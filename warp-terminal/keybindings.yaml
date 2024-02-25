@@ -1,0 +1,7 @@
+---
+"pane_group:add_right": alt-shift-D
+"pane_group:navigate_prev": alt-left
+"editor_view:add_cursor_below": ctrl-alt-shift-down
+"pane_group:navigate_next": alt-right
+"workspace:new_tab": ctrl-shift-D
+"editor_view:add_cursor_above": ctrl-alt-shift-up
