@@ -31,10 +31,12 @@ label {
 }
 
 .workspaces button.work {
+  padding-left: 14px;
   color: #00A2FF;
 }
 
 .workspaces button {
+  padding-left: 14px;
   background-color: transparent;
   color: #eee;
 }
@@ -42,8 +44,10 @@ label {
 .media {
   background-color: #24273A;
   padding-left: 15px;
-  padding-right: 15px;
-
+  padding-right: 5px;
+}
+.media button{
+  background-color: #24273A;
 }
 
 .media:hover {
@@ -61,6 +65,7 @@ label {
 }
 
 .workspaces button.focused {
+  padding-left: 14px;
   color: #6200ff;
   border-bottom: 3px solid #6200ff;
 }
