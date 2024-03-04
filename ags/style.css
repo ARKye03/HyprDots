@@ -3,19 +3,26 @@ label {
 }
 
 .workspaces,
-.media,
 .clock,
 .volume,
 .systray {
   background-color: #24273a;
   border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  border-color: #ffffff;
+  padding-left: 5px;
+  padding-right: 5px;
   margin-left: 10px;
   margin-right: 10px;
 }
 
+.systray button {
+  background-color: transparent;
+}
+
+
 .bc {
+  margin-left: 5px;
+  margin-right: 5px;
   padding-right: 12px;
 }
 
@@ -27,21 +34,28 @@ label {
   color: #00A2FF;
 }
 
-.workspaces button,
-.media {
+.workspaces button {
   background-color: transparent;
   color: #eee;
-  padding-left: 14px;
 }
 
-.workspaces button:hover,
+.media {
+  background-color: #24273A;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
 .media:hover {
+  background-color: #343852;
+}
+
+.workspaces button:hover {
   background-color: rgba(255, 255, 255, 0.1);
   color: #efefef;
 }
 
-.workspaces button:active,
-.media:active {
+.workspaces button:active {
   background-color: rgba(255, 255, 255, 0.2);
   color: #fff;
 }

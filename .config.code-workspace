@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../arch_progs/Dotfiles"
+		},
+		{
+			"path": "../arch_progs/dotfiles"
+		}
+	],
+	"settings": {}
+}

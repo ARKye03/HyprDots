@@ -65,10 +65,21 @@ const Notification = () => Widget.Box({
     ],
 });
 
+const MusicPlayerDaemon = Widget.Button({
+    className: 'media',
+    child: Widget.Label({
+        connections: [
+            [1000, self => execAsync(['mpc', '--format', '[%artist% - %title%]', 'current'])
+                .then(date => self.label = date).catch(console.error)],
+        ],
+    }),
+    on_primary_click: () => execAsync(`/usr/bin/alacritty --class floatcritty -e ncmpcpp -c /home/archkye/.ncmpcpp/config`)
+})
+
 const Rofi = Widget.Button({
     className: 'bc',
     child: Widget.Label('⏻'),
-    on_primary_click: () => execAsync(`home/archkye/.config/rofi/powermenu/type-4/powermenu.sh`),
+    on_primary_click: () => execAsync(`/home/archkye/.config/rofi/powermenu/type-4/powermenu.sh`),
 });
 const Power = Widget.Button({
     className: 'bc',
@@ -130,24 +141,26 @@ const SysTray = () => Widget.Box({
 // layout of the bar
 const Left = () => Widget.Box({
     children: [
+        Power,
         Workspaces(),
     ],
 });
 
 const Center = () => Widget.Box({
     children: [
-        Rofi,
-        Notification(),
-        Clock(),
-        Power
+        MusicPlayerDaemon,
+        Notification()
     ],
 });
 
 const Right = () => Widget.Box({
     hpack: 'end',
     children: [
+        /* Playerctl, */
         Volume(),
+        Clock(),
         SysTray(),
+        Rofi,
     ],
 });
 
