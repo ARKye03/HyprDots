@@ -5,52 +5,36 @@ label {
 .workspaces,
 .clock,
 .volume,
-.systray {
+.systray,
+.media,
+.bc {
   background-color: #353955;
   border-radius: 10px;
   border-color: #ffffff;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding: 0 5px;
+  margin: 5px 10px;
 }
-.systray button {
+
+.systray button,
+.workspaces button {
   background-color: transparent;
-}
-
-
-.bc {
-  margin-left: 5px;
-  margin-right: 5px;
-  padding-right: 12px;
 }
 
 .bc:hover {
   color: #8432d2;
 }
+.bc label{
+  padding-right: 3px;
+}
 
-.workspaces button.work {
+.workspaces button.work,
+.workspaces button.focused {
   padding-left: 14px;
   color: #00A2FF;
 }
 
 .workspaces button {
-  padding-left: 14px;
-  background-color: transparent;
   color: #eee;
-}
-
-.media {
-  background-color: #353955;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.media button{
-  background-color: #353955;
-}
-
-.media:hover {
-  background-color: #343852;
 }
 
 .workspaces button:hover {
@@ -64,9 +48,16 @@ label {
 }
 
 .workspaces button.focused {
-  padding-left: 14px;
   color: #6200ff;
   border-bottom: 3px solid #6200ff;
+}
+
+.media button {
+  background-color: #353955;
+}
+
+.media:hover {
+  background-color: #343852;
 }
 
 .notification image {
@@ -75,7 +66,6 @@ label {
 }
 
 .clock {
-  margin: 0 6px;
   font-size: 1.1em;
 }
 
