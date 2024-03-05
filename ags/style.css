@@ -6,7 +6,7 @@ label {
 .clock,
 .volume,
 .systray {
-  background-color: #24273a;
+  background-color: #353955;
   border-radius: 10px;
   border-color: #ffffff;
   padding-left: 5px;
@@ -14,7 +14,6 @@ label {
   margin-left: 10px;
   margin-right: 10px;
 }
-
 .systray button {
   background-color: transparent;
 }
@@ -42,12 +41,12 @@ label {
 }
 
 .media {
-  background-color: #24273A;
-  padding-left: 15px;
+  background-color: #353955;
+  padding-left: 5px;
   padding-right: 5px;
 }
 .media button{
-  background-color: #24273A;
+  background-color: #353955;
 }
 
 .media:hover {

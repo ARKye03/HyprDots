@@ -73,7 +73,6 @@ const Workspaces = () =>
             "󰊖 ",
             "",
           ];
-          // generate an array [1..10] then make buttons from the index
           const arr = Array.from({ length: 10 }, (_, i) => i + 1);
           self.children = arr.map((i) => {
             let className = "bc"; // default value
@@ -87,7 +86,8 @@ const Workspaces = () =>
             }
 
             return Widget.Button({
-              onClicked: () => execAsync(`hyprctl dispatch workspace ${i}`),
+              onClicked: () =>
+                execAsync(`/usr/bin/hyprctl dispatch workspace ${i}`),
               child: Widget.Label(`${Wicons[i]}`),
               className: className,
             });
@@ -130,7 +130,12 @@ const MusicPlayerDaemon = Widget.Button({
       [
         1000,
         (/** @type {{ label: string; }} */ self) =>
-          execAsync(["mpc", "--format", "[%artist% - %title%]", "current"])
+          execAsync([
+            "/usr/bin/mpc",
+            "--format",
+            "[%artist% - %title%]",
+            "current",
+          ])
             .then((date) => (self.label = date))
             .catch(console.error),
       ],
@@ -138,7 +143,7 @@ const MusicPlayerDaemon = Widget.Button({
   }),
   on_primary_click: () =>
     execAsync(
-      `/usr/bin/alacritty --class floatcritty -e ncmpcpp -c /home/archkye/.ncmpcpp/config`
+      `/usr/bin/alacritty --class floatcritty -e /usr/bin/ncmpcpp -c /home/archkye/.ncmpcpp/config`
     ),
 });
 
