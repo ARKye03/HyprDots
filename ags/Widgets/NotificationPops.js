@@ -34,12 +34,6 @@ const NotificationIcon = ({ app_entry, app_icon, image }) => {
 
 /** @param {import('resource:///com/github/Aylur/ags/service/notifications.js').Notification} n */
 export const Notification = (n) => {
-  const icon = Widget.Box({
-    vpack: "start",
-    class_name: "icon",
-    child: NotificationIcon(n),
-  });
-
   const title = Widget.Label({
     class_name: "title",
     xalign: 0,
@@ -82,7 +76,6 @@ export const Notification = (n) => {
       children: [
         Widget.Box({
           children: [
-            icon,
             Widget.Box({
               vertical: true,
               children: [title, body],
@@ -95,12 +88,23 @@ export const Notification = (n) => {
   });
 };
 
+const notificationBox = Widget.Box({
+  class_name: "notifications",
+  vertical: true,
+  children: popups.as((popups) => {
+    const styleContext = notificationBox.get_style_context();
+    // Add the 'show' class when there are popups
+    if (popups.length > 0) {
+      styleContext.add_class("show");
+    } else {
+      styleContext.remove_class("show");
+    }
+    return popups.map(Notification);
+  }),
+});
+
 export const notificationPopup = Widget.Window({
   name: "notifications",
   anchor: ["top", "right"],
-  child: Widget.Box({
-    class_name: "notifications",
-    vertical: true,
-    children: popups.as((popups) => popups.map(Notification)),
-  }),
+  child: notificationBox,
 });
