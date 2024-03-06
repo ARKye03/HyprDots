@@ -90,7 +90,7 @@ label {
   }
   
   .notification {
-  min-width:350px;
+  min-width:300px;
   border-radius:11px;
   padding:1em;
   margin:.5em;
@@ -98,7 +98,7 @@ label {
   background-color:#353955
   }
   
-  .notification.critical {
+    .notification.critical {
   border:1px solid #f08080
   }
   
