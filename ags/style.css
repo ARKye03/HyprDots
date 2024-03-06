@@ -1,134 +1,125 @@
 label {
-  font-weight: bold;
-}
-
-.workspaces,
-.clock,
-.volume,
-.systray,
-.media,
-.bc {
-  background-color: #353955;
-  border-radius: 10px;
-  border-color: #ffffff;
-  padding: 0 5px;
-  margin: 5px 10px;
-}
-
-.systray button,
-.workspaces button {
-  background-color: transparent;
-}
-
-.bc:hover {
-  color: #8432d2;
-}
-.bc label{
-  padding-right: 3px;
-}
-
-.workspaces button.work,
-.workspaces button.focused {
-  padding-left: 14px;
-  color: #00A2FF;
-}
-
-.workspaces button {
-  color: #eee;
-}
-
-.workspaces button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #efefef;
-}
-
-.workspaces button:active {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #fff;
-}
-
-.workspaces button.focused {
-  color: #6200ff;
-  border-bottom: 3px solid #6200ff;
-}
-
-.media button {
-  background-color: #353955;
-}
-
-.media:hover {
-  background-color: #343852;
-}
-
-
-.clock {
-  font-size: 1.1em;
-}
-
-progress,
-highlight {
-  background-color: aqua;
-  min-height: 8px;
-}
-
-window#notifications {
-  all: unset;
-}
-
-window#notifications box.notifications {
-  padding: .5em;
-}
-
-.icon {
-  min-width: 68px;
-  min-height: 68px;
-  margin-right: 1em;
-}
-
-.icon image {
-  font-size: 58px;
-  /* to center the icon */
-  margin: 5px;
-  color: #efefef;
-}
-
-.icon box {
-  min-width: 68px;
-  min-height: 68px;
-  border-radius: 7px;
-}
-
-.notification {
-  min-width: 350px;
-  border-radius: 11px;
-  padding: 1em;
-  margin: .5em;
-  border: 1px solid #00A2FF;
-  background-color: #353955;
-}
-
-.notification.critical {
-  border: 1px solid lightcoral;
-}
-
-.title {
-  color: #8432d2;
-  font-size: 1.4em;
-}
-
-.body {
-  color: #343852;
-}
-
-.actions .action-button {
-  margin: 0 .4em;
-  margin-top: .8em;
-}
-
-.actions .action-button:first-child {
-  margin-left: 0;
-}
-
-.actions .action-button:last-child {
-  margin-right: 0;
-}
+  font-weight:700
+  }
+  
+  .workspaces,.clock,.volume,.systray,.media,.bc {
+  background-color:#353955;
+  border-radius:10px;
+  border-color:#fff;
+  padding:0 5px;
+  margin:5px 10px
+  }
+  
+  .systray button,.workspaces button {
+  background-color:transparent
+  }
+  
+  .bc:hover {
+  color:#8432d2
+  }
+  
+  .bc label {
+  padding-right:3px
+  }
+  
+  .workspaces button.work,.workspaces button.focused {
+  padding-left:14px;
+  color:#00A2FF
+  }
+  
+  .workspaces button {
+  color:#eee
+  }
+  
+  .workspaces button:hover {
+  background-color:#474A57;
+  color:#efefef
+  }
+  
+  .workspaces button:active {
+  background-color:#535561;
+  color:#fff
+  }
+  
+  .workspaces button.focused {
+  color:#6200ff;
+  border-bottom:3px solid #6200ff
+  }
+  
+  .media button {
+  background-color:#353955
+  }
+  
+  .media:hover {
+  background-color:#343852
+  }
+  
+  .clock {
+  font-size:1.1em
+  }
+  
+  progress,highlight {
+  background-color:aqua;
+  min-height:8px
+  }
+  
+  window#notifications {
+  all:unset;
+  }
+  
+  window#notifications box.notifications {
+  padding:.5em
+  }
+  
+  .icon {
+  min-width:68px;
+  min-height:68px;
+  margin-right:1em
+  }
+  
+  .icon image {
+  font-size:58px;
+  margin:5px;
+  color:#efefef
+  }
+  
+  .icon box {
+  min-width:68px;
+  min-height:68px;
+  border-radius:7px
+  }
+  
+  .notification {
+  min-width:350px;
+  border-radius:11px;
+  padding:1em;
+  margin:.5em;
+  border:1px solid #00A2FF;
+  background-color:#353955
+  }
+  
+  .notification.critical {
+  border:1px solid #f08080
+  }
+  
+  .title {
+  color:#8432d2;
+  font-size:1.4em
+  }
+  
+  .body {
+  color:#343852
+  }
+  
+  .actions .action-button {
+  margin:0 .4em;
+  margin-top:.8em
+  }
+  
+  .actions .action-button:first-child {
+  margin-left:0
+  }
+  
+  .actions .action-button:last-child {
+  margin-right:0
+  }
