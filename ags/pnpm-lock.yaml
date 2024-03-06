@@ -1,0 +1,50 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+devDependencies:
+  '@girs/accountsservice-1.0':
+    specifier: 1.0.0-3.2.9
+    version: 1.0.0-3.2.9
+
+packages:
+
+  /@girs/accountsservice-1.0@1.0.0-3.2.9:
+    resolution: {integrity: sha512-o0O+G61zVubCoXomJI+zi2G42rP0kej8/mq4pAaMg/DMdYOLpGfUq2/EKlkXn/kAe4D3JZW3kg3PBFYXEW/gxw==}
+    dependencies:
+      '@girs/gio-2.0': 2.78.0-3.2.9
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
+    dev: true
+
+  /@girs/gio-2.0@2.78.0-3.2.9:
+    resolution: {integrity: sha512-A3F1AkBPF8Up6bSfH9zbAUsQqv4dB0jvfUIo5b+SJs6Mt9FhpqNEUMyqeCFTDKDA9n2sK6JxAJviwsW9dxViJA==}
+    dependencies:
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
+    dev: true
+
+  /@girs/gjs@3.2.9:
+    resolution: {integrity: sha512-dJfCNdtt4OLRywlhKOc+h27l5KoOiDhbhkuuG/WaV/jn9KaQ1BMAyVWdBEZu6WzPJlsiWYujis0fe5ZJnrgoDA==}
+    dependencies:
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
+    dev: true
+
+  /@girs/glib-2.0@2.78.0-3.2.9:
+    resolution: {integrity: sha512-wcbnSojav6jc4//PYsAJPwXizFlz35/F+AHyFbvutOSdNz4xzzUUZqUhhH2lmoyR8WDvkVWBcQitCmYmPNe6Xg==}
+    dependencies:
+      '@girs/gjs': 3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
+    dev: true
+
+  /@girs/gobject-2.0@2.78.0-3.2.9:
+    resolution: {integrity: sha512-zszoqx7/z7KseQnc7WUXz1jgs3oYskT748cMKLQ7n4pRtL6klrTzlPbM42Szs+Uk6wOKJ+o+MMdcpb8znflDBg==}
+    dependencies:
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+    dev: true

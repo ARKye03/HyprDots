@@ -1,0 +1,7 @@
+{
+  "name": "ags-dotfiles",
+  "author": "ARKye03",
+  "devDependencies": {
+    "@girs/accountsservice-1.0": "1.0.0-3.2.9"
+  }
+}
