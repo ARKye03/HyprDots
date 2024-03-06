@@ -12,27 +12,6 @@ Widget.Label({
 const popups = notifications.bind("popups");
 
 /** @param {import('resource:///com/github/Aylur/ags/service/notifications.js').Notification} n */
-const NotificationIcon = ({ app_entry, app_icon, image }) => {
-  if (image) {
-    return Widget.Box({
-      css: `
-                background-image: url("${image}");
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-            `,
-    });
-  }
-
-  let icon = "dialog-information-symbolic";
-  if (Utils.lookUpIcon(app_icon)) icon = app_icon;
-
-  if (app_entry && Utils.lookUpIcon(app_entry)) icon = app_entry;
-
-  return Widget.Icon(icon);
-};
-
-/** @param {import('resource:///com/github/Aylur/ags/service/notifications.js').Notification} n */
 export const Notification = (n) => {
   const title = Widget.Label({
     class_name: "title",
@@ -88,23 +67,12 @@ export const Notification = (n) => {
   });
 };
 
-const notificationBox = Widget.Box({
-  class_name: "notifications",
-  vertical: true,
-  children: popups.as((popups) => {
-    const styleContext = notificationBox.get_style_context();
-    // Add the 'show' class when there are popups
-    if (popups.length > 0) {
-      styleContext.add_class("show");
-    } else {
-      styleContext.remove_class("show");
-    }
-    return popups.map(Notification);
-  }),
-});
-
 export const notificationPopup = Widget.Window({
   name: "notifications",
   anchor: ["top", "right"],
-  child: notificationBox,
+  child: Widget.Box({
+    class_name: "notifications",
+    vertical: true,
+    children: popups.as((popups) => popups.map(Notification)),
+  }),
 });
