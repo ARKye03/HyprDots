@@ -46,6 +46,7 @@ fi
 
 #Aliases
 alias pacsu="yay --noconfirm"
+alias pacsuw='/usr/bin/yay --noconfirm --config /etc/pacman-warp.conf'
 alias pacin="sudo pacman -S --noconfirm"
 alias yacin="yay -S --noconfirm"
 alias pacre="sudo pacman -Rns"
@@ -113,3 +114,4 @@ esac
 #source <(ng completion script)
 
 PATH=~/.console-ninja/.bin:$PATH
+
