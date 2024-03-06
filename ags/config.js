@@ -1,4 +1,3 @@
-// importing
 import App from "resource:///com/github/Aylur/ags/app.js";
 import Widget from "resource:///com/github/Aylur/ags/widget.js";
 import { Workspaces } from "./Widgets/Workspaces.js";
@@ -9,7 +8,6 @@ import { SysTray } from "./Widgets/SysTray.js";
 import { Clock } from "./Widgets/Clock.js";
 import { notificationPopup } from "./Widgets/NotificationPops.js";
 
-// layout of the bar
 const Left = () =>
   Widget.Box({
     children: [Power, Workspaces()],
@@ -28,7 +26,7 @@ const Right = () =>
 
 const Bar = (monitor = 0) =>
   Widget.Window({
-    name: `bar-${monitor}`, // name has to be unique
+    name: `bar-${monitor}`,
     class_name: "bar",
     monitor,
     anchor: ["top", "left", "right"],
