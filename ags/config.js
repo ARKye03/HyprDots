@@ -1,44 +1,21 @@
-import App from "resource:///com/github/Aylur/ags/app.js";
-import Widget from "resource:///com/github/Aylur/ags/widget.js";
-import { Workspaces } from "./Widgets/Workspaces.js";
-import { MusicPlayerDaemon } from "./Widgets/MusicPlayerDaemon.js";
-import { Power, Rofi } from "./Widgets/BorderMenus.js";
-import { Volume } from "./Widgets/Volume.js";
-import { SysTray } from "./Widgets/SysTray.js";
-import { Clock } from "./Widgets/Clock.js";
-import { notificationPopup } from "./Widgets/NotificationPops.js";
+const entry = App.configDir + "/main.ts";
+const outdir = "/tmp/ags/js";
 
-const Left = () =>
-  Widget.Box({
-    children: [Power, Workspaces()],
-  });
+try {
+  await Utils.execAsync([
+    "bun",
+    "build",
+    entry,
+    "--outdir",
+    outdir,
+    "--external",
+    "resource://*",
+    "--external",
+    "gi://*",
+  ]);
+  await import(`file://${outdir}/main.js`);
+} catch (error) {
+  console.error(error);
+}
 
-const Center = () =>
-  Widget.Box({
-    children: [MusicPlayerDaemon],
-  });
-
-const Right = () =>
-  Widget.Box({
-    hpack: "end",
-    children: [Volume(), Clock(), SysTray(), Rofi],
-  });
-
-const Bar = (monitor = 0) =>
-  Widget.Window({
-    name: `bar-${monitor}`,
-    class_name: "bar",
-    monitor,
-    anchor: ["top", "left", "right"],
-    exclusivity: "exclusive",
-    child: Widget.CenterBox({
-      start_widget: Left(),
-      center_widget: Center(),
-      end_widget: Right(),
-    }),
-  });
-
-App.config({
-  style: "./style.css",
-  windows: [Bar(), notificationPopup],
-});
+export {};
