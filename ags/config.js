@@ -2,12 +2,12 @@
 import App from "resource:///com/github/Aylur/ags/app.js";
 import Widget from "resource:///com/github/Aylur/ags/widget.js";
 import { Workspaces } from "./Widgets/Workspaces.js";
-import { Notification } from "./Widgets/Notification.js";
 import { MusicPlayerDaemon } from "./Widgets/MusicPlayerDaemon.js";
 import { Power, Rofi } from "./Widgets/BorderMenus.js";
 import { Volume } from "./Widgets/Volume.js";
 import { SysTray } from "./Widgets/SysTray.js";
 import { Clock } from "./Widgets/Clock.js";
+import { notificationPopup } from "./Widgets/NotificationPops.js";
 
 // layout of the bar
 const Left = () =>
@@ -17,7 +17,7 @@ const Left = () =>
 
 const Center = () =>
   Widget.Box({
-    children: [MusicPlayerDaemon, Notification()],
+    children: [MusicPlayerDaemon],
   });
 
 const Right = () =>
@@ -42,5 +42,5 @@ const Bar = (monitor = 0) =>
 
 App.config({
   style: "./style.css",
-  windows: [Bar()],
+  windows: [Bar(), notificationPopup],
 });

@@ -60,10 +60,6 @@ label {
   background-color: #343852;
 }
 
-.notification image {
-  color: yellow;
-  margin-left: 1em;
-}
 
 .clock {
   font-size: 1.1em;
@@ -73,4 +69,66 @@ progress,
 highlight {
   background-color: aqua;
   min-height: 8px;
+}
+
+window#notifications {
+  all: unset;
+}
+
+window#notifications box.notifications {
+  padding: .5em;
+}
+
+.icon {
+  min-width: 68px;
+  min-height: 68px;
+  margin-right: 1em;
+}
+
+.icon image {
+  font-size: 58px;
+  /* to center the icon */
+  margin: 5px;
+  color: #efefef;
+}
+
+.icon box {
+  min-width: 68px;
+  min-height: 68px;
+  border-radius: 7px;
+}
+
+.notification {
+  min-width: 350px;
+  border-radius: 11px;
+  padding: 1em;
+  margin: .5em;
+  border: 1px solid #00A2FF;
+  background-color: #353955;
+}
+
+.notification.critical {
+  border: 1px solid lightcoral;
+}
+
+.title {
+  color: #8432d2;
+  font-size: 1.4em;
+}
+
+.body {
+  color: #343852;
+}
+
+.actions .action-button {
+  margin: 0 .4em;
+  margin-top: .8em;
+}
+
+.actions .action-button:first-child {
+  margin-left: 0;
+}
+
+.actions .action-button:last-child {
+  margin-right: 0;
 }
