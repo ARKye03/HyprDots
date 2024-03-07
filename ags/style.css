@@ -20,37 +20,26 @@ label {
   background-color: transparent;
 }
 
-.bc:hover {
-  color: #8432d2;
-}
-
 .bc label {
   padding-right: 3px;
-}
-
-.workspaces button.work,
-.workspaces button.focused {
-  padding-left: 14px;
-  color: #00a2ff;
 }
 
 .workspaces button {
   color: #eee;
 }
 
-.workspaces button:hover {
-  background-color: #474a57;
-  color: #efefef;
-}
-
-.workspaces button:active {
-  background-color: #535561;
-  color: #fff;
+.workspaces button.work {
+  color: #00a2ff;
 }
 
 .workspaces button.focused {
   color: #6200ff;
   border-bottom: 3px solid #6200ff;
+}
+.workspaces button,
+.workspaces button.work,
+.workspaces button.focused {
+  padding-right: 5px;
 }
 
 .media button {
