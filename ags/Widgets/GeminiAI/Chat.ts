@@ -1,6 +1,7 @@
 export const Chat = () =>
   Widget.Window({
     name: "Chat",
+    visible: false,
     class_name: "chat",
     anchor: ["top", "right", "bottom"],
     child: Widget.Button({
