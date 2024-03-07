@@ -7,6 +7,7 @@ import { Volume } from "./Widgets/Volume";
 import { SysTray } from "./Widgets/SysTray";
 import { Clock } from "./Widgets/Clock";
 import { notificationPopup } from "./Widgets/NotificationPops";
+import { Chat } from "Widgets/GeminiAI/Chat";
 
 const Left = () =>
   Widget.Box({
@@ -39,6 +40,6 @@ const Bar = (monitor = 0) =>
   });
 
 App.config({
-  style: "./style.css",
-  windows: [Bar(), notificationPopup],
+  style: "./styles/style.css",
+  windows: [Bar(), notificationPopup, Chat()],
 });
