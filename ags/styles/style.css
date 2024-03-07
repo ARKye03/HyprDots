@@ -120,3 +120,10 @@ window#notifications box.notifications {
 .actions .action-button:last-child {
   margin-right: 0;
 }
+
+.chat {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-color: #00a2ff;
+  background-color: purple;
+}
