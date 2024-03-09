@@ -43,14 +43,15 @@ export const Chat = () =>
     name: "Chat",
     keymode: "on-demand",
     width_request: 400,
-    //visible: false,
+    visible: false,
     class_name: "chat",
-    anchor: ["top", "right", "bottom"],
+    anchor: ["top", "left", "bottom"],
     child: Widget.CenterBox({
       vertical: true,
       vexpand: true,
       startWidget: Widget.Box({
         vexpand: true,
+        class_name: "chatHeader",
         children: [
           Widget.Icon({
             icon: "/home/archkye/.config/ags/assets/pacman.svg",
@@ -66,10 +67,10 @@ export const Chat = () =>
           }),
           Widget.Button({
             onClicked: () => App.toggleWindow("Chat"),
+            class_name: "closeButton",
             child: Widget.Icon({
               icon: "/home/archkye/.config/ags/assets/closeChat.svg",
               size: 50,
-              hpack: "end",
               hexpand: true,
             }),
           }),

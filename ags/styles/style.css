@@ -122,8 +122,8 @@ window#notifications box.notifications {
 }
 
 .chat {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   border-color: #00a2ff;
   background-color: #38374c;
 }
@@ -137,5 +137,10 @@ window#notifications box.notifications {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.chat-header {
+.chatHeader {
+  padding: 10px 40px 10px 40px;
+}
+.closeButton {
+  background-color: #38374c;
+  border-radius: 25px;
 }
