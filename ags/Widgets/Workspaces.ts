@@ -9,7 +9,7 @@ export const Workspaces = () =>
       const Wicons = [
         "",
         " ",
-        " ",
+        " ",
         "󰨞 ",
         " ",
         " ",
