@@ -11,7 +11,7 @@ if echo "$vpn_status" | grep -q "Country"; then
   hyprctl notify 1 3000 "rgb(00ce71)" "Disconnected"
 else
   # If the VPN is not connected, connect it
-  hyprctl notify 1 10000 "rgb(f1ea3)" "Connecting Proton VPN"
+  hyprctl notify 1 10000 "rgb(f1eca3)" "Connecting Proton VPN"
   protonvpn-cli c --cc US -p udp
   if [ $? -eq 0 ]; then
     # Get the server information
