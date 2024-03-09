@@ -125,8 +125,17 @@ window#notifications box.notifications {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border-color: #00a2ff;
-  background-color: #272634;
+  background-color: #38374c;
 }
-.pacman {
+.input {
+  padding: 15px;
+}
+.inputBox {
   background-color: #00a2ff;
+}
+.sendButton {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.chat-header {
 }
