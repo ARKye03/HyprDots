@@ -1,9 +1,12 @@
+import GLib from "gi://GLib";
+
 export async function fetchCode(input: string) {
-  // @ts-ignore
-  const API_KEY = process.env.API_KEY;
-  console.log(
-    "Hello from fetchCode!+----------------------------------------------------------"
-  );
+  const API_KEY = GLib.getenv("API_KEY");
+
+  console.log(API_KEY);
+  if (!API_KEY) {
+    throw new Error("API_KEY not found");
+  }
 
   const response = await Utils.fetch(
     `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}`,

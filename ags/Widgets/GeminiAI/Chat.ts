@@ -105,7 +105,11 @@ export const Chat = () =>
 
                   // Create a new Box with a Label containing the text
                   let row = Widget.Box();
-                  let label = Widget.Label({ wrap: true, label: resultText });
+                  let label = Widget.Label({
+                    wrap: true,
+                    label: resultText,
+                    useMarkup: true,
+                  });
                   row.add(label);
 
                   // Add the Box to the top of the ListBox
