@@ -43,7 +43,7 @@ export const Chat = () =>
     name: "Chat",
     keymode: "on-demand",
     width_request: 400,
-    visible: false,
+    visible: true,
     class_name: "chat",
     anchor: ["top", "left", "bottom"],
     child: Widget.CenterBox({
