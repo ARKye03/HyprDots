@@ -15,7 +15,6 @@ Utils.monitorFile(
 
   // reload function
   function () {
-    console.log("Hello");
     // main scss file
     const sass = `${App.configDir}/styles/MainStyle.sass`;
 
