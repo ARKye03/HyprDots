@@ -6,10 +6,9 @@ const TextEntryWidget = Widget.subclass(Gtk.TextView);
 
 const TextInputWidget = TextEntryWidget({
   // @ts-ignore
-  wrap_mode: Gtk.WrapMode.WORD_CHAR, // Wrap text at character boundaries
-  left_margin: 5, // Set left margin
-  top_margin: 5, // Set left margin
-  className: "inputBox",
+  wrap_mode: Gtk.WrapMode.WORD_CHAR,
+  left_margin: 5,
+  top_margin: 5,
   setup(self) {
     self.bind();
   },
@@ -20,13 +19,21 @@ const ScrollableTextInputWidget = Widget.Scrollable({
   width_request: 350, // Set a fixed width of 350 pixels
   vscroll: "automatic",
   hscroll: "never",
+  class_name: "inputBox",
   child: TextInputWidget,
 });
 // Create a reference to the center ListBox
 const CenterListBox = Widget.ListBox({
   hexpand: false,
+  class_name: "chatBox",
   setup(self) {
-    self.add(Widget.Label({ label: "Hi there! How can I help you today?" }));
+    self.add(
+      Widget.Label({
+        wrap: true,
+        use_markup: true,
+        label: "Hi there! How can I help you today?",
+      })
+    );
   },
 });
 
@@ -68,7 +75,6 @@ export const Chat = () =>
           }),
           Widget.Button({
             onClicked: () => App.toggleWindow("Chat"),
-            class_name: "closeButton",
             child: Widget.Icon({
               icon: "/home/archkye/.config/ags/assets/closeChat.svg",
               size: 50,
@@ -107,9 +113,7 @@ export const Chat = () =>
                   // Create a new Box with a Label containing the text
                   let row = Widget.Box();
                   let label = Widget.Label({
-                    wrap: true,
                     label: resultText,
-                    useMarkup: true,
                   });
                   row.add(label);
 
