@@ -36,13 +36,88 @@ const CenterListBox = Widget.ListBox({
     );
   },
 });
-
-// Wrap the ListBox in a Scrollable
+const geminiChatHeader = Widget.Box({
+  vexpand: true,
+  class_name: "chatHeader",
+  children: [
+    Widget.Icon({
+      icon: "/home/archkye/.config/ags/assets/pacman.svg",
+      class_name: "pacman",
+      size: 60,
+      hpack: "start",
+      hexpand: true,
+    }),
+    Widget.Label({
+      label: "Gemini here for you.",
+      hpack: "center",
+      hexpand: true,
+    }),
+    Widget.Button({
+      onClicked: () => App.toggleWindow("Chat"),
+      child: Widget.Icon({
+        icon: "/home/archkye/.config/ags/assets/closeChat.svg",
+        size: 50,
+        hexpand: true,
+      }),
+    }),
+  ],
+});
 const ScrollableListBox = Widget.Scrollable({
   height_request: 850,
   hscroll: "never",
   vscroll: "automatic",
   child: CenterListBox,
+});
+const resultListBox = Widget.Box({
+  class_name: "input",
+  spacing: 8,
+  vexpand: true,
+  homogeneous: false,
+  vertical: false,
+  children: [
+    ScrollableTextInputWidget,
+    Widget.Button({
+      class_name: "sendButton",
+      onClicked: async () => {
+        let startIter = TextInputWidget.get_buffer().get_start_iter();
+        let endIter = TextInputWidget.get_buffer().get_end_iter();
+        let textToSend = TextInputWidget.get_buffer().get_text(
+          startIter,
+          endIter,
+          true
+        );
+        print("Send: " + textToSend);
+        fetchCode(textToSend)
+          .then((result) => {
+            console.log(result);
+            let resultText = Array.isArray(result) ? result.join(" ") : result;
+
+            // Create a new Box with a Label containing the text
+            let row = Widget.Box();
+            let label = Widget.Label({
+              label: resultText,
+              wrap: true,
+              use_markup: true,
+            });
+            row.add(label);
+
+            // Add the Box to the top of the ListBox
+            CenterListBox.prepend(row);
+
+            // Show the Box
+            row.show_all();
+          })
+          .catch((error) => {
+            // handle the error here
+            console.log(error);
+          });
+      },
+      child: Widget.Icon({
+        icon: "/home/archkye/.config/ags/assets/send.svg",
+        size: 20,
+      }),
+    }),
+  ],
 });
 
 export const Chat = () =>
@@ -57,83 +132,8 @@ export const Chat = () =>
     child: Widget.CenterBox({
       vertical: true,
       vexpand: true,
-      startWidget: Widget.Box({
-        vexpand: true,
-        class_name: "chatHeader",
-        children: [
-          Widget.Icon({
-            icon: "/home/archkye/.config/ags/assets/pacman.svg",
-            class_name: "pacman",
-            size: 60,
-            hpack: "start",
-            hexpand: true,
-          }),
-          Widget.Label({
-            label: "Gemini here for you.",
-            hpack: "center",
-            hexpand: true,
-          }),
-          Widget.Button({
-            onClicked: () => App.toggleWindow("Chat"),
-            child: Widget.Icon({
-              icon: "/home/archkye/.config/ags/assets/closeChat.svg",
-              size: 50,
-              hexpand: true,
-            }),
-          }),
-        ],
-      }),
+      startWidget: geminiChatHeader,
       centerWidget: ScrollableListBox,
-      endWidget: Widget.Box({
-        class_name: "input",
-        spacing: 8,
-        vexpand: true,
-        homogeneous: false,
-        vertical: false,
-        children: [
-          ScrollableTextInputWidget,
-          Widget.Button({
-            class_name: "sendButton",
-            onClicked: async () => {
-              let startIter = TextInputWidget.get_buffer().get_start_iter();
-              let endIter = TextInputWidget.get_buffer().get_end_iter();
-              let textToSend = TextInputWidget.get_buffer().get_text(
-                startIter,
-                endIter,
-                true
-              );
-              print("Send: " + textToSend);
-              fetchCode(textToSend)
-                .then((result) => {
-                  console.log(result);
-                  let resultText = Array.isArray(result)
-                    ? result.join(" ")
-                    : result;
-
-                  // Create a new Box with a Label containing the text
-                  let row = Widget.Box();
-                  let label = Widget.Label({
-                    label: resultText,
-                  });
-                  row.add(label);
-
-                  // Add the Box to the top of the ListBox
-                  CenterListBox.prepend(row);
-
-                  // Show the Box
-                  row.show_all();
-                })
-                .catch((error) => {
-                  // handle the error here
-                  console.log(error);
-                });
-            },
-            child: Widget.Icon({
-              icon: "/home/archkye/.config/ags/assets/send.svg",
-              size: 20,
-            }),
-          }),
-        ],
-      }),
+      endWidget: resultListBox,
     }),
   });
