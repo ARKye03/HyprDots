@@ -1,0 +1,50 @@
+$mach-Surface1: #494d64;
+
+.chat {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: $mach-Surface1;
+}
+
+.input {
+  padding: 15px;
+  border-radius: 10px;
+
+  &Box {
+    background-color: #00a2ff;
+  }
+}
+
+.inputBox {
+  background-color: #1e1e2e;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.sendButton {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.chatHeader {
+  padding: 15px 40px 10px 40px;
+}
+.chatHeader button {
+  background-color: #38374c;
+  border-radius: 25px;
+  padding: 2px 5px;
+  margin: 0 5px;
+}
+.chatBox {
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.chatBox label {
+  color: #00a2ff;
+  font-size: 1.1em;
+  font-weight: 700;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: #141414;
+}

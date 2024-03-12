@@ -4,7 +4,7 @@ import { Chat } from "Widgets/GeminiAI/Chat";
 import { Bar } from "Widgets/Bar";
 
 // main scss file
-const sass = `${App.configDir}/styles/MainStyle.sass`;
+const scss = `${App.configDir}/styles/MainStyle.scss`;
 
 // target css file
 const css = `/tmp/my-style.css`;
@@ -16,20 +16,20 @@ Utils.monitorFile(
   // reload function
   function () {
     // main scss file
-    const sass = `${App.configDir}/styles/MainStyle.sass`;
+    const scss = `${App.configDir}/styles/MainStyle.scss`;
 
     // target css file
     const css = `/tmp/my-style.css`;
 
     // compile, reset, apply
-    Utils.exec(`sassc ${sass} ${css}`);
+    Utils.exec(`sassc ${scss} ${css}`);
     App.resetCss();
     App.applyCss(css);
   }
 );
 
 // make sure sassc is installed on your system
-Utils.exec(`sassc ${sass} ${css}`);
+Utils.exec(`sassc ${scss} ${css}`);
 
 App.config({
   style: css,
