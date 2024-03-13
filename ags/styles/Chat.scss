@@ -1,24 +1,31 @@
 $mach-Surface1: #494d64;
+$text-input: #3a3d4b;
+$tenpx: 10px;
 
 .chat {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: $mach-Surface1;
 }
+.activatable {
+  border-radius: $tenpx;
+}
 
 .input {
   padding: 15px;
   border-radius: 10px;
-
-  &Box {
-    background-color: #00a2ff;
-  }
 }
-
-.inputBox {
-  background-color: #1e1e2e;
+.right {
+  border-top-left-radius: $tenpx;
+  border-bottom-left-radius: $tenpx;
+}
+.inputBox,
+.inputBox text,
+.view {
+  padding: 2px;
   border-radius: 10px;
-  padding: 5px;
+  border-color: #00a2ff;
+  background-color: $text-input;
 }
 
 .sendButton {
@@ -40,7 +47,7 @@ $mach-Surface1: #494d64;
 }
 
 .chatBox label {
-  color: #00a2ff;
+  color: #efefef;
   font-size: 1.1em;
   font-weight: 700;
   padding: 10px;
