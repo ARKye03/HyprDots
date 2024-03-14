@@ -1,8 +1,8 @@
 import Widget from "resource:///com/github/Aylur/ags/widget.js";
 import { Workspaces } from "./Workspaces";
-import { MusicPlayerDaemon } from "./MusicPlayerDaemon";
+import { MusicPlayerDaemon } from "./Media/MusicPlayerDaemon";
 import { Power, Rofi } from "./BorderMenus";
-import { Volume } from "./Volume";
+import { Volume } from "./Media/Volume";
 import { SysTray } from "./SysTray";
 import { Clock } from "./Clock";
 

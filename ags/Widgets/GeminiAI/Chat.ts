@@ -120,6 +120,13 @@ const resultListBox = Widget.Box({
   ],
 });
 
+const SideBarContent = Widget.CenterBox({
+  vertical: true,
+  vexpand: true,
+  startWidget: geminiChatHeader,
+  centerWidget: ScrollableListBox,
+  endWidget: resultListBox,
+});
 export const Chat = () =>
   Widget.Window({
     name: "Chat",
@@ -129,11 +136,5 @@ export const Chat = () =>
     visible: false,
     class_name: "chat",
     anchor: ["top", "left", "bottom"],
-    child: Widget.CenterBox({
-      vertical: true,
-      vexpand: true,
-      startWidget: geminiChatHeader,
-      centerWidget: ScrollableListBox,
-      endWidget: resultListBox,
-    }),
+    child: SideBarContent,
   });
