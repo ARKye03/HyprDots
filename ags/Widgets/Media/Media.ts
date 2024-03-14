@@ -137,6 +137,20 @@ export const MediaWidget = () =>
               if (title !== undefined) songTitleLabel.label = title;
               if (artist !== undefined) artistNameLabel.label = artist;
               if (album !== undefined) albumNameLabel.label = album;
+
+              // Check if a song is currently playing
+              execAsync(["mpc", "status"])
+                .then((status) => {
+                  if (status.includes("[playing]")) {
+                    playButton.child.icon =
+                      "/home/archkye/.config/ags/assets/MediaWidget/Stop.svg";
+                  } else {
+                    playButton.child.icon =
+                      "/home/archkye/.config/ags/assets/MediaWidget/Play.svg";
+                  }
+                })
+                .catch(console.error);
+
               execAsync(["mpc", "idle", "player"]).then(updateWidget);
             })
             .catch(console.error);
