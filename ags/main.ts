@@ -2,6 +2,7 @@ import App from "resource:///com/github/Aylur/ags/app.js";
 import { notificationPopup } from "./Widgets/Notifications/NotificationPops";
 import { Chat } from "Widgets/GeminiAI/Chat";
 import { Bar } from "Widgets/Bar";
+import { MediaWidget } from "Widgets/Media/Media";
 
 // main scss file
 const scss = `${App.configDir}/styles/MainStyle.scss`;
@@ -32,5 +33,5 @@ Utils.exec(`sassc ${scss} ${css}`);
 
 App.config({
   style: css,
-  windows: [Bar(), notificationPopup, Chat()],
+  windows: [Bar(), notificationPopup, Chat(), MediaWidget()],
 });
