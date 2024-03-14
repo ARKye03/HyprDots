@@ -84,7 +84,7 @@ const repeatMode = Widget.Button({
     icon: "/home/archkye/.config/ags/assets/MediaWidget/Repeat.svg",
   }),
 });
-const OpenPlayer = Widget.Button({
+const openPlayer = Widget.Button({
   on_primary_click_release: () => {
     execAsync(
       `/usr/bin/alacritty --class floatcritty
@@ -107,7 +107,7 @@ export const MediaWidget = () =>
       children: [
         Widget.Box({
           vertical: true,
-          children: [singleMode, repeatMode, OpenPlayer],
+          children: [singleMode, repeatMode, openPlayer],
         }),
         Widget.Box({
           class_name: "media-info",
