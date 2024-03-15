@@ -1,6 +1,6 @@
 import App from "resource:///com/github/Aylur/ags/app.js";
 import { notificationPopup } from "./Widgets/Notifications/NotificationPops";
-/* import { notificationSideBar } from "Widgets/Notifications/NotificationCenter"; */
+import { notificationSideBar } from "Widgets/Notifications/NotificationCenter";
 import { Chat } from "Widgets/GeminiAI/Chat";
 import { Bar } from "Widgets/Bar/Bar";
 import { MediaWidget } from "Widgets/Media/Media";
@@ -39,6 +39,6 @@ App.config({
     notificationPopup,
     Chat(),
     MediaWidget(),
-    /* notificationSideBar, */
+    notificationSideBar,
   ],
 });

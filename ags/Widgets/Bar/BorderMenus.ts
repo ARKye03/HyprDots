@@ -1,13 +1,22 @@
 import Widget from "resource:///com/github/Aylur/ags/widget.js";
 import { execAsync } from "resource:///com/github/Aylur/ags/utils.js";
+import { CurrentNotifications } from "Widgets/Notifications/NotificationCenter";
 
-export const Rofi = Widget.Button({
+export const PowerMenu = Widget.Box({
   className: "bc",
-  child: Widget.Label(" ⏻ "),
-  on_primary_click_release: () =>
-    execAsync(`/home/archkye/.config/rofi/powermenu/type-4/powermenu.sh`),
+  children: [
+    Widget.Button({
+      on_primary_click_release: () => App.ToggleWindow("notificationSideBar"),
+      child: CurrentNotifications,
+    }),
+    Widget.Button({
+      child: Widget.Label(" ⏻ "),
+      on_primary_click_release: () =>
+        execAsync(`/home/archkye/.config/rofi/powermenu/type-4/powermenu.sh`),
+    }),
+  ],
 });
-export const Power = Widget.Button({
+export const AppLauncher = Widget.Button({
   className: "bc",
   child: Widget.Label(" 󱓞 "),
   on_primary_click_release: () =>
