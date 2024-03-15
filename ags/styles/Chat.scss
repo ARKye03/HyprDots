@@ -5,7 +5,13 @@ $tenpx: 10px;
 .chat {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: $mach-Surface1;
+  background-color: #7da8ff;
+}
+.chat box {
+  margin: 1px;
+  border-top-right-radius: $tenpx;
+  border-bottom-right-radius: $tenpx;
+  background-color: #21252b;
 }
 .activatable {
   border-radius: $tenpx;
@@ -42,6 +48,7 @@ $tenpx: 10px;
   margin: 0 5px;
 }
 .chatBox {
+  background-color: #282c34;
   margin: 5px;
   border-radius: 10px;
 }

@@ -63,7 +63,7 @@ const geminiChatHeader = Widget.Box({
   ],
 });
 const ScrollableListBox = Widget.Scrollable({
-  height_request: 850,
+  height_request: 840,
   hscroll: "never",
   vscroll: "automatic",
   child: CenterListBox,
@@ -120,7 +120,7 @@ const resultListBox = Widget.Box({
   ],
 });
 
-const SideBarContent = Widget.CenterBox({
+const sideBarContent = Widget.CenterBox({
   vertical: true,
   vexpand: true,
   startWidget: geminiChatHeader,
@@ -136,5 +136,5 @@ export const Chat = () =>
     visible: false,
     class_name: "chat",
     anchor: ["top", "left", "bottom"],
-    child: SideBarContent,
+    child: sideBarContent,
   });
