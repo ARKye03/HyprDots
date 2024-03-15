@@ -42,9 +42,9 @@ label {
 .systray,
 .media,
 .bc {
-  background-color: #353955;
+  border: 1.5px solid #7da8ff;
+  background-color: #3d434f;
   border-radius: 10px;
-  border-color: #fff;
   padding: 0 5px;
   margin: 5px 10px;
 }
@@ -73,14 +73,12 @@ label {
 
 .workspaces button.focused {
   color: #6200ff;
-  border-bottom: 3px solid #6200ff;
 }
 .workspaces button,
 .workspaces button.work,
 .workspaces button.focused {
   padding-right: 5px;
 }
-
 .media button {
   background-color: #353955;
 }

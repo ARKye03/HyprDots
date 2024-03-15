@@ -67,20 +67,37 @@ window#notifications box.notifications {
 .notification-sidebar {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  background-color: #7da8ff;
+  box-shadow: 0 0 0 1px #7da8ff inset;
+  background-color: #282c34;
 }
 .scroll_notifications {
-  margin: 1px;
   padding: 10px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  background-color: #282c34;
 }
 .notification-widget {
   margin: 2px;
   border-radius: 5px;
   background-color: #393e49;
 }
-.notification-widget:hover label:hover {
-  background-color: #00a2ff;
+.notification-widget:hover {
+  background-color: #3e4452;
+}
+.notification-title {
+  color: #7da8ff;
+  font-size: 1.2em;
+  margin: 5px;
+}
+.notification-body {
+  color: #ffffff;
+  margin: 5px;
+}
+
+.notification-sidebar button {
+  margin: 5px 140px;
+  background-color: #21252b;
+}
+
+.notification-sidebar button:hover {
+  animation: none;
 }
