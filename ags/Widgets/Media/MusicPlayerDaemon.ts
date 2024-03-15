@@ -22,8 +22,5 @@ export const MusicPlayerDaemon = Widget.Button({
       updateLabel();
     },
   }),
-  on_primary_click: () => execAsync(`ags -t MediaWidget`),
-  /*     execAsync(
-      `/usr/bin/alacritty --class floatcritty -e /usr/bin/ncmpcpp -c /home/archkye/.ncmpcpp/config`
-    ), */
+  on_primary_click: () => App.ToggleWindow("MediaWidget"),
 });
