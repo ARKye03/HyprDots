@@ -16,7 +16,6 @@ import {
 export const MediaWidget = () =>
   Widget.Window({
     name: "MediaWidget",
-    exclusivity: "normal",
     class_name: "media-window",
     visible: false,
     anchor: ["top"],
