@@ -12,7 +12,7 @@ Widget.Label({
 const popups = notifications.bind("popups");
 
 /** @param {import('resource:///com/github/Aylur/ags/service/notifications.js').Notification} n */
-export const Notification = (n) => {
+const Notification = (n) => {
   const title = Widget.Label({
     class_name: "title",
     xalign: 0,

@@ -137,3 +137,13 @@ export default (notification: Notification) => {
     child: eventbox,
   });
 };
+export const notificationSideBar = Widget.Window({
+  name: "notifications-center",
+  anchor: ["top", "right"],
+  child: Widget.Box({
+    class_name: "notifications",
+    vertical: true,
+    homogeneous: false,
+    children: [],
+  }),
+});
