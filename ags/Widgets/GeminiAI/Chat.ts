@@ -132,7 +132,7 @@ export const Chat = () =>
     name: "Chat",
     keymode: "on-demand",
     width_request: 400,
-    exclusivity: "exclusive",
+    exclusivity: "normal",
     visible: false,
     class_name: "chat",
     anchor: ["top", "left", "bottom"],

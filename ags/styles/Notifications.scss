@@ -32,7 +32,7 @@ window#notifications box.notifications {
 
 .notification {
   min-width: 300px;
-  border-radius: 11px;
+  border-radius: 10px;
   padding: 1em;
   margin: 0.5em;
   border: 1px solid #00a2ff;
@@ -67,7 +67,7 @@ window#notifications box.notifications {
 .notification-sidebar {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  box-shadow: 0 0 0 1px #7da8ff inset;
+  border: 1px solid #7da8ff;
   background-color: #282c34;
 }
 .scroll_notifications {
