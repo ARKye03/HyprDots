@@ -49,7 +49,7 @@ window#notifications box.notifications {
 }
 
 .body {
-  color: #ffffff;
+  color: #fff;
 }
 
 .actions .action-button {
@@ -64,32 +64,38 @@ window#notifications box.notifications {
 .actions .action-button:last-child {
   margin-right: 0;
 }
+
 .notification-sidebar {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border: 1px solid #7da8ff;
   background-color: #282c34;
 }
+
 .scroll_notifications {
   padding: 10px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+
+.scroll_notifications:hover * {
+  background-color: #1e61ff;
+}
+
 .notification-widget {
   margin: 2px;
   border-radius: 5px;
   background-color: #393e49;
 }
-.notification-widget:hover {
-  background-color: #3e4452;
-}
+
 .notification-title {
   color: #7da8ff;
   font-size: 1.2em;
   margin: 5px;
 }
+
 .notification-body {
-  color: #ffffff;
+  color: #fff;
   margin: 5px;
 }
 
@@ -99,5 +105,5 @@ window#notifications box.notifications {
 }
 
 .notification-sidebar button:hover {
-  animation: none;
+  background-color: #59606d;
 }

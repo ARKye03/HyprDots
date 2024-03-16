@@ -49,6 +49,9 @@ $tenpx: 10px;
   padding: 2px 5px;
   margin: 0 5px;
 }
+.chatHeader button:hover {
+  background-color: #333546;
+}
 .chatBox * {
   all: unset;
 }

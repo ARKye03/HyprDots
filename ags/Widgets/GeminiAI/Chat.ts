@@ -1,6 +1,7 @@
 // @ts-ignore
 import Gtk from "gi://Gtk";
 import { fetchCode } from "./GeminiAPI";
+import { icons } from "assets/Assets";
 
 const TextEntryWidget = Widget.subclass(Gtk.TextView);
 
@@ -41,7 +42,7 @@ const geminiChatHeader = Widget.Box({
   class_name: "chatHeader",
   children: [
     Widget.Icon({
-      icon: "/home/archkye/.config/ags/assets/pacman.svg",
+      icon: icons.Pacman,
       class_name: "pacman",
       size: 60,
       hpack: "start",
@@ -56,7 +57,7 @@ const geminiChatHeader = Widget.Box({
       can_focus: false,
       onClicked: () => App.toggleWindow("Chat"),
       child: Widget.Icon({
-        icon: "/home/archkye/.config/ags/assets/closeChat.svg",
+        icon: icons.closeChatSvg,
         size: 50,
         hexpand: true,
       }),
@@ -116,7 +117,7 @@ const resultListBox = Widget.Box({
           });
       },
       child: Widget.Icon({
-        icon: "/home/archkye/.config/ags/assets/send.svg",
+        icon: icons.sendSvg,
         size: 20,
       }),
     }),

@@ -12,6 +12,7 @@ import {
   nextButton,
   prevButton,
 } from "./MediaComponents";
+import { icons } from "assets/Assets";
 
 export const MediaWidget = () =>
   Widget.Window({
@@ -58,11 +59,9 @@ export const MediaWidget = () =>
               execAsync(["mpc", "status"])
                 .then((status) => {
                   if (status.includes("[playing]")) {
-                    playButton.child.icon =
-                      "/home/archkye/.config/ags/assets/MediaWidget/Stop.svg";
+                    playButton.child.icon = icons.stopSvg;
                   } else {
-                    playButton.child.icon =
-                      "/home/archkye/.config/ags/assets/MediaWidget/Play.svg";
+                    playButton.child.icon = icons.playSvg;
                   }
                 })
                 .catch(console.error);

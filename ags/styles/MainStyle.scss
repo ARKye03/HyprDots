@@ -1,6 +1,7 @@
 @import "Chat.scss";
 @import "Notifications.scss";
 @import "Media.scss";
+@import "AppLauncher.scss";
 
 $mach-Rosewater: #f4dbd6;
 $mach-Flamingo: #f0c6c6;
@@ -42,7 +43,7 @@ label {
 .systray,
 .media,
 .bc {
-  border: 1.5px solid #7da8ff;
+  border: 1px solid #7da8ff;
   background-color: #282c34;
   border-radius: 10px;
   padding: 0 5px;
@@ -52,6 +53,11 @@ label {
 .systray button,
 .workspaces button {
   background-color: transparent;
+}
+.systray button:hover,
+.workspaces button:hover,
+.bc button:hover {
+  background-color: rgba($color: #545c70, $alpha: 0.4);
 }
 
 .bc label {
@@ -72,7 +78,8 @@ label {
 }
 
 .workspaces button.focused {
-  color: #6200ff;
+  background-color: rgba($color: #6200ff, $alpha: 0.3);
+  color: #6a00ff;
 }
 .workspaces button,
 .workspaces button.work,
@@ -81,6 +88,9 @@ label {
 }
 .media button {
   background-color: #353955;
+}
+.media label {
+  color: #eee;
 }
 
 .media:hover {

@@ -1,3 +1,4 @@
+import { icons } from "assets/Assets";
 import Notification, {
   Notification as NotificationService,
 } from "resource:///com/github/Aylur/ags/service/notifications.js";
@@ -57,7 +58,7 @@ export const notificationSideBar = Widget.Window({
       Widget.Button({
         on_primary_click_release: () => Notification.Clear(),
         child: Widget.Icon({
-          icon: "/home/archkye/.config/ags/assets/TrashNotifications.svg",
+          icon: icons.trashNotificationsSvg,
           size: 20,
         }),
       }),
