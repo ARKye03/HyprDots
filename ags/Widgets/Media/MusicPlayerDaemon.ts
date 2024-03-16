@@ -6,12 +6,7 @@ export const MusicPlayerDaemon = Widget.Button({
   child: Widget.Label({
     setup: (self) => {
       const updateLabel = () => {
-        execAsync([
-          "/usr/bin/mpc",
-          "--format",
-          "[%title% - %artist%]",
-          "current",
-        ])
+        execAsync(["/usr/bin/mpc", "--format", "%title%", "current"])
           .then((date) => {
             self.label = date;
             // Wait for player status change and then update the label again
