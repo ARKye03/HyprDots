@@ -58,6 +58,7 @@ export const notificationSideBar = Widget.Window({
         on_primary_click_release: () => Notification.Clear(),
         child: Widget.Icon({
           icon: "/home/archkye/.config/ags/assets/TrashNotifications.svg",
+          size: 20,
         }),
       }),
     ],
