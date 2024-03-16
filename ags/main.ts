@@ -4,6 +4,7 @@ import { notificationSideBar } from "Widgets/Notifications/NotificationCenter";
 import { Chat } from "Widgets/GeminiAI/Chat";
 import { Bar } from "Widgets/Bar/Bar";
 import { MediaWidget } from "Widgets/Media/Media";
+import { applauncher } from "Widgets/AppLauncher";
 
 // main scss file
 const scss = `${App.configDir}/styles/MainStyle.scss`;
@@ -40,5 +41,6 @@ App.config({
     Chat(),
     MediaWidget(),
     notificationSideBar,
+    applauncher,
   ],
 });
