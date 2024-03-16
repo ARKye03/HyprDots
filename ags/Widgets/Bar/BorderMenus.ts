@@ -19,6 +19,7 @@ export const PowerMenu = Widget.Box({
 export const AppLauncher = Widget.Button({
   className: "bc",
   child: Widget.Label(" 󱓞 "),
-  on_primary_click_release: () =>
-    execAsync(`/home/archkye/.config/rofi/launchers/type-3/launcher.sh`),
+  on_clicked: () => App.ToggleWindow("applauncher"),
+  /*   on_primary_click_release: () =>
+    execAsync(`/home/archkye/.config/rofi/launchers/type-3/launcher.sh`), */
 });
