@@ -25,13 +25,15 @@ $tenpx: 10px;
   border-top-left-radius: $tenpx;
   border-bottom-left-radius: $tenpx;
 }
+.inputBox {
+  border: 1.5px solid #3e4452;
+}
 .inputBox,
 .inputBox text,
 .view {
   padding: 2px;
   border-radius: 10px;
-  border-color: #00a2ff;
-  background-color: $text-input;
+  background-color: #1d1f23;
 }
 
 .sendButton {
@@ -42,10 +44,13 @@ $tenpx: 10px;
   padding: 15px 40px 10px 40px;
 }
 .chatHeader button {
-  background-color: #38374c;
+  background-color: transparent;
   border-radius: 25px;
   padding: 2px 5px;
   margin: 0 5px;
+}
+.chatBox * {
+  all: unset;
 }
 .chatBox {
   background-color: #282c34;
@@ -58,7 +63,7 @@ $tenpx: 10px;
   font-size: 1.1em;
   font-weight: 700;
   padding: 10px;
-  margin: 5px;
+  margin: 2px;
   border-radius: 10px;
   background-color: #141414;
 }

@@ -53,6 +53,7 @@ const geminiChatHeader = Widget.Box({
       hexpand: true,
     }),
     Widget.Button({
+      can_focus: false,
       onClicked: () => App.toggleWindow("Chat"),
       child: Widget.Icon({
         icon: "/home/archkye/.config/ags/assets/closeChat.svg",
@@ -77,6 +78,7 @@ const resultListBox = Widget.Box({
   children: [
     ScrollableTextInputWidget,
     Widget.Button({
+      can_focus: false,
       class_name: "sendButton",
       onClicked: async () => {
         let startIter = TextInputWidget.get_buffer().get_start_iter();
@@ -98,6 +100,7 @@ const resultListBox = Widget.Box({
               label: resultText,
               wrap: true,
               use_markup: true,
+              selectable: true,
             });
             row.add(label);
 
