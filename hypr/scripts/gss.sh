@@ -13,9 +13,8 @@ function stdout_screenshot {
 }
 
 function window_screenshot {
-  grim -g "$(swaymsg -t get_tree | jq -r '.. | select(.pid? and .visible?) | .rect | "\(.x),\(.y) \(.width)x\(.height)"' | slurp)" - | swappy -f -
+  grim -g "$(hyprctl activewindow | awk '/at:/ {print $2} /size:/ {print $2}' | tr '\n' ',' | sed 's/,$/\n/' | awk -F ',' '{print $1","$2" "$3"x"$4}')" - | swappy -f -
 }
-
 function full_screenshot {
   grim
   if [ $? -eq 0 ]; then
@@ -25,6 +24,7 @@ function full_screenshot {
 
 function custom_slurp {
   slurp -d -c \#ffffff -b \#00000000
+  
 }
 
 case "$1" in
