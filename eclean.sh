@@ -3,7 +3,7 @@
 #sudo pacman -Scc --noconfirm && yay -Scc --noconfirm
 #pacman -Qqd | sudo pacman -Rsu -
 
-hyprctl notify 1 5000 "rgb(ff1ea3)" "Cleaning up the system..."
+notify-send "Cleaning up the system..."
 
 sudo sh -c '
 pacman -Qdtq | pacman -Rns -
@@ -13,7 +13,7 @@ paccache -rk0
 fstrim -av
 '
 if [ $? -eq 0 ]; then
-  hyprctl notify 1 5000 "rgb(1eff00)" "System cleanup complete!"
+  notify-send "System cleanup complete!"
 else
-  hyprctl notify 5 5000 "rgb(ff0000)" "System cleanup failed!"
+  notify-send -u critical "System cleanup failed!"
 fi
