@@ -7,7 +7,7 @@ const notifications = Notification;
 notifications.popupTimeout = 3000;
 notifications.forceTimeout = false;
 notifications.cacheActions = false;
-notifications.clearDelay = 100;
+notifications.clearDelay = 50;
 
 export const CurrentNotifications = Widget.Label({
   label: notifications.bind("notifications").as((n) => `${n.length}`),

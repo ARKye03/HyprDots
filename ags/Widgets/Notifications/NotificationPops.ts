@@ -1,14 +1,5 @@
 const notifications = await Service.import("notifications");
-notifications.popupTimeout = 3000;
-notifications.forceTimeout = false;
-notifications.cacheActions = false;
-notifications.clearDelay = 100;
 
-Widget.Label({
-  label: notifications
-    .bind("notifications")
-    .as((n) => `there are ${n.length} notifications`),
-});
 const popups = notifications.bind("popups");
 
 /** @param {import('resource:///com/github/Aylur/ags/service/notifications.js').Notification} n */
