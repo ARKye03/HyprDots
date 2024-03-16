@@ -1,3 +1,5 @@
+@import "Colors.scss";
+
 progress,
 highlight {
   background-color: aqua;
@@ -35,8 +37,8 @@ window#notifications box.notifications {
   border-radius: 10px;
   padding: 1em;
   margin: 0.5em;
-  border: 1px solid #00a2ff;
-  background-color: #353955;
+  border: $borders;
+  background-color: $one-dark-bg;
 }
 
 .notification.critical {
