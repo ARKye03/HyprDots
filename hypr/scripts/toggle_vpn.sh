@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This script toggles the connection status of a ProtonVPN.
+# It checks the current status of the VPN and either connects or disconnects it accordingly.
+
 # Check the status of the VPN
 vpn_status=$(protonvpn-cli status)
 
