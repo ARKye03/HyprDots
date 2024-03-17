@@ -13,6 +13,13 @@ export const CurrentNotifications = Widget.Label({
   label: notifications.bind("notifications").as((n) => `${n.length}`),
 });
 const createNotificationWidget = (notification: NotificationService) => {
+  const actionButtons = notification.actions.map((action) =>
+    Widget.Button({
+      label: action.label,
+      on_primary_click_release: () => notification.invoke(action.id),
+    })
+  );
+
   return Widget.Box({
     vertical: true,
     class_name: "notification-widget",
@@ -31,10 +38,10 @@ const createNotificationWidget = (notification: NotificationService) => {
         wrap: true,
         label: notification.body,
       }),
+      ...actionButtons,
     ],
   });
 };
-
 export const notificationSideBar = Widget.Window({
   name: "notificationSideBar",
   visible: false,
