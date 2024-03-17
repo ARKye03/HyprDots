@@ -46,14 +46,12 @@ export const notificationSideBar = Widget.Window({
   name: "notificationSideBar",
   visible: false,
   class_name: "notification-sidebar",
-  width_request: 350,
   anchor: ["top", "right", "bottom"],
   child: Widget.Box({
     vertical: true,
     children: [
       Widget.Scrollable({
         class_name: "scroll_notifications",
-        width_request: 300,
         child: Widget.Box({
           vertical: true,
           vexpand: true,

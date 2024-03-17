@@ -75,13 +75,10 @@ window#notifications box.notifications {
 }
 
 .scroll_notifications {
+  min-width: 330px;
   padding: 10px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-}
-
-.scroll_notifications:hover * {
-  background-color: #1e61ff;
 }
 
 .notification-widget {

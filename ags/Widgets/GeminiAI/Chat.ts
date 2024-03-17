@@ -17,7 +17,6 @@ const TextInputWidget = TextEntryWidget({
 
 // Wrap the TextInputWidget in a Scrollable
 const ScrollableTextInputWidget = Widget.Scrollable({
-  width_request: 350, // Set a fixed width of 350 pixels
   vscroll: "automatic",
   hscroll: "never",
   class_name: "inputBox",
@@ -65,7 +64,7 @@ const geminiChatHeader = Widget.Box({
   ],
 });
 const ScrollableListBox = Widget.Scrollable({
-  height_request: 840,
+  class_name: "scrollChatBox",
   hscroll: "never",
   vscroll: "automatic",
   child: CenterListBox,
@@ -135,7 +134,6 @@ export const Chat = () =>
   Widget.Window({
     name: "Chat",
     keymode: "on-demand",
-    width_request: 400,
     exclusivity: "normal",
     visible: false,
     class_name: "chat",

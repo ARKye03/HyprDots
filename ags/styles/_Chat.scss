@@ -32,11 +32,14 @@ $tenpx: 10px;
 .inputBox,
 .inputBox text,
 .view {
+  min-width: 350px;
   padding: 2px;
   border-radius: 10px;
   background-color: #1d1f23;
 }
-
+.scrollChatBox {
+  min-height: 830px;
+}
 .sendButton {
   margin-top: 15px;
   margin-bottom: 15px;
