@@ -17,7 +17,8 @@ Used here:
 - Clipboard manager: Copyq.
 - Notification Daemon: AGS.
 - Zsh, ble.sh(Bash).
-- GTK Theme: Catppuccin-Mocha-Standard-Mauve-Dark.
+- GTK Theme: One-Dark.
+  - Gradience adw-gtk3
 - Cursor: Colloid.
 
 !["Something went wrong :("](./HyprArch.png "Hyprland Arch theme")
