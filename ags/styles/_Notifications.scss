@@ -37,7 +37,7 @@ window#notifications box.notifications {
   border-radius: 10px;
   padding: 1em;
   margin: 0.5em;
-  border: $borders;
+  border: 1px solid $main-border-color;
   background-color: $one-dark-bg;
 }
 
@@ -45,7 +45,7 @@ window#notifications box.notifications {
   border: 1px solid #40ff69;
 }
 .notification.normal {
-  border: 1px solid #7da8ff;
+  border: 1px solid $main-border-color;
 }
 .notification.critical {
   border: 1px solid #f08080;
@@ -76,8 +76,8 @@ window#notifications box.notifications {
 .notification-sidebar {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  border: 1px solid #7da8ff;
-  background-color: #282c34;
+  border: 1px solid $main-border-color;
+  background-color: $one-dark-bg;
 }
 
 .scroll_notifications {
@@ -98,7 +98,7 @@ window#notifications box.notifications {
   margin: 5px;
 }
 .notification-title-normal {
-  color: #7da8ff;
+  color: $main-border-color;
   font-size: 1.2em;
   margin: 5px;
 }
