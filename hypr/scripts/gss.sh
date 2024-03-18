@@ -13,7 +13,7 @@ function stdout_screenshot {
 }
 
 function window_screenshot {
-  grim -g "$(hyprctl activewindow | awk '/at:/ {print $2} /size:/ {print $2}' | tr '\n' ',' | sed 's/,$/\n/' | awk -F ',' '{print $1","$2" "$3"x"$4}')" - | swappy -f -
+  grim -g "$(hyprctl -j activewindow | jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"')" - | swappy -f -
 }
 function full_screenshot {
   grim
