@@ -16,6 +16,7 @@ const createNotificationWidget = (notification: NotificationService) => {
   const actionButtons = notification.actions.map((action) =>
     Widget.Button({
       label: action.label,
+      hexpand: true, // Make the button expand to fill the available space
       on_primary_click_release: () => notification.invoke(action.id),
     })
   );
@@ -25,7 +26,7 @@ const createNotificationWidget = (notification: NotificationService) => {
     class_name: "notification-widget",
     children: [
       Widget.Label({
-        class_name: "notification-title",
+        class_name: `notification-title-${notification.urgency}`,
         justification: "center",
         use_markup: true,
         wrap: true,
@@ -38,7 +39,11 @@ const createNotificationWidget = (notification: NotificationService) => {
         wrap: true,
         label: notification.body,
       }),
-      ...actionButtons,
+      Widget.Box({
+        vexpand: false,
+        hexpand: false,
+        children: actionButtons,
+      }),
     ],
   });
 };
@@ -60,12 +65,25 @@ export const notificationSideBar = Widget.Window({
             .as((n) => n.slice(-50).map(createNotificationWidget)), // Only take the last 50 notifications
         }),
       }),
-      Widget.Button({
-        on_primary_click_release: () => Notification.Clear(),
-        child: Widget.Icon({
-          icon: icons.trashNotificationsSvg,
-          size: 20,
-        }),
+      Widget.Box({
+        class_name: "notification-clear-icon",
+        homogeneous: true,
+        children: [
+          Widget.Button({
+            on_primary_click_release: () => Notification.Clear(),
+            child: Widget.Icon({
+              icon: icons.trashNotificationsSvg,
+              size: 20,
+            }),
+          }),
+          Widget.Button({
+            on_primary_click_release: () => Notification.Clear(),
+            child: Widget.Icon({
+              icon: icons.trashNotificationsSvg,
+              size: 20,
+            }),
+          }),
+        ],
       }),
     ],
   }),

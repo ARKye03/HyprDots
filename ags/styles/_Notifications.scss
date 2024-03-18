@@ -41,6 +41,12 @@ window#notifications box.notifications {
   background-color: $one-dark-bg;
 }
 
+.notification.low {
+  border: 1px solid #40ff69;
+}
+.notification.normal {
+  border: 1px solid #7da8ff;
+}
 .notification.critical {
   border: 1px solid #f08080;
 }
@@ -75,20 +81,29 @@ window#notifications box.notifications {
 }
 
 .scroll_notifications {
-  min-width: 330px;
+  min-width: 350px;
   padding: 10px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-
 .notification-widget {
   margin: 2px;
   border-radius: 5px;
   background-color: #393e49;
 }
 
-.notification-title {
+.notification-title-low {
+  color: #40ff69;
+  font-size: 1.2em;
+  margin: 5px;
+}
+.notification-title-normal {
   color: #7da8ff;
+  font-size: 1.2em;
+  margin: 5px;
+}
+.notification-title-critical {
+  color: #f08080;
   font-size: 1.2em;
   margin: 5px;
 }
@@ -97,12 +112,17 @@ window#notifications box.notifications {
   color: #fff;
   margin: 5px;
 }
-
-.notification-sidebar button {
-  margin: 5px 140px;
+.notification-clear-icon {
+  border-bottom-left-radius: 10px;
+  margin: 1px;
+  padding: 5px 10px;
   background-color: #21252b;
 }
+.notification-clear-icon button {
+  background-color: #21252b;
+  transition-duration: 200ms;
+}
 
-.notification-sidebar button:hover {
+.notification-clear-icon button:hover {
   background-color: #59606d;
 }
