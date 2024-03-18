@@ -1,12 +1,12 @@
 @import "Colors.scss";
 .media-window {
   background-color: $main-border-color;
-  border-radius: 10px;
+  border-radius: $borders;
 }
 .media-window box {
   margin: 1px;
   background-color: $one-dark-bg;
-  border-radius: 10px;
+  border-radius: $borders;
   padding: 8px;
 }
 

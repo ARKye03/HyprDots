@@ -1,6 +1,6 @@
 @import "Colors.scss";
 .applauncher {
-  border-radius: 10px;
+  border-radius: $borders;
   border: 1px solid $main-border-color;
   background-color: $one-dark-bg;
 }

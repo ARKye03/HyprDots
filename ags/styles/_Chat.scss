@@ -1,7 +1,7 @@
 @import "Colors.scss";
 $mach-Surface1: #494d64;
 $text-input: #3a3d4b;
-$tenpx: 10px;
+$borders: 10px;
 
 .chat {
   border-top-right-radius: 10px;
@@ -10,21 +10,21 @@ $tenpx: 10px;
 }
 .chat box {
   margin: 1px;
-  border-top-right-radius: $tenpx;
-  border-bottom-right-radius: $tenpx;
+  border-top-right-radius: $borders;
+  border-bottom-right-radius: $borders;
   background-color: #21252b;
 }
 .activatable {
-  border-radius: $tenpx;
+  border-radius: $borders;
 }
 
 .input {
   padding: 15px;
-  border-radius: 10px;
+  border-radius: $borders;
 }
 .right {
-  border-top-left-radius: $tenpx;
-  border-bottom-left-radius: $tenpx;
+  border-top-left-radius: $borders;
+  border-bottom-left-radius: $borders;
 }
 .inputBox {
   border: 1.5px solid #3e4452;
@@ -34,7 +34,7 @@ $tenpx: 10px;
 .view {
   min-width: 350px;
   padding: 2px;
-  border-radius: 10px;
+  border-radius: $borders;
   background-color: #1d1f23;
 }
 .scrollChatBox {
@@ -50,8 +50,6 @@ $tenpx: 10px;
 .chatHeader button {
   background-color: transparent;
   border-radius: 25px;
-  padding: 2px 5px;
-  margin: 0 5px;
 }
 .chatHeader button:hover {
   background-color: #59606d;
@@ -63,7 +61,7 @@ $tenpx: 10px;
 .chatBox {
   background-color: $one-dark-bg;
   margin: 5px;
-  border-radius: 10px;
+  border-radius: $borders;
 }
 
 .chatBox label {
@@ -72,6 +70,6 @@ $tenpx: 10px;
   font-weight: 700;
   padding: 10px;
   margin: 2px;
-  border-radius: 10px;
+  border-radius: $borders;
   background-color: #141414;
 }

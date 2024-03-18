@@ -34,7 +34,7 @@ window#notifications box.notifications {
 
 .notification {
   min-width: 300px;
-  border-radius: 10px;
+  border-radius: $borders;
   padding: 1em;
   margin: 0.5em;
   border: 1px solid $main-border-color;
