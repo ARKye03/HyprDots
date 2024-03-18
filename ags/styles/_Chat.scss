@@ -1,11 +1,10 @@
 @import "Colors.scss";
 $mach-Surface1: #494d64;
 $text-input: #3a3d4b;
-$borders: 10px;
 
 .chat {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-right-radius: $borders;
+  border-bottom-right-radius: $borders;
   background-color: $main-border-color;
 }
 .chat box {

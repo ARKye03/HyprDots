@@ -74,8 +74,8 @@ window#notifications box.notifications {
 }
 
 .notification-sidebar {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: $borders;
+  border-bottom-left-radius: $borders;
   border: 1px solid $main-border-color;
   background-color: $one-dark-bg;
 }
@@ -83,8 +83,8 @@ window#notifications box.notifications {
 .scroll_notifications {
   min-width: 350px;
   padding: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: $borders;
+  border-bottom-left-radius: $borders;
 }
 .notification-widget {
   margin: 2px;
@@ -113,7 +113,7 @@ window#notifications box.notifications {
   margin: 5px;
 }
 .notification-clear-icon {
-  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: $borders;
   margin: 1px;
   padding: 5px 10px;
   background-color: #21252b;
