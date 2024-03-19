@@ -52,8 +52,11 @@ export const MediaWidget = () =>
             .then((data) => {
               const [title, artist, album] = data.split(" - ");
               if (title !== undefined) songTitleLabel.label = title;
+              else songTitleLabel.label = "~";
               if (artist !== undefined) artistNameLabel.label = artist;
+              else artistNameLabel.label = "~";
               if (album !== undefined) albumNameLabel.label = album;
+              else albumNameLabel.label = "~";
 
               // Check if a song is currently playing
               execAsync(["mpc", "status"])
