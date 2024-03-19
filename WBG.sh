@@ -47,6 +47,25 @@ next_wallpaper() {
   wbg "${wallpapers[$next_index]}"
 }
 
+prev_wallpaper() {
+  killall wbg
+  # Get the current wallpaper index
+  if [ -f $index_file ]; then
+    current_index=$(cat $index_file)
+  else
+    current_index=0
+  fi
+  
+  # Calculate the next index
+ prev_index=$(( (current_index - 1) % num_wallpapers ))
+  
+  # Write the new index to the file
+  echo $prev_index > $index_file
+  
+  # Set the next wallpaper
+  wbg "${wallpapers[$prev_index]}"
+}
+
 # Check the command line arguments
 if [ "$1" == "select" ]; then
   select_wallpaper $2
@@ -54,6 +73,8 @@ if [ "$1" == "select" ]; then
   random_wallpaper
   elif [ "$1" == "next" ]; then
   next_wallpaper
+  elif [ "$1" == "prev" ]; then
+  prev_wallpaper
 else
   echo "Invalid command. Use 'select', 'random', or 'next'."
 fi
