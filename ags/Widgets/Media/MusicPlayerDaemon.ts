@@ -17,5 +17,5 @@ export const MusicPlayerDaemon = Widget.Button({
       updateLabel();
     },
   }),
-  on_primary_click: () => App.ToggleWindow("MediaWidget"),
+  on_clicked: () => App.ToggleWindow("MediaWidget"),
 });
