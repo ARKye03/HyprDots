@@ -5,6 +5,7 @@ import { Chat } from "Widgets/GeminiAI/Chat";
 import { Bar } from "Widgets/Bar/Bar";
 import { MediaWidget } from "Widgets/Media/Media";
 import { applauncher } from "Widgets/AppLauncher";
+import { calendar } from "Widgets/Bar/Clock";
 
 // main scss file
 const scss = `${App.configDir}/styles/MainStyle.scss`;
@@ -42,5 +43,6 @@ App.config({
     MediaWidget(),
     notificationSideBar,
     applauncher,
+    calendar,
   ],
 });
