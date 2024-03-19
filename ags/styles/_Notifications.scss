@@ -81,6 +81,7 @@ window#notifications box.notifications {
 }
 
 .scroll_notifications {
+  min-height: 500px;
   min-width: 350px;
   padding: 10px;
   border-top-left-radius: $borders;

@@ -51,7 +51,7 @@ export const notificationSideBar = Widget.Window({
   name: "notificationSideBar",
   visible: false,
   class_name: "notification-sidebar",
-  anchor: ["top", "right", "bottom"],
+  anchor: ["right", "bottom"],
   child: Widget.Box({
     vertical: true,
     children: [
@@ -77,9 +77,10 @@ export const notificationSideBar = Widget.Window({
             }),
           }),
           Widget.Button({
-            on_primary_click_release: () => Notification.Clear(),
+            on_primary_click_release: () =>
+              App.ToggleWindow("notificationSideBar"),
             child: Widget.Icon({
-              icon: icons.trashNotificationsSvg,
+              icon: icons.closeChatSvg,
               size: 20,
             }),
           }),
