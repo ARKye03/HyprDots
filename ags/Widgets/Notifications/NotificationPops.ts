@@ -3,7 +3,14 @@ const notifications = await Service.import("notifications");
 const popups = notifications.bind("popups");
 
 /** @param {import('resource:///com/github/Aylur/ags/service/notifications.js').Notification} n */
-const Notification = (n) => {
+const Notification = (n: {
+  summary: any;
+  body: any;
+  actions: { id: any; label: any }[];
+  invoke: (arg0: any) => void;
+  dismiss: () => unknown;
+  urgency: any;
+}) => {
   const title = Widget.Label({
     class_name: "title",
     xalign: 0,
