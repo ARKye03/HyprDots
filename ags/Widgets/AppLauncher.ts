@@ -2,7 +2,12 @@ const { query } = await Service.import("applications");
 const WINDOW_NAME = "applauncher";
 
 /** @param {import('resource:///com/github/Aylur/ags/service/applications.js').Application} app */
-const AppItem = (app) =>
+const AppItem = (app: {
+  [x: string]: any;
+  launch: () => void;
+  icon_name: any;
+  name: any;
+}) =>
   Widget.Button({
     on_clicked: () => {
       App.closeWindow(WINDOW_NAME);
