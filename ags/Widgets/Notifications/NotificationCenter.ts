@@ -9,8 +9,8 @@ notifications.forceTimeout = false;
 notifications.cacheActions = false;
 notifications.clearDelay = 50;
 
-const MAX_HEIGHT = 780; // Maximum height in pixels
-const NOTIFICATION_HEIGHT = 100; // Replace with your actual notification height
+const MAX_HEIGHT = 780;
+const NOTIFICATION_HEIGHT = 80;
 
 export const CurrentNotifications = Widget.Label({
   label: notifications.bind("notifications").as((n) => `${n.length}`),
@@ -65,7 +65,6 @@ const scrolledWindow = Widget.Scrollable({
   child: notificationContainer,
 });
 
-// Update the height_request property whenever a notification is added or removed
 notifications.connect("notified", () => {
   const numNotifications = notifications.notifications.length;
   scrolledWindow.height_request = Math.min(
