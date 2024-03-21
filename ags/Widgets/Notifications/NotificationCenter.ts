@@ -52,14 +52,18 @@ const createNotificationWidget = (notification: NotificationService) => {
   });
 };
 
+//@ts-ignore
 const notificationContainer = Widget.Box({
   vertical: true,
   vexpand: true,
   children: notifications
     .bind("notifications")
-    .as((n) => n.map(createNotificationWidget)),
+    .as((n) =>
+      n.length === 0
+        ? [Widget.Label("There are no notifications")]
+        : n.map(createNotificationWidget)
+    ),
 });
-
 const scrolledWindow = Widget.Scrollable({
   class_name: "scroll_notifications",
   child: notificationContainer,
