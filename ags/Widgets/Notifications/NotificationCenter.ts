@@ -9,9 +9,13 @@ notifications.forceTimeout = false;
 notifications.cacheActions = false;
 notifications.clearDelay = 50;
 
+const MAX_HEIGHT = 780; // Maximum height in pixels
+const NOTIFICATION_HEIGHT = 100; // Replace with your actual notification height
+
 export const CurrentNotifications = Widget.Label({
   label: notifications.bind("notifications").as((n) => `${n.length}`),
 });
+
 const createNotificationWidget = (notification: NotificationService) => {
   const actionButtons = notification.actions.map((action) =>
     Widget.Button({
@@ -47,6 +51,36 @@ const createNotificationWidget = (notification: NotificationService) => {
     ],
   });
 };
+
+const notificationContainer = Widget.Box({
+  vertical: true,
+  vexpand: true,
+  children: notifications
+    .bind("notifications")
+    .as((n) => n.map(createNotificationWidget)),
+});
+
+const scrolledWindow = Widget.Scrollable({
+  class_name: "scroll_notifications",
+  child: notificationContainer,
+});
+
+// Update the height_request property whenever a notification is added or removed
+notifications.connect("notified", () => {
+  const numNotifications = notifications.notifications.length;
+  scrolledWindow.height_request = Math.min(
+    numNotifications * NOTIFICATION_HEIGHT,
+    MAX_HEIGHT
+  );
+});
+notifications.connect("closed", () => {
+  const numNotifications = notifications.notifications.length;
+  scrolledWindow.height_request = Math.min(
+    numNotifications * NOTIFICATION_HEIGHT,
+    MAX_HEIGHT
+  );
+});
+
 export const notificationSideBar = Widget.Window({
   name: "notificationSideBar",
   visible: false,
@@ -55,16 +89,7 @@ export const notificationSideBar = Widget.Window({
   child: Widget.Box({
     vertical: true,
     children: [
-      Widget.Scrollable({
-        class_name: "scroll_notifications",
-        child: Widget.Box({
-          vertical: true,
-          vexpand: true,
-          children: notifications
-            .bind("notifications")
-            .as((n) => n.slice(-50).map(createNotificationWidget)), // Only take the last 50 notifications
-        }),
-      }),
+      scrolledWindow,
       Widget.Box({
         class_name: "notification-clear-icon",
         homogeneous: true,
