@@ -23,7 +23,8 @@ function full_screenshot {
 }
 
 function custom_slurp {
-  slurp -d -c \#ffffff -b \#00000000
+  output=$(slurp -d -c \#ffffff -b \#00000000)
+  notify-send "The measure is:" "$output" -u low
   
 }
 
