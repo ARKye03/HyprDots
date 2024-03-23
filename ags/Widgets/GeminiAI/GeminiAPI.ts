@@ -38,3 +38,28 @@ export async function fetchCode(input: string) {
 
   return textParts;
 }
+
+export async function PhindCode(
+  question: string,
+  options: object,
+  context: string,
+  challenge: number
+) {
+  const response = await Utils.fetch(`https://https.api.phind.com/infer/`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json;charset=UTF-8",
+      Origin: "https://www.phind.com",
+    },
+    body: JSON.stringify({
+      question: question,
+      options: options,
+      context: context,
+      challenge: challenge,
+    }),
+  });
+
+  const data = await response.json();
+
+  return data;
+}
