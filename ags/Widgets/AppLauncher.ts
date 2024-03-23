@@ -106,9 +106,29 @@ export const applauncher = Widget.Window({
     }),
   visible: false,
   keymode: "exclusive",
-  child: Applauncher({
-    width: 500,
-    height: 500,
-    spacing: 12,
+  child: Widget.Box({
+    css: 'padding: 1px',
+    child: Widget.Revealer({
+      revealChild: false,
+      transition: "slide_down",
+      transition_duration: 200,
+      setup: (self) => {
+        self.hook(
+          App,
+          (self, windowName, visible) => {
+            if (windowName === "applauncher") {
+              self.reveal_child = visible;
+            }
+          },
+          "window-toggled"
+        );
+      },
+      child:
+        Applauncher({
+          width: 500,
+          height: 500,
+          spacing: 12,
+        })
+    })
   }),
 });
