@@ -3,6 +3,8 @@ import { execAsync } from "resource:///com/github/Aylur/ags/utils.js";
 
 export const MusicPlayerDaemon = Widget.Button({
   className: "media",
+  can_focus: false,
+
   child: Widget.Label({
     setup: (self) => {
       const updateLabel = () => {
