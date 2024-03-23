@@ -1,4 +1,3 @@
-
 export async function PhindCode(question: string) {
     const response = await Utils.fetch(`https://https.api.phind.com/infer/`, {
         method: "POST",
