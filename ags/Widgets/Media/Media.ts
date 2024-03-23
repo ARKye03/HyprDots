@@ -21,140 +21,80 @@ export const MediaWidget = () =>
     visible: false,
     anchor: ["top"],
     child: Widget.Box({
-      children: [
-        Widget.Box({
-          vertical: true,
-          children: [singleMode, repeatMode, openPlayer],
-        }),
-        Widget.Box({
-          class_name: "media-info",
-          vertical: true,
-          children: [
-            songTitleLabel,
-            albumNameLabel,
-            artistNameLabel,
-            positionSlider,
-          ],
-        }),
-        Widget.Box({
-          vertical: true,
-          children: [playButton, nextButton, prevButton],
-        }),
-      ],
-      setup: (self) => {
-        const updateWidget = () => {
-          execAsync([
-            "/usr/bin/mpc",
-            "--format",
-            "[%title% - %artist% - %album%]",
-            "current",
-          ])
-            .then((data) => {
-              const [title, artist, album] = data.split(" - ");
-              if (title !== undefined) songTitleLabel.label = title;
-              else songTitleLabel.label = "~";
-              if (artist !== undefined) artistNameLabel.label = artist;
-              else artistNameLabel.label = "~";
-              if (album !== undefined) albumNameLabel.label = album;
-              else albumNameLabel.label = "~";
-
-              // Check if a song is currently playing
-              execAsync(["mpc", "status"])
-                .then((status) => {
-                  if (status.includes("[playing]")) {
-                    playButton.child.icon = icons.stopSvg;
-                  } else {
-                    playButton.child.icon = icons.playSvg;
-                  }
-                })
-                .catch(console.error);
-
-              execAsync(["mpc", "idle", "player"]).then(updateWidget);
-            })
-            .catch(console.error);
-        };
-        updateWidget();
-      },
-    }),
-  });
-/* export const MediaWidget = () =>
-  Widget.Window({
-    name: "MediaWidget",
-    class_name: "media-window",
-    visible: false,
-    anchor: ["top"],
-    child: Widget.Revealer({
-      revealChild: false,
-      transitionDuration: 150,
-      transition: "slide_down",
-      setup: (self) => {
-        self.hook(
-          App,
-          (self, windowName, visible) => {
-            if (windowName === "MediaWidget") {
-              self.reveal_child = visible;
-              console.log(`MediaWidget visibility status: ${visible}`); // Log the status
-            }
+      css: 'padding: 1px;',
+      child:
+        Widget.Revealer({
+          revealChild: false,
+          transitionDuration: 150,
+          transition: "slide_down",
+          setup: (self) => {
+            self.hook(
+              App,
+              (self, windowName, visible) => {
+                if (windowName === "MediaWidget") {
+                  self.reveal_child = visible;
+                }
+              },
+              "window-toggled"
+            );
           },
-          "window-toggled"
-        );
-      },
-      child: Widget.Box({
-        children: [
-          Widget.Box({
-            vertical: true,
-            children: [singleMode, repeatMode, openPlayer],
-          }),
-          Widget.Box({
-            class_name: "media-info",
-            vertical: true,
+          child: Widget.Box({
             children: [
-              songTitleLabel,
-              albumNameLabel,
-              artistNameLabel,
-              positionSlider,
+              Widget.Box({
+                vertical: true,
+                children: [singleMode, repeatMode, openPlayer],
+              }),
+              Widget.Box({
+                class_name: "media-info",
+                vertical: true,
+                children: [
+                  songTitleLabel,
+                  albumNameLabel,
+                  artistNameLabel,
+                  positionSlider,
+                ],
+              }),
+              Widget.Box({
+                vertical: true,
+                children: [playButton, nextButton, prevButton],
+              }),
             ],
-          }),
-          Widget.Box({
-            vertical: true,
-            children: [playButton, nextButton, prevButton],
-          }),
-        ],
-        setup: () => {
-          const updateWidget = () => {
-            execAsync([
-              "/usr/bin/mpc",
-              "--format",
-              "[%title% - %artist% - %album%]",
-              "current",
-            ])
-              .then((data) => {
-                const [title, artist, album] = data.split(" - ");
-                if (title !== undefined) songTitleLabel.label = title;
-                else songTitleLabel.label = "~";
-                if (artist !== undefined) artistNameLabel.label = artist;
-                else artistNameLabel.label = "~";
-                if (album !== undefined) albumNameLabel.label = album;
-                else albumNameLabel.label = "~";
+            setup: () => {
+              const updateWidget = () => {
+                execAsync([
+                  "/usr/bin/mpc",
+                  "--format",
+                  "[%title% - %artist% - %album%]",
+                  "current",
+                ])
+                  .then((data) => {
+                    const [title, artist, album] = data.split(" - ");
+                    if (title !== undefined) songTitleLabel.label = title;
+                    else songTitleLabel.label = "~";
+                    if (artist !== undefined) artistNameLabel.label = artist;
+                    else artistNameLabel.label = "~";
+                    if (album !== undefined) albumNameLabel.label = album;
+                    else albumNameLabel.label = "~";
 
-                // Check if a song is currently playing
-                execAsync(["mpc", "status"])
-                  .then((status) => {
-                    if (status.includes("[playing]")) {
-                      playButton.child.icon = icons.stopSvg;
-                    } else {
-                      playButton.child.icon = icons.playSvg;
-                    }
+                    // Check if a song is currently playing
+                    execAsync(["mpc", "status"])
+                      .then((status) => {
+                        if (status.includes("[playing]")) {
+                          playButton.child.icon = icons.stopSvg;
+                        } else {
+                          playButton.child.icon = icons.playSvg;
+                        }
+                      })
+                      .catch(console.error);
+
+                    execAsync(["mpc", "idle", "player"]).then(updateWidget);
                   })
                   .catch(console.error);
-
-                execAsync(["mpc", "idle", "player"]).then(updateWidget);
-              })
-              .catch(console.error);
-          };
-          updateWidget();
-        },
-      }),
+              };
+              updateWidget();
+            },
+          }),
+        })
     }),
   });
- */
+
