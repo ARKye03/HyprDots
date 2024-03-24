@@ -1,7 +1,7 @@
 import Widget from "resource:///com/github/Aylur/ags/widget.js";
 import { Workspaces } from "./Workspaces";
 import { MusicPlayerDaemon } from "../Media/MusicPlayerDaemon";
-import { AppLauncher, PowerMenu } from "./BorderMenus";
+import { AppLauncher, PowerMenu, SpecialWorkspace } from "./BorderMenus";
 import { Volume } from "../Media/Volume";
 import { SysTray } from "./SysTray";
 import { Clock } from "./Clock";
@@ -17,7 +17,7 @@ const Center = () =>
 const Right = () =>
   Widget.Box({
     hpack: "end",
-    children: [Volume(), Clock(), SysTray(), PowerMenu],
+    children: [SpecialWorkspace, Volume(), Clock(), SysTray(), PowerMenu],
   });
 export const Bar = (monitor = 0) =>
   Widget.Window({

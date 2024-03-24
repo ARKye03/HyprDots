@@ -23,3 +23,9 @@ export const AppLauncher = Widget.Button({
   /*   on_primary_click_release: () =>
     execAsync(`/home/archkye/.config/rofi/launchers/type-3/launcher.sh`), */
 });
+export const SpecialWorkspace = Widget.Button({
+  className: "bc",
+  css: "color: #56AFE9",
+  child: Widget.Label("  "),
+  on_clicked: () => execAsync("hyprctl dispatch togglespecialworkspace"),
+});
