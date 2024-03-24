@@ -1,13 +1,12 @@
+@import "Colors";
 @import "Chat.scss";
 @import "Notifications.scss";
 @import "Media.scss";
 @import "AppLauncher.scss";
-@import "Colors.scss";
 
 label {
   font-weight: 700;
 }
-
 .workspaces,
 .clock,
 .volume,
