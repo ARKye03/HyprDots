@@ -47,36 +47,21 @@ const Notification = (n: {
 
   return Widget.EventBox({
     on_primary_click: () => n.dismiss(),
-    child: Widget.Revealer({
-      reveal_child: false,
-      transition: "slide_left",
-      transition_duration: 300,
-      child:
+    child: Widget.Box({
+      class_name: `notification ${n.urgency}`,
+      vertical: true,
+      children: [
         Widget.Box({
-          class_name: `notification ${n.urgency}`,
-          vertical: true,
           children: [
             Widget.Box({
-              children: [
-                Widget.Box({
-                  vertical: true,
-                  children: [title, body],
-                }),
-              ],
+              vertical: true,
+              children: [title, body],
             }),
-            actions,
           ],
         }),
-      setup: (self) => {
-        self.hook(
-          notifications,
-          (self) => {
-            self.reveal_child = true;
-          },
-          "notified"
-        );
-      }
-    })
+        actions,
+      ],
+    }),
   });
 };
 
