@@ -25,34 +25,16 @@ const createNotificationWidget = (notification: NotificationService) => {
     })
   );
 
-  const closeButton = Widget.Button({
-    hexpand: true,
-    css: "margin: 0px 10px 0px 80px;",
-    on_primary_click_release: () => {
-      notification.close();
-    },
-    child: Widget.Icon({
-      icon: icons.closeChatSvg,
-      size: 20,
-    }),
-  });
-
   return Widget.Box({
     vertical: true,
     class_name: "notification-widget",
     children: [
-      Widget.Box({
-        hexpand: true,
-        children: [
-          Widget.Label({
-            class_name: `notification-title-${notification.urgency}`,
-            justification: "center",
-            use_markup: true,
-            wrap: true,
-            label: notification.summary,
-          }),
-          closeButton,
-        ],
+      Widget.Label({
+        class_name: `notification-title-${notification.urgency}`,
+        justification: "center",
+        use_markup: true,
+        wrap: true,
+        label: notification.summary,
       }),
       Widget.Label({
         class_name: "notification-body",
