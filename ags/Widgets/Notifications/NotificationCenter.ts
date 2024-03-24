@@ -32,7 +32,7 @@ const createNotificationWidget = (notification: NotificationService) => {
       notification.close();
     },
     child: Widget.Icon({
-      icon: icons.closeChatSvg, // Replace with your icon
+      icon: icons.closeChatSvg,
       size: 20,
     }),
   });
