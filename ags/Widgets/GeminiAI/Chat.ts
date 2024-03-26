@@ -137,10 +137,6 @@ export const Chat = () =>
     class_name: "chat",
     exclusivity: "normal",
     visible: false,
-<<<<<<< HEAD
-=======
-    class_name: "chat",
->>>>>>> parent of 937215a (New SideChatBar UI)
     anchor: ["top", "left", "bottom"],
     child: sideBarContent,
   });
