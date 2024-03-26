@@ -134,9 +134,9 @@ export const Chat = () =>
   Widget.Window({
     name: "Chat",
     keymode: "on-demand",
-    class_name: "chat",
     exclusivity: "normal",
     visible: false,
+    class_name: "chat",
     anchor: ["top", "left", "bottom"],
     child: sideBarContent,
   });
