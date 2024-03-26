@@ -17,8 +17,9 @@ export const Chat = () =>
     name: "Chat",
     width_request: 400,
     keymode: "on-demand",
+    class_name: "chat",
     exclusivity: "normal",
-    visible: true,
+    visible: false,
     anchor: ["top", "left", "bottom"],
     child: webView,
   });
