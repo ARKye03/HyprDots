@@ -25,7 +25,7 @@ export const AppLauncher = Widget.Button({
 });
 export const SpecialWorkspace = Widget.Button({
   className: "bc",
-  css: "color: #56AFE9",
+  css: "color: #56AFE9;",
   child: Widget.Label("  "),
   on_clicked: () => execAsync("hyprctl dispatch togglespecialworkspace"),
 });
