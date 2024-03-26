@@ -31,10 +31,11 @@
         }
         #chat-contents .chat-message {
             border: 1px solid #ddd;
+            color: #f5f5f5;
             padding: 10px;
             margin-bottom: 10px;
             border-radius: 5px;
-            background-color: #f5f5f5;
+            background-color: #21252B;
             overflow-y: auto;
             flex-grow: 1;
         }
@@ -54,16 +55,16 @@
 </head>
 
 <body>
+    <div id="chat-header">
+        <h2>Chatbot</h2>
+    </div>
     <div id="chat-container">
-        <div id="chat-header">
-            <h2>Chatbot</h2>
-        </div>
         <div id="chat-contents">
             <!-- Chat messages will be added here -->
         </div>
-        <textarea id="chat-input" rows="3" cols="50" placeholder="Ask to Gemini here..."
-            style="resize: none; max-height: 130px; "></textarea>
     </div>
+    <textarea id="chat-input" rows="3" cols="50" placeholder="Ask to Gemini here..."
+        style="resize: none; max-height: 130px; "></textarea>
     <script type="module">
         import { GoogleGenerativeAI } from "@google/generative-ai";
         const API_KEY = "WIP";
