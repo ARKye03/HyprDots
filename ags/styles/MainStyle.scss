@@ -26,7 +26,8 @@ label {
 }
 .systray button:hover,
 .workspaces button:hover,
-.bc button:hover {
+.bc button:hover,
+.bc:hover {
   background-color: rgba($color: #545c70, $alpha: 0.4);
 }
 
