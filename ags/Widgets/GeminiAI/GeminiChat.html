@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script type="importmap">
+   {
+     "imports": {
+       "@google/generative-ai": "https://esm.run/@google/generative-ai"
+     }
+   }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini</title>
+    <style>
+        body{
+            background-color: #282C34;
+        }
+        #chat-container {
+            display: flex;
+            flex-direction: column;
+            height: 800px;
+        }
+
+        #chat-header {
+            color: cyan;
+            background-color: #21252B;
+            padding: 10px;
+            text-align: center;
+        }
+        #chat-contents .chat-message {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+            overflow-y: auto;
+            flex-grow: 1;
+        }
+
+        #chat-input {
+            background-color: #1D1F23;
+            color: #f5f5f5;
+            border: 1px solid #3E4452;
+            border-radius: 10px;
+            position: fixed;
+            bottom: 10px;
+            left: 20px;
+            max-width: 340px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="chat-container">
+        <div id="chat-header">
+            <h2>Chatbot</h2>
+        </div>
+        <div id="chat-contents">
+            <!-- Chat messages will be added here -->
+        </div>
+        <textarea id="chat-input" rows="3" cols="50" placeholder="Ask to Gemini here..."
+            style="resize: none; max-height: 130px; "></textarea>
+    </div>
+    <script type="module">
+        import { GoogleGenerativeAI } from "@google/generative-ai";
+        const API_KEY = "AIzaSyBi8IzFSlTEpPsN9EI3mFW5oO2roUXW-io";
+        console.log(API_KEY);
+        const genAI = new GoogleGenerativeAI(API_KEY);
+        const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+
+        function addMessageToChat(message) {
+            var chatContents = document.getElementById('chat-contents');
+            var messageDiv = document.createElement('div');
+            messageDiv.className = 'chat-message';
+            messageDiv.innerHTML = marked.parse(message);
+            chatContents.appendChild(messageDiv);
+        }
+
+        async function run() {
+            console.log("Start----------<")
+            const prompt = document.getElementById('chat-input').value;
+            console.log("Prompt: ", prompt);
+
+            const result = await model.generateContent(prompt);
+            console.log("Generated content: ", result);
+            const response = await result.response;
+            const text = response.text();
+            console.log("Response text: ", text);
+
+            // Add the generated content to the chat
+            addMessageToChat(text);
+        }
+
+        // Add an event listener to the chat-input field
+        document.getElementById('chat-input').addEventListener('keydown', function (e) {
+            if (e.key === 'Enter') {
+                if (e.shiftKey) {
+                    // If the Shift key is being pressed, insert a newline character
+                    const start = this.selectionStart;
+                    const end = this.selectionEnd;
+                    this.value = this.value.substring(0, start) + "\n" + this.value.substring(end);
+                    this.selectionStart = this.selectionEnd = start + 1;
+                    e.preventDefault();
+                } else {
+                    // If the Shift key is not being pressed, call the run function
+                    console.log("Enter key pressed");
+                    run();
+                    // Clear the input field
+                    this.value = '';
+                    e.preventDefault();
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
