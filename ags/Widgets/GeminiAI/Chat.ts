@@ -2,6 +2,7 @@
 import Gtk from "gi://Gtk";
 import { fetchCode } from "./GeminiAPI";
 import { icons } from "assets/Assets";
+import { fetchGroq } from "./GroqAPI";
 
 const TextEntryWidget = Widget.subclass(Gtk.TextView);
 
@@ -89,7 +90,7 @@ const resultListBox = Widget.Box({
           true
         );
         print("Send: " + textToSend);
-        fetchCode(textToSend)
+        fetchGroq(textToSend)
           .then((result) => {
             console.log(result);
             let resultText = Array.isArray(result) ? result.join(" ") : result;
