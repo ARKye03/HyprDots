@@ -56,6 +56,7 @@ alias paclean='sudo pacman -Qdtq | sudo pacman -Rns - ; sudo fstrim -av'
 alias pacache="sudo pacman -Scc --noconfirm && yay -Scc --noconfirm"
 alias eclean="./.config/eclean.sh"
 alias gc="git clone"
+alias gs="git status"
 alias getw="xprop | grep WM_CLASS"
 alias mkex="chmod +x"
 alias ythd="yt-dlp -f 'bestvideo[height<=720]+bestaudio/best[height<=720]' --merge-output-format mp4 -o '~/Downloads/ythd/%(title)s.%(ext)s'"
@@ -78,7 +79,8 @@ alias prd="pnpm run dev"
 alias pvpn="protonvpn-cli c --cc US -p udp"
 alias pvpc="protonvpn-cli c"
 alias pvpd="protonvpn-cli d"
-alias ls="ls -l --group-directories-first --color"
+alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias lsa="eza -a --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias cdar="cd /home/archkye/arch_progs/"
 
 #.Net Aliases
@@ -97,10 +99,6 @@ alias db='dotnet build'
 
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
-#export WEBKIT_DISABLE_COMPOSITING_MODE=1
-#export RUST_BACKTRACE=1
-#export PKG_CONFIG_PATH=/usr/lib/pkgconfig/
-#export PKG_CONFIG_SYSROOT_DIR=/
 
 # pnpm
 export PNPM_HOME="/home/archkye/.local/share/pnpm"
@@ -110,9 +108,10 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-
-# Load Angular CLI autocompletion.
-#source <(ng completion script)
-
 PATH=~/.console-ninja/.bin:$PATH
+export GEM_HOME="$(gem env user_gemhome)"
+export PATH="$PATH:$GEM_HOME/bin"
+
+eval "$(fzf --zsh)"
+eval "$(zoxide init zsh)"
 
