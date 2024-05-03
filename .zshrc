@@ -45,7 +45,7 @@ if [[ "$TERM_PROGRAM" != "WarpTerminal" ]]; then
   
 fi
 
-#Aliases
+#Arch Linux Aliases
 alias pacsu="yay --noconfirm"
 alias pacsuw='/usr/bin/yay --noconfirm --config /etc/pacman-warp.conf'
 alias pacin="sudo pacman -S --noconfirm"
@@ -55,33 +55,59 @@ alias yacre="yay -Rns"
 alias paclean='sudo pacman -Qdtq | sudo pacman -Rns - ; sudo fstrim -av'
 alias pacache="sudo pacman -Scc --noconfirm && yay -Scc --noconfirm"
 alias eclean="./.config/eclean.sh"
-alias gc="git clone"
-alias gs="git status"
+
+#Lvim Aliases
+alias lvzsh="lvim ~/.zshrc"
+alias lvbsh="lvim ~/.bashrc"
+alias lvpac="sudo lvim /etc/pacman.conf"
+alias lvbsp="lvim ~/.config/bspwm/bspwmrc"
+alias lvhyp="lvim ~/.dotfiles/.config/hypr/hyprland.conf"
+alias lvags="lvim ~/.dotfiles/.config/ags/"
+alias lvsxh="lvim ~/.config/sxhkd/sxhkdrc"
+alias lvpic="sudo lvim ~/.config/picom/picom.conf"
+
+#ProtonVPN
+alias pvpn="protonvpn-cli c --cc US -p udp"
+alias pvpc="protonvpn-cli c"
+alias pvpd="protonvpn-cli d"
+
+#NMCLI
+alias nmli="nmcli device wifi list"
+alias nmco="nmcli device wifi connect"
+alias nmcomp='nmcli device wifi connect "Mon Palais"'
+
+#OTHERS
 alias getw="xprop | grep WM_CLASS"
 alias mkex="chmod +x"
 alias ythd="yt-dlp -f 'bestvideo[height<=720]+bestaudio/best[height<=720]' --merge-output-format mp4 -o '~/Downloads/ythd/%(title)s.%(ext)s'"
 alias cldl="scdl --onlymp3 --path Downloads/sdcl -l"
 alias nfetch="clear && neofetch"
-alias nmli="nmcli device wifi list"
-alias nmco="nmcli device wifi connect"
-alias nmcomp='nmcli device wifi connect "Mon Palais"'
 alias mntwin="sudo mount -t ntfs-3g /dev/nvme0n1p3 /mnt/c && sudo mount -t ntfs-3g /dev/sda1 /mnt/d && sudo mount -t ntfs-3g /dev/sdb1 /mnt/e"
-alias lvzsh="lvim ~/.zshrc"
-alias lvbsh="lvim ~/.bashrc"
-alias lvpac="sudo lvim /etc/pacman.conf"
-alias lvbsp="lvim ~/.config/bspwm/bspwmrc"
-alias lvhyp="lvim ~/.config/hypr/hyprland.conf"
-alias lvags="lvim ~/.config/ags/"
-alias lvsxh="lvim ~/.config/sxhkd/sxhkdrc"
-alias lvpic="sudo lvim ~/.config/picom/picom.conf"
 alias ptd="pnpm tauri dev"
 alias prd="pnpm run dev"
-alias pvpn="protonvpn-cli c --cc US -p udp"
-alias pvpc="protonvpn-cli c"
-alias pvpd="protonvpn-cli d"
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias lsa="eza -a --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias cdar="cd /home/archkye/arch_progs/"
+
+# Git Aliases
+alias ggpush='git push origin "$(git_current_branch)"'
+alias ggpull='git pull origin "$(git_current_branch)"'
+alias gc="git clone"
+alias gs="git status"
+alias ga="git add"
+alias gaa="git add ."
+alias gcm="git commit -m"
+alias gco="git checkout"
+alias gcb="git checkout -b"
+alias gbr="git branch"
+alias gbd="git branch -d"
+alias gpl="git pull"
+alias gps="git push"
+alias gd="git diff --name-only --relative --diff-filter=d | xargs bat --diff"
+alias gr="git restore"
+alias gplm="git pull origin main"
+alias gpsm="git push origin main"
+
 
 #.Net Aliases
 alias vsgit='wget -O .gitignore  https://raw.githubusercontent.com/github/gitignore/main/VisualStudio.gitignore'
