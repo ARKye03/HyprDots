@@ -89,28 +89,40 @@ alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time
 alias lsa="eza -a --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias cdar="cd /home/archkye/arch_progs/"
 
-# Git Aliases
-alias ggpush='git push origin "$(git_current_branch)"'
-alias ggpull='git pull origin "$(git_current_branch)"'
-alias gc="git clone"
-alias gs="git status"
-alias ga="git add"
-alias gaa="git add ."
-alias gcm="git commit -m"
-alias gco="git checkout"
-alias gcb="git checkout -b"
-alias gbr="git branch"
-alias gbd="git branch -d"
-alias gpl="git pull"
-alias gps="git push"
-alias gd="git diff --name-only --relative --diff-filter=d | xargs bat --diff"
-alias gr="git restore"
-alias gplm="git pull origin main"
-alias gpsm="git push origin main"
+#Git Aliases
+alias gc="git clone";
+alias gs="git status";
+alias gss="git status -s";
+alias ga="git add";
+alias gaa="git add --all";
+alias gcm="git commit -m";
+alias gco="git checkout";
+alias gcb="git checkout -b";
+alias gbr="git branch";
+alias gbd="git branch -d";
+alias gpl="git pull";
+alias gplr="git pull --rebase";
+alias gp="git push";
+alias gpf!="git push --force";
+alias gf="git fetch";
+alias gd="git diff --name-only --relative --diff-filter=d | xargs bat --diff";
+alias gr="git restore";
+alias gplm="git pull origin main";
+alias gpsm="git push origin main";
+# alias ggpull="git pull origin $(git_current_branch)";
+# alias ggpush="git push origin $(git_current_branch)";
+alias gm="git merge";
+# alias gmom="git merge origin/$(git_main_branch)";
+alias grs="git restore";
+alias gsw="git switch";
+alias gswc="git switch -c";
+# alias gswm="git switch $(git_main_branch)";
+# alias gswd="git switch $(git_develop_branch)";
+alias gts="git tag -s";
+alias gtv="git tag | sort -V";
 
 
 #.Net Aliases
-alias vsgit='wget -O .gitignore  https://raw.githubusercontent.com/github/gitignore/main/VisualStudio.gitignore'
 alias dn='dotnet new'
 alias dr='dotnet run'
 alias dt='dotnet test'
@@ -125,6 +137,9 @@ alias db='dotnet build'
 
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+
+export MANROFFOPT="-c"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # pnpm
 export PNPM_HOME="/home/archkye/.local/share/pnpm"
