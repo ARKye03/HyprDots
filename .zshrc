@@ -87,7 +87,7 @@ alias ptd="pnpm tauri dev"
 alias prd="pnpm run dev"
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias lsa="eza -a --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
-alias cdar="cd /home/archkye/arch_progs/"
+alias cdar="cd ~/arch_progs/"
 
 #Git Aliases
 alias gc="git clone";
@@ -109,15 +109,15 @@ alias gd="git diff --name-only --relative --diff-filter=d | xargs bat --diff";
 alias gr="git restore";
 alias gplm="git pull origin main";
 alias gpsm="git push origin main";
-# alias ggpull="git pull origin $(git_current_branch)";
-# alias ggpush="git push origin $(git_current_branch)";
+alias ggpull='git pull origin "$(git_current_branch)"';
+alias ggpush='git push origin "$(git_current_branch)"';
 alias gm="git merge";
-# alias gmom="git merge origin/$(git_main_branch)";
+alias gmom='git merge origin/$(git_main_branch)';
 alias grs="git restore";
 alias gsw="git switch";
 alias gswc="git switch -c";
-# alias gswm="git switch $(git_main_branch)";
-# alias gswd="git switch $(git_develop_branch)";
+alias gswm='git switch $(git_main_branch)';
+alias gswd='git switch $(git_develop_branch)';
 alias gts="git tag -s";
 alias gtv="git tag | sort -V";
 
@@ -150,8 +150,8 @@ esac
 # pnpm end
 
 PATH=~/.console-ninja/.bin:$PATH
-export GEM_HOME="$(gem env user_gemhome)"
-export PATH="$PATH:$GEM_HOME/bin"
+# export GEM_HOME="$(gem env user_gemhome)"
+# export PATH="$PATH:$GEM_HOME/bin"
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
