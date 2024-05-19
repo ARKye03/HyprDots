@@ -46,8 +46,8 @@ if [[ "$TERM_PROGRAM" != "WarpTerminal" ]]; then
 fi
 
 #Arch Linux Aliases
-alias pacsu="yay --noconfirm"
-alias pacsuw='yay --noconfirm --config /etc/pacman-warp.conf'
+alias pacsu="sudo pacman -Syu --noconfirm && yay -Syu"
+alias pacsuw='sudo pacman -Syu --noconfirm --config /etc/pacman-warp.conf && yay -Syu --noconfirm --config /etc/pacman-warp.conf'
 alias pacin="sudo pacman -S --noconfirm"
 alias yacin="yay -S --noconfirm"
 alias pacre="sudo pacman -Rns"
@@ -57,14 +57,14 @@ alias pacache="sudo pacman -Scc --noconfirm && yay -Scc --noconfirm"
 alias eclean="./.config/eclean.sh"
 
 #Lvim Aliases
-alias lvzsh="lvim ~/.zshrc"
-alias lvbsh="lvim ~/.bashrc"
-alias lvpac="sudo lvim /etc/pacman.conf"
-alias lvbsp="lvim ~/.config/bspwm/bspwmrc"
-alias lvhyp="lvim ~/.dotfiles/.config/hypr/hyprland.conf"
-alias lvags="lvim ~/.dotfiles/.config/ags/"
-alias lvsxh="lvim ~/.config/sxhkd/sxhkdrc"
-alias lvpic="sudo lvim ~/.config/picom/picom.conf"
+alias avzsh="nvim ~/.zshrc"
+alias avbsh="nvim ~/.bashrc"
+alias avpac="sudo nvim /etc/pacman.conf"
+alias avbsp="nvim ~/.config/bspwm/bspwmrc"
+alias avhyp="nvim ~/.dotfiles/.config/hypr/hyprland.conf"
+alias avags="nvim ~/.dotfiles/.config/ags/"
+alias avsxh="nvim ~/.config/sxhkd/sxhkdrc"
+alias avpic="sudo nvim ~/.config/picom/picom.conf"
 
 #ProtonVPN
 alias pvpn="protonvpn-cli c --cc US -p udp"
@@ -82,12 +82,15 @@ alias mkex="chmod +x"
 alias ythd="yt-dlp -f 'bestvideo[height<=720]+bestaudio/best[height<=720]' --merge-output-format mp4 -o '~/Downloads/ythd/%(title)s.%(ext)s'"
 alias cldl="scdl --onlymp3 --path Downloads/sdcl -l"
 alias nfetch="clear && neofetch"
-#alias mntwin="sudo mount -t ntfs-3g /dev/nvme0n1p3 /mnt/c && sudo mount -t ntfs-3g /dev/sda1 /mnt/d && sudo mount -t ntfs-3g /dev/sdb1 /mnt/e"
 alias ptd="pnpm tauri dev"
 alias prd="pnpm run dev"
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias lsa="eza -a --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias cdar="cd ~/arch_progs/"
+alias codeX="code ~/.dotfiles"
+alias lvimX="lvim ~/.dotfiles"
+# alias nvimX="nvim ~/.dotfiles"
+# alias zedX="Zed ~/.dotfiles"
 
 # Git Aliases
 alias gc="git clone"
