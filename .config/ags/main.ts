@@ -11,19 +11,19 @@ import { notificationPopup } from "./Widgets/Notifications/NotificationPops";
 const scss = `${App.configDir}/styles/MainStyle.scss`;
 
 // target css file
-const css = `/tmp/my-style.css`;
+const css = "/tmp/my-style.css";
 
 Utils.monitorFile(
   // directory that contains the scss files
   `${App.configDir}/styles/`,
 
   // reload function
-  function () {
+  () => {
     // main scss file
     const scss = `${App.configDir}/styles/MainStyle.scss`;
 
     // target css file
-    const css = `/tmp/my-style.css`;
+    const css = "/tmp/my-style.css";
 
     // compile, reset, apply
     Utils.exec(`sassc ${scss} ${css}`);

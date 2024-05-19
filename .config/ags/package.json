@@ -2,6 +2,7 @@
   "name": "ags-dotfiles",
   "author": "ARKye03",
   "devDependencies": {
+    "@biomejs/biome": "^1.7.3",
     "@girs/accountsservice-1.0": "1.0.0-3.2.9"
   }
 }
