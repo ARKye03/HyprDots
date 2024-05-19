@@ -1,4 +1,3 @@
-
 if [[ "$TERM_PROGRAM" != "WarpTerminal" ]]; then
   if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
     source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -56,7 +55,7 @@ alias paclean='sudo pacman -Qdtq | sudo pacman -Rns - ; sudo fstrim -av'
 alias pacache="sudo pacman -Scc --noconfirm && yay -Scc --noconfirm"
 alias eclean="./.config/eclean.sh"
 
-#Lvim Aliases
+#AstroNvim Aliases
 alias avzsh="nvim ~/.zshrc"
 alias avbsh="nvim ~/.bashrc"
 alias avpac="sudo nvim /etc/pacman.conf"
@@ -64,6 +63,7 @@ alias avbsp="nvim ~/.config/bspwm/bspwmrc"
 alias avhyp="nvim ~/.dotfiles/.config/hypr/hyprland.conf"
 alias avags="nvim ~/.dotfiles/.config/ags/"
 alias avsxh="nvim ~/.config/sxhkd/sxhkdrc"
+alias avnvim="nvim ~/.config/nvim/"
 alias avpic="sudo nvim ~/.config/picom/picom.conf"
 
 #ProtonVPN
