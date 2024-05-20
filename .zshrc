@@ -108,7 +108,6 @@ alias gplr="git pull --rebase"
 alias gp="git push"
 alias gpf!="git push --force"
 alias gf="git fetch"
-alias gd="git diff --name-only --relative --diff-filter=d | xargs bat --diff"
 alias gr="git restore"
 alias gplm="git pull origin main"
 alias gpsm="git push origin main"
@@ -124,6 +123,12 @@ alias gswd='git switch $(git_develop_branch)'
 alias gts="git tag -s"
 alias gtv="git tag | sort -V"
 
+function git_current_branch() {
+  git branch --show-current
+}
+function gd() {
+  git diff --name-only --relative --diff-filter=d $@ | xargs bat --diff 
+}
 
 #.Net Aliases
 alias dn='dotnet new'
