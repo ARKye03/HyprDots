@@ -33,7 +33,7 @@ Used here:
   ```sh
   git clone https://github.com/ARKye03/HyprDots.git
   cd HyprDots
-  stow .
+  stow . --dotfiles
   ```
 
   Have in mind that if stow finds a file that already exists, it will not overwrite it.
