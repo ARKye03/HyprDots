@@ -1,8 +1,3 @@
-#sudo paccache -rk0
-#sudo pacman -Qdtq | sudo pacman -Rns - ; sudo fstrim -av
-#sudo pacman -Scc --noconfirm && yay -Scc --noconfirm
-#pacman -Qqd | sudo pacman -Rsu -
-
 hyprctl notify 1 5000 "rgb(ff1ea3)" "Cleaning up the system..."
 
 sudo sh -c '
