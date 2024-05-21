@@ -8,7 +8,7 @@
     "strict": true,
     "noImplicitAny": false,
     "baseUrl": ".",
-    "typeRoots": ["./types", "./node_modules/@girs"],
+    "typeRoots": ["./types", "./types/@girs"],
     "skipLibCheck": true
   }
 }
