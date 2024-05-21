@@ -10,14 +10,14 @@ alias pacache="sudo pacman -Scc --noconfirm && yay -Scc --noconfirm"
 alias eclean="./.config/eclean.sh"
 
 #AstroNvim Aliases
-alias avzsh="nvim ~/.zshrc"
-alias avbsh="nvim ~/.bashrc"
+alias avzsh="nvim ~/.dotfiles/.zshrc"
+alias avbsh="nvim ~/.dotfiles/.bashrc"
 alias avpac="sudo nvim /etc/pacman.conf"
 alias avbsp="nvim ~/.config/bspwm/bspwmrc"
 alias avhyp="nvim ~/.dotfiles/.config/hypr/hyprland.conf"
 alias avags="nvim ~/.dotfiles/.config/ags/"
 alias avsxh="nvim ~/.config/sxhkd/sxhkdrc"
-alias avnvim="nvim ~/.config/nvim/"
+alias avnvim="nvim ~/.dotfiles/dot-config/nvim/"
 alias avpic="sudo nvim ~/.config/picom/picom.conf"
 
 #ProtonVPN
@@ -76,10 +76,10 @@ alias gts="git tag -s"
 alias gtv="git tag | sort -V"
 
 function git_current_branch() {
-  git branch --show-current
+	git branch --show-current
 }
 function gd() {
-  git diff --name-only --relative --diff-filter=d $@ | xargs bat --diff
+	git diff --name-only --relative --diff-filter=d $@ | xargs bat --diff
 }
 
 #.Net Aliases
