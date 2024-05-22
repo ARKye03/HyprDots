@@ -11,6 +11,7 @@ alias eclean="./.config/eclean.sh"
 
 #AstroNvim Aliases
 alias avzsh="nvim ~/.dotfiles/.zshrc"
+alias avdots="nvim ~/.dotfiles/"
 alias avbsh="nvim ~/.dotfiles/.bashrc"
 alias avpac="sudo nvim /etc/pacman.conf"
 alias avbsp="nvim ~/.config/bspwm/bspwmrc"
@@ -41,8 +42,9 @@ alias prd="pnpm run dev"
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias lsa="eza -a --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias cdar="cd ~/arch_progs/"
-alias codeX="code ~/.dotfiles"
-alias lvimX="lvim ~/.dotfiles"
+alias codedots="code ~/.dotfiles"
+alias codeags="code ~/.dotfiles/dot-config/ags/"
+alias zdots="cd ~/.dotfiles/"
 
 # Git Aliases
 alias gc="git clone"

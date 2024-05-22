@@ -17,5 +17,7 @@ source ~/.profile
 
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.console-ninja/.bin:$PATH"
 
-PATH=~/.console-ninja/.bin:$PATH
+eval "$(fzf --bash)"
+eval "$(zoxide init bash)"
