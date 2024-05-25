@@ -15,8 +15,8 @@ alias avdots="nvim ~/.dotfiles/"
 alias avbsh="nvim ~/.dotfiles/.bashrc"
 alias avpac="sudo nvim /etc/pacman.conf"
 alias avbsp="nvim ~/.config/bspwm/bspwmrc"
-alias avhyp="nvim ~/.dotfiles/.config/hypr/hyprland.conf"
-alias avags="nvim ~/.dotfiles/.config/ags/"
+alias avhyp="nvim ~/.dotfiles/dot-config/hypr/"
+alias avags="nvim ~/.dotfiles/dot-config/ags/"
 alias avsxh="nvim ~/.config/sxhkd/sxhkdrc"
 alias avnvim="nvim ~/.dotfiles/dot-config/nvim/"
 alias avpic="sudo nvim ~/.config/picom/picom.conf"
@@ -101,6 +101,11 @@ alias db='dotnet build'
 alias mr='make run'
 alias mp='make prune'
 alias mc='make create'
+
+# Angular Aliases
+alias ngs='ng serve'
+alias ngso='ng serve --open'
+alias nggc='ng generate component'
 
 # Added by Toolbox App
 # export PATH="$PATH:/home/archkye/.local/share/JetBrains/Toolbox/scripts"

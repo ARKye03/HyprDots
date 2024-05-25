@@ -69,3 +69,27 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
 eval "$(direnv hook zsh)"
 
+eval "export PATH="/run/user/1000/fnm_multishells/112983_1716601015197/bin":$PATH
+export FNM_NODE_DIST_MIRROR="https://nodejs.org/dist"
+export FNM_MULTISHELL_PATH="/run/user/1000/fnm_multishells/112983_1716601015197"
+export FNM_DIR="/home/archkye/.local/share/fnm"
+export FNM_COREPACK_ENABLED="false"
+export FNM_ARCH="x64"
+export FNM_VERSION_FILE_STRATEGY="local"
+export FNM_LOGLEVEL="info"
+export FNM_RESOLVE_ENGINES="false"
+autoload -U add-zsh-hook
+_fnm_autoload_hook () {
+    if [[ -f .node-version || -f .nvmrc ]]; then
+    fnm use --silent-if-unchanged
+fi
+
+}
+
+add-zsh-hook chpwd _fnm_autoload_hook \
+    && _fnm_autoload_hook
+
+rehash"
+eval "$(fnm env --use-on-cd)"
+
+PATH=~/.console-ninja/.bin:$PATH
