@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=WhatsApp Web
+Exec=/opt/microsoft/msedge/microsoft-edge --enable-features=UseOzonePlatform --ozone-platform=wayland --use-gl=desktop --profile-directory=Default --app-id=hnpfjngllnobngcgfapefoaidbinmjnm --app-url=https://web.whatsapp.com/
+Icon=msedge-hnpfjngllnobngcgfapefoaidbinmjnm-Default
+StartupWMClass=crx__hnpfjngllnobngcgfapefoaidbinmjnm
