@@ -22,7 +22,7 @@ Used here:
 - Cursor: [Colloid](https://github.com/vinceliuice/Colloid-icon-theme).
 - [GNU Stow](https://www.gnu.org/software/stow/)
 
-!["Something went wrong :("](./HyprArch.png "Hyprland Arch theme")
+!["Something went wrong :("](./public/HyprArch.png "Hyprland Arch theme")
 
 [Hyprland + ArchLinux](https://github.com/ARKye03/dotfiles/tree/HyprArch)
 
