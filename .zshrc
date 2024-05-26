@@ -93,3 +93,6 @@ rehash"
 eval "$(fnm env --use-on-cd)"
 
 PATH=~/.console-ninja/.bin:$PATH
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
