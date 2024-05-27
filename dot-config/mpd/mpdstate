@@ -1,0 +1,42 @@
+sw_volume: 100
+audio_device_state:1:pulse audio
+audio_device_state:1:my_fifo
+state: play
+current: 22
+time: 61.021000
+random: 0
+repeat: 1
+single: 0
+consume: 0
+crossfade: 2
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Panda Eyes - Take My Hand (feat. Azuria Sky).mp3
+1:Excision - Apex_Excision - Vault.mp3
+2:Arcade (feat. FLETCHER) - Duncan Laurence.m4a
+3:Shadow - Livingston.m4a
+4:679 Kuromi (i got a glock in my rawrie  3) - peXt.m4a
+5:Black Hole Sun.mp3
+6:THE DEATH OF PEACE OF MIND/THE DEATH OF PEACE OF MIND_ARTIFICIAL SUICIDE.mp3
+7:Architect - Livingston.m4a
+8:Bloody Mary - Instrumental - Lucidity.m4a
+9:Panda Eyes & Teminite - Immortal Flame (feat. Anna Yvette).mp3
+10:Ping.mp3
+11:Antihero - Noisestorm.m4a
+12:ReWel - Rogue.m4a
+13:Children of the Night - Razihel.m4a
+14:Frag Out (feat. DJ ASSASS1N) - BSZ Release.m4a
+15:Bring It On - Mr. Bill.mp3
+16:Subtronics - Cottage Gore_OsB5jTfivkw.mp3
+17:SOOTHSAYER - Deathpact.m4a
+18:The Descent - Rezz.mp3
+19:Mabel - Overthinking.mp3
+20:Crossfire - Stephen.m4a
+21:NerdOut - Born to Fight.mp3
+22:Excision - Apex_Excision & Space Laces - 1 On 1.mp3
+23:Excision - Apex_Excision x Illenium - Gold (Stupid Love) feat Shallows.mp3
+24:Excision - Apex_Excision & Sullivan King - Wake Up.mp3
+25:01 - Alan Walker - Ignite.mp3
+26:Overthinker - INZO.m4a
+playlist_end
