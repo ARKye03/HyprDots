@@ -1,9 +1,9 @@
 sw_volume: 100
 audio_device_state:1:pulse audio
 audio_device_state:1:my_fifo
-state: pause
-current: 14
-time: 14.505000
+state: play
+current: 1
+time: 122.065000
 random: 0
 repeat: 1
 single: 0
@@ -22,21 +22,24 @@ playlist_begin
 7:Architect - Livingston.m4a
 8:Bloody Mary - Instrumental - Lucidity.m4a
 9:Panda Eyes & Teminite - Immortal Flame (feat. Anna Yvette).mp3
-10:Ping.mp3
-11:Antihero - Noisestorm.m4a
-12:ReWel - Rogue.m4a
-13:Children of the Night - Razihel.m4a
-14:Frag Out (feat. DJ ASSASS1N) - BSZ Release.m4a
-15:Bring It On - Mr. Bill.mp3
-16:Subtronics - Cottage Gore_OsB5jTfivkw.mp3
-17:SOOTHSAYER - Deathpact.m4a
-18:The Descent - Rezz.mp3
-19:Mabel - Overthinking.mp3
-20:Crossfire - Stephen.m4a
-21:NerdOut - Born to Fight.mp3
-22:Excision - Apex_Excision & Space Laces - 1 On 1.mp3
-23:Excision - Apex_Excision x Illenium - Gold (Stupid Love) feat Shallows.mp3
-24:Excision - Apex_Excision & Sullivan King - Wake Up.mp3
-25:01 - Alan Walker - Ignite.mp3
-26:Overthinker - INZO.m4a
+10:Antihero - Noisestorm.m4a
+11:ReWel - Rogue.m4a
+12:Children of the Night - Razihel.m4a
+13:Frag Out (feat. DJ ASSASS1N) - BSZ Release.m4a
+14:Bring It On - Mr. Bill.mp3
+15:Subtronics - Cottage Gore_OsB5jTfivkw.mp3
+16:SOOTHSAYER - Deathpact.m4a
+17:The Descent - Rezz.mp3
+18:Mabel - Overthinking.mp3
+19:Crossfire - Stephen.m4a
+20:NerdOut - Born to Fight.mp3
+21:Excision - Apex_Excision & Space Laces - 1 On 1.mp3
+22:Excision - Apex_Excision x Illenium - Gold (Stupid Love) feat Shallows.mp3
+23:Excision - Apex_Excision & Sullivan King - Wake Up.mp3
+24:01 - Alan Walker - Ignite.mp3
+25:Overthinker - INZO.m4a
+26:Nirvana - Something In The Way.mp3
+27:Different World.mp3
+28:Exyl - Ping!.mp3
+29:Another World - Modestep.mp3
 playlist_end
