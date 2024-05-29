@@ -22,7 +22,7 @@ notify-send -t 50 "Temporary Notification" "This notification will disappear aft
 sleep 1
 # Notification with actions
 # Note: This requires a notification server that supports actions, like dunst or notify-osd
-notify-send -a "action1" -a "action2" "Action Notification" "This notification has actions."
+notify-send -A "action1" -A "action2" "Action Notification" "This notification has actions."
 sleep 1
 # Notification with hints
 # Hints are used to provide additional information to the notification server
@@ -40,5 +40,5 @@ notify-send -c "email.arrived" "New Email" "You have a new email."
 sleep 1
 # Notification with a custom app name
 # This can be useful for distinguishing notifications from different applications
-notify-send -a "MyApp" "App Notification" "This notification comes from MyApp."
+notify-send -A "MyApp" "App Notification" "This notification comes from MyApp."
 sleep 1
