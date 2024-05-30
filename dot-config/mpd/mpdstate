@@ -2,8 +2,8 @@ sw_volume: 100
 audio_device_state:1:pulse audio
 audio_device_state:1:my_fifo
 state: play
-current: 1
-time: 122.065000
+current: 29
+time: 122.054000
 random: 0
 repeat: 1
 single: 0
@@ -42,4 +42,5 @@ playlist_begin
 27:Different World.mp3
 28:Exyl - Ping!.mp3
 29:Another World - Modestep.mp3
+30:Unknown Brain - Fuck It (ft. DeathbyRomy).mp3
 playlist_end
