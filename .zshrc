@@ -19,8 +19,11 @@ if [[ "$TERM_PROGRAM" != "WarpTerminal" ]]; then
   setopt LIST_PACKED
   setopt AUTO_LIST
   setopt HIST_IGNORE_DUPS
+  setopt HIST_IGNORE_ALL_DUPS
   setopt HIST_FIND_NO_DUPS
   setopt COMPLETE_IN_WORD
+  setopt SHARE_HISTORY
+  setopt APPEND_HISTORY
   
   #Plugins
   source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
