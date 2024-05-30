@@ -1,3 +1,4 @@
 dot-config/mpd/mpd.db
 dot-config/mpd/mpd.log
+dot-config/mpd/mpd.pid
 dot-config/mpd/mpdstate
