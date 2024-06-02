@@ -32,7 +32,9 @@ if [[ "$TERM_PROGRAM" != "WarpTerminal" ]]; then
   source /usr/share/zsh/plugins/zsh-sudo/sudo.plugin.zsh
   # source /usr/share/zsh/plugins/zsh-nix-shell/nix-shell.plugin.zsh
   source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-  
+
+  ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+
   #Binds
   bindkey '^[[A' history-substring-search-up
   bindkey '^[[B' history-substring-search-down
