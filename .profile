@@ -109,3 +109,7 @@ alias nggc='ng generate component'
 
 # Added by Toolbox App
 # export PATH="$PATH:/home/archkye/.local/share/JetBrains/Toolbox/scripts"
+
+# >>> coursier install directory >>>
+export PATH="$PATH:$HOME/.local/share/coursier/bin"
+export PATH="$PATH:$HOME/go/bin/"
