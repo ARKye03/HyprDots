@@ -21,14 +21,13 @@ Used here:
   - [Gradience](https://github.com/GradienceTeam/Gradience) adw-gtk3
 - Cursor: [Colloid](https://github.com/vinceliuice/Colloid-icon-theme).
 - [GNU Stow](https://www.gnu.org/software/stow/)
+- [Lua](https://lua.org/)
 
 !["Something went wrong :("](./public/hypr_arch.gif "Hyprland Arch theme")
 
-[Hyprland + ArchLinux](https://github.com/ARKye03/dotfiles/tree/HyprArch)
-
 ## Usage
 
-  Install stow, dependencies and clone the repo.
+  Install GNU Stow, dependencies and clone the repo.
   
   ```sh
   git clone https://github.com/ARKye03/HyprDots.git
