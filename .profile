@@ -7,7 +7,6 @@ alias pacre="sudo pacman -Rns"
 alias yacre="yay -Rns"
 alias paclean='sudo pacman -Qdtq | sudo pacman -Rns - ; sudo fstrim -av'
 alias pacache="sudo pacman -Scc --noconfirm && yay -Scc --noconfirm"
-alias eclean="./.config/eclean.sh"
 
 #AstroNvim Aliases
 alias avzsh="nvim ~/.dotfiles/.zshrc"
@@ -82,6 +81,15 @@ function git_current_branch() {
 }
 function gd() {
 	git diff --name-only --relative --diff-filter=d $@ | xargs bat --diff
+}
+function eclean() {
+	echo "Are you sure you want to clean the cache and remove old packages?"
+	read -p "Type 'yes' to continue: " yn
+	if [ "$yn" = "yes" ]; then
+	~/.dotfiles/scripts/eclean.lua
+	else
+		echo "Aborted."
+	fi
 }
 
 #.Net Aliases
