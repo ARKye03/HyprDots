@@ -12,24 +12,24 @@ vim.opt.rtp:prepend(lazypath)
 if not pcall(require, "lazy") then
   -- stylua: ignore
   vim.api.nvim_echo(
-  { { ("Unable to load lazy from: %s\n"):format(lazypath), "ErrorMsg" }, { "Press any key to exit...", "MoreMsg" } },
+    { { ("Unable to load lazy from: %s\n"):format(lazypath), "ErrorMsg" }, { "Press any key to exit...", "MoreMsg" } },
     true, {})
   vim.fn.getchar()
   vim.cmd.quit()
 end
 
 -- Hyprlang LSP
--- vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
---   pattern = { "*.hl", "hypr*.conf" },
---   callback = function(event)
---     print(string.format("starting hyprls for %s", vim.inspect(event)))
---     vim.lsp.start {
---       name = "hyprlang",
---       cmd = { "hyprls" },
---       root_dir = vim.fn.getcwd(),
---     }
---   end,
--- })
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+  pattern = { "*.hl", "hypr*.conf" },
+  callback = function(event)
+    print(string.format("starting hyprls for %s", vim.inspect(event)))
+    vim.lsp.start {
+      name = "hyprlang",
+      cmd = { "hyprls" },
+      root_dir = vim.fn.getcwd(),
+    }
+  end,
+})
 
 require "lazy_setup"
 require "polish"
