@@ -16,7 +16,7 @@ if handle ~= nil then
         markdown = markdown .. "| " .. package .. " | " .. version .. " |\n"
     end
 
-    local file = io.open("INSTALLEDPKGS.MD", "w")
+    local file = io.open("README.md", "w")
     if file ~= nil then
         file:write(markdown)
         file:close()
