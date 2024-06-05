@@ -112,4 +112,5 @@ alias nggc='ng generate component'
 
 # >>> coursier install directory >>>
 export PATH="$PATH:$HOME/.local/share/coursier/bin"
-export PATH="$PATH:$HOME/go/bin/"
+# export PATH="$PATH:$HOME/go/bin/"
+export PATH=$PATH:$(go env GOPATH)/bin
