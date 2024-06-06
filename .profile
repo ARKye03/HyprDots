@@ -84,9 +84,10 @@ function gd() {
 }
 function eclean() {
 	echo "Are you sure you want to clean the cache and remove old packages?"
-	read -p "Type 'yes' to continue: " yn
+	echo "Type 'yes' to continue: "
+	read yn
 	if [ "$yn" = "yes" ]; then
-	~/.dotfiles/scripts/eclean.lua
+		~/.dotfiles/scripts/eclean.lua
 	else
 		echo "Aborted."
 	fi
