@@ -43,12 +43,12 @@ if [[ "$TERM_PROGRAM" != "WarpTerminal" ]]; then
   bindkey '^H' backward-kill-word # Ctrl + Backspace
   bindkey "^L" clear-screen # Ctrl + L
   
-  autoload -Uz compinit
-  compinit
   # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
   [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
   
 fi
+autoload -Uz compinit
+compinit
 
 # Aliases
 source ~/.profile
