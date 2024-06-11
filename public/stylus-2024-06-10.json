@@ -1,0 +1,980 @@
+[
+  {
+    "settings": {
+      "openEditInWindow": false,
+      "openEditInWindow.popup": false,
+      "windowPosition": {},
+      "show-badge": true,
+      "disableAll": false,
+      "exposeIframes": false,
+      "exposeStyleName": false,
+      "newStyleAsUsercss": false,
+      "styleViaASS": false,
+      "styleViaXhr": false,
+      "patchCsp": false,
+      "urlInstaller": true,
+      "config.autosave": true,
+      "schemeSwitcher.enabled": "system",
+      "schemeSwitcher.nightStart": "18:00",
+      "schemeSwitcher.nightEnd": "06:00",
+      "popup.enabledFirst": true,
+      "popup.stylesFirst": true,
+      "popup.autoResort": false,
+      "popup.borders": false,
+      "popup.findSort": "w",
+      "manage.onlyEnabled": false,
+      "manage.onlyLocal": false,
+      "manage.onlyUsercss": false,
+      "manage.onlyEnabled.invert": false,
+      "manage.onlyLocal.invert": false,
+      "manage.onlyUsercss.invert": false,
+      "manage.actions.expanded": true,
+      "manage.backup.expanded": true,
+      "manage.filters.expanded": true,
+      "manage.minColumnWidth": 750,
+      "manage.newUI": true,
+      "manage.newUI.favicons": true,
+      "manage.newUI.faviconsGray": false,
+      "manage.newUI.targets": 3,
+      "manage.newUI.sort": "title,asc",
+      "manage.searchMode": "meta",
+      "editor.options": {},
+      "editor.toc.expanded": true,
+      "editor.options.expanded": true,
+      "editor.lint.expanded": true,
+      "editor.publish.expanded": true,
+      "editor.lineWrapping": true,
+      "editor.smartIndent": true,
+      "editor.indentWithTabs": false,
+      "editor.tabSize": 4,
+      "editor.keyMap": "default",
+      "editor.theme": "default",
+      "editor.beautify": {
+        "selector_separator_newline": true,
+        "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
+        "newline_between_properties": true,
+        "newline_before_close_brace": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "end_with_newline": false,
+        "indent_conditional": true,
+        "indent_mozdoc": true,
+        "space_around_combinator": true,
+        "space_around_cmp": false
+      },
+      "editor.beautify.hotkey": "",
+      "editor.lintDelay": 300,
+      "editor.linter": "csslint",
+      "editor.lintReportDelay": 500,
+      "editor.matchHighlight": "token",
+      "editor.autoCloseBrackets": true,
+      "editor.autocompleteOnTyping": false,
+      "editor.contextDelete": false,
+      "editor.selectByTokens": true,
+      "editor.arrowKeysTraverse": true,
+      "editor.appliesToLineWidget": true,
+      "editor.autosaveDraft": 10,
+      "editor.livePreview": true,
+      "editor.targetsFirst": true,
+      "editor.colorpicker": true,
+      "editor.colorpicker.hexUppercase": false,
+      "editor.colorpicker.hotkey": "",
+      "editor.colorpicker.color": "",
+      "editor.colorpicker.maxHeight": 300,
+      "hotkey._execute_browser_action": "",
+      "hotkey.openManage": "",
+      "hotkey.styleDisableAll": "",
+      "sync.enabled": "none",
+      "iconset": -1,
+      "badgeDisabled": "#8B0000",
+      "badgeNormal": "#006666",
+      "headerWidth.edit": 280,
+      "headerWidth.install": 280,
+      "headerWidth.manage": 280,
+      "popupWidth": 246,
+      "popupWidthMax": 280,
+      "updateInterval": 24,
+      "updateOnlyEnabled": false
+    },
+    "order": {
+      "main": [],
+      "prio": []
+    }
+  },
+  {
+    "enabled": true,
+    "installDate": 1717694583094,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name Arch Wiki Catppuccin\n@namespace github.com/catppuccin/userstyles/styles/arch-wiki\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/arch-wiki\n@version 0.0.6\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/arch-wiki/catppuccin.user.css\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Aarch-wiki\n@description Soothing pastel theme for Arch Wiki\n@author Catppuccin\n@license MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n==/UserStyle== */\n\n@-moz-document domain('wiki.archlinux.org') {\n  @media (prefers-color-scheme: dark) {\n    :root {\n      #catppuccin(@darkFlavor, @accentColor);\n    }\n  }\n  @media (prefers-color-scheme: light) {\n    :root {\n      #catppuccin(@lightFlavor, @accentColor);\n    }\n  }\n\n  #catppuccin(@lookup, @accent) {\n    @rosewater: @catppuccin[@@lookup][@rosewater];\n    @flamingo: @catppuccin[@@lookup][@flamingo];\n    @pink: @catppuccin[@@lookup][@pink];\n    @mauve: @catppuccin[@@lookup][@mauve];\n    @red: @catppuccin[@@lookup][@red];\n    @maroon: @catppuccin[@@lookup][@maroon];\n    @peach: @catppuccin[@@lookup][@peach];\n    @yellow: @catppuccin[@@lookup][@yellow];\n    @green: @catppuccin[@@lookup][@green];\n    @teal: @catppuccin[@@lookup][@teal];\n    @sky: @catppuccin[@@lookup][@sky];\n    @sapphire: @catppuccin[@@lookup][@sapphire];\n    @blue: @catppuccin[@@lookup][@blue];\n    @lavender: @catppuccin[@@lookup][@lavender];\n    @text: @catppuccin[@@lookup][@text];\n    @subtext1: @catppuccin[@@lookup][@subtext1];\n    @subtext0: @catppuccin[@@lookup][@subtext0];\n    @overlay2: @catppuccin[@@lookup][@overlay2];\n    @overlay1: @catppuccin[@@lookup][@overlay1];\n    @overlay0: @catppuccin[@@lookup][@overlay0];\n    @surface2: @catppuccin[@@lookup][@surface2];\n    @surface1: @catppuccin[@@lookup][@surface1];\n    @surface0: @catppuccin[@@lookup][@surface0];\n    @base: @catppuccin[@@lookup][@base];\n    @mantle: @catppuccin[@@lookup][@mantle];\n    @crust: @catppuccin[@@lookup][@crust];\n    @accent-color: @catppuccin[@@lookup][@@accent];\n\n    color-scheme: if(@lookup = latte, light, dark);\n\n    ::selection {\n      background-color: fade(@accent-color, 30%);\n    }\n\n    input,\n    textarea {\n      &::placeholder {\n        color: @subtext0 !important;\n      }\n    }\n\n    #content table,\n    #content h1,\n    #content h2,\n    #content h3,\n    #content h4,\n    #content h5,\n    #content pre,\n    #content code,\n    #content tt {\n      color: @text !important;\n    }\n\n    #archnavbar {\n      background-color: @mantle !important;\n      border-bottom-color: @blue !important;\n    }\n    .mw-parser-output {\n      background-color: @base !important;\n    }\n    .mw-page-container {\n      background-color: @mantle !important;\n    }\n\n    .vector-header-container {\n      background-color: @base !important;\n    }\n\n    #content,\n    header.mw-header li:not(.new),\n    #mw-panel-toc,\n    #mw-navigation li:not(.new),\n    #mw-panel li:not(.new),\n    #column-one li:not(.new),\n    #footer {\n      a:not([role=\"button\"], .new) {\n        color: @blue !important;\n      }\n    }\n\n    @media screen {\n      html.client-darkmode {\n        background-color: @base;\n      }\n    }\n\n    .vector-feature-zebra-design-disabled,\n    body {\n      background-color: @base;\n    }\n\n    #archnavbarlogo {\n      @svg: escape(\n        '<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1\" width=\"600\" height=\"126\"><path d=\"M159.568 34.427c-8.89-.014-16.267 1.809-19.12 2.803l-2.937 15.857c-.007.058 14.617-3.9 21.059-3.667 10.665.383 11.646 4.076 11.46 9.06.182.292-2.752-4.503-11.979-4.664-11.64-.2-28.069 4.122-28.046 21.692-.314 19.765 14.764 25.579 25.032 25.686 9.232-.168 13.563-3.496 15.934-5.28 3.115-3.257 6.679-6.532 10.078-10.462-3.216 5.844-6.005 9.884-8.907 12.977v2.611l14.033-2.361.096-38.144c-.143-5.399 3.096-26.057-26.703-26.108m-2.016 33.21c5.817.08 12.488 2.948 12.497 9.849.03 6.277-7.863 9.651-12.996 9.598-5.135-.053-11.949-4.036-11.979-10.155.099-5.47 6.426-9.432 12.478-9.291zm37.972-29.685-.095 63.166 16.348-3.15.027-35.814c.004-5.333 7.62-11.564 17.178-11.464 2.028-3.67 5.84-13.05 6.77-15.183-21.351-.051-21.623 6.137-25.336 9.18-.04-5.806-.013-9.292-.013-9.292zm92.002 8.292c-.158-.074-8.526-9.788-25.35-9.864-15.758-.262-33.433 5.847-33.716 32.27.138 23.232 16.979 32.311 33.805 32.488 18.007.187 25.172-11.26 25.602-11.543-2.149-1.863-10.196-9.837-10.196-9.837s-5.027 7.157-14.779 7.248c-9.755.093-18.234-7.54-18.354-18.189-.125-10.65 7.795-16.419 18.427-16.885 9.205-.002 14.516 5.943 14.516 5.943zm20.606-30.399-15.434 3.628.115 82.277 15.204-2.745.172-38.72c.033-4.06 5.874-10.295 15.626-10.097 9.325.097 11.41 6.215 11.384 6.988l.269 44.824 14.993-2.65.057-47.53c.099-4.574-10.018-14.233-26.28-14.302-7.729.012-12.009 1.762-14.187 3.052-3.726 2.879-7.985 5.637-12.17 9.157 3.869-4.97 7.117-8.407 10.29-10.961z\" fill=\"@{text}\" fill-rule=\"evenodd\"/><path d=\"m360.136 17.218 6.962-1.742.33 82.95-7.074 1.204zm18.928 24.757 6.101-2.716.052 59.478-5.892 1.217zm-1.45-21.448 4.92-4.015 4.086 4.547-4.921 4.121zm19.024 20.365 6.962-1.421.033 12.434c.001.534 3.823-13.89 22.258-13.57 17.9.1 20.827 13.957 20.73 17.064l.221 43.725-6.102 1.324-.035-43.189c.07-1.261-2.79-11.927-15.439-11.966-12.646-.037-21.409 9.186-21.393 15.078l.1 38.047-7.07 1.847zm110.954 58.546-6.962 1.42-.033-12.433c-.001-.534-3.825 13.89-22.258 13.57-17.9-.1-20.827-13.957-20.73-17.064l-.221-43.725 7.397-1.494.114 43.19c.003 1.18 1.416 12.096 14.065 12.135 12.646.037 21.506-7.616 21.569-19.139l-.09-34.076 6.885-1.757zm13.645-59.037-4.882 3.82 18.717 24.494-19.963 28.3 5.179 3.843 18.766-26.28 19.368 26.902 4.791-3.82-20.757-28.765 16.56-23.262-5.092-4.305-15.085 21.525zM61.88 1.778c-5.385 13.203-8.633 21.839-14.629 34.649 3.676 3.896 8.188 8.434 15.516 13.559-7.878-3.242-13.252-6.497-17.267-9.874-7.673 16.011-19.695 38.818-44.09 82.65 19.174-11.068 34.037-17.893 47.889-20.497a35 35 0 0 1-.91-8.213l.023-.614c.304-12.284 6.694-21.73 14.264-21.09 7.57.642 13.454 11.126 13.15 23.41-.058 2.312-.319 4.536-.774 6.598 13.701 2.68 28.405 9.487 47.32 20.407-3.73-6.866-7.059-13.056-10.238-18.95-5.007-3.882-10.23-8.933-20.884-14.402 7.323 1.903 12.566 4.099 16.653 6.552C75.58 35.786 72.963 27.79 61.88 1.778\" fill=\"@{blue}\" fill-rule=\"evenodd\"/><path d=\"M576.771 93.265V80.603h-4.73v-1.695h11.38v1.695h-4.75v12.662zm8.629 0V78.908h2.859l3.398 10.166q.47 1.42.686 2.125.245-.784.764-2.301l3.437-9.99h2.556v14.357h-1.831V81.25l-4.172 12.016h-1.714l-4.152-12.222v12.222h-1.832\" font-weight=\"400\" font-size=\"8.441\" font-family=\"DejaVu Sans Mono\" fill=\"@{subtext1}\"/></svg>'\n      );\n      background: url(\"data:image/svg+xml,@{svg}\") !important;\n      background-size: 190px 40px !important;\n    }\n    .cdx-text-input__input:enabled:focus {\n      border-color: @blue;\n      box-shadow: @blue !important;\n    }\n\n    .archwiki-template-box-tip {\n      background-color: fadeout(hsla(90, 90%, 65%, 0.3), 10%) !important;\n      border-color: fadeout(hsla(90, 90%, 75%, 0.3), 10%);\n      color: @subtext1;\n    }\n\n    .archwiki-template-box-note {\n      background-color: fadeout(hsla(208, 100%, 61%, 0.3), 5%) !important;\n      border-color: fadeout(hsla(208, 100%, 81%, 0.3), 5%) !important;\n      color: @subtext1;\n    }\n\n    .archwiki-template-box-warning {\n      background-color: fadeout(hsla(7, 99%, 60%, 0.3), 5%) !important;\n      border-color: fadeout(hsla(7, 99%, 80%, 0.3), 05%) !important;\n      color: @subtext1;\n    }\n\n    .firstHeading {\n      color: @accent-color !important;\n    }\n\n    #content {\n      border-color: @overlay0;\n    }\n\n    #content pre:not([class*=\"CodeMirror\"]),\n    #content code,\n    #content tt {\n      background-color: @surface0;\n      color: @text;\n      border-color: @overlay0;\n    }\n\n    .vector-pinned-container {\n      border-color: @overlay0 !important;\n    }\n\n    .vector-pinnable-header-label {\n      color: @text;\n    }\n\n    .vector-pinnable-header-toggle-button,\n    .vector-pinnable-header-unpin-button {\n      color: @blue;\n    }\n\n    .wikitable {\n      background-color: @base;\n    }\n\n    .wikitable > tr > th,\n    .wikitable > tr > td,\n    .wikitable > * > tr > th,\n    .wikitable > * > tr > td {\n      color: @text;\n      border-color: @crust;\n    }\n\n    .wikitable > tr > th,\n    .wikitable > * > tr > th {\n      background-color: @mantle;\n      color: @text;\n    }\n\n    .pre {\n      color: @mantle;\n    }\n\n    .mw-headline {\n      color: @text;\n    }\n\n    .plainlinks,\n    .archwiki-template-man,\n    .external text {\n      color: multiply(@blue, #555);\n    }\n\n    .cdx-button:enabled.cdx-button--weight-quiet,\n    .cdx-button.cdx-button--fake-button--enabled,\n    .cdx-button.cdx-button--fake-button--enabled.cdx-button--weight-quiet,\n    .diff-context,\n    .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle,\n    .oo-ui-checkboxInputWidget [type=\"checkbox\"] + span {\n      background-color: @surface0;\n      color: @text;\n      border-color: @surface2;\n    }\n\n    .vector-feature-zebra-design-disabled,\n    #contentSub:not(:empty) {\n      color: @surface0 !important;\n    }\n\n    .mw-editfont-monospace {\n      background-color: @surface0;\n      color: @text;\n      border-color: @surface1;\n    }\n\n    .diff-deletedline,\n    .mw-message-box-warning {\n      background-color: @yellow;\n      color: @mantle;\n    }\n\n    .diff-addedline {\n      background-color: @sky;\n      color: @mantle;\n    }\n\n    .mw-message-box-error {\n      background-color: @flamingo;\n      border-color: @red;\n      color: @base;\n    }\n\n    .mw-number-text {\n      color: @text;\n    }\n\n    .cdx-checkbox__icon {\n      background-color: @surface0;\n    }\n\n    .oo-ui-checkboxInputWidget.oo-ui-widget-enabled\n      [type=\"checkbox\"]:checked\n      + span,\n    .cdx-checkbox__input:enabled:checked + .cdx-checkbox__icon,\n    .cdx-button:enabled.cdx-button--weight-primary.cdx-button--action-progressive {\n      background-color: @blue;\n      border-color: @sapphire;\n      color: @mantle !important;\n    }\n\n    .vector-feature-zebra-design-disabled,\n    #vector-toc-pinned-container,\n    .vector-toc::after {\n      background: linear-gradient(rgba(255, 255, 255, 0), @base) !important;\n    }\n\n    #archnavbar ul li.anb-selected a {\n      color: @accent-color !important;\n    }\n\n    .archwiki-template-message {\n      background-color: @base;\n    }\n\n    .catlinks {\n      background-color: @mantle;\n    }\n\n    .mw-parser-output p {\n      color: @text !important;\n    }\n\n    .archwiki-template-meta-related-articles {\n      background-color: @surface0;\n    }\n\n    .archwiki-template-meta-related-articles p {\n      color: @text;\n      border-bottom-color: @blue;\n    }\n\n    .archwiki-template-meta-related-articles ul li a {\n      color: @blue important;\n    }\n\n    .mw-plusminus-neg,\n    a.new {\n      color: @red !important;\n    }\n\n    .mw-plusminus-pos {\n      color: @green;\n    }\n\n    .mw-plusminus-null {\n      color: @subtext0;\n    }\n\n    .oo-ui-textInputWidget .oo-ui-inputWidget-input,\n    .mw-widget-dateInputWidget-handle,\n    .oo-ui-buttonElement-framed.oo-ui-widget-enabled\n      > .oo-ui-buttonElement-button,\n    #pagehistory li.selected {\n      background-color: @surface0 !important;\n      color: @text !important;\n      border-color: @surface2 !important;\n    }\n\n    .oo-ui-menuSelectWidget {\n      background-color: @surface0;\n      border-color: @surface2;\n    }\n\n    .oo-ui-OptionWidget-highlighted {\n      background-color: @overlay0 !important;\n    }\n\n    .oo-ui-menuOptionWidget.oo-ui-widget-enabled.oo-ui-optionWidget,\n    .minoredit,\n    .comment {\n      color: @text;\n    }\n\n    .mw-footer-container {\n      color: @text !important;\n    }\n\n    #archnavbarlist li a {\n      color: @blue !important;\n    }\n\n    .anb-selected {\n      color: @subtext1 !important;\n    }\n\n    .mw-footer li {\n      color: @text;\n    }\n\n    .vector-main-menu,\n    .vector-pinnable-element {\n      background-color: @base !important;\n    }\n\n    #p-navigation ul li a {\n      color: @blue !important;\n    }\n\n    .archwiki-template-box-note a {\n      color: @blue !important;\n    }\n\n    .archwiki-template-box-note a:visited {\n      color: @mauve !important;\n    }\n\n    .mw-page-title-main {\n      color: @text;\n    }\n\n    .vector-tab-noicon mw-list-item a {\n      color: @blue;\n    }\n\n    .mw-footer li a {\n      color: @blue;\n    }\n\n    .mw-body {\n      background-color: @base !important;\n      color: @text;\n    }\n\n    .cdx-text-input__input:enabled {\n      background-color: @surface0 !important;\n      color: @text !important;\n      border-color: @surface1;\n    }\n\n    .cdx-button:enabled,\n    .cdx-button.cdxbutton--fake-button--enabled {\n      color: @mantle;\n      background-color: @accent-color;\n      border-color: @base;\n    }\n\n    .cdx-menu {\n      background-color: @surface0;\n    }\n\n    .cdx-menu:hover {\n      background-color: @base !important;\n    }\n\n    .anb-home {\n      color: @text !important;\n    }\n\n    .vector-dropdown-content {\n      background-color: @base !important;\n    }\n\n    .mw-headline::before {\n      color: @accent-color !important;\n    }\n  }\n}\n\n/* prettier-ignore */\n@catppuccin: {\n  @latte:     { @rosewater: #dc8a78; @flamingo: #dd7878; @pink: #ea76cb; @mauve: #8839ef; @red: #d20f39; @maroon: #e64553; @peach: #fe640b; @yellow: #df8e1d; @green: #40a02b; @teal: #179299; @sky: #04a5e5; @sapphire: #209fb5; @blue: #1e66f5; @lavender: #7287fd; @text: #4c4f69; @subtext1: #5c5f77; @subtext0: #6c6f85; @overlay2: #7c7f93; @overlay1: #8c8fa1; @overlay0: #9ca0b0; @surface2: #acb0be; @surface1: #bcc0cc; @surface0: #ccd0da; @base: #eff1f5; @mantle: #e6e9ef; @crust: #dce0e8; };\n  @frappe:    { @rosewater: #f2d5cf; @flamingo: #eebebe; @pink: #f4b8e4; @mauve: #ca9ee6; @red: #e78284; @maroon: #ea999c; @peach: #ef9f76; @yellow: #e5c890; @green: #a6d189; @teal: #81c8be; @sky: #99d1db; @sapphire: #85c1dc; @blue: #8caaee; @lavender: #babbf1; @text: #c6d0f5; @subtext1: #b5bfe2; @subtext0: #a5adce; @overlay2: #949cbb; @overlay1: #838ba7; @overlay0: #737994; @surface2: #626880; @surface1: #51576d; @surface0: #414559; @base: #303446; @mantle: #292c3c; @crust: #232634; };\n  @macchiato: { @rosewater: #f4dbd6; @flamingo: #f0c6c6; @pink: #f5bde6; @mauve: #c6a0f6; @red: #ed8796; @maroon: #ee99a0; @peach: #f5a97f; @yellow: #eed49f; @green: #a6da95; @teal: #8bd5ca; @sky: #91d7e3; @sapphire: #7dc4e4; @blue: #8aadf4; @lavender: #b7bdf8; @text: #cad3f5; @subtext1: #b8c0e0; @subtext0: #a5adcb; @overlay2: #939ab7; @overlay1: #8087a2; @overlay0: #6e738d; @surface2: #5b6078; @surface1: #494d64; @surface0: #363a4f; @base: #24273a; @mantle: #1e2030; @crust: #181926; };\n  @mocha:     { @rosewater: #f5e0dc; @flamingo: #f2cdcd; @pink: #f5c2e7; @mauve: #cba6f7; @red: #f38ba8; @maroon: #eba0ac; @peach: #fab387; @yellow: #f9e2af; @green: #a6e3a1; @teal: #94e2d5; @sky: #89dceb; @sapphire: #74c7ec; @blue: #89b4fa; @lavender: #b4befe; @text: #cdd6f4; @subtext1: #bac2de; @subtext0: #a6adc8; @overlay2: #9399b2; @overlay1: #7f849c; @overlay0: #6c7086; @surface2: #585b70; @surface1: #45475a; @surface0: #313244; @base: #1e1e2e; @mantle: #181825; @crust: #11111b; };\n}\n\n// vim:ft=less\n",
+    "usercssData": {
+      "name": "Arch Wiki Catppuccin",
+      "namespace": "github.com/catppuccin/userstyles/styles/arch-wiki",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/arch-wiki",
+      "version": "0.0.6",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/arch-wiki/catppuccin.user.css",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Aarch-wiki",
+      "description": "Soothing pastel theme for Arch Wiki",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": null,
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": null,
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for Arch Wiki",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/arch-wiki",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/arch-wiki/catppuccin.user.css",
+    "name": "Arch Wiki Catppuccin",
+    "originalDigest": "618824d4a255f3319a0e0abd6aaaea1bb5497708",
+    "_id": "703e94c5-650a-4f57-996b-554b4b6a8b28",
+    "_rev": 1717694733124,
+    "id": 1
+  },
+  {
+    "enabled": true,
+    "installDate": 1717694645341,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name         GitHub Catppuccin\n@namespace    github.com/catppuccin/userstyles/styles/github\n@homepageURL  https://github.com/catppuccin/userstyles/tree/main/styles/github\n@version      1.6.10\n@updateURL    https://github.com/catppuccin/userstyles/raw/main/styles/github/catppuccin.user.css\n@supportURL   https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Agithub\n@description  Soothing pastel theme for GitHub\n@author       Catppuccin\n@license      MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n==/UserStyle== */\n\n@-moz-document regexp(\"https:\\/\\/(gist\\.)*github\\.com(?!((\\/.+?\\/.+?\\/commit\\/[A-Fa-f0-9]+\\.(patch|diff)$)|\\/home$|\\/features($|\\/.*)|\\/marketplace($|\\?.*|\\/.*)|\\/organizations\\/plan)).*$\") {\n  [data-color-mode=\"auto\"] {\n    @media (prefers-color-scheme: light) {\n      &[data-light-theme=\"light\"] {\n        #catppuccin(@lightFlavor, @accentColor);\n      }\n      &[data-light-theme=\"dark\"] {\n        #catppuccin(@darkFlavor, @accentColor);\n      }\n    }\n\n    @media (prefers-color-scheme: dark) {\n      &[data-dark-theme=\"light\"] {\n        #catppuccin(@lightFlavor, @accentColor);\n      }\n      &[data-dark-theme=\"dark\"] {\n        #catppuccin(@darkFlavor, @accentColor);\n      }\n    }\n  }\n  [data-color-mode=\"light\"][data-light-theme=\"dark\"],\n  [data-color-mode=\"dark\"][data-dark-theme=\"dark\"] {\n    #catppuccin(@darkFlavor, @accentColor);\n  }\n  [data-color-mode=\"light\"][data-light-theme=\"light\"],\n  [data-color-mode=\"dark\"][data-dark-theme=\"light\"] {\n    #catppuccin(@lightFlavor, @accentColor);\n  }\n\n  html:not([data-light-theme=\"light\"], [data-light-theme=\"dark\"])\n    body:not(.logged-out)::after,\n  html:not([data-dark-theme=\"dark\"], [data-dark-theme=\"light\"])\n    body:not(.logged-out)::after {\n    position: fixed;\n    top: 0;\n    left: 0;\n    padding: 1rem;\n    margin: 1rem;\n    border-radius: 0.5rem;\n    max-width: 40ch;\n    background-color: var(--color-danger-fg);\n    color: var(--color-header-bg);\n    content: \"Unsupported GitHub theme detected! Please switch to the default light/dark theme via the GitHub Appearance settings to get the best experience for the Catppuccin GitHub userstyle.\";\n    z-index: 9999;\n  }\n\n  #catppuccin(@lookup, @accent) {\n    @rosewater: @catppuccin[@@lookup][@rosewater];\n    @flamingo: @catppuccin[@@lookup][@flamingo];\n    @pink: @catppuccin[@@lookup][@pink];\n    @mauve: @catppuccin[@@lookup][@mauve];\n    @red: @catppuccin[@@lookup][@red];\n    @maroon: @catppuccin[@@lookup][@maroon];\n    @peach: @catppuccin[@@lookup][@peach];\n    @yellow: @catppuccin[@@lookup][@yellow];\n    @green: @catppuccin[@@lookup][@green];\n    @teal: @catppuccin[@@lookup][@teal];\n    @sky: @catppuccin[@@lookup][@sky];\n    @sapphire: @catppuccin[@@lookup][@sapphire];\n    @blue: @catppuccin[@@lookup][@blue];\n    @lavender: @catppuccin[@@lookup][@lavender];\n    @text: @catppuccin[@@lookup][@text];\n    @subtext1: @catppuccin[@@lookup][@subtext1];\n    @subtext0: @catppuccin[@@lookup][@subtext0];\n    @overlay2: @catppuccin[@@lookup][@overlay2];\n    @overlay1: @catppuccin[@@lookup][@overlay1];\n    @overlay0: @catppuccin[@@lookup][@overlay0];\n    @surface2: @catppuccin[@@lookup][@surface2];\n    @surface1: @catppuccin[@@lookup][@surface1];\n    @surface0: @catppuccin[@@lookup][@surface0];\n    @base: @catppuccin[@@lookup][@base];\n    @mantle: @catppuccin[@@lookup][@mantle];\n    @crust: @catppuccin[@@lookup][@crust];\n    @accent-color: @catppuccin[@@lookup][@@accent];\n\n    color-scheme: if(@lookup = latte, light, dark);\n\n    ::selection {\n      background-color: fade(@accent-color, 30%);\n    }\n\n    input,\n    textarea {\n      &::placeholder {\n        color: @subtext0 !important;\n      }\n    }\n    .cm-placeholder {\n      color: @subtext0;\n    }\n\n    accent-color: @accent-color;\n    color: @text;\n\n    --color-social-reaction-bg-reacted-hover: fade(@accent-color, 30%);\n    --color-notifications-button-hover-bg: fade(@accent-color, 60%);\n    --color-workflow-card-header-shadow: rgba(27, 31, 35, 0.04);\n    --color-icon-directory: var(--fgColor-muted, var(--color-fg-muted));\n    --color-calendar-halloween-graph-day-L1-bg: fadeout(\n      @accent-color,\n      60%\n    ) !important;\n    --color-calendar-halloween-graph-day-L2-bg: fadeout(\n      @accent-color,\n      40%\n    ) !important;\n    --color-calendar-halloween-graph-day-L3-bg: fadeout(\n      @accent-color,\n      20%\n    ) !important;\n    --color-calendar-halloween-graph-day-L4-bg: @accent-color !important;\n    --color-calendar-winter-graph-day-L1-bg: fadeout(\n      @accent-color,\n      60%\n    ) !important;\n    --color-calendar-winter-graph-day-L2-bg: fadeout(\n      @accent-color,\n      40%\n    ) !important;\n    --color-calendar-winter-graph-day-L3-bg: fadeout(\n      @accent-color,\n      20%\n    ) !important;\n    --color-calendar-winter-graph-day-L4-bg: @accent-color !important;\n    --color-calendar-graph-day-bg: @surface0 !important;\n    --color-calendar-graph-day-border: transparent !important;\n    --color-calendar-graph-day-L1-bg: fadeout(@accent-color, 60%) !important;\n    --color-calendar-graph-day-L2-bg: fadeout(@accent-color, 40%) !important;\n    --color-calendar-graph-day-L3-bg: fadeout(@accent-color, 20%) !important;\n    --color-calendar-graph-day-L4-bg: @accent-color !important;\n    --color-calendar-graph-day-L2-border: transparent !important;\n    --color-calendar-graph-day-L3-border: transparent !important;\n    --color-calendar-graph-day-L4-border: transparent !important;\n    --color-user-mention-fg: @accent-color;\n    --color-user-mention-bg: fade(@accent-color, 30%);\n    --color-dashboard-feed-bg: var(--color-scale-gray-9);\n    --color-mktg-btn-shadow-outline: rgba(255, 255, 255, 0.25) 0 0 0 1px inset;\n    --color-marketing-icon-secondary: var(--color-scale-blue-5);\n    --color-project-header-bg: var(--color-scale-gray-9);\n    --color-project-sidebar-bg: var(--color-scale-gray-8);\n    --color-project-gradient-in: var(--color-scale-gray-8);\n    --color-project-gradient-out: rgba(22, 27, 34, 0);\n    --color-diff-blob-selected-line-highlight-mix-blend-mode: screen;\n    --topicTag-borderColor: #0000;\n    --highlight-neutral-bgColor: fade(@yellow, 30%);\n    --page-header-bgColor: @crust;\n    --diffBlob-addition-fgColor-text: @text;\n    --diffBlob-addition-fgColor-num: @text;\n    --diffBlob-addition-bgColor-num: fadeout(@green, 70%);\n    --diffBlob-addition-bgColor-line: fadeout(@green, 85%);\n    --diffBlob-addition-bgColor-word: fadeout(@green, 70%);\n    --diffBlob-deletion-fgColor-text: @text;\n    --diffBlob-deletion-fgColor-num: @text;\n    --diffBlob-deletion-bgColor-num: fadeout(@red, 70%);\n    --diffBlob-deletion-bgColor-line: fadeout(@red, 85%);\n    --diffBlob-deletion-bgColor-word: fadeout(@red, 70%);\n    --diffBlob-hunk-bgColor-num: fadeout(@accent-color, 60%);\n    --diffBlob-expander-iconColor: #848d97;\n    --codeMirror-fgColor: @text;\n    --codeMirror-bgColor: @base;\n    --codeMirror-gutters-bgColor: @base;\n    --codeMirror-gutterMarker-fgColor-default: @base;\n    --codeMirror-gutterMarker-fgColor-muted: @overlay0;\n    --codeMirror-lineNumber-fgColor: @subtext1;\n    --codeMirror-cursor-fgColor: @text;\n    --codeMirror-selection-bgColor: #388bfd66;\n    --codeMirror-activeline-bgColor: #6e768166;\n    --codeMirror-matchingBracket-fgColor: @text;\n    --codeMirror-lines-bgColor: @base;\n    --codeMirror-syntax-fgColor-comment: @overlay0;\n    --codeMirror-syntax-fgColor-constant: @blue;\n    --codeMirror-syntax-fgColor-entity: @blue;\n    --codeMirror-syntax-fgColor-keyword: @pink;\n    --codeMirror-syntax-fgColor-storage: @peach;\n    --codeMirror-syntax-fgColor-string: @green;\n    --codeMirror-syntax-fgColor-support: #79c0ff;\n    --codeMirror-syntax-fgColor-variable: @peach;\n    --header-fgColor-default: @text;\n    --header-fgColor-logo: @text;\n    --header-bgColor: @crust;\n    --header-borderColor-divider: #8b949e;\n    --headerSearch-bgColor: @mantle;\n    --headerSearch-borderColor: @surface0;\n    --avatar-bgColor: fade(@text, 26%);\n    --avatar-borderColor: @surface0;\n    --avatar-shadow: 0px 0px 0px 2px #0d1117;\n    --avatarStack-fade-bgColor-default: @surface1;\n    --avatarStack-fade-bgColor-muted: #21262d;\n    --control-bgColor-rest: @red;\n    --control-bgColor-hover: #292e36;\n    --control-bgColor-active: @surface1;\n    --control-bgColor-disabled: fade(@mantle, 60%);\n    --control-bgColor-selected: #161b22;\n    --control-fgColor-rest: @text;\n    --control-fgColor-placeholder: #484f58;\n    --control-fgColor-disabled: fade(@subtext0, 70%);\n    --control-borderColor-rest: @surface1;\n    --control-borderColor-emphasis: #666e79;\n    --control-borderColor-disabled: fade(@surface1, 75%);\n    --control-borderColor-selected: #f0f6fc;\n    --control-borderColor-success: @green;\n    --control-borderColor-danger: @red;\n    --control-borderColor-warning: @yellow;\n    --control-iconColor-rest: #848d97;\n    --control-transparent-bgColor-rest: #0000;\n    --control-transparent-bgColor-hover: fade(@surface2, 20%);\n    --control-transparent-bgColor-active: fade(@overlay0, 50%);\n    --control-transparent-bgColor-disabled: #21262db3;\n    --control-transparent-bgColor-selected: #b1bac414;\n    --control-transparent-borderColor-rest: #0000;\n    --control-transparent-borderColor-hover: #0000;\n    --control-transparent-borderColor-active: #0000;\n    --control-danger-fgColor-rest: @red;\n    --control-danger-fgColor-hover: @crust;\n    --control-danger-bgColor-hover: fade(@red, 80%);\n    --control-danger-bgColor-active: @red;\n    --control-checked-bgColor-rest: @accent-color;\n    --control-checked-bgColor-hover: lighten(@accent-color, 5%);\n    --control-checked-bgColor-active: lighten(@accent-color, 5%);\n    --control-checked-bgColor-disabled: #6e7681;\n    --control-checked-fgColor-rest: @crust;\n    --control-checked-fgColor-disabled: #010409;\n    --control-checked-borderColor-rest: @accent-color;\n    --control-checked-borderColor-hover: @accent-color;\n    --control-checked-borderColor-active: @accent-color;\n    --control-checked-borderColor-disabled: @surface0;\n    --controlTrack-bgColor-rest: @surface0;\n    --controlTrack-bgColor-hover: @surface1;\n    --controlTrack-bgColor-active: @surface2;\n    --controlTrack-bgColor-disabled: #6e7681;\n    --controlTrack-fgColor-rest: #848d97;\n    --controlTrack-fgColor-disabled: @text;\n    --controlTrack-borderColor-rest: #0000;\n    --controlTrack-borderColor-disabled: #6e7681;\n    --controlKnob-bgColor-rest: @base;\n    --controlKnob-bgColor-disabled: #21262db3;\n    --controlKnob-bgColor-checked: @text;\n    --controlKnob-borderColor-rest: @surface2;\n    --controlKnob-borderColor-disabled: #21262db3;\n    --controlKnob-borderColor-checked: @blue;\n    --button-default-fgColor-rest: @text;\n    --button-default-bgColor-rest: @surface0;\n    --button-default-bgColor-hover: @surface1;\n    --button-default-bgColor-active: @surface2;\n    --button-default-bgColor-selected: @surface2;\n    --button-default-bgColor-disabled: fade(@surface0, 70%);\n    --button-default-borderColor-rest: @surface1;\n    --button-default-borderColor-hover: @surface1;\n    --button-default-borderColor-active: @surface1;\n    --button-default-borderColor-disabled: fade(@surface0, 70%);\n    --button-default-shadow-resting: 0px 0px 0px 0px #000;\n    --button-primary-fgColor-rest: @base;\n    --button-primary-fgColor-disabled: fade(@base, 60%);\n    --button-primary-iconColor-rest: @base;\n    --button-primary-bgColor-rest: @green;\n    --button-primary-bgColor-hover: lighten(@green, 5%);\n    --button-primary-bgColor-active: saturate(@green, 5%);\n    --button-primary-bgColor-disabled: fade(@green, 70%);\n    --button-primary-borderColor-rest: @green;\n    --button-primary-borderColor-hover: @green;\n    --button-primary-borderColor-active: @green;\n    --button-primary-borderColor-disabled: fade(@green, 70%);\n    --button-primary-shadow-selected: 0px 0px 0px 0px #000;\n    --button-invisible-fgColor-rest: @accent-color;\n    --button-invisible-fgColor-hover: lighten(@accent-color, 10%);\n    --button-invisible-fgColor-disabled: #6e7681;\n    --button-invisible-iconColor-rest: @overlay2;\n    --button-invisible-iconColor-hover: #e6edf3;\n    --button-invisible-iconColor-disabled: #6e7681;\n    --button-invisible-bgColor-rest: #0000;\n    --button-invisible-bgColor-hover: #b1bac41f;\n    --button-invisible-bgColor-active: #b1bac433;\n    --button-invisible-bgColor-disabled: fade(@surface1, 70%);\n    --button-invisible-borderColor-rest: #0000;\n    --button-invisible-borderColor-hover: #0000;\n    --button-invisible-borderColor-disabled: fade(@surface1, 70%);\n    --button-outline-fgColor-rest: #388bfd;\n    --button-outline-fgColor-hover: #58a6ff;\n    --button-outline-fgColor-active: @text;\n    --button-outline-fgColor-disabled: #4493f880;\n    --button-outline-bgColor-rest: #f0f6fc;\n    --button-outline-bgColor-hover: @surface1;\n    --button-outline-bgColor-active: #0d419d;\n    --button-outline-bgColor-disabled: #0d1117;\n    --button-outline-borderColor-hover: #f0f6fc1a;\n    --button-outline-borderColor-selected: #f0f6fc1a;\n    --button-outline-shadow-selected: 0px 0px 0px 0px #000;\n    --button-danger-fgColor-rest: @red;\n    --button-danger-fgColor-hover: @base;\n    --button-danger-fgColor-active: @base;\n    --button-danger-fgColor-disabled: fade(@red, 50%);\n    --button-danger-iconColor-rest: @red;\n    --button-danger-iconColor-hover: @crust;\n    --button-danger-bgColor-rest: @surface0;\n    --button-danger-bgColor-hover: @red;\n    --button-danger-bgColor-active: darken(@red, 5%);\n    --button-danger-bgColor-disabled: @base;\n    --button-danger-borderColor-rest: @surface1;\n    --button-danger-borderColor-hover: @red;\n    --button-danger-borderColor-active: darken(@red, 5%);\n    --button-danger-shadow-selected: 0px 0px 0px 0px #000;\n    --button-inactive-fgColor: #8b949e;\n    --button-inactive-bgColor: #21262d;\n    --button-star-iconColor: @yellow;\n    --buttonCounter-default-bgColor-rest: @surface1;\n    --buttonCounter-invisible-bgColor-rest: @surface1;\n    --buttonCounter-primary-bgColor-rest: #04260f33;\n    --buttonCounter-outline-bgColor-rest: #051d4d33;\n    --buttonCounter-outline-bgColor-hover: #051d4d33;\n    --buttonCounter-outline-bgColor-disabled: #1f6feb0d;\n    --buttonCounter-outline-fgColor-rest: #388bfd;\n    --buttonCounter-outline-fgColor-hover: #58a6ff;\n    --buttonCounter-outline-fgColor-disabled: #4493f880;\n    --buttonCounter-danger-bgColor-hover: fade(@text, 20%);\n    --buttonCounter-danger-bgColor-disabled: #da36330d;\n    --buttonCounter-danger-bgColor-rest: #49020233;\n    --buttonCounter-danger-fgColor-rest: @red;\n    --buttonCounter-danger-fgColor-hover: @text;\n    --buttonCounter-danger-fgColor-disabled: fade(@red, 50%);\n    --focus-outlineColor: @accent-color;\n    --menu-bgColor-active: @mantle;\n    --overlay-bgColor: @base;\n    --overlay-borderColor: @surface0;\n    --overlay-backdrop-bgColor: #161b2266;\n    --selectMenu-borderColor: #484f58;\n    --selectMenu-bgColor-active: #0c2d6b;\n    --sideNav-bgColor-selected: #21262d;\n    --skeletonLoader-bgColor: #161b22;\n    --timelineBadge-bgColor: @mantle;\n    --treeViewItem-leadingVisual-iconColor-rest: #848d97;\n    --underlineNav-borderColor-active: @accent-color;\n    --underlineNav-borderColor-hover: #6e768166;\n    --underlineNav-iconColor-rest: #848d97;\n    --selection-bgColor: fade(@accent-color, 30%);\n    --reactionButton-selected-bgColor-rest: fade(@accent-color, 20%);\n    --reactionButton-selected-bgColor-hover: fade(@accent-color, 35%);\n    --reactionButton-selected-fgColor-rest: @accent-color;\n    --reactionButton-selected-fgColor-hover: @accent-color;\n    --fgColor-default: @text;\n    --fgColor-muted: @subtext1;\n    --fgColor-onEmphasis: @base;\n    --fgColor-white: if(@lookup = latte, @crust, @text);\n    --fgColor-disabled: @surface2;\n    --fgColor-link: @accent-color;\n    --fgColor-neutral: #6e7681;\n    --fgColor-accent: @accent-color;\n    --fgColor-success: @green;\n    --fgColor-attention: @yellow;\n    --fgColor-severe: @peach;\n    --fgColor-danger: @red;\n    --fgColor-open: @green;\n    --fgColor-closed: @red;\n    --fgColor-done: @mauve;\n    --fgColor-sponsors: @pink;\n    --bgColor-default: @base;\n    --bgColor-muted: @mantle;\n    --bgColor-inset: @crust;\n    --bgColor-emphasis: @overlay2;\n    --bgColor-inverse: @text;\n    --bgColor-disabled: #21262db3;\n    --bgColor-transparent: #0000;\n    --bgColor-neutral-muted: fade(@surface0, 40%);\n    --bgColor-neutral-emphasis: @subtext0;\n    --bgColor-accent-muted: fade(@accent-color, 20%);\n    --bgColor-accent-emphasis: @accent-color;\n    --bgColor-success-muted: #2ea04326;\n    --bgColor-success-emphasis: @green;\n    --bgColor-attention-muted: fade(@yellow, 15%);\n    --bgColor-attention-emphasis: @yellow;\n    --bgColor-severe-muted: fade(@peach, 26%);\n    --bgColor-severe-emphasis: @peach;\n    --bgColor-danger-muted: fade(@red, 26%);\n    --bgColor-danger-emphasis: @red;\n    --bgColor-open-muted: #2ea0431a;\n    --bgColor-open-emphasis: @green;\n    --bgColor-closed-muted: fade(@red, 15%);\n    --bgColor-closed-emphasis: @red;\n    --bgColor-done-muted: #a371f726;\n    --bgColor-done-emphasis: @mauve;\n    --bgColor-sponsors-muted: #db61a21a;\n    --bgColor-sponsors-emphasis: @pink;\n    --borderColor-default: @surface1;\n    --borderColor-muted: @surface0;\n    --borderColor-emphasis: #484f58;\n    --borderColor-disabled: #21262db3;\n    --borderColor-transparent: #0000;\n    --borderColor-neutral-muted: #6e768166;\n    --borderColor-neutral-emphasis: #6e7681;\n    --borderColor-accent-muted: fade(@accent-color, 50%);\n    --borderColor-accent-emphasis: @accent-color;\n    --borderColor-success-muted: darken(@green, 5%);\n    --borderColor-success-emphasis: @green;\n    --borderColor-attention-muted: fade(@flamingo, 30%);\n    --borderColor-attention-emphasis: @flamingo;\n    --borderColor-severe-muted: @peach;\n    --borderColor-severe-emphasis: #bd561d;\n    --borderColor-danger-muted: @red;\n    --borderColor-danger-emphasis: @red;\n    --borderColor-open-muted: darken(@green, 5%);\n    --borderColor-open-emphasis: @green;\n    --borderColor-closed-muted: @red;\n    --borderColor-closed-emphasis: @red;\n    --borderColor-done-muted: @lavender;\n    --borderColor-done-emphasis: @mauve;\n    --borderColor-sponsors-muted: #db61a266;\n    --borderColor-sponsors-emphasis: @pink;\n    & when (@lookup =latte) {\n      --color-ansi-black: @subtext1;\n      --color-ansi-black-bright: @subtext0;\n      --color-ansi-gray: @subtext0;\n      --color-ansi-white: @surface2;\n      --color-ansi-white-bright: @surface1;\n    }\n    & when not (@lookup =latte) {\n      --color-ansi-black: @surface1;\n      --color-ansi-black-bright: @surface2;\n      --color-ansi-gray: @surface2;\n      --color-ansi-white: @subtext1;\n      --color-ansi-white-bright: @subtext0;\n    }\n    --color-ansi-red: @red;\n    --color-ansi-red-bright: @red;\n    --color-ansi-green: @green;\n    --color-ansi-green-bright: @green;\n    --color-ansi-yellow: @yellow;\n    --color-ansi-yellow-bright: @yellow;\n    --color-ansi-blue: @blue;\n    --color-ansi-blue-bright: @blue;\n    --color-ansi-magenta: @pink;\n    --color-ansi-magenta-bright: @pink;\n    --color-ansi-cyan: @teal;\n    --color-ansi-cyan-bright: @teal;\n    --color-prettylights-syntax-comment: @overlay1;\n    --color-prettylights-syntax-constant: @blue;\n    --color-prettylights-syntax-entity: @blue;\n    --color-prettylights-syntax-storage-modifier-import: @peach;\n    --color-prettylights-syntax-entity-tag: @teal;\n    --color-prettylights-syntax-keyword: @pink;\n    --color-prettylights-syntax-string: @green;\n    --color-prettylights-syntax-variable: @peach;\n    --color-prettylights-syntax-invalid-illegal-text: @red;\n    --color-prettylights-syntax-invalid-illegal-bg: fadeout(@red, 85%);\n    --color-prettylights-syntax-markup-heading: @teal;\n    --color-prettylights-syntax-markup-italic: @yellow;\n    --color-prettylights-syntax-markup-bold: @yellow;\n    --color-prettylights-syntax-markup-deleted-text: @text;\n    --color-prettylights-syntax-markup-deleted-bg: fadeout(@red, 60%);\n    --color-prettylights-syntax-markup-inserted-text: @text;\n    --color-prettylights-syntax-markup-inserted-bg: fadeout(@green, 60%);\n    --color-prettylights-syntax-markup-changed-text: @text;\n    --color-prettylights-syntax-markup-changed-bg: fadeout(@yellow, 60%);\n    --color-prettylights-syntax-markup-ignored-text: @text;\n    --bgColor-white: @base;\n    --color-scale-white: @base;\n    --color-scale-gray-3: @overlay2;\n    --color-scale-gray-5: @overlay0;\n    --color-scale-gray-6: @surface1;\n    --color-scale-gray-7: @surface1;\n    --color-scale-blue-2: @sky;\n    --color-scale-blue-5: @blue;\n    --color-scale-green-3: @green;\n    --color-scale-green-4: @green;\n    --color-scale-yellow-3: @peach;\n    --color-scale-orange-4: @peach;\n    --color-scale-red-4: @red;\n    --shadow-inset: inset 0px 1px 0px 0px @crust;\n    --shadow-resting-xsmall: 0px 1px 0px 0px @crust;\n    --shadow-resting-small: 0px 1px 0px 0px @crust, 0px 1px 3px 0px @crust;\n    --shadow-resting-medium: 0px 3px 6px 0px @crust;\n    --shadow-floating-small: 0px 0px 0px 1px @base, 0px 6px 12px -3px @crust,\n      0px 6px 18px 0px @crust;\n    --shadow-floating-medium: 0px 0px 0px 1px @surface0,\n      0px 8px 16px -4px @crust, 0px 4px 32px -4px @crust,\n      0px 24px 48px -12px @crust, 0px 48px 96px -24px @crust;\n    --shadow-floating-large: 0px 0px 0px 1px @surface0,\n      0px 24px 48px 0px #010409;\n    --shadow-floating-xlarge: 0px 0px 0px 1px @surface0,\n      0px 32px 64px 0px #010409;\n    --shadow-floating-legacy: 0px 6px 12px -3px @crust, 0px 6px 18px 0px @crust;\n    --outline-focus: @blue solid 2px;\n\n    .turbo-progress-bar {\n      background-color: @accent-color;\n    }\n\n    .form-select {\n      @svg: escape(\n        '<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"@{subtext0}\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m4.427 9.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 9H4.604a.25.25 0 0 0-.177.427M4.423 6.47 7.82 3.072a.25.25 0 0 1 .354 0L11.57 6.47a.25.25 0 0 1-.177.427H4.6a.25.25 0 0 1-.177-.427\"/></svg>'\n      );\n      background-image: url(\"data:image/svg+xml,@{svg}\");\n    }\n\n    img[src=\"https://github.githubassets.com/assets/mona-loading-default-c3c7aad1282f.gif\"]\n    {\n      content: url(\"https://giscus.catppuccin.com/assets/loading_48x48.gif\");\n    }\n\n    /* Header when logged out */\n    .HeaderMenu-link {\n      color: var(--fgColor-default);\n\n      &:hover {\n        color: var(--fgColor-default);\n      }\n    }\n    .header-search-button.placeholder {\n      color: @subtext0;\n    }\n    .HeaderMenu-toggle-bar {\n      background-color: @text;\n    }\n    .notification-indicator .mail-status {\n      background-image: linear-gradient(\n        @accent-color,\n        darken(@accent-color, 5%)\n      );\n    }\n\n    .CheckStep {\n      .ansifg-r {\n        color: var(--color-ansi-red);\n      }\n      .ansifg-y {\n        color: var(--color-ansi-yellow);\n      }\n      .ansifg-g {\n        color: var(--color-ansi-green);\n      }\n      .ansifg-b {\n        color: var(--color-ansi-blue);\n      }\n      .ansifg-c {\n        color: var(--color-ansi-cyan);\n      }\n      .ansifg-m {\n        color: var(--color-ansi-magenta);\n      }\n      .ansifg-gr {\n        color: var(--color-ansi-gray);\n      }\n    }\n\n    .js-activity-overview-graph .js-highlight-blob {\n      fill: @accent-color;\n      stroke: @accent-color;\n    }\n  }\n}\n\n@-moz-document url-prefix(\"https://viewscreen.githubusercontent.com/markdown/mermaid\")\n{\n  [data-color-mode=\"auto\"] {\n    @media (prefers-color-scheme: light) {\n      &[data-light-theme=\"light\"] {\n        #catppuccin(@lightFlavor, @accentColor);\n      }\n      &[data-light-theme=\"dark\"] {\n        #catppuccin(@darkFlavor, @accentColor);\n      }\n    }\n\n    @media (prefers-color-scheme: dark) {\n      &[data-dark-theme=\"light\"] {\n        #catppuccin(@lightFlavor, @accentColor);\n      }\n      &[data-dark-theme=\"dark\"] {\n        #catppuccin(@darkFlavor, @accentColor);\n      }\n    }\n  }\n  [data-color-mode=\"light\"][data-light-theme=\"dark\"],\n  [data-color-mode=\"dark\"][data-dark-theme=\"dark\"] {\n    #catppuccin(@darkFlavor, @accentColor);\n  }\n  [data-color-mode=\"light\"][data-light-theme=\"light\"],\n  [data-color-mode=\"dark\"][data-dark-theme=\"light\"] {\n    #catppuccin(@lightFlavor, @accentColor);\n  }\n\n  #catppuccin(@lookup, @accent) {\n    @rosewater: @catppuccin[@@lookup][@rosewater];\n    @flamingo: @catppuccin[@@lookup][@flamingo];\n    @pink: @catppuccin[@@lookup][@pink];\n    @mauve: @catppuccin[@@lookup][@mauve];\n    @red: @catppuccin[@@lookup][@red];\n    @maroon: @catppuccin[@@lookup][@maroon];\n    @peach: @catppuccin[@@lookup][@peach];\n    @yellow: @catppuccin[@@lookup][@yellow];\n    @green: @catppuccin[@@lookup][@green];\n    @teal: @catppuccin[@@lookup][@teal];\n    @sky: @catppuccin[@@lookup][@sky];\n    @sapphire: @catppuccin[@@lookup][@sapphire];\n    @blue: @catppuccin[@@lookup][@blue];\n    @lavender: @catppuccin[@@lookup][@lavender];\n    @text: @catppuccin[@@lookup][@text];\n    @subtext1: @catppuccin[@@lookup][@subtext1];\n    @subtext0: @catppuccin[@@lookup][@subtext0];\n    @overlay2: @catppuccin[@@lookup][@overlay2];\n    @overlay1: @catppuccin[@@lookup][@overlay1];\n    @overlay0: @catppuccin[@@lookup][@overlay0];\n    @surface2: @catppuccin[@@lookup][@surface2];\n    @surface1: @catppuccin[@@lookup][@surface1];\n    @surface0: @catppuccin[@@lookup][@surface0];\n    @base: @catppuccin[@@lookup][@base];\n    @mantle: @catppuccin[@@lookup][@mantle];\n    @crust: @catppuccin[@@lookup][@crust];\n    @accent-color: @catppuccin[@@lookup][@@accent];\n\n    ::selection {\n      background-color: fade(@accent-color, 30%);\n    }\n\n    background-color: @base;\n\n    --color-btn-text: @text;\n    --color-btn-bg: @surface0;\n    --color-btn-border: @surface1;\n    --color-btn-hover-bg: @surface1;\n    --color-btn-hover-border: @surface2;\n    --color-btn-active-bg: @surface2;\n    --color-btn-selected-bg: @surface2;\n    --color-btn-counter-bg: @surface2;\n    --color-btn-outline-text: @accent-color;\n    --color-fg-muted: @subtext1;\n\n    #diagram {\n      .node rect,\n      .node circle,\n      .node ellipse,\n      .node polygon,\n      .node path {\n        fill: fade(@accent-color, 10%);\n        stroke: @accent-color;\n      }\n\n      .label text,\n      span,\n      p {\n        fill: @text;\n        color: @text;\n      }\n\n      .flowchart-link,\n      .marker {\n        stroke: @subtext0;\n        fill: @subtext0;\n      }\n\n      .edgeLabel {\n        background-color: @crust;\n      }\n    }\n\n    .octicon {\n      fill: var(--color-fg-muted) !important;\n    }\n  }\n}\n\n@-moz-document regexp(\"https:\\/\\/notebooks\\.githubusercontent\\.com\\/view\\/ipynb.*\") {\n  :root {\n    #catppuccin(@darkFlavor, @accentColor);\n  }\n\n  #catppuccin(@lookup, @accent) {\n    @rosewater: @catppuccin[@@lookup][@rosewater];\n    @flamingo: @catppuccin[@@lookup][@flamingo];\n    @pink: @catppuccin[@@lookup][@pink];\n    @mauve: @catppuccin[@@lookup][@mauve];\n    @red: @catppuccin[@@lookup][@red];\n    @maroon: @catppuccin[@@lookup][@maroon];\n    @peach: @catppuccin[@@lookup][@peach];\n    @yellow: @catppuccin[@@lookup][@yellow];\n    @green: @catppuccin[@@lookup][@green];\n    @teal: @catppuccin[@@lookup][@teal];\n    @sky: @catppuccin[@@lookup][@sky];\n    @sapphire: @catppuccin[@@lookup][@sapphire];\n    @blue: @catppuccin[@@lookup][@blue];\n    @lavender: @catppuccin[@@lookup][@lavender];\n    @text: @catppuccin[@@lookup][@text];\n    @subtext1: @catppuccin[@@lookup][@subtext1];\n    @subtext0: @catppuccin[@@lookup][@subtext0];\n    @overlay2: @catppuccin[@@lookup][@overlay2];\n    @overlay1: @catppuccin[@@lookup][@overlay1];\n    @overlay0: @catppuccin[@@lookup][@overlay0];\n    @surface2: @catppuccin[@@lookup][@surface2];\n    @surface1: @catppuccin[@@lookup][@surface1];\n    @surface0: @catppuccin[@@lookup][@surface0];\n    @base: @catppuccin[@@lookup][@base];\n    @mantle: @catppuccin[@@lookup][@mantle];\n    @crust: @catppuccin[@@lookup][@crust];\n    @accent-color: @catppuccin[@@lookup][@@accent];\n\n    color-scheme: if(@lookup = latte, light, dark);\n\n    ::selection {\n      background-color: fade(@accent-color, 30%);\n    }\n\n    input,\n    textarea {\n      &::placeholder {\n        color: @subtext0 !important;\n      }\n    }\n\n    --jp-border-color0: var(--color-scale-gray-7);\n    --jp-border-color1: var(--color-scale-gray-7);\n    --jp-border-color2: var(--color-scale-gray-8);\n    --jp-border-color3: var(--color-scale-gray-9);\n    --jp-ui-font-color0: @text;\n    --jp-ui-font-color1: fadeout(@text, 13%);\n    --jp-ui-font-color2: fadeout(@text, 46%);\n    --jp-ui-font-color3: fadeout(@text, 72%);\n    --jp-ui-inverse-font-color0: @crust;\n    --jp-ui-inverse-font-color1: fadeout(@crust, 20%);\n    --jp-ui-inverse-font-color2: fadeout(@crust, 50%);\n    --jp-ui-inverse-font-color3: fadeout(@crust, 70%);\n    --jp-content-font-color0: @text;\n    --jp-content-font-color1: @text;\n    --jp-content-font-color2: fadeout(@text, 30%);\n    --jp-content-font-color3: fadeout(@text, 50%);\n    --jp-content-link-color: @sapphire;\n    --jp-layout-color0: @base !important;\n    --jp-layout-color1: var(--color-scale-gray-9);\n    --jp-layout-color2: var(--color-scale-gray-8);\n    --jp-layout-color3: var(--color-scale-gray-7);\n    --jp-layout-color4: var(--color-scale-gray-6);\n    --jp-inverse-layout-color0: var(--color-scale-white);\n    --jp-inverse-layout-color1: var(--color-scale-white);\n    --jp-inverse-layout-color2: var(--color-scale-gray-2);\n    --jp-inverse-layout-color3: var(--color-scale-gray-4);\n    --jp-inverse-layout-color4: var(--color-scale-gray-6);\n    --jp-brand-color0: var(--color-scale-blue-7);\n    --jp-brand-color1: var(--color-scale-blue-5);\n    --jp-brand-color2: var(--color-scale-blue-3);\n    --jp-brand-color3: var(--color-scale-blue-1);\n    --jp-brand-color4: var(--color-scale-blue-0);\n    --jp-accent-color0: var(--color-scale-green-7);\n    --jp-accent-color1: var(--color-scale-green-5);\n    --jp-accent-color2: var(--color-scale-green-3);\n    --jp-accent-color3: var(--color-scale-green-1);\n    --jp-warn-color0: var(--color-scale-orange-7);\n    --jp-warn-color1: var(--color-scale-orange-5);\n    --jp-warn-color2: var(--color-scale-orange-3);\n    --jp-warn-color3: var(--color-scale-orange-1);\n    --jp-error-color0: var(--color-scale-red-7);\n    --jp-error-color1: var(--color-scale-red-5);\n    --jp-error-color2: var(--color-scale-red-3);\n    --jp-error-color3: var(--color-scale-red-1);\n    --jp-success-color0: var(--color-scale-green-7);\n    --jp-success-color1: var(--color-scale-green-5);\n    --jp-success-color2: var(--color-scale-green-3);\n    --jp-success-color3: var(--color-scale-green-1);\n    --jp-info-color0: var(--color-scale-blue-7);\n    --jp-info-color1: var(--color-scale-blue-5);\n    --jp-info-color2: var(--color-scale-blue-3);\n    --jp-info-color3: var(--color-scale-blue-1);\n    --jp-cell-editor-border-color: var(--color-scale-gray-7);\n    --jp-cell-editor-box-shadow: inset 0 0 2px var(--color-scale-blue-3);\n    --jp-cell-prompt-not-active-font-color: fadeout(@text, 50%);\n    --jp-cell-inprompt-font-color: var(--color-scale-blue-6);\n    --jp-cell-outprompt-font-color: var(--color-scale-coral-6);\n    --jp-notebook-multiselected-color: fadeout(@overlay2, 86%);\n    --jp-rendermime-error-background: fadeout(@red, 82%);\n    --jp-rendermime-table-row-background: var(--color-scale-gray-9);\n    --jp-rendermime-table-row-hover-background: fadeout(@surface2, 86%);\n    --jp-dialog-background: fadeout(@crust, 40%);\n    --jp-toolbar-box-shadow: 0px 0px 2px 0px fadeout(@crust, 20%);\n    --jp-input-box-shadow: inset 0 0 2px var(--color-scale-blue-3);\n    --jp-input-background: var(--color-scale-gray-8);\n    --jp-input-active-box-shadow-color: fadeout(@blue, 70%);\n    --jp-editor-selected-focused-background: fadeout(@blue, 86%);\n    --jp-mirror-editor-keyword-color: var(--color-scale-green-5);\n    --jp-mirror-editor-atom-color: var(--color-scale-blue-3);\n    --jp-mirror-editor-number-color: var(--color-scale-green-4);\n    --jp-mirror-editor-def-color: var(--color-scale-blue-6);\n    --jp-mirror-editor-variable-color: var(--color-scale-gray-3);\n    --jp-mirror-editor-variable-2-color: var(--color-scale-blue-4);\n    --jp-mirror-editor-variable-3-color: var(--color-scale-green-6);\n    --jp-mirror-editor-punctuation-color: var(--color-scale-blue-4);\n    --jp-mirror-editor-property-color: var(--color-scale-blue-4);\n    --jp-mirror-editor-operator-color: @mauve;\n    --jp-mirror-editor-comment-color: @subtext0;\n    --jp-mirror-editor-string-color: @peach;\n    --jp-mirror-editor-string-2-color: var(--color-scale-purple-3);\n    --jp-mirror-editor-meta-color: @mauve;\n    --jp-mirror-editor-qualifier-color: var(--color-scale-gray-5);\n    --jp-mirror-editor-builtin-color: var(--color-scale-green-6);\n    --jp-mirror-editor-bracket-color: var(--color-scale-gray-2);\n    --jp-mirror-editor-tag-color: var(--color-scale-blue-7);\n    --jp-mirror-editor-attribute-color: var(--color-scale-blue-7);\n    --jp-mirror-editor-header-color: var(--color-scale-blue-5);\n    --jp-mirror-editor-quote-color: var(--color-scale-green-3);\n    --jp-mirror-editor-link-color: var(--color-scale-blue-7);\n    --jp-mirror-editor-error-color: @red;\n    --jp-mirror-editor-hr-color: var(--color-scale-gray-8);\n    --jp-vega-background: var(--color-scale-gray-4);\n    --jp-search-selected-match-background-color: @yellow;\n    --jp-search-selected-match-color: @crust;\n    --jp-icon-contrast-color0: var(--color-scale-purple-6);\n    --jp-icon-contrast-color1: var(--color-scale-green-6);\n    --jp-icon-contrast-color2: var(--color-scale-pink-6);\n    --jp-icon-contrast-color3: var(--color-scale-blue-6);\n  }\n}\n\n/* prettier-ignore */\n@catppuccin: {\n  @latte:     { @rosewater: #dc8a78; @flamingo: #dd7878; @pink: #ea76cb; @mauve: #8839ef; @red: #d20f39; @maroon: #e64553; @peach: #fe640b; @yellow: #df8e1d; @green: #40a02b; @teal: #179299; @sky: #04a5e5; @sapphire: #209fb5; @blue: #1e66f5; @lavender: #7287fd; @text: #4c4f69; @subtext1: #5c5f77; @subtext0: #6c6f85; @overlay2: #7c7f93; @overlay1: #8c8fa1; @overlay0: #9ca0b0; @surface2: #acb0be; @surface1: #bcc0cc; @surface0: #ccd0da; @base: #eff1f5; @mantle: #e6e9ef; @crust: #dce0e8; };\n  @frappe:    { @rosewater: #f2d5cf; @flamingo: #eebebe; @pink: #f4b8e4; @mauve: #ca9ee6; @red: #e78284; @maroon: #ea999c; @peach: #ef9f76; @yellow: #e5c890; @green: #a6d189; @teal: #81c8be; @sky: #99d1db; @sapphire: #85c1dc; @blue: #8caaee; @lavender: #babbf1; @text: #c6d0f5; @subtext1: #b5bfe2; @subtext0: #a5adce; @overlay2: #949cbb; @overlay1: #838ba7; @overlay0: #737994; @surface2: #626880; @surface1: #51576d; @surface0: #414559; @base: #303446; @mantle: #292c3c; @crust: #232634; };\n  @macchiato: { @rosewater: #f4dbd6; @flamingo: #f0c6c6; @pink: #f5bde6; @mauve: #c6a0f6; @red: #ed8796; @maroon: #ee99a0; @peach: #f5a97f; @yellow: #eed49f; @green: #a6da95; @teal: #8bd5ca; @sky: #91d7e3; @sapphire: #7dc4e4; @blue: #8aadf4; @lavender: #b7bdf8; @text: #cad3f5; @subtext1: #b8c0e0; @subtext0: #a5adcb; @overlay2: #939ab7; @overlay1: #8087a2; @overlay0: #6e738d; @surface2: #5b6078; @surface1: #494d64; @surface0: #363a4f; @base: #24273a; @mantle: #1e2030; @crust: #181926; };\n  @mocha:     { @rosewater: #f5e0dc; @flamingo: #f2cdcd; @pink: #f5c2e7; @mauve: #cba6f7; @red: #f38ba8; @maroon: #eba0ac; @peach: #fab387; @yellow: #f9e2af; @green: #a6e3a1; @teal: #94e2d5; @sky: #89dceb; @sapphire: #74c7ec; @blue: #89b4fa; @lavender: #b4befe; @text: #cdd6f4; @subtext1: #bac2de; @subtext0: #a6adc8; @overlay2: #9399b2; @overlay1: #7f849c; @overlay0: #6c7086; @surface2: #585b70; @surface1: #45475a; @surface0: #313244; @base: #1e1e2e; @mantle: #181825; @crust: #11111b; };\n}\n\n// vim:ft=less\n",
+    "usercssData": {
+      "name": "GitHub Catppuccin",
+      "namespace": "github.com/catppuccin/userstyles/styles/github",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/github",
+      "version": "1.6.10",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/github/catppuccin.user.css",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Agithub",
+      "description": "Soothing pastel theme for GitHub",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": null,
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": "blue",
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for GitHub",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/github",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/github/catppuccin.user.css",
+    "name": "GitHub Catppuccin",
+    "originalDigest": "2b8e8258ef6310232bcc0ce5e858e6cb14a67519",
+    "_id": "fb00da56-f925-40cb-bbfa-614da0284b44",
+    "_rev": 1717874719268,
+    "id": 2
+  },
+  {
+    "enabled": true,
+    "installDate": 1718049799963,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name Google Catppuccin\n@namespace github.com/catppuccin/userstyles/styles/google\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/google\n@version 0.2.3\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/google/catppuccin.user.css\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Agoogle\n@description Soothing pastel theme for Google\n@author Catppuccin\n@license MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n==/UserStyle== */\n\n@-moz-document regexp(\"^https?://(www\\\\.|images\\\\.)?google\\\\..*\")\n{\n  @media (prefers-color-scheme: light) {\n    :root {\n      #catppuccin(@lightFlavor, @accentColor);\n    }\n  }\n  @media (prefers-color-scheme: dark) {\n    :root {\n      #catppuccin(@darkFlavor, @accentColor);\n    }\n  }\n\n  #catppuccin(@lookup, @accent) {\n    @flamingo: @catppuccin[@@lookup][@flamingo];\n    @pink: @catppuccin[@@lookup][@pink];\n    @mauve: @catppuccin[@@lookup][@mauve];\n    @red: @catppuccin[@@lookup][@red];\n    @maroon: @catppuccin[@@lookup][@maroon];\n    @peach: @catppuccin[@@lookup][@peach];\n    @yellow: @catppuccin[@@lookup][@yellow];\n    @green: @catppuccin[@@lookup][@green];\n    @teal: @catppuccin[@@lookup][@teal];\n    @sky: @catppuccin[@@lookup][@sky];\n    @sapphire: @catppuccin[@@lookup][@sapphire];\n    @blue: @catppuccin[@@lookup][@blue];\n    @lavender: @catppuccin[@@lookup][@lavender];\n    @text: @catppuccin[@@lookup][@text];\n    @subtext1: @catppuccin[@@lookup][@subtext1];\n    @subtext0: @catppuccin[@@lookup][@subtext0];\n    @overlay2: @catppuccin[@@lookup][@overlay2];\n    @overlay1: @catppuccin[@@lookup][@overlay1];\n    @overlay0: @catppuccin[@@lookup][@overlay0];\n    @surface2: @catppuccin[@@lookup][@surface2];\n    @surface1: @catppuccin[@@lookup][@surface1];\n    @surface0: @catppuccin[@@lookup][@surface0];\n    @base: @catppuccin[@@lookup][@base];\n    @mantle: @catppuccin[@@lookup][@mantle];\n    @crust: @catppuccin[@@lookup][@crust];\n    @accent-color: @catppuccin[@@lookup][@@accent];\n\n    color-scheme: if(@lookup = latte, light, dark);\n    iframe {\n      color-scheme: none !important;\n    }\n\n    ::selection {\n      background-color: fade(@accent-color, 30%);\n    }\n\n    input,\n    textarea {\n      &::placeholder {\n        color: @subtext0 !important;\n      }\n    }\n\n    &,\n    body {\n      background: @base !important;\n      --uv-styles-color-surface: @crust;\n      --uv-styles-color-tertiary: @surface0;\n      --uv-styles-color-secondary: fade(@blue, 25%);\n      --uv-styles-color-text-primary: @blue;\n      --uv-styles-color-icon-default: @text;\n      --uv-styles-color-text-emphasis: @text;\n      --uv-styles-color-icon-on-secondary: @subtext0;\n      --uv-styles-color-on-tertiary: @text;\n      --uv-styles-color-icon-on-tertiary: @text;\n      --xhUGwc: @base;\n      --bbQxAb: @text;\n      --IXoxUe: @subtext0;\n      --COEmY: @text;\n      --YLNNHc: @text;\n      --gS5jXb: @surface0;\n      --EpFNW: @mantle;\n      --tefdc5886c2f04483: @text;\n      --te8f1ea4d4928be48: @text !important;\n      --ta884a309a24f44f4: @subtext0 !important;\n      --tdee01b39543f1cac: @base !important;\n      --tcc8c9ef487836e2b: @surface0 !important;\n      --ta83cba65577ef850: @blue !important;\n      --t7d1a3050c2c1c0a5: @text !important;\n      --t6a0469853a1a02c1: @text !important;\n      --t5feec22832a0fdd6: @surface0 !important;\n      --t342c96645d13ae13: @accent-color !important;\n      --t6c7325fca9d536d4: @text !important;\n      --tf7148cf5018d5074: @text !important;\n      --t9ab8d922307d428d: @text;\n      --t62e84c71989f1975: @red !important;\n      --tc9db399ed82142e1: @green !important;\n      --uv-styles-color-text-default: @subtext0 !important;\n      --uv-styles-color-review-stars: @yellow !important;\n    }\n\n    /* safe search toggle dropdown */\n    .z4R3Z.yb2zA {\n      color: @blue !important;\n    }\n    .z4R3Z {\n      color: @text !important;\n    }\n\n    /* selected image background */\n    .PNCib.fT6ABc::after {\n      background-color: @surface1 !important;\n      border-color: @blue !important;\n    }\n\n    /* travel  */\n    .Usd1Ac {\n      background-color: @surface0 !important;\n      border-color: @surface2 !important;\n    }\n    .P77izf {\n      background-color: @base !important;\n      color: @text !important;\n    }\n    .VfPpkd-StrnGf-rymPhb-f7MjDc,\n    .VfPpkd-qPzbhe-JNdkSc-Bz112c {\n      color: @accent-color !important;\n    }\n    .EL3pcf {\n      color: @accent-color !important;\n    }\n    .bVfPpkd-StrnGf-rymPhb,\n    .DMZ54e {\n      color: @text !important;\n    }\n    .VfPpkd-pafCAf,\n    .VfPpkd-pafCAf-OWXEXe-Xhs9z {\n      fill: @mantle !important;\n    }\n    .VfPpkd-l6JLsf::after {\n      background-color: @blue !important;\n    }\n    .VfPpkd-l6JLsf::before {\n      background-color: @surface2 !important;\n    }\n    .VfPpkd-uMhiad::after {\n      background: @overlay0;\n    }\n    .dmaMHc {\n      background-color: @surface0 !important;\n    }\n    .AJxgH {\n      background-color: @mantle !important;\n    }\n    .VfPpkd-cTi5dd {\n      color: @accent-color !important;\n    }\n    /* news column thingymaboober idk what it's actually called, but it's like these columns of news headlines so yeah */\n    .z7T1i,\n    .nEklgc {\n      background-color: @surface0;\n    }\n    .rbYSKb {\n      color: @subtext0;\n    }\n    .FuOudf {\n      color: @subtext0;\n    }\n    /* calculator senpai~ */\n    .zRQJhd {\n      background-color: @base !important;\n    }\n    .XH1CIc {\n      color: @subtext0;\n    }\n    .pno7A.hU1rMc .Tqvz7b,\n    .pno7A.rfUaPd .SwDSDf {\n      color: @subtext1;\n    }\n    .pno7A.rfUaPd .Tqvz7b {\n      color: @text;\n    }\n    .tR3EBc {\n      background-color: @mantle;\n    }\n    .AOvabd,\n    .dxp44d {\n      background: @surface0 !important;\n      color: @text !important;\n      border-color: @surface0 !important;\n      &:hover {\n        background-color: @surface1;\n        border-color: @surface1;\n      }\n    }\n    .zbvg1c {\n      color: @text;\n    }\n    .UUhRt {\n      background-color: @blue;\n      color: @mantle;\n      border-color: @blue;\n      &:hover {\n        background-color: @sky;\n        border-color: @sky;\n      }\n    }\n    .tw-lliw.item-selected .language_list_item {\n      color: @blue;\n    }\n    .qv3Wpe {\n      color: @text;\n    }\n    .TIGsTb {\n      border-color: @surface0;\n    }\n    .TIGsTb:hover {\n      background-color: @surface0;\n      border-color: @surface0;\n    }\n    .MEdqYd,\n    .feqqG {\n      background: @surface2;\n      color: @text;\n      border-color: @surface2;\n      &:hover {\n        background-color: @overlay0;\n        border-color: @overlay0;\n      }\n    }\n    /* knowoledge panel uwu */\n    .H73aad {\n      &,\n      &hover {\n        background-color: @mantle !important;\n        border-color: @surface0 !important;\n      }\n    }\n\n    .AQtWSd,\n    .ulmfef,\n    .xCBykf,\n    .m2E3md {\n      color: @blue;\n    }\n\n    .joHe2d {\n      background-color: @base !important;\n      box-shadow: 0 1px 0 @base !important;\n    }\n    .xt8Uw,\n    .ipwqjc,\n    .Bk8Hxd:link,\n    .ucRBdc,\n    .PDzHbe,\n    .pt3Hdf,\n    .Cv2Brc,\n    .IFGUre,\n    .review-dialog {\n      color: @text;\n    }\n\n    .GK1a5e {\n      background-color: @text;\n    }\n\n    .RC9d6e {\n      border-top-color: @text;\n    }\n\n    .IFmkIb.IFmkIb {\n      background-color: @surface0;\n      border-color: @surface2;\n    }\n    .ab_button {\n      background-image: linear-gradient(to top, @surface0, @base);\n      background-color: @surface0;\n      border-color: @surface1;\n    }\n\n    .PGbOqf {\n      background-color: @accent-color;\n    }\n\n    .yAbdSd {\n      color: @red;\n    }\n\n    .ycghLd {\n      background-color: @red;\n      border-color: @red;\n    }\n\n    .IRH78d,\n    .CFjcj,\n    .HkuhB {\n      color: @subtext0;\n    }\n    .l2gNXd {\n      background-color: @yellow;\n    }\n    .uVGhGc,\n    .hIqKNb {\n      background-color: @surface0;\n    }\n    .tcuWYc {\n      background-image: linear-gradient(\n        @overlay0 1px,\n        rgba(255, 255, 255, 0) 0\n      );\n    }\n    .qk7LXc.Fb1AKc,\n    .fAt9Jd,\n    .SME0md,\n    .ipwqjc {\n      background-color: @base !important;\n    }\n\n    .ttBXeb,\n    .NDTw3e.K7R36c,\n    .knowledge-finance-wholepage-chart__fw-uch .uch-svg {\n      color: @subtext0;\n    }\n\n    .sQ6RSc {\n      fill: @text;\n    }\n\n    .egcvbb {\n      border-color: @surface2;\n      &:hover {\n        border-color: @text;\n      }\n    }\n\n    .knowledge-finance-wholepage-chart__hover-card {\n      background-color: @base;\n    }\n    .knowledge-finance-wholepage-chart__hover-card-time {\n      color: @subtext0;\n    }\n\n    .fw-ch-sel .KWk7r.qUjgX {\n      background-color: @surface0;\n      color: @blue;\n    }\n\n    .gb_Ka.gb_f,\n    .gb_Na.gb_f,\n    #gb {\n      background-color: @base !important;\n      svg,\n      .gb_Rc svg,\n      .gb_dd .gb_ld,\n      .gb_3c .gb_ld {\n        color: @text;\n      }\n    }\n    .gb_Nc a.gb_F,\n    .gb_Nc span.gb_F {\n      color: @text;\n    }\n    .uU7dJb {\n      border-bottom-color: @surface0;\n      background-color: @mantle;\n      color: @subtext1;\n    }\n    .gb_Nc .gb_d:hover {\n      background-color: @surface0;\n    }\n    .KxwPGc {\n      background-color: @mantle;\n    }\n    .HJSKzf {\n      color: @text;\n    }\n\n    .gbqfba,\n    .lJ9FBc input[type=\"submit\"] {\n      color: @text;\n      background-color: @surface0;\n      border-color: @surface1;\n      &:hover {\n        color: @text;\n        background-color: @surface0;\n        border-color: @surface2;\n      }\n    }\n\n    /* AI search */\n\n    .UxeQfc,\n    .s7d4ef,\n    .yXu61c,\n    .X6JNf,\n    .BERAof,\n    .oxbMzd,\n    .A5s9h,\n    .V9Wb7c,\n    .GVUPk,\n    .GyAeWb,\n    .A0hi5,\n    .Tme6jf {\n      background-color: @base !important;\n    }\n\n    .d3o3Ad,\n    .sZKvbe {\n      fill: @green !important;\n    }\n\n    .Fzsovc,\n    .cwYVJe,\n    .RJPOee,\n    .vM0jzc,\n    .clOx1e,\n    .vDF3Oc.vDF3Oc .R8BTeb,\n    .vDF3Oc.vDF3Oc .ouxCkc,\n    .Yt787,\n    .mulB1,\n    .xUc8Ie,\n    .sfgTZc,\n    .I6Kpxd,\n    .cQEt3 {\n      color: @text !important;\n    }\n\n    .yQLaje,\n    .tVoQIb,\n    .f9nOyf,\n    .kHtcsd,\n    .DopHqc,\n    .p7bv,\n    .ar9V1,\n    .DfMusf,\n    .y6CIle,\n    .JukT7c,\n    .xUc8Ie.BXdrne,\n    .sEqX7e,\n    .ZFiwCf {\n      background-color: @surface0 !important;\n    }\n\n    .xUc8Ie.BXdrne,\n    .YUg0se,\n    .WGbsof {\n      border-color: @surface2 !important;\n    }\n\n    .NOo3C {\n      color: @subtext1;\n    }\n\n    .WGbsof[selected] {\n      background-color: @blue;\n      border-color: @blue !important;\n    }\n\n    /* End of AI search */\n\n    .pHiOh,\n    a.pHiOh {\n      color: @subtext1 !important;\n    }\n    a {\n      color: @blue;\n    }\n    .RNNXgb {\n      background: @surface0;\n      border-color: @surface1;\n    }\n    .RNNXgb:hover,\n    .sbfc .RNNXgb {\n      background: @surface0 !important;\n      border-color: @surface0;\n      box-shadow: 0 1px 6px 0 @crust;\n    }\n    .minidiv .RNNXgb {\n      background: @surface0;\n      border-color: @surface1;\n      &:hover {\n        box-shadow: 0 4px 12px @crust;\n      }\n    }\n    .HSryR .KsRP6 {\n      border-color: @surface2;\n    }\n    .emcav .RNNXgb {\n      box-shadow: 0 1px 6px 0 @crust;\n      background: @surface0;\n      border-color: @surface0;\n    }\n    .aajZCb {\n      background: @surface0;\n      box-shadow: 0 4px 6px 0 @crust;\n    }\n    .xtSCL {\n      border-top-color: @surface2;\n    }\n    .sbct:hover {\n      background-color: @surface1;\n    }\n    .WggQGd {\n      color: @mauve !important;\n    }\n    .JCHpcb {\n      color: @subtext0;\n    }\n    .JCHpcb:hover {\n      color: @blue;\n    }\n    .wM6W7d,\n    .ABAbCc {\n      color: @text;\n    }\n    .uDetx {\n      fill: @text;\n    }\n    .ExCKkf,\n    .BjWz4c {\n      color: @subtext0;\n    }\n    .ACRAdd {\n      border-left-color: @overlay0;\n    }\n    .Pvpvv {\n      background-color: @crust;\n      border-color: @surface1;\n      color: @text;\n    }\n    .w9dUj {\n      color: @text !important;\n    }\n    .Pvpvv .zE5Aq,\n    .adnFRd,\n    .XfJHbe {\n      color: @blue;\n    }\n    .CS4h3e {\n      background-color: @subtext0;\n    }\n    .Pvpvv .xyGai {\n      color: @text;\n    }\n    #SIvCob {\n      color: @text;\n    }\n    .gb_Jc a.gb_B,\n    .gb_Jc span.gb_B {\n      color: @text;\n    }\n    .gb_Jc svg,\n    .gb_Oc.gb_Sc svg,\n    .gb_Jc .gb_ad .gb_id,\n    .gb_Jc .gb_ad .gb_Ic,\n    .gb_Jc .gb_ad .gb_cd,\n    .gb_Oc.gb_Sc .gb_id {\n      color: @text;\n    }\n    .gb_Ka svg,\n    .gb_Oc svg,\n    .gb_ad .gb_id,\n    .gb_0c .gb_id {\n      color: @text;\n    }\n    .gLFyf {\n      color: @text;\n    }\n    .QCzoEc {\n      color: @overlay2;\n    }\n    .szppmdbYutt__middle-slot-promo {\n      color: @text;\n    }\n    .gb_Jc .gb_Ud button:hover svg,\n    .gb_Jc .gb_d:hover {\n      background-color: @surface0;\n    }\n    .gb_Jc .gb_Ud.gb_qe button:hover svg,\n    .gb_Ud button:hover svg,\n    .gb_d:hover {\n      background-color: @surface0;\n    }\n    .gb_We {\n      background: @mantle;\n      color: @text;\n    }\n    a.gb_B,\n    span.gb_B {\n      color: @text;\n    }\n    .gb_zc div:first-child {\n      color: @text;\n    }\n    .gb_zc > * {\n      color: @subtext0;\n    }\n    .ClJ9Yb {\n      color: @subtext0;\n    }\n    .sfbg {\n      background-color: @base;\n    }\n    .jfN4p,\n    .lnXdpd:not([src^=\"/logos/doodles/\"]) {\n      @svg: escape(\n        '<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"272\" height=\"92\"><path fill=\"@{red}\" d=\"M115.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18C71.25 34.32 81.24 25 93.5 25s22.25 9.32 22.25 22.18m-9.74 0c0-7.98-5.79-13.44-12.51-13.44S80.99 39.2 80.99 47.18c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44\"/><path fill=\"@{yellow}\" d=\"M163.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18c0-12.85 9.99-22.18 22.25-22.18s22.25 9.32 22.25 22.18m-9.74 0c0-7.98-5.79-13.44-12.51-13.44s-12.51 5.46-12.51 13.44c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44\"/><path fill=\"@{blue}\" d=\"M209.75 26.34v39.82c0 16.38-9.66 23.07-21.08 23.07-10.75 0-17.22-7.19-19.66-13.07l8.48-3.53c1.51 3.61 5.21 7.87 11.17 7.87 7.31 0 11.84-4.51 11.84-13v-3.19h-.34c-2.18 2.69-6.38 5.04-11.68 5.04-11.09 0-21.25-9.66-21.25-22.09 0-12.52 10.16-22.26 21.25-22.26 5.29 0 9.49 2.35 11.68 4.96h.34v-3.61h9.25zm-8.56 20.92c0-7.81-5.21-13.52-11.84-13.52-6.72 0-12.35 5.71-12.35 13.52 0 7.73 5.63 13.36 12.35 13.36 6.63 0 11.84-5.63 11.84-13.36\"/><path fill=\"@{green}\" d=\"M225 3v65h-9.5V3z\"/><path fill=\"@{red}\" d=\"m262.02 54.48 7.56 5.04c-2.44 3.61-8.32 9.83-18.48 9.83-12.6 0-22.01-9.74-22.01-22.18 0-13.19 9.49-22.18 20.92-22.18 11.51 0 17.14 9.16 18.98 14.11l1.01 2.52-29.65 12.28c2.27 4.45 5.8 6.72 10.75 6.72 4.96 0 8.4-2.44 10.92-6.14m-23.27-7.98 19.82-8.23c-1.09-2.77-4.37-4.7-8.23-4.7-4.95 0-11.84 4.37-11.59 12.93\"/><path fill=\"@{blue}\" d=\"M35.29 41.41V32H67c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.91S16.32.47 35.3.47c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03s10.84 25.03 24.7 25.03c8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.65z\"/></svg>'\n      );\n      content: url(\"data:image/svg+xml,@{svg}\");\n    }\n    .aXBZVd {\n      @svg: escape(\n        '<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path fill=\"@{text}\" d=\"m20.49 19-5.73-5.73C15.53 12.2 16 10.91 16 9.5A6.5 6.5 0 1 0 9.5 16c1.41 0 2.7-.47 3.77-1.24L19 20.49zM5 9.5C5 7.01 7.01 5 9.5 5S14 7.01 14 9.5 11.99 14 9.5 14 5 11.99 5 9.5\"/></svg>'\n      );\n      background-image: url(\"data:image/svg+xml,@{svg}\");\n    }\n    .zgAlFc {\n      color: @blue;\n    }\n    .fLciMb {\n      color: @text;\n    }\n    .d2IKib {\n      color: @red;\n    }\n    .fLciMb:hover {\n      background-color: @surface0;\n    }\n    .kno-ftr.rpBMYb {\n      color: @subtext0;\n    }\n    .aTI8gc {\n      color: @text;\n    }\n    .wwUB2c {\n      color: @subtext0;\n    }\n    .dhERQc {\n      color: @base !important;\n      background-color: @blue !important;\n    }\n    .z1asCe,\n    .ikb4Bb {\n      color: @text !important;\n    }\n    .rsGxI.Ww4FFb,\n    .Ww4FFb {\n      background-color: @base;\n    }\n    .RES9jf {\n      color: @text;\n    }\n    .CSkcDe,\n    .related-question-pair div.iDjcJe {\n      color: @text;\n    }\n    .cUnQKe .ILfuVd b {\n      background-color: fade(@blue, 25%);\n      color: @text;\n    }\n    .cUnQKe .ILfuVd,\n    .cUnQKe .UiGGAb.ILfuVd {\n      color: @subtext1;\n    }\n    .ZYHQ7e {\n      color: @subtext0;\n    }\n    .VuuXrf {\n      color: @text;\n    }\n    .hb8SAc,\n    .gb_Oc a.gb_H,\n    .gb_Oc span.gb_H {\n      color: @text;\n    }\n    .TQc1id .I6TXqe {\n      border-color: @surface2;\n    }\n    .I6TXqe,\n    .zaokob {\n      background: @base;\n    }\n    .tw-lliw:hover,\n    .tw-lliw:focus {\n      background-color: @surface0;\n    }\n    .language_list_languages.tw-ll-top::after {\n      background: linear-gradient(\n        to bottom,\n        rgba(red(@base), green(@base), blue(@base), 0),\n        rgba(red(@base), green(@base), blue(@base), 1)\n      );\n    }\n    .HsZQAe {\n      border-bottom-color: @surface2;\n    }\n    .KLEmSd {\n      border-bottom-color: @surface1;\n    }\n    .NtaMpb .niO4u,\n    .nZWEZc .ttwCMe,\n    .xNzW0d,\n    .lWzCpb {\n      background-color: @base;\n    }\n    .aURkK {\n      border-left-color: @surface1;\n    }\n    .iRPzcb {\n      border-bottom-color: @surface1;\n    }\n    .related-question-pair .d0fCJc {\n      color: @text;\n    }\n    cite,\n    cite a:link,\n    cite a:visited {\n      color: @subtext0;\n    }\n    .WZ8Tjf,\n    .EZAeBe,\n    .F0gfrd {\n      color: @subtext0;\n    }\n    .yDYNvb.lyLwlc {\n      color: @text;\n    }\n    .H9lube {\n      background-color: @base;\n      border-color: @surface2;\n    }\n    .Bi9oQd {\n      background-color: @surface1;\n    }\n    .akqY6 {\n      background: @surface1;\n    }\n    .KFFQ0c .YfftMc,\n    .KFFQ0c .YfftMc span,\n    .KFFQ0c .YfftMc div,\n    .KFFQ0c .YfftMc a,\n    g-menu.DWsAYc g-menu-item a.K1yPdf,\n    .f3LoEf,\n    .TXBhSe:hover,\n    .TXBhSe:not(:hover),\n    .r025kc.lVm3ye,\n    .Bo9xMe,\n    .oyj2db {\n      color: @subtext0;\n    }\n    .dyjrff,\n    .LEwnzc {\n      color: @subtext1;\n    }\n    .ZFiwCf {\n      background-color: @surface0;\n      &:hover {\n        background-color: @surface1;\n      }\n    }\n    .LGwnxb,\n    .WGwSK {\n      color: @text;\n    }\n    .EsIlz {\n      background-color: @base;\n      border-color: @surface1;\n    }\n    .O7G3Gd {\n      color: @text;\n      &:hover {\n        color: @blue;\n      }\n    }\n    .appbar {\n      background: @base;\n      border-top-color: @surface1;\n    }\n    .bSeRjc:hover .fKmH1e {\n      color: @subtext1;\n      background-color: @surface0;\n    }\n    .bSeRjc:hover div[aria-expanded=\"true\"] .fKmH1e,\n    div[aria-expanded=\"true\"] .fKmH1e {\n      background-color: fade(@blue, 25%);\n      color: @blue;\n    }\n    .LHJvCe,\n    .vqseUe,\n    .dMCttd {\n      color: @subtext0;\n    }\n    .dG2XIf .xpdbox .yc7KLc {\n      background-color: @base;\n    }\n    .URgIvb {\n      border-color: @blue;\n      background-color: @blue;\n    }\n    .pdpvld {\n      color: @green;\n    }\n    .YrbPuc {\n      color: @subtext1;\n    }\n    .y6CIle {\n      background-color: @surface0;\n    }\n    .Yt787,\n    .vDF3Oc.vDF3Oc .R8BTeb {\n      color: @text;\n    }\n    .IDFSOe {\n      background-color: @surface2;\n    }\n    .ffmmcd,\n    .u7yw9 .WeviRb {\n      border-color: @surface1;\n    }\n    .wdQNof {\n      border-color: @surface1;\n      background-color: @base;\n    }\n    .eadHV.Ses7yd {\n      color: @text !important;\n    }\n    .f,\n    .j04ED,\n    .j04ED a,\n    .j04ED a:link,\n    .XaIwc {\n      color: @subtext0 !important;\n    }\n    #_Xg6uZYKGBYCDhbIPvK2s2AI_27\n      > div:nth-child(3)\n      > g-right-button:nth-child(1)\n      > g-fab:nth-child(1),\n    g-right-button.wgbRNb > g-fab:nth-child(1) {\n      background-color: @crust !important;\n    }\n    .gb_2e {\n      background-color: @surface0;\n    }\n    .gb_Ec {\n      div:first-child {\n        color: @text;\n      }\n      > * {\n        color: @subtext0;\n      }\n    }\n    .kLhEKe {\n      background-color: @base;\n    }\n    .S8ee5.CwbYXd {\n      color: @text;\n    }\n    .S8ee5 {\n      background: @surface0;\n    }\n    .S8ee5:hover {\n      background: @surface1;\n    }\n    .rhHIGd {\n      background-color: @surface2;\n    }\n    .sY7ric {\n      color: @text;\n    }\n    .I6a0ee {\n      background-color: @base;\n      border-color: @surface2;\n      color: @text;\n    }\n    .I6a0ee:hover {\n      background-color: @mantle;\n      border-color: @surface2;\n    }\n    .I6a0ee:focus {\n      background-color: @crust;\n      border-color: @surface2;\n    }\n    .pxhZNb {\n      background-color: @surface0 !important;\n      color: @text;\n    }\n    .d2F2Td {\n      color: @text;\n    }\n    .c07z9 {\n      color: @subtext0;\n    }\n    .c07z9 a,\n    .c07z9 a:active,\n    .c07z9 a:link {\n      color: @text;\n      text-decoration-color: @subtext0;\n    }\n    .wHYlTd {\n      color: @subtext0;\n    }\n    .dG2XIf .c2xzTb .wDYxhc:first-child {\n      background: @base;\n    }\n    .fm06If .ILfuVd,\n    .c2xzTb .ILfuVd,\n    .Jb0Zif .c2xzTb .ILfuVd {\n      color: @text;\n    }\n    .fm06If .ILfuVd b,\n    .c2xzTb .ILfuVd b {\n      background-color: fade(@blue, 25%);\n      color: @text;\n    }\n    .GKS7s {\n      background: @surface0;\n      border-color: @surface1;\n    }\n    .GKS7s:hover {\n      background-color: @surface1 !important;\n      border-color: @surface2;\n    }\n    .yXK7lf em {\n      color: @text;\n    }\n    .Lb0dA:hover {\n      background-color: @surface0;\n    }\n    .Lb0dA[aria-expanded=\"true\"]:hover .EGarzf {\n      color: @blue;\n    }\n    .Lb0dA[aria-expanded=\"true\"] {\n      background-color: fade(@blue, 25%);\n    }\n    .BaegVc:hover {\n      background-color: @surface0;\n    }\n    .hdtb-tl-sel .BaegVc {\n      background-color: fade(@blue, 25%);\n    }\n    .BaegVc:focus {\n      background-color: fade(@blue, 25%);\n    }\n    .TZqsAd {\n      background: @overlay0;\n    }\n    .FalWJb {\n      background: @base;\n    }\n    .YeThId {\n      border-top-color: @surface1;\n    }\n    .k8XOCe {\n      background-color: @surface0;\n    }\n    .s75CSd {\n      color: @text;\n    }\n    .ZkkK1e,\n    .uAbMZd {\n      background: @base;\n      border-color: @surface1;\n      &:hover {\n        background: @surface0;\n      }\n    }\n    .QjI2jc {\n      color: @subtext0;\n    }\n    .lhLbod {\n      color: @subtext0;\n    }\n    .nr7I6e div[aria-expanded=\"true\"] .F75bid,\n    .nr7I6e div[aria-expanded=\"true\"]:hover .fFI3rb .F75bid {\n      color: @blue;\n    }\n    .F75bid {\n      color: @subtext0;\n    }\n    div[aria-expanded=\"true\"] .fFI3rb {\n      background-color: fade(@blue, 25%) !important;\n    }\n    div[aria-expanded=\"true\"]:hover .fFI3rb:hover {\n      background-color: fade(@blue, 25%) !important;\n    }\n    .MAMMm {\n      background: @mantle;\n      box-shadow: 0 2px 6px @crust !important;\n    }\n    [selected].nWtjMe {\n      background: fade(@blue, 25%) !important;\n    }\n    .uZNuIf:hover {\n      background-color: @surface0;\n      color: @text;\n    }\n    [selected].nWtjMe .FMKtTb {\n      color: @text;\n    }\n    .nWtjMe .FMKtTb {\n      color: @subtext0;\n    }\n    .GKS7s .FMKtTb,\n    .GKS7s .RWhoyd.mol54e {\n      color: @text;\n    }\n    .ePSouf .FMKtTb {\n      color: @subtext0;\n    }\n    .NkCsjc:hover {\n      background-color: @surface0 !important;\n      color: @text;\n    }\n    .nr7I6e div[aria-haspopup=\"true\"]:hover .F75bid {\n      color: @text;\n    }\n    a.hisnlb {\n      background: fade(@overlay2, 25%);\n    }\n    div[aria-expanded=\"true\"] .fFI3rb,\n    div[aria-expanded=\"true\"]:hover .fFI3rb:hover {\n      background-color: @surface0 !important;\n    }\n    .hdtb-tl-sel .BaegVc .WjMmQ:hover {\n      color: @blue;\n    }\n    .hdtb-mn-hd {\n      color: @subtext0;\n    }\n    .hdtb-mn-hd:hover {\n      color: @text;\n    }\n    .fSnalc {\n      stroke: @blue;\n    }\n    .oOg6Ne {\n      stroke: @yellow;\n    }\n    .ZqPjbb {\n      stroke: @red;\n    }\n    .aPiskd {\n      stroke: @green;\n    }\n    .s8GCU {\n      background-color: @base;\n    }\n    .Lj9fsd {\n      background-color: @base;\n    }\n    .jZWadf {\n      background-color: @base;\n    }\n    .rQEFy,\n    .rQEFy:hover {\n      border-color: fade(@blue, 25%);\n      background-color: fade(@blue, 25%);\n    }\n    .gbZSUe {\n      color: @text;\n    }\n    .gbZSUe:hover {\n      background: @surface0;\n    }\n    .XZ5MVe {\n      color: @blue;\n    }\n    a:visited {\n      color: @mauve;\n    }\n    .F9Idpe {\n      background: linear-gradient(to right, transparent 0%, @base 60%, @base);\n    }\n    .SvoXfb > .x5f7Bc {\n      fill: @subtext0;\n    }\n    .SvoXfb:hover > .x5f7Bc {\n      fill: @text;\n    }\n    .SvoXfb:hover {\n      background-color: @surface0;\n    }\n    .IsZvec,\n    .yxAsKe {\n      color: @subtext0;\n    }\n    .zqrO0.k0Jjg .QuU3Wb,\n    .zqrO0.k0Jjg:hover .QuU3Wb {\n      color: @subtext1;\n    }\n    .uo4vr {\n      color: @subtext0;\n    }\n    .minidiv .sfbg {\n      background: @base;\n      box-shadow: 0 1px 6px 0 @crust;\n    }\n    .aqCVJb {\n      background-color: @blue !important;\n      border-color: @blue !important;\n    }\n    .T8VaVe {\n      color: @blue;\n    }\n    .tw-ta,\n    #tw-source-text-container .tw-ta,\n    #tw-source-rmn-container .tw-ta {\n      color: @text;\n    }\n    .tw-bilingual-marked {\n      border-color: @blue;\n    }\n    #tw-target {\n      background-color: @surface0;\n    }\n    .tw-data-placeholder {\n      color: @text;\n    }\n    .j1iyq {\n      border-color: @surface2;\n    }\n    .w8qArf .fl {\n      color: @text !important;\n    }\n    .HSryR a.B1uW2d {\n      border-bottom-color: @surface2;\n    }\n    .usJj9c .zz3gNc {\n      color: @text;\n    }\n    .Ss2Faf a {\n      color: @text;\n    }\n    .aCOpRe em,\n    .yXK7lf em {\n      color: @text;\n    }\n    .FR7ZSc .niO4u {\n      background-color: @base;\n      border-color: @surface2;\n      color: @blue;\n    }\n    .g {\n      color: @text;\n    }\n    .VSHxQ {\n      color: @subtext0;\n    }\n    .cF4V5c {\n      background-color: @crust !important;\n    }\n    .cF4V5c g-menu-item a,\n    .cF4V5c g-menu-item a:visited,\n    .cF4V5c g-menu-item a:hover {\n      color: @text;\n    }\n    .cF4V5c:hover g-menu-item:hover a,\n    .cF4V5c:hover g-menu-item a:visited,\n    .cF4V5c g-menu-item a:hover {\n      background-color: @surface0;\n    }\n    .GZnQqe.LGiluc {\n      border-top-color: @surface2 !important;\n    }\n    .pkWBse {\n      box-shadow: 1px 1px 15px 0 @crust;\n    }\n    .dG2XIf {\n      background: @base;\n    }\n    .Z0LcW {\n      color: @text;\n    }\n    .i29hTd .qLLird {\n      color: @text;\n    }\n    .i29hTd .kR7nSc {\n      color: @text;\n    }\n    .N6Sb2c {\n      color: @subtext0;\n    }\n    .C9iYEe {\n      color: @subtext0;\n    }\n    .KcXNxb {\n      background: @base;\n    }\n    .ss6qqb .PKDVJd {\n      color: @subtext0;\n    }\n    a.oBa0Fe {\n      color: @subtext0;\n    }\n    .o6juZc {\n      background-color: @surface0;\n    }\n    .o6juZc:hover {\n      background-color: @surface0;\n      box-shadow: 0 4px 12px @crust;\n    }\n    .W6pGoe {\n      background: @surface0;\n      box-shadow: 0 4px 6px 0 @crust;\n    }\n    .WdWr7c {\n      border-top-color: @surface2;\n    }\n    .sU3bKf {\n      color: @text;\n    }\n    .O5OUld {\n      color: @subtext0;\n    }\n    .zP7KFe {\n      background: @surface1;\n    }\n    .O5OUld:hover {\n      color: @blue;\n    }\n    .og3lId {\n      color: @text;\n    }\n    .M3w8Nb .o6juZc {\n      box-shadow: 0 1px 6px 0 @crust;\n    }\n    .r8xEL {\n      color: @text;\n    }\n    .ZZ7G7b {\n      color: @text;\n      border-color: @surface1;\n    }\n    .NZmxZe {\n      background-color: @base;\n      border-color: @surface1;\n      color: @text;\n    }\n    .NZmxZe:not(.rQEFy):hover,\n    .cj2HCb.iuN0sf .w6PoOe:hover,\n    .CgGjZc:hover {\n      background-color: @surface0;\n      border-color: @surface1;\n      color: @text;\n    }\n    .ssfWCe .ZXJQ7c,\n    .cj2HCb.iuN0sf .w6PoOe,\n    .G2XB8d,\n    .cj2HCb.iuN0sf .w6PoOe .KA8Jyb {\n      color: @subtext0;\n      .KA8Jyb:hover {\n        fill: @subtext1;\n      }\n    }\n    .KA8Jyb {\n      fill: @subtext0;\n    }\n    .CgGjZc:hover .G2XB8d {\n      color: @subtext1;\n    }\n    .o6OF0 {\n      background-color: @surface1;\n      &:hover {\n        background-color: @surface2;\n      }\n      .SHFPkb {\n        color: @text;\n      }\n      .PnfqLc {\n        color: @subtext0;\n      }\n    }\n    .zbRPDe,\n    .scU1d {\n      color: @text;\n    }\n    .UafVBb {\n      background-color: @base;\n      border-color: @surface2;\n    }\n    .mEQved {\n      color: @subtext0;\n    }\n    .goxjub {\n      > path:nth-child(1) {\n        fill: @blue;\n      }\n      > path:nth-child(2) {\n        fill: @green;\n      }\n      > path:nth-child(3) {\n        fill: @yellow;\n      }\n      > path:nth-child(4) {\n        fill: @red;\n      }\n    }\n    [fill=\"#34a853\"] {\n      fill: @green;\n    }\n    [fill=\"#4285f4\"] {\n      fill: @blue;\n    }\n    [fill=\"#ea4335\"] {\n      fill: @red;\n    }\n    [fill=\"#fbbc05\"] {\n      fill: @yellow;\n    }\n    .ssfWCe .ZXJQ7c:hover {\n      background-color: @surface0;\n      color: @text;\n    }\n    .qcTKEe {\n      background-color: @base;\n    }\n    .ooPrBf {\n      background: @base;\n    }\n    .r9PaP {\n      color: @subtext0;\n    }\n    .r9PaP:hover {\n      color: @blue;\n    }\n    .H1KrKd {\n      fill: @subtext0;\n    }\n    .cEPPT {\n      border-bottom-color: @surface1;\n    }\n    .Ix6LGe {\n      background: @base;\n      box-shadow: 0 2px 10px 0 @crust;\n    }\n    .Hm7Qac:hover,\n    .EuKAde {\n      background-color: @surface0;\n    }\n    .igM9Le {\n      color: @text;\n    }\n    .irf0hb {\n      box-shadow: 1px 1px 15px 0 @crust;\n    }\n    .gb_Mc .gb_Vd button:hover svg,\n    .gb_Mc .gb_d:hover {\n      background-color: @surface0;\n    }\n    .gb_Mc svg,\n    .gb_Rc.gb_Vc svg,\n    .gb_Mc .gb_dd .gb_ld,\n    .gb_Mc .gb_dd .gb_Lc,\n    .gb_Mc .gb_dd .gb_fd,\n    .gb_Rc.gb_Vc .gb_ld {\n      color: @text;\n    }\n    .cEW58 {\n      background-color: @surface0;\n    }\n    .dyAbMb {\n      fill: @subtext0;\n    }\n    .zItAnd,\n    .zItAnd:link,\n    .zItAnd:visited,\n    .zItAnd:hover,\n    .zItAnd:active {\n      color: @text;\n    }\n    .zItAnd {\n      background-color: @base;\n      border-color: @surface1;\n    }\n    .zItAnd:not(.MgQdud):hover {\n      background-color: @surface0;\n      border-color: @surface1;\n    }\n    .fKmH1e {\n      background-color: @base;\n      border-color: @surface1;\n      color: @subtext0;\n    }\n    .fKmH1e:hover {\n      background-color: @surface0;\n      border-color: @surface1;\n    }\n    .nfSF8e,\n    .WRhYSc {\n      color: @subtext0;\n    }\n    .nfSF8e:hover,\n    .WRhYSc:hover {\n      background-color: @surface0;\n      color: @subtext0;\n    }\n    .ssJ7i {\n      color: @text;\n    }\n    .iAIpCb {\n      color: @subtext0;\n    }\n    .KMdzJ,\n    .ss6qqb .oBrLN,\n    .ylgVCe {\n      color: @subtext1;\n    }\n    .PmPt7d {\n      color: @subtext0;\n    }\n    .gb_Mc a.gb_E,\n    .gb_Mc span.gb_E {\n      color: @text;\n    }\n    a.gb_E,\n    span.gb_E {\n      color: @text !important;\n    }\n    .RzdJxc {\n      border-top-color: @surface2;\n    }\n    .rKnmn {\n      border-top-color: @surface2;\n    }\n    .FzCfme {\n      color: @subtext0;\n    }\n    .hMJ0yc {\n      color: @subtext0;\n    }\n    .yg51vc {\n      background-color: @base;\n    }\n    .hdtb-mitem a {\n      color: @subtext0;\n    }\n    .hdtb-mitem .GOE98c,\n    .hdtb-mitem a,\n    .hdtb-mitem.hdtb-msel,\n    .t2vtad {\n      color: @subtext0;\n    }\n    .t2vtad:not(.hdtb-tl-sel) {\n      color: @subtext0;\n    }\n    .dG2XIf .xpdopen .mJ2Mod {\n      border-color: @surface1;\n    }\n    .t2vtad:not(.hdtb-tl-sel):hover {\n      background-color: @surface0;\n      border-color: @surface1;\n      color: @text;\n      box-shadow: 0 1px 1px @crust;\n    }\n    .hdtb-mitem:hover .GOE98c:hover,\n    .hdtb-mitem:hover a,\n    .hdtb-mitem.hdtb-msel,\n    .t2vtad:hover {\n      color: @blue;\n    }\n    .w6PoOe {\n      color: @subtext0;\n    }\n    .w6PoOe:hover {\n      color: @text;\n    }\n    .Lj9fsd.DU1Mzb {\n      background-color: @base;\n      box-shadow: 0 1px 6px 0 @crust;\n      .o6juZc {\n        border-color: @surface1 !important;\n      }\n    }\n    .dZ5aUe .vbLSne .MjJqGe:not(.xvfzbc):hover {\n      background-color: @surface0;\n    }\n    .FjVBEd {\n      color: @green;\n    }\n    title-with-lhs-icon:hover .ekf0x h3 {\n      color: @blue;\n    }\n    .GmE3X {\n      color: @text;\n    }\n    .iv236 {\n      color: @text;\n    }\n    .GLcBOb {\n      border-bottom-color: @surface1;\n    }\n    .ss6qqb .Ui2TZ {\n      color: @text;\n    }\n    .wx62f {\n      color: @subtext0;\n    }\n    #rhs .u7yw9 {\n      border-left-color: @surface1;\n    }\n    .ss6qqb .Jk5Tjc {\n      border-color: @surface2;\n    }\n    #rhs .u7yw9 .cLjAic {\n      border-bottom-color: @surface1;\n    }\n    .JNkvid .HnYYW {\n      color: @text;\n    }\n    .aokhrd .TZahnb {\n      border-left-color: @surface1;\n    }\n    .Cx1ZMc {\n      color: @subtext0;\n    }\n    .CBPSbf {\n      background-color: @base;\n    }\n    .E74aCb {\n      color: @text;\n    }\n    .OE86Gc {\n      background-color: @base;\n      color: @text;\n      fill: @text;\n    }\n    .c72nic {\n      color: @text;\n    }\n    .GXMTjb {\n      background-color: @base;\n      border-color: @surface0;\n    }\n    .A9y7kf {\n      color: @subtext0;\n    }\n    .OE86Gc a {\n      color: @blue;\n    }\n    .Es2Et {\n      color: @subtext0;\n    }\n    .KwJT0.VqKh3b div div {\n      background-color: @base;\n      fill: @text;\n      color: @text;\n      border-color: @surface1;\n    }\n    .rx7XFb {\n      background-color: @surface0;\n    }\n    .VP31Vb {\n      color: @text;\n    }\n    .HXQjqf {\n      background-color: fade(@blue, 25%);\n      color: @blue;\n    }\n    .SW5pqf {\n      color: @blue;\n    }\n    .rQEFy:hover {\n      color: @blue;\n    }\n    .hdtb-tl-sel {\n      border-color: @surface2;\n      background: @surface0;\n      color: @text;\n    }\n    .hdtb-tl-sel:focus {\n      border-color: @surface2;\n      background: @surface0;\n      color: @blue;\n    }\n    .t2vtad:active,\n    .t2vtad:not(.hdtb-tl-sel):hover:active {\n      background-color: @surface0 !important;\n      box-shadow: inset 0 1px 2px @crust !important;\n    }\n    .gTl8xb {\n      border-color: @subtext0 transparent;\n    }\n    .hdtb-mn-hd:hover .gTl8xb {\n      border-color: @text transparent;\n    }\n    .h3L8Ub .yMAEcf {\n      background: @surface0;\n      border-color: @surface2;\n    }\n    .ynRric {\n      color: @subtext0;\n    }\n    .cRV9hb .pcTkSc .wM6W7d {\n      color: @text;\n    }\n    .h3L8Ub .yMAEcf.sbhl {\n      background-color: @surface1;\n    }\n    .sbhl {\n      background: @surface1;\n    }\n    .CjiZvb,\n    .GZnQqe.EpPYLd:active {\n      background-color: @surface0;\n    }\n    .PyJv1b {\n      color: @text;\n    }\n    .REySof {\n      color: @overlay2 !important;\n    }\n    .NQyKp {\n      color: @surface0 !important;\n      background: @accent-color !important;\n    }\n    .b0Xfjd {\n      color: @base !important;\n    }\n    .LiOdre {\n      background-color: @base;\n      border-color: @surface1;\n    }\n    .LiOdre:hover {\n      background-color: @mantle;\n      border-color: @surface2;\n    }\n    .LiOdre:focus {\n      border-color: @blue;\n    }\n    .mfsgsd {\n      color: @text;\n    }\n    .GCSyeb {\n      background: @surface1;\n    }\n    .IVvPP .cLjAic.WY0eLb,\n    .Hwkikb.WY0eLb {\n      border-left-color: @surface1;\n    }\n    .mQo3nc {\n      background-color: @surface0;\n      color: @subtext0 !important;\n    }\n    .cfBJGe {\n      color: @text;\n    }\n    .f6F9Be {\n      background: @mantle;\n    }\n    .KwU3F {\n      color: @blue;\n    }\n    .b0KoTc {\n      color: @text;\n    }\n    .dfB0uf {\n      color: @text;\n    }\n    .unknown_loc {\n      background: @text;\n    }\n    .GS5rRd {\n      color: @blue;\n    }\n    .xSQxL {\n      color: @blue;\n    }\n    .smiUbb {\n      color: @text;\n    }\n    .b2hzT {\n      border-bottom-color: @surface0;\n    }\n    #swml {\n      border-left-color: @surface0;\n    }\n    .KXbwLb {\n      background-color: @surface2;\n    }\n    .WZH4jc .VknLRd .GNJvt {\n      background: @surface0;\n    }\n    .WZH4jc .VknLRd:hover .GNJvt {\n      background: @surface1;\n    }\n    .GNJvt {\n      color: @text;\n    }\n    .fJOpI.H9lube {\n      background-color: @blue !important;\n      border-color: @blue;\n    }\n    .XNo5Ab.XNo5Ab {\n      color: @base !important;\n      fill: @base !important;\n    }\n    .Ss2Faf.boljiHqtXe7__place-qa-title {\n      color: @text !important;\n    }\n    .xEzgBc {\n      color: @text !important;\n    }\n    .Ss2Faf.sq4Bpf {\n      color: @text !important;\n    }\n    .ea0Lbe {\n      background: @surface0;\n    }\n    .f6GA0,\n    .CacfB,\n    .Ua7Yuf {\n      background: @base;\n    }\n    .DV7the {\n      color: @blue;\n    }\n    .ZeVBtc {\n      color: @subtext0;\n    }\n    .cB9M7 {\n      background-color: @surface0;\n      border-color: @surface1;\n      color: @text;\n      &:hover {\n        border-color: @surface2;\n      }\n      &:focus {\n        border-color: @blue;\n      }\n    }\n    .Qwbd3 {\n      background: @surface0;\n      color: @text;\n      border-color: @surface1;\n      &:hover {\n        background: @surface1;\n        border-color: @surface2;\n      }\n    }\n    .ArIAXb {\n      fill: @surface0;\n    }\n    .qOFLsb {\n      fill: @surface0;\n    }\n    .aHK1bd {\n      color: @subtext0;\n    }\n    .diOlIe {\n      border-top-color: @overlay0;\n    }\n    .p4pvTd {\n      color: @text;\n    }\n    .gIYJUc {\n      background: @base !important;\n      border-color: @surface1 !important;\n    }\n    .Gdd5U > g:nth-child(2) {\n      > circle:nth-child(1) {\n        fill: @green !important;\n      }\n      > circle:nth-child(2) {\n        fill: @blue !important;\n      }\n      > path:nth-child(3) {\n        fill: @red !important;\n      }\n      > path:nth-child(4) {\n        fill: @yellow !important;\n      }\n      > path:nth-child(5) {\n        fill: @blue !important;\n      }\n    }\n    .CbAZb {\n      background: @base;\n      border-bottom-color: @surface0;\n    }\n    .S8wJ3 {\n      color: @text !important;\n    }\n    .ZI7elf {\n      color: @text !important;\n    }\n    .tGS0Nc {\n      color: @text;\n    }\n    .kzt0Nc a {\n      color: @subtext0 !important;\n    }\n    .fgc1P,\n    .N7KPxb {\n      border-top-color: @surface0 !important;\n    }\n    .kQEH5b {\n      color: @subtext0 !important;\n    }\n    .kNKdL {\n      color: @text !important;\n    }\n    .q0yked:hover {\n      background-color: @mantle !important;\n    }\n    .Oz5Rbb:hover {\n      background: @mantle !important;\n    }\n    .lwwARb {\n      background-color: @crust !important;\n    }\n    .LO47Ff {\n      color: @text;\n    }\n    .j8PBfc {\n      color: @subtext0;\n    }\n    .act-tim-txt-cnt {\n      color: @text;\n    }\n    .act-switch-area {\n      background-color: @base !important;\n    }\n    .q8U8x > div:nth-child(1) {\n      background-color: @base !important;\n    }\n    .EwDHG,\n    .vNdLpe,\n    .vNdLpe:visited {\n      color: @subtext0 !important;\n    }\n    color: @subtext0;\n  }\n  @media (prefers-color-scheme: light) {\n    body {\n      #catppuccin(@lightFlavor, @accentColor);\n    }\n  }\n  @media (prefers-color-scheme: dark) {\n    body {\n      #catppuccin(@darkFlavor, @accentColor);\n    }\n  }\n}\n\n@-moz-document regexp(\"^https?://(ogs\\\\.)?google\\\\..*\")\n{\n  @media (prefers-color-scheme: light) {\n    body {\n      #catppuccin(@lightFlavor, @accentColor);\n    }\n  }\n  @media (prefers-color-scheme: dark) {\n    body {\n      #catppuccin(@darkFlavor, @accentColor);\n    }\n  }\n  #catppuccin(@lookup, @accent) {\n    @flamingo: @catppuccin[@@lookup][@flamingo];\n    @pink: @catppuccin[@@lookup][@pink];\n    @mauve: @catppuccin[@@lookup][@mauve];\n    @red: @catppuccin[@@lookup][@red];\n    @maroon: @catppuccin[@@lookup][@maroon];\n    @peach: @catppuccin[@@lookup][@peach];\n    @yellow: @catppuccin[@@lookup][@yellow];\n    @green: @catppuccin[@@lookup][@green];\n    @teal: @catppuccin[@@lookup][@teal];\n    @sky: @catppuccin[@@lookup][@sky];\n    @sapphire: @catppuccin[@@lookup][@sapphire];\n    @blue: @catppuccin[@@lookup][@blue];\n    @lavender: @catppuccin[@@lookup][@lavender];\n    @text: @catppuccin[@@lookup][@text];\n    @subtext1: @catppuccin[@@lookup][@subtext1];\n    @subtext0: @catppuccin[@@lookup][@subtext0];\n    @overlay2: @catppuccin[@@lookup][@overlay2];\n    @overlay1: @catppuccin[@@lookup][@overlay1];\n    @overlay0: @catppuccin[@@lookup][@overlay0];\n    @surface2: @catppuccin[@@lookup][@surface2];\n    @surface1: @catppuccin[@@lookup][@surface1];\n    @surface0: @catppuccin[@@lookup][@surface0];\n    @base: @catppuccin[@@lookup][@base];\n    @mantle: @catppuccin[@@lookup][@mantle];\n    @crust: @catppuccin[@@lookup][@crust];\n    @accent-color: @catppuccin[@@lookup][@@accent];\n\n    .aRDKUe {\n      .rRF0wd {\n        fill: @yellow !important;\n      }\n      .ub0gT {\n        fill: @base !important;\n      }\n      .Pzuhxc {\n        color: @text !important;\n        &:hover {\n          background-color: @surface2 !important;\n        }\n      }\n      .hCDve {\n        color: @text !important;\n      }\n      .WkuXae {\n        color: @blue;\n      }\n      .coHE2 {\n        border-color: @surface2 !important;\n        &:hover {\n          background-color: fade(@blue, 25%);\n        }\n      }\n      .eYSAde {\n        color: @text !important;\n      }\n      .Lvwayc {\n        background-color: @surface0 !important;\n      }\n      .Z6NXed {\n        color: @text !important;\n      }\n      .bMnvr {\n        background: @surface1 !important;\n      }\n      .Wdz6e {\n        color: @subtext0 !important;\n      }\n      .LzIwWe {\n        color: @text !important;\n      }\n      .znj3je {\n        color: @text !important;\n      }\n      .fVFoBd {\n        color: @text !important;\n      }\n      .cllK4d {\n        background: @surface0 !important;\n        color: @subtext0 !important;\n      }\n      .aFCkf {\n        background: @surface0 !important;\n        color: @blue !important;\n      }\n      .DgDbFe .vZvJBb:not(:first-child) .BVnP4c::before {\n        color: @text !important;\n      }\n      .qLP7kc .jFfZdd {\n        background: @base !important;\n      }\n      .Z6NXed:hover {\n        background-color: @surface1 !important;\n      }\n    }\n    .nz9sqb.EHzcec {\n      background: var(--gm3-sys-color-surface-container-high, @surface0);\n      .LVal7b {\n        background: var(--gm3-sys-color-surface-container-low, @mantle);\n      }\n    }\n    .nz9sqb {\n      .NQV3m {\n        color: var(--gm3-sys-color-primary, @blue);\n        border-color: var(--gm3-sys-color-outline, @surface2);\n        &:hover {\n          background-color: fade(@blue, 25%);\n        }\n        &:focus {\n          background-color: fade(@blue, 25%);\n        }\n      }\n      .Rq5Gcb {\n        color: @text !important;\n      }\n      .tX9u1b:hover {\n        background-color: @surface0;\n      }\n    }\n    .nz9sqb.o07G5 .tX9u1b:active,\n    .nz9sqb.o07G5 .tX9u1b:active:focus,\n    .nz9sqb.o07G5 .tX9u1b:active .Rq5Gcb,\n    .nz9sqb.o07G5 .tX9u1b:active:hover .Rq5Gcb {\n      background-color: @surface0;\n    }\n    .aRDKUe .pRjiJb,\n    .aRDKUe .DmSTqc {\n      color: @text;\n    }\n    .aRDKUe .idKC9b,\n    .aRDKUe .MbHqJ {\n      color: @subtext0;\n    }\n    .aRDKUe .GXg3Le {\n      color: @blue;\n    }\n    .aRDKUe .G5bXNb {\n      background-color: @mantle;\n      &:hover {\n        background-color: @base;\n      }\n    }\n  }\n}\n\n/* prettier-ignore */\n@catppuccin: {\n  @latte:     { @rosewater: #dc8a78; @flamingo: #dd7878; @pink: #ea76cb; @mauve: #8839ef; @red: #d20f39; @maroon: #e64553; @peach: #fe640b; @yellow: #df8e1d; @green: #40a02b; @teal: #179299; @sky: #04a5e5; @sapphire: #209fb5; @blue: #1e66f5; @lavender: #7287fd; @text: #4c4f69; @subtext1: #5c5f77; @subtext0: #6c6f85; @overlay2: #7c7f93; @overlay1: #8c8fa1; @overlay0: #9ca0b0; @surface2: #acb0be; @surface1: #bcc0cc; @surface0: #ccd0da; @base: #eff1f5; @mantle: #e6e9ef; @crust: #dce0e8; };\n  @frappe:    { @rosewater: #f2d5cf; @flamingo: #eebebe; @pink: #f4b8e4; @mauve: #ca9ee6; @red: #e78284; @maroon: #ea999c; @peach: #ef9f76; @yellow: #e5c890; @green: #a6d189; @teal: #81c8be; @sky: #99d1db; @sapphire: #85c1dc; @blue: #8caaee; @lavender: #babbf1; @text: #c6d0f5; @subtext1: #b5bfe2; @subtext0: #a5adce; @overlay2: #949cbb; @overlay1: #838ba7; @overlay0: #737994; @surface2: #626880; @surface1: #51576d; @surface0: #414559; @base: #303446; @mantle: #292c3c; @crust: #232634; };\n  @macchiato: { @rosewater: #f4dbd6; @flamingo: #f0c6c6; @pink: #f5bde6; @mauve: #c6a0f6; @red: #ed8796; @maroon: #ee99a0; @peach: #f5a97f; @yellow: #eed49f; @green: #a6da95; @teal: #8bd5ca; @sky: #91d7e3; @sapphire: #7dc4e4; @blue: #8aadf4; @lavender: #b7bdf8; @text: #cad3f5; @subtext1: #b8c0e0; @subtext0: #a5adcb; @overlay2: #939ab7; @overlay1: #8087a2; @overlay0: #6e738d; @surface2: #5b6078; @surface1: #494d64; @surface0: #363a4f; @base: #24273a; @mantle: #1e2030; @crust: #181926; };\n  @mocha:     { @rosewater: #f5e0dc; @flamingo: #f2cdcd; @pink: #f5c2e7; @mauve: #cba6f7; @red: #f38ba8; @maroon: #eba0ac; @peach: #fab387; @yellow: #f9e2af; @green: #a6e3a1; @teal: #94e2d5; @sky: #89dceb; @sapphire: #74c7ec; @blue: #89b4fa; @lavender: #b4befe; @text: #cdd6f4; @subtext1: #bac2de; @subtext0: #a6adc8; @overlay2: #9399b2; @overlay1: #7f849c; @overlay0: #6c7086; @surface2: #585b70; @surface1: #45475a; @surface0: #313244; @base: #1e1e2e; @mantle: #181825; @crust: #11111b; };\n}\n\n// vim:ft=less\n",
+    "usercssData": {
+      "name": "Google Catppuccin",
+      "namespace": "github.com/catppuccin/userstyles/styles/google",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/google",
+      "version": "0.2.3",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/google/catppuccin.user.css",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Agoogle",
+      "description": "Soothing pastel theme for Google",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": null,
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": null,
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for Google",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/google",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/google/catppuccin.user.css",
+    "name": "Google Catppuccin",
+    "originalDigest": "e7fbe19de0da7147f380de8abdca9ff97ee0328a",
+    "_id": "e656cb73-3e8f-4141-8f7f-921180bb7ece",
+    "_rev": 1718049799963,
+    "id": 3
+  },
+  {
+    "enabled": true,
+    "installDate": 1718049805189,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name NixOS Search Catppuccin\n@namespace github.com/catppuccin/userstyles/styles/nixos-search\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/nixos-search\n@version 0.4.1\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/nixos-search/catppuccin.user.css\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Anixos-search\n@description Soothing pastel theme for NixOS Search\n@author Catppuccin\n@license MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n==/UserStyle== */\n\n@-moz-document domain(\"search.nixos.org\") {\n  @media (prefers-color-scheme: light) {\n    :root {\n      #catppuccin(@lightFlavor, @accentColor);\n    }\n  }\n\n  @media (prefers-color-scheme: dark) {\n    :root {\n      #catppuccin(@darkFlavor, @accentColor);\n    }\n  }\n\n  #catppuccin(@lookup, @accent) {\n    @rosewater: @catppuccin[@@lookup][@rosewater];\n    @flamingo: @catppuccin[@@lookup][@flamingo];\n    @pink: @catppuccin[@@lookup][@pink];\n    @mauve: @catppuccin[@@lookup][@mauve];\n    @red: @catppuccin[@@lookup][@red];\n    @maroon: @catppuccin[@@lookup][@maroon];\n    @peach: @catppuccin[@@lookup][@peach];\n    @yellow: @catppuccin[@@lookup][@yellow];\n    @green: @catppuccin[@@lookup][@green];\n    @teal: @catppuccin[@@lookup][@teal];\n    @sky: @catppuccin[@@lookup][@sky];\n    @sapphire: @catppuccin[@@lookup][@sapphire];\n    @blue: @catppuccin[@@lookup][@blue];\n    @lavender: @catppuccin[@@lookup][@lavender];\n    @text: @catppuccin[@@lookup][@text];\n    @subtext1: @catppuccin[@@lookup][@subtext1];\n    @subtext0: @catppuccin[@@lookup][@subtext0];\n    @overlay2: @catppuccin[@@lookup][@overlay2];\n    @overlay1: @catppuccin[@@lookup][@overlay1];\n    @overlay0: @catppuccin[@@lookup][@overlay0];\n    @surface2: @catppuccin[@@lookup][@surface2];\n    @surface1: @catppuccin[@@lookup][@surface1];\n    @surface0: @catppuccin[@@lookup][@surface0];\n    @base: @catppuccin[@@lookup][@base];\n    @mantle: @catppuccin[@@lookup][@mantle];\n    @crust: @catppuccin[@@lookup][@crust];\n    @accent-color: @catppuccin[@@lookup][@@accent];\n\n    color-scheme: if(@lookup = latte, light, dark);\n\n    ::selection {\n      background-color: fade(@accent-color, 30%);\n    }\n\n    input,\n    textarea {\n      &::placeholder {\n        color: @subtext0 !important;\n      }\n    }\n\n    --background-color: @base;\n    --badge-background: @accent-color;\n    --button-active-background: @surface1;\n    --button-active-hover-background: @surface2;\n    --button-background: @surface0;\n    --button-hover-background: @surface2;\n    --color-active-hover-tab: @surface1;\n    --color-active-tab: @surface0;\n    --color-hover-tab: @surface1;\n    --headerbar-background-color: @mantle;\n    --hover-background: @surface0;\n    --link-color: @accent-color;\n    --info-label-background: @accent-color;\n    --dark-blue: @accent-color;\n    --light-blue: @accent-color; // used by focus outline\n    --line-color: @surface0;\n    --search-result-short-details-color: @subtext1;\n    --search-result-divider-line-color: @surface0;\n    --search-result-title-color: @accent-color;\n    --search-sidebar-link-color: @text;\n    --search-sidebar-selected-link-background: @accent-color;\n    --search-sidebar-selected-link-color: @crust;\n    --terminal-background: @surface0;\n    --terminal-color: @red;\n    --text-color: @text;\n    --text-color-light: @text;\n    --text-color-warning: @yellow;\n\n    // hardcoded to #fff\n    .label,\n    .badge {\n      color: @crust;\n    }\n\n    // hardcoded to #005580\n    a:hover,\n    a:focus {\n      color: @text;\n    }\n  }\n}\n\n/* prettier-ignore */\n@catppuccin: {\n  @latte:     { @rosewater: #dc8a78; @flamingo: #dd7878; @pink: #ea76cb; @mauve: #8839ef; @red: #d20f39; @maroon: #e64553; @peach: #fe640b; @yellow: #df8e1d; @green: #40a02b; @teal: #179299; @sky: #04a5e5; @sapphire: #209fb5; @blue: #1e66f5; @lavender: #7287fd; @text: #4c4f69; @subtext1: #5c5f77; @subtext0: #6c6f85; @overlay2: #7c7f93; @overlay1: #8c8fa1; @overlay0: #9ca0b0; @surface2: #acb0be; @surface1: #bcc0cc; @surface0: #ccd0da; @base: #eff1f5; @mantle: #e6e9ef; @crust: #dce0e8; };\n  @frappe:    { @rosewater: #f2d5cf; @flamingo: #eebebe; @pink: #f4b8e4; @mauve: #ca9ee6; @red: #e78284; @maroon: #ea999c; @peach: #ef9f76; @yellow: #e5c890; @green: #a6d189; @teal: #81c8be; @sky: #99d1db; @sapphire: #85c1dc; @blue: #8caaee; @lavender: #babbf1; @text: #c6d0f5; @subtext1: #b5bfe2; @subtext0: #a5adce; @overlay2: #949cbb; @overlay1: #838ba7; @overlay0: #737994; @surface2: #626880; @surface1: #51576d; @surface0: #414559; @base: #303446; @mantle: #292c3c; @crust: #232634; };\n  @macchiato: { @rosewater: #f4dbd6; @flamingo: #f0c6c6; @pink: #f5bde6; @mauve: #c6a0f6; @red: #ed8796; @maroon: #ee99a0; @peach: #f5a97f; @yellow: #eed49f; @green: #a6da95; @teal: #8bd5ca; @sky: #91d7e3; @sapphire: #7dc4e4; @blue: #8aadf4; @lavender: #b7bdf8; @text: #cad3f5; @subtext1: #b8c0e0; @subtext0: #a5adcb; @overlay2: #939ab7; @overlay1: #8087a2; @overlay0: #6e738d; @surface2: #5b6078; @surface1: #494d64; @surface0: #363a4f; @base: #24273a; @mantle: #1e2030; @crust: #181926; };\n  @mocha:     { @rosewater: #f5e0dc; @flamingo: #f2cdcd; @pink: #f5c2e7; @mauve: #cba6f7; @red: #f38ba8; @maroon: #eba0ac; @peach: #fab387; @yellow: #f9e2af; @green: #a6e3a1; @teal: #94e2d5; @sky: #89dceb; @sapphire: #74c7ec; @blue: #89b4fa; @lavender: #b4befe; @text: #cdd6f4; @subtext1: #bac2de; @subtext0: #a6adc8; @overlay2: #9399b2; @overlay1: #7f849c; @overlay0: #6c7086; @surface2: #585b70; @surface1: #45475a; @surface0: #313244; @base: #1e1e2e; @mantle: #181825; @crust: #11111b; };\n}\n\n// vim:ft=less\n",
+    "usercssData": {
+      "name": "NixOS Search Catppuccin",
+      "namespace": "github.com/catppuccin/userstyles/styles/nixos-search",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/nixos-search",
+      "version": "0.4.1",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/nixos-search/catppuccin.user.css",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Anixos-search",
+      "description": "Soothing pastel theme for NixOS Search",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": null,
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": null,
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for NixOS Search",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/nixos-search",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/nixos-search/catppuccin.user.css",
+    "name": "NixOS Search Catppuccin",
+    "originalDigest": "0ffb84c79403190c93980bc4f7f6f25d05cbc6cb",
+    "_id": "882930e9-8ab3-42a1-a355-328262f73ae3",
+    "_rev": 1718049805190,
+    "id": 4
+  },
+  {
+    "enabled": true,
+    "installDate": 1718077080404,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name Codeberg Catppuccin\n@namespace github.com/catppuccin/userstyles/styles/codeberg\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/codeberg\n@version 1.1.1\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/codeberg/catppuccin.user.css\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Acodeberg\n@description Soothing pastel theme for Codeberg\n@author Catppuccin\n@license MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n==/UserStyle== */\n\n@-moz-document domain('codeberg.org') {\n  @import (css)\n    url(\"https://catppuccin.github.io/gitea/theme-catppuccin-@{lightFlavor}-@{accentColor}.css\")\n    (prefers-color-scheme: light);\n  @import (css)\n    url(\"https://catppuccin.github.io/gitea/theme-catppuccin-@{darkFlavor}-@{accentColor}.css\")\n    (prefers-color-scheme: dark);\n\n  #catppuccin(@lookup, @accent) {\n    @rosewater: @catppuccin[@@lookup][@rosewater];\n    @flamingo: @catppuccin[@@lookup][@flamingo];\n    @pink: @catppuccin[@@lookup][@pink];\n    @mauve: @catppuccin[@@lookup][@mauve];\n    @red: @catppuccin[@@lookup][@red];\n    @maroon: @catppuccin[@@lookup][@maroon];\n    @peach: @catppuccin[@@lookup][@peach];\n    @yellow: @catppuccin[@@lookup][@yellow];\n    @green: @catppuccin[@@lookup][@green];\n    @teal: @catppuccin[@@lookup][@teal];\n    @sky: @catppuccin[@@lookup][@sky];\n    @sapphire: @catppuccin[@@lookup][@sapphire];\n    @blue: @catppuccin[@@lookup][@blue];\n    @lavender: @catppuccin[@@lookup][@lavender];\n    @text: @catppuccin[@@lookup][@text];\n    @subtext1: @catppuccin[@@lookup][@subtext1];\n    @subtext0: @catppuccin[@@lookup][@subtext0];\n    @overlay2: @catppuccin[@@lookup][@overlay2];\n    @overlay1: @catppuccin[@@lookup][@overlay1];\n    @overlay0: @catppuccin[@@lookup][@overlay0];\n    @surface2: @catppuccin[@@lookup][@surface2];\n    @surface1: @catppuccin[@@lookup][@surface1];\n    @surface0: @catppuccin[@@lookup][@surface0];\n    @base: @catppuccin[@@lookup][@base];\n    @mantle: @catppuccin[@@lookup][@mantle];\n    @crust: @catppuccin[@@lookup][@crust];\n    @accent-color: @catppuccin[@@lookup][@@accent];\n\n    /* Base styles not needed, themed in upstream Gitea port. */\n\n    --color-body: @base;\n    --color-nav-text: @crust;\n    --color-nav-hover-bg: darken(@accent-color, 5%);\n    --color-secondary-nav-bg: @surface0;\n    --color-link: @blue;\n    --color-footer-text: @text;\n\n    .ui.secondary.menu .dropdown.item:hover,\n    .ui.secondary.menu a.item:hover {\n      background-color: var(--color-nav-hover-bg);\n      color: var(--color-black);\n    }\n\n    .ui.basic.red.buttons .button,\n    .ui.basic.red.button {\n      &:hover,\n      &:focus {\n        background-color: @red;\n        border-color: var(--color-light-border);\n        color: @crust;\n      }\n    }\n\n    #codeberg-logo (@color) {\n      @svg: escape(\n        '<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\"><defs><linearGradient id=\"b\" x1=\"42519.285\" x2=\"42575.336\" y1=\"-7078.7891\" y2=\"-6966.9312\" gradientUnits=\"userSpaceOnUse\" href=\"#a\"/><linearGradient id=\"a\"><stop color=\"@{color}\" offset=\"0\" stop-opacity=\"0\"/><stop offset=\".495\" stop-color=\"@{color}\" stop-opacity=\".3\"/><stop offset=\"1\" stop-color=\"@{color}\" stop-opacity=\".3\"/></linearGradient></defs><path fill=\"url(#b)\" d=\"M42519.285-7078.79a.76.568 0 0 0-.738.675l33.586 125.888a87.2 87.2 0 0 0 39.381-33.763l-71.565-92.52a.76.568 0 0 0-.664-.28\" transform=\"translate(-5840.572 980.524)scale(.13766)\"/><path fill=\"@{color}\" d=\"M12.003.525A12.003 12.003 0 0 0 0 12.533 11.9 11.9 0 0 0 1.826 18.9L11.838 5.956c.068-.09.25-.09.324 0l10.007 12.939A11.9 11.9 0 0 0 24 12.522 12.003 12.003 0 0 0 12.003.525\"/></svg>'\n      );\n      content: url(\"data:image/svg+xml,@{svg}\");\n    }\n\n    #navbar-logo img {\n      #codeberg-logo(@crust);\n    }\n    .branding img {\n      #codeberg-logo(@text);\n    }\n\n    footer {\n      .button:hover {\n        background-color: @accent-color;\n        color: @crust;\n      }\n\n      a:hover {\n        color: @blue !important;\n      }\n    }\n  }\n\n  @media (prefers-color-scheme: light) {\n    :root {\n      #catppuccin(@lightFlavor, @accentColor);\n    }\n  }\n\n  @media (prefers-color-scheme: dark) {\n    :root {\n      #catppuccin(@darkFlavor, @accentColor);\n    }\n  }\n}\n\n/* prettier-ignore */\n@catppuccin: {\n  @latte:     { @rosewater: #dc8a78; @flamingo: #dd7878; @pink: #ea76cb; @mauve: #8839ef; @red: #d20f39; @maroon: #e64553; @peach: #fe640b; @yellow: #df8e1d; @green: #40a02b; @teal: #179299; @sky: #04a5e5; @sapphire: #209fb5; @blue: #1e66f5; @lavender: #7287fd; @text: #4c4f69; @subtext1: #5c5f77; @subtext0: #6c6f85; @overlay2: #7c7f93; @overlay1: #8c8fa1; @overlay0: #9ca0b0; @surface2: #acb0be; @surface1: #bcc0cc; @surface0: #ccd0da; @base: #eff1f5; @mantle: #e6e9ef; @crust: #dce0e8; };\n  @frappe:    { @rosewater: #f2d5cf; @flamingo: #eebebe; @pink: #f4b8e4; @mauve: #ca9ee6; @red: #e78284; @maroon: #ea999c; @peach: #ef9f76; @yellow: #e5c890; @green: #a6d189; @teal: #81c8be; @sky: #99d1db; @sapphire: #85c1dc; @blue: #8caaee; @lavender: #babbf1; @text: #c6d0f5; @subtext1: #b5bfe2; @subtext0: #a5adce; @overlay2: #949cbb; @overlay1: #838ba7; @overlay0: #737994; @surface2: #626880; @surface1: #51576d; @surface0: #414559; @base: #303446; @mantle: #292c3c; @crust: #232634; };\n  @macchiato: { @rosewater: #f4dbd6; @flamingo: #f0c6c6; @pink: #f5bde6; @mauve: #c6a0f6; @red: #ed8796; @maroon: #ee99a0; @peach: #f5a97f; @yellow: #eed49f; @green: #a6da95; @teal: #8bd5ca; @sky: #91d7e3; @sapphire: #7dc4e4; @blue: #8aadf4; @lavender: #b7bdf8; @text: #cad3f5; @subtext1: #b8c0e0; @subtext0: #a5adcb; @overlay2: #939ab7; @overlay1: #8087a2; @overlay0: #6e738d; @surface2: #5b6078; @surface1: #494d64; @surface0: #363a4f; @base: #24273a; @mantle: #1e2030; @crust: #181926; };\n  @mocha:     { @rosewater: #f5e0dc; @flamingo: #f2cdcd; @pink: #f5c2e7; @mauve: #cba6f7; @red: #f38ba8; @maroon: #eba0ac; @peach: #fab387; @yellow: #f9e2af; @green: #a6e3a1; @teal: #94e2d5; @sky: #89dceb; @sapphire: #74c7ec; @blue: #89b4fa; @lavender: #b4befe; @text: #cdd6f4; @subtext1: #bac2de; @subtext0: #a6adc8; @overlay2: #9399b2; @overlay1: #7f849c; @overlay0: #6c7086; @surface2: #585b70; @surface1: #45475a; @surface0: #313244; @base: #1e1e2e; @mantle: #181825; @crust: #11111b; };\n}\n\n// vim:ft=less\n",
+    "usercssData": {
+      "name": "Codeberg Catppuccin",
+      "namespace": "github.com/catppuccin/userstyles/styles/codeberg",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/codeberg",
+      "version": "1.1.1",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/codeberg/catppuccin.user.css",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Acodeberg",
+      "description": "Soothing pastel theme for Codeberg",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": null,
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": "blue",
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for Codeberg",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/codeberg",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/codeberg/catppuccin.user.css",
+    "name": "Codeberg Catppuccin",
+    "originalDigest": "c5278bdf5030d2dd686b9672837fccd24735cce5",
+    "_id": "f8c23695-1b0d-4fad-abe5-683fea26ad31",
+    "_rev": 1718077186581,
+    "id": 5
+  }
+]
