@@ -45,6 +45,7 @@ alias cdar="cd ~/arch_progs/"
 alias codedots="code ~/.dotfiles"
 alias codeags="code ~/.dotfiles/dot-config/ags/"
 alias zdots="cd ~/.dotfiles/"
+alias curl='noglob curl'
 
 # Git Aliases
 alias gc="git clone"
@@ -117,10 +118,10 @@ alias ngs='ng serve'
 alias ngso='ng serve --open'
 alias nggc='ng generate component'
 
-# Added by Toolbox App
-# export PATH="$PATH:/home/archkye/.local/share/JetBrains/Toolbox/scripts"
-
 # >>> coursier install directory >>>
 export PATH="$PATH:$HOME/.local/share/coursier/bin"
 # export PATH="$PATH:$HOME/go/bin/"
 export PATH=$PATH:$(go env GOPATH)/bin
+
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+export LD_LIBRARY_PATH=/usr/local/lib
