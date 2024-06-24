@@ -15,8 +15,12 @@ cat <<EOF > flake.nix
       (system:
         let
           pkgs = nixpkgs.legacyPackages.\${system};
+          nix-utils = with pkgs; [
+            nil
+            nixpkgs-fmt
+          ];
           shell = pkgs.mkShell {
-            nativeBuildInputs = with pkgs.buildPackages; [ $@ ];
+            nativeBuildInputs = with pkgs.buildPackages; [ $@ ] ++ nix-utils;
           };
         in
         {
