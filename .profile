@@ -113,6 +113,13 @@ alias mr='make run'
 alias mp='make prune'
 alias mc='make create'
 
+# Rust Aliases
+alias cg='cargo'
+alias cgc='cargo check'
+alias cgr='cargo run'
+alias cgb='cargo build'
+alias cgbr='cargo build --release'
+
 # Angular Aliases
 alias ngs='ng serve'
 alias ngso='ng serve --open'
