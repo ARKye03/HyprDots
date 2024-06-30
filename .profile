@@ -130,5 +130,6 @@ export PATH="$PATH:$HOME/.local/share/coursier/bin"
 # export PATH="$PATH:$HOME/go/bin/"
 export PATH=$PATH:$(go env GOPATH)/bin
 
-export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
-export LD_LIBRARY_PATH=/usr/local/lib
+# export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+# export LD_LIBRARY_PATH=/usr/local/lib
+export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
