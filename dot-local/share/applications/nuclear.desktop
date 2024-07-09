@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Nuclear
+Exec=/opt/nuclear/nuclear --enable-features=UseOzonePlatform --ozone-platform=wayland --use-gl=desktop %U
+Terminal=false
+Type=Application
+Icon=nuclear
+StartupWMClass=nuclear
+Name[es]=Reproductor de música Nuclear
+Comment[es]=Reproductor que retransmite música desde fuentes encontradas automáticamente.
+Comment=Streaming music player that finds music sources automatically.
+MimeType=audio/mp3;audio/mpeg;audio/ogg;audio/ogg;audio/aac;audio/flac;audio/x-wav;audio/m4a;audio/weba;audio/mp4;audio/webm;
+Categories=Audio;AudioVideo;Network;Player;Music;
