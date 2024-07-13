@@ -1,40 +1,225 @@
-# Hypr-dots
+# Zoore Arch Installed Packages
 
-> - Hyprland
->
-> - AGS
->
-> - MPD
-
-Used here:
-
-- [Aylur's GTK Shell](https://github.com/Aylur/ags).
-- [Rofi (lbonn's wayland fork)](https://github.com/lbonn/rofi).
-- [Warp-Terminal](https://www.warp.dev/), [Alacritty](https://alacritty.org/), [Kitty](https://sw.kovidgoyal.net/kitty/).
-- [Hyprlock](https://github.com/hyprwm/hyprlock), [hyprpicker](https://github.com/hyprwm/hyprpicker)., [hypridle](https://github.com/hyprwm/hypridle)
-- [Music Player Daemon](https://musicpd.org/) + [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp) & [mpd-mpris](https://github.com/natsukagami/mpd-mpris).
-- Wallpaper utility: [wbg](https://codeberg.org/dnkl/wbg).
-- Clipboard manager: [CopyQ](https://github.com/hluk/CopyQ).
-- Notification Daemon: [AGS](https://aylur.github.io/ags-docs/services/notifications/).
-- [Zsh](https://www.zsh.org/), [ble.sh(Bash)](https://github.com/akinomyoga/ble.sh).
-- GTK Theme: One-Dark.
-  - [Gradience](https://github.com/GradienceTeam/Gradience) adw-gtk3
-- Cursor: [Colloid](https://github.com/vinceliuice/Colloid-icon-theme).
-- [GNU Stow](https://www.gnu.org/software/stow/)
-- [Lua](https://lua.org/)
-
-!["Something went wrong :("](./public/hypr_arch.gif "Hyprland Arch theme")
-
-## Usage
-
-  Install GNU Stow, dependencies and clone the repo.
-  
-  ```sh
-  git clone https://github.com/ARKye03/HyprDots.git
-  cd HyprDots
-  stow . --dotfiles
-  ```
-
-  Have in mind that if stow finds a file that already exists, it will not overwrite it.
-
-### Theoretically, this should work. If not, may god have mercy on your soul
+| Package  | Version |
+| -------  | ------- |
+| adw-gtk3 | 5.3-2 |
+| alacritty | 0.13.2-2 |
+| appmenu-gtk-module | 24.05-1 |
+| aspnet-runtime | 8.0.6.sdk106-1 |
+| aylurs-gtk-shell | 1.8.2-2 |
+| base | 3-2 |
+| base-devel | 1-1 |
+| bat | 0.24.0-2 |
+| bleachbit | 4.6.0-2 |
+| blueman | 2.4.2-1 |
+| brave-bin | 1:1.67.123-1 |
+| bspwm | 0.9.10-3 |
+| btop | 1.3.2-1 |
+| bun-bin | 1.1.20-1 |
+| cambalache | 0.90.4-1 |
+| catppuccin-cursors-mocha | 0.3.1-1 |
+| celluloid | 0.27-1 |
+| chaotic-keyring | 20230616-1 |
+| chaotic-mirrorlist | 20240306-1 |
+| chatgpt-desktop-bin | 1.1.0-1 |
+| cjson | 1.7.18-1 |
+| clapper | 0.6.1-1 |
+| cliphist | 1:0.5.0-1 |
+| cmake | 3.30.0-1 |
+| copyq | 9.0.0-1 |
+| cpanminus | 1.7046-3 |
+| cronie | 1.7.2-1 |
+| debtap | 3.5.1-1.2 |
+| direnv | 2.34.0-1 |
+| discord | 0.0.59-2 |
+| docker | 1:27.0.3-1 |
+| dotnet-sdk | 8.0.6.sdk106-1 |
+| downgrade | 11.3.0-1.1 |
+| edk2-shell | 202311-1 |
+| efibootmgr | 18-3 |
+| engrampa | 1.28.1-1 |
+| exfat-utils | 1.4.0-3 |
+| extramaus | 20121220-3 |
+| eza | 0.18.21-1 |
+| fastfetch | 2.18.1-1 |
+| fcitx5 | 5.1.10-1 |
+| fd | 10.1.0-1 |
+| ffmpegthumbnailer | 2.2.2-6 |
+| find-the-command | 2.0.1-1.2 |
+| firefox-developer-edition | 128.0b8-1 |
+| fnm-bin | 1.37.1-0 |
+| fzf | 0.53.0-1 |
+| g4music | 3.7.2-1 |
+| geogebra | 1:5.2.848.0-1 |
+| gimp | 2.10.38-1 |
+| git | 2.45.2-1 |
+| github-cli | 2.52.0-1 |
+| glfw | 3.4-2 |
+| gnome-bluetooth-3.0 | 46.0-1 |
+| gnome-keyring | 1:46.2-1 |
+| gnome-photos | 1:44.0-4 |
+| gnome-text-editor | 46.3-2 |
+| go | 2:1.22.5-1 |
+| gobject-introspection | 1.80.1-3 |
+| gradience-git | 0.8.0.beta1.r214.g9b19f4b1-1 |
+| grim | 1.4.1-2 |
+| gst-plugin-pipewire | 1:1.2.1-1 |
+| gtk-doc | 1.34.0-1 |
+| gtksourceview5 | 5.12.1-1 |
+| gvfs | 1.54.2-1 |
+| gvfs-mtp | 1.54.2-1 |
+| htop | 3.3.0-3 |
+| hypridle | 0.1.2-1 |
+| hyprland-git | 0.41.2.r31.e728e56c-1 |
+| hyprlang | 0.5.2-1 |
+| hyprlock | 0.3.0-1 |
+| hyprpicker | 0.3.0-1 |
+| icoextract | 0.1.5-1 |
+| icu74 | 74.2-6 |
+| intel-ucode | 20240531-1 |
+| iwd | 2.19-1 |
+| jq | 1.7.1-2 |
+| kitty | 0.35.2-1 |
+| ldb | 2:2.9.1-1 |
+| lib32-pipewire | 1:1.2.1-1 |
+| libappindicator-gtk3 | 12.10.0.r298-3 |
+| libastal-mpris-git | r3.33ad109-1 |
+| libayatana-appindicator | 0.5.93-1 |
+| libdisplay-info | 0.2.0-1 |
+| libpulse | 17.0-3 |
+| libreoffice-still | 7.6.7-1 |
+| libva-intel-driver | 2.4.1-3 |
+| libva-nvidia-driver | 0.0.12-1 |
+| libvips | 8.15.1-5 |
+| linux-firmware | 20240610.9c10a208-1 |
+| linux-zen | 6.9.7.zen1-1 |
+| linux-zen-docs | 6.9.7.zen1-1 |
+| linux-zen-headers | 6.9.7.zen1-1 |
+| loupe | 46.2-1 |
+| man-db | 2.12.1-1 |
+| meson | 1.5.0-1 |
+| microsoft-edge-stable-bin | 126.0.2592.68-1 |
+| mlocate | 0.26.git.20170220-7 |
+| mpc | 0.35-1 |
+| mpd | 0.23.15-5 |
+| mpd-mpris-bin | 0.4.1-2 |
+| nano | 8.0-1 |
+| ncmpcpp | 0.9.2-19 |
+| neofetch | 7.1.0-2 |
+| neovim | 0.10.0-5 |
+| network-manager-applet | 1.36.0-1 |
+| networkmanager | 1.48.4-1 |
+| ninja | 1.12.1-1 |
+| nix | 2.23.3-1 |
+| nm-connection-editor | 1.36.0-1 |
+| nmap | 7.95-1 |
+| noto-fonts-emoji | 1:2.042-1 |
+| ntfs-3g | 2022.10.3-1 |
+| nuclear-player-bin | 0.6.30-3 |
+| nushell | 0.95.0-1 |
+| nvidia-dkms | 555.58.02-1 |
+| nwg-look | 0.2.7-1 |
+| obs-studio | 30.1.2-2 |
+| obsidian | 1.6.5-1 |
+| ocs-url | 3.1.0-7.3 |
+| opencl-nvidia | 555.58.02-1 |
+| openssh | 9.8p1-1 |
+| p7zip | 1:17.05-2 |
+| pacman-contrib | 1.10.6-1 |
+| pandoc-cli | 0.1.1.1-113 |
+| pavucontrol | 1:6.0-1 |
+| perl-file-homedir | 1.006-5 |
+| picom | 11.2-1 |
+| pipewire | 1:1.2.1-1 |
+| pipewire-alsa | 1:1.2.1-1 |
+| pipewire-jack | 1:1.2.1-1 |
+| pipewire-pulse | 1:1.2.1-1 |
+| plank | 0.11.89-4 |
+| playerctl | 2.4.1-3 |
+| pngquant | 3.0.3-2 |
+| polkit-gnome | 0.105-10 |
+| polybar | 3.7.1-1 |
+| protonvpn | 1.0.0-3 |
+| protonvpn-cli | 3.13.0-2 |
+| protonvpn-gui | 1.12.0-1 |
+| python-build | 1.2.1-3 |
+| python-installer | 0.7.0-8 |
+| python-openai | 1.35.13-1 |
+| python-pam | 2.0.2-3 |
+| python-pip | 24.1.2-1 |
+| python-pynvim | 0.5.0-3 |
+| python-zombie-imp | 0.0.2-1 |
+| qalculate-gtk | 5.2.0-1 |
+| qemu-full | 9.0.1-1 |
+| quickemu | 4.9.6-1 |
+| reflector | 2023-2 |
+| ripgrep | 14.1.0-1 |
+| river | 0.3.4-2 |
+| rofi-lbonn-wayland | 1.7.5+wayland3-1 |
+| rsync | 3.3.0-2 |
+| rustup | 1.27.1-1 |
+| rxvt-unicode | 9.31-4 |
+| sassc | 3.6.2-5 |
+| sdbus-cpp | 1.5.0-3 |
+| sddm | 0.21.0-4 |
+| sddm-catppuccin-git | r34.ffaad5c-1 |
+| seahorse | 1:43.0-3 |
+| slurp | 1.5.0-1 |
+| smartmontools | 7.4-1 |
+| soundcloud-dl | 2.7.6-1 |
+| speedtest-cli | 2.1.3-8 |
+| sslh | 2.1.2-1 |
+| stow | 2.4.0-1 |
+| swappy | 1.5.1-2 |
+| sxhkd | 0.6.2-3 |
+| systemd-resolvconf | 256.2-1 |
+| telegram-desktop | 5.2.3-1 |
+| tgpt-bin | 2.8.0-1 |
+| thunar | 4.18.10-2 |
+| thunar-archive-plugin | 0.5.2-1 |
+| thunar-media-tags-plugin | 0.4.0-2 |
+| thunar-volman | 4.18.0-1 |
+| thunderbird | 115.12.2-1 |
+| time | 1.9-5 |
+| tldr | 3.3.0-1 |
+| tree | 2.1.3-1 |
+| ttf-cousine-nerd | 3.2.1-2 |
+| ttf-firacode-nerd | 3.2.1-2 |
+| ttf-font-awesome | 6.5.2-1 |
+| ttf-jetbrains-mono-nerd | 3.2.1-2 |
+| tumbler | 4.18.2-1 |
+| udisks2 | 2.10.1-4 |
+| uget | 2.2.3-6 |
+| uget-integrator-chromium | 1.0.0-4 |
+| uncrustify | 0.78.1-2 |
+| vi | 1:070224-6 |
+| vim | 9.1.0532-1 |
+| visual-studio-code-bin | 1.91.1-1 |
+| vlc-git | 4.0.0.r29793.g438a5675baf-1 |
+| warp-terminal | v0.2024.07.09.08.01.stable_00-1 |
+| wbg | 1.2.0-1 |
+| wf-recorder | 0.4.1-2 |
+| wget | 1.24.5-3 |
+| wine | 9.12-1 |
+| wine-mono | 9.2.0-1 |
+| wireless_tools | 30.pre9-4 |
+| wireplumber | 0.5.5-1 |
+| wl-clip-persist | 0.4.3-1 |
+| wl-clipboard | 1:2.2.1-2 |
+| wmctrl | 1.07-6 |
+| xcolor | 0.5.1-3 |
+| xdg-desktop-portal-hyprland | 1.3.2-1 |
+| xdg-utils | 1.2.1-1 |
+| xdo | 0.5.7-2 |
+| xorg-xsetroot | 1.1.3-1 |
+| xsettingsd | 1.0.2-1 |
+| yay | 12.3.5-1 |
+| zed | 0.143.7-1 |
+| zoxide | 0.9.4-2 |
+| zsh | 5.9-5 |
+| zsh-autosuggestions | 0.7.0-2 |
+| zsh-completions | 0.35.0-1 |
+| zsh-history-substring-search | 1.1.0-1 |
+| zsh-nix-shell | 0.8.0-1 |
+| zsh-syntax-highlighting | 0.8.0-1 |
+| zsh-theme-powerlevel10k | 1.20.0-2 |
