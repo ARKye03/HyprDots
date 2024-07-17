@@ -2,11 +2,39 @@
 
 bash start.sh
 
+riverctl focus-follows-cursor normal
+
 riverctl map normal Super Return spawn alacritty
-riverctl map normal Super D spawn '/usr/bin/ags -t applauncher' # ~/.dotfiles/dot-config/rofi/launchers/type-4/launcher.sh
+riverctl map normal Super+Shift Return spawn /usr/bin/kitty
+riverctl map normal Super+Control Return spawn /usr/bin/warp-terminal
+
+riverctl map normal Super D spawn '/usr/bin/ags -t applauncher'
 riverctl map normal Super R spawn '/usr/bin/ags -q; ags'
 # Super+Q to close the focused view
 riverctl map normal Super C close
+
+# Browser
+riverctl map normal Super W spawn '/usr/bin/brave --enable-features=UseOzonePlatform --ozone-platform=wayland --use-gl=desktop --disable-features=UseChromeOSDirectVideoDecoder --enable-features=VaapiVideoDecoder'
+
+# Utils 
+riverctl map normal Super V spawn '$HOME/.dotfiles/scripts/toggle_vpn.lua'
+riverctl map normal Super X spawn '$HOME/.config/rofi/powermenu/type-4/powermenu.sh'
+riverctl map normal Super M spawn '/usr/bin/alacritty --class floatcritty -e /usr/bin/ncmpcpp -c $HOME/.ncmpcpp/config'
+riverctl map normal Super E spawn '/usr/bin/thunar'
+
+# Screenshots
+riverctl map normal Super Print spawn '$HOME/.dotfiles/scripts/gss.lua region'
+riverctl map normal Super S spawn '$HOME/.dotfiles/scripts/gss.lua window'
+riverctl map normal None Print spawn '$HOME/.dotfiles/scripts/gss.lua full'
+riverctl map normal Super Q spawn '$HOME/.dotfiles/scripts/gss.lua aspect_visualizer'
+
+# Wallpapers WBG
+riverctl map normal Super U spawn '$HOME/.dotfiles/scripts/WBG.lua next'
+riverctl map normal Super+Shift U spawn '$HOME/.dotfiles/scripts/WBG.lua prev'
+
+# HyprEcko
+riverctl map normal Super P spawn '/usr/bin/hyprpicker -a'
+riverctl map normal Super L spawn '/usr/bin/gtklock'
 
 # Super+Shift+E to exit river
 riverctl map normal Super+Shift E exit
@@ -116,25 +144,18 @@ for mode in normal locked; do
 	# Eject the optical drive (well if you still have one that is)
 	riverctl map $mode None XF86Eject spawn 'eject -T'
 
-	# Control pulse audio volume with pamixer (https://github.com/cdemoulins/pamixer)
-	riverctl map $mode None XF86AudioRaiseVolume spawn 'pamixer -i 5'
-	riverctl map $mode None XF86AudioLowerVolume spawn 'pamixer -d 5'
-	riverctl map $mode None XF86AudioMute spawn 'pamixer --toggle-mute'
+	riverctl map $mode None XF86AudioRaiseVolume spawn '/usr/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+'
+	riverctl map $mode None XF86AudioLowerVolume spawn '/usr/bin/wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-'
 
-	# Control MPRIS aware media players with playerctl (https://github.com/altdesktop/playerctl)
 	riverctl map $mode None XF86AudioMedia spawn 'playerctl play-pause'
 	riverctl map $mode None XF86AudioPlay spawn 'playerctl play-pause'
 	riverctl map $mode None XF86AudioPrev spawn 'playerctl previous'
 	riverctl map $mode None XF86AudioNext spawn 'playerctl next'
-
-	# Control screen backlight brightness with brightnessctl (https://github.com/Hummer12007/brightnessctl)
-	riverctl map $mode None XF86MonBrightnessUp spawn 'brightnessctl set +5%'
-	riverctl map $mode None XF86MonBrightnessDown spawn 'brightnessctl set 5%-'
 done
 
 # Set background and border color
-riverctl background-color 0x002b36
-riverctl border-color-focused 0x93a1a1
+riverctl background-color 0x181825
+riverctl border-color-focused 0x8aadf4
 riverctl border-color-unfocused 0x586e75
 
 # Set keyboard repeat rate
