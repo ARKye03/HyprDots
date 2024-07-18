@@ -1,6 +1,6 @@
 #!/bin/sh
 
-bash start.sh
+bash $HOME/.config/river/start.sh
 
 riverctl focus-follows-cursor normal
 
@@ -16,7 +16,7 @@ riverctl map normal Super C close
 # Browser
 riverctl map normal Super W spawn '/usr/bin/brave --enable-features=UseOzonePlatform --ozone-platform=wayland --use-gl=desktop --disable-features=UseChromeOSDirectVideoDecoder --enable-features=VaapiVideoDecoder'
 
-# Utils 
+# Utils
 riverctl map normal Super V spawn '$HOME/.dotfiles/scripts/toggle_vpn.lua'
 riverctl map normal Super X spawn '$HOME/.config/rofi/powermenu/type-4/powermenu.sh'
 riverctl map normal Super M spawn '/usr/bin/alacritty --class floatcritty -e /usr/bin/ncmpcpp -c $HOME/.ncmpcpp/config'
