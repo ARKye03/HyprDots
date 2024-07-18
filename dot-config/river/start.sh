@@ -15,7 +15,7 @@ commands=(
     "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
     "/usr/bin/nm-applet"
     "/usr/bin/copyq --start-server"
-    "/usr/bin/hypridle"
+    # "/usr/bin/hypridle"
     "/usr/bin/wl-clip-persist --clipboard regular"
     "/usr/bin/mpd-mpris --no-instance --host 127.0.0.1"
     "/usr/bin/ags"
