@@ -57,7 +57,7 @@ riverctl map normal Super+Shift Period send-to-output next
 riverctl map normal Super+Shift Comma send-to-output previous
 
 # Super+Return to bump the focused view to the top of the layout stack
-riverctl map normal Super+Shift Return zoom
+riverctl map normal Super+Shift P zoom
 
 # Super+H and Super+L to decrease/increase the main ratio of rivertile(1)
 riverctl map normal Super H send-layout-cmd rivertile "main-ratio -0.05"
@@ -94,14 +94,19 @@ riverctl map-pointer normal Super BTN_RIGHT resize-view
 # Super + Middle Mouse Button to toggle float
 riverctl map-pointer normal Super BTN_MIDDLE toggle-float
 
-riverctl rule-add -app-id 'Alacritty' ssd
+ssds=('org.gnome.Loupe' 'Alacritty' 'dev.zed.Zed' 'thunar' 'uget-gtk' 'io.github.celluloid_player.Celluloid' 'nwg-look')
+
+for it in "${ssds[@]}"; do
+    riverctl rule-add -app-id "$it" ssd
+done
+
+riverctl rule-add -app-id 'kitty' float
+
 riverctl rule-add -app-id 'brave-browser' tags 2
 
 riverctl rule-add -app-id 'code-url-handler' tags 4
-riverctl rule-add -app-id 'dev.zed.Zed' ssd
 riverctl rule-add -app-id 'dev.zed.Zed' tags 4
 
-riverctl rule-add -app-id 'thunar' ssd
 riverctl rule-add -app-id 'thunar' tags 8
 
 riverctl rule-add -app-id 'org.telegram.desktop' tags 32
@@ -110,7 +115,6 @@ riverctl rule-add -app-id 'discord' tags 32
 riverctl rule-add -app-id 'io.github.celluloid_player.Celluloid' tags 64
 riverctl rule-add -app-id 'vlc' tags 64
 
-riverctl rule-add -app-id 'uget-gtk' ssd
 riverctl rule-add -app-id 'uget-gtk' tags 128
 
 for i in $(seq 1 9); do
