@@ -4,7 +4,7 @@
   "LuaSnip": { "branch": "master", "commit": "03c8e67eb7293c404845b3982db895d59c0d1538" },
   "aerial.nvim": { "branch": "master", "commit": "7e2615991cf110f6688112abcb45cf338248d1f6" },
   "alpha-nvim": { "branch": "main", "commit": "41283fb402713fc8b327e60907f74e46166f4cfd" },
-  "astrocommunity": { "branch": "main", "commit": "110e75863a4b7d88bf9e198cde83598c90cc833a" },
+  "astrocommunity": { "branch": "main", "commit": "8e1a2a4e7e3f052e382eaee3aa751e21a3c4da84" },
   "astrocore": { "branch": "main", "commit": "e659ec1f23dd070fa9a68a78eab0675b7bf3e97d" },
   "astrolsp": { "branch": "main", "commit": "366a8edfddb90bfcd7b710b95a3d6b685efaa4db" },
   "astrotheme": { "branch": "main", "commit": "c52dad31bb0000524ca4003222c9ed0f4e8c3058" },
@@ -21,7 +21,7 @@
   "guess-indent.nvim": { "branch": "main", "commit": "6cd61f7a600bb756e558627cd2e740302c58e32d" },
   "heirline.nvim": { "branch": "master", "commit": "0d797435e54645a5f98bad7ad6046aac1ef95c1e" },
   "indent-blankline.nvim": { "branch": "master", "commit": "65e20ab94a26d0e14acac5049b8641336819dfc7" },
-  "lazy.nvim": { "branch": "main", "commit": "839f9e78e78dc935b1188fb16583365991739c51" },
+  "lazy.nvim": { "branch": "main", "commit": "4496b4cad69a862199bb3ad452d3c4988bb925a1" },
   "lspkind.nvim": { "branch": "master", "commit": "1735dd5a5054c1fb7feaf8e8658dbab925f4f0cf" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "9ae570e206360e47d30b4c35a4550c165f4ea7b7" },
   "mason-null-ls.nvim": { "branch": "main", "commit": "2b8433f76598397fcc97318d410e0c4f7a4bea6a" },
@@ -59,5 +59,5 @@
   "todo-comments.nvim": { "branch": "main", "commit": "313b04e5b02d29ab9275c9295ff5e2b73921b0eb" },
   "toggleterm.nvim": { "branch": "main", "commit": "48be57eaba817f038d61bbf64d2c597f578c0827" },
   "vim-illuminate": { "branch": "master", "commit": "5eeb7951fc630682c322e88a9bbdae5c224ff0aa" },
-  "which-key.nvim": { "branch": "main", "commit": "c74c245d9277ad6865b28ea7e37158b7f990b7fe" }
+  "which-key.nvim": { "branch": "main", "commit": "c5e799388989fe1b87072d6188719b529d7421c5" }
 }
