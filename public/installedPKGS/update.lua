@@ -32,10 +32,10 @@ local function perform_update(use_warp)
 		local updateType = use_warp and "Warp" or "Regular"
 		print(
 			updateType
-				.. " update failed with exit reason: "
-				.. tostring(exitType)
-				.. ", exit code: "
-				.. tostring(exitCode)
+			.. " update failed with exit reason: "
+			.. tostring(exitType)
+			.. ", exit code: "
+			.. tostring(exitCode)
 		)
 	end
 end
