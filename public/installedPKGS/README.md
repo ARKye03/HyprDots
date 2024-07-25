@@ -11,8 +11,8 @@
 | base-devel | 1-1 |
 | bat | 0.24.0-2 |
 | bleachbit | 4.6.0-2 |
-| blueman | 2.4.2-1 |
-| brave-bin | 1:1.67.123-1 |
+| blueman | 2.4.2-2 |
+| brave-bin | 1:1.68.128-1 |
 | bspwm | 0.9.10-3 |
 | btop | 1.3.2-1 |
 | bun-bin | 1.1.20-1 |
@@ -24,7 +24,7 @@
 | chaotic-mirrorlist | 20240306-1 |
 | chatgpt-desktop-bin | 1.1.0-1 |
 | cjson | 1.7.18-1 |
-| clapper | 0.6.1-1 |
+| clapper | 0.6.1-2 |
 | cliphist | 1:0.5.0-1 |
 | cmake | 3.30.1-1 |
 | copyq | 9.0.0-1 |
@@ -41,7 +41,7 @@
 | engrampa | 1.28.1-1 |
 | exfat-utils | 1.4.0-3 |
 | extramaus | 20121220-3 |
-| eza | 0.18.22-1 |
+| eza | 0.18.23-1 |
 | fastfetch | 2.19.1-1 |
 | fcitx5 | 5.1.10-1 |
 | fd | 10.1.0-1 |
@@ -71,7 +71,7 @@
 | gvfs-mtp | 1.54.2-1 |
 | htop | 3.3.0-3 |
 | hypridle-git | 0.1.2.r10.ge5366d34-1 |
-| hyprland-git | 0.41.2.r85.72bce7ef-1 |
+| hyprland-git | 0.41.2.r98.33a5c8ce-1 |
 | hyprlang-git | 0.5.2.r8.gadbefbf4-1 |
 | hyprlock-git | 0.4.1.r0.gdba9d8b5-1 |
 | hyprpicker-git | 0.3.0.r9.c36676a-1 |
@@ -174,7 +174,7 @@
 | stow | 2.4.0-1 |
 | swappy | 1.5.1-2 |
 | sxhkd | 0.6.2-3 |
-| systemd-resolvconf | 256.3-1 |
+| systemd-resolvconf | 256.4-1 |
 | telegram-desktop | 5.2.3-1 |
 | tgpt-bin | 2.8.0-1 |
 | thunar | 4.18.10-2 |
@@ -216,7 +216,7 @@
 | xorg-xsetroot | 1.1.3-2 |
 | xsettingsd | 1.0.2-2 |
 | yay | 12.3.5-1 |
-| zed | 0.144.4-1 |
+| zed | 0.145.1-1 |
 | zoxide | 0.9.4-2 |
 | zsh | 5.9-5 |
 | zsh-autosuggestions | 0.7.0-3 |
