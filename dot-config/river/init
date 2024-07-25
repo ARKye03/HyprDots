@@ -4,6 +4,8 @@ bash $HOME/.config/river/start.sh
 
 riverctl focus-follows-cursor normal
 
+riverctl map normal Super Tab focus-previous-tags
+
 riverctl map normal Super Return spawn /usr/bin/alacritty
 riverctl map normal Super+Shift Return spawn /usr/bin/kitty
 riverctl map normal Super+Control Return spawn /usr/bin/warp-terminal
