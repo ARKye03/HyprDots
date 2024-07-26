@@ -3,3 +3,4 @@ dot-config/mpd/mpd.log
 dot-config/mpd/mpd.pid
 dot-config/mpd/mpdstate
 dot-config/mpv/playlist/
+dot-config/nvim/lazy-lock.json
