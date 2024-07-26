@@ -47,21 +47,25 @@ end
 function Mapping.SetFocusedTag(modkeys, keybind, tag)
     local cmd = string.format(
         "riverctl map normal %s %s set-focused-tags %s", modkeys, keybind, tags[tag])
+    os.execute(cmd)
 end
 
 function Mapping.SetViewTag(modkeys, keybind, tag)
     local cmd = string.format(
         "riverctl map normal %s %s set-view-tags %s", modkeys, keybind, tags[tag])
+    os.execute(cmd)
 end
 
 function Mapping.ToggleFocusedTag(modkeys, keybind, tag)
     local cmd = string.format(
         "riverctl map normal %s %s toggle-focused-tags %s", modkeys, keybind, tags[tag])
+    os.execute(cmd)
 end
 
 function Mapping.ToggleViewTag(modkeys, keybind, tag)
     local cmd = string.format(
         "riverctl map normal %s %s toggle-view-tags %s", modkeys, keybind, tags[tag])
+    os.execute(cmd)
 end
 
 return Mapping

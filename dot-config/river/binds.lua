@@ -42,17 +42,15 @@ Utils.Action({ "Super" }, "F", "toggle-fullscreen")
 
 -- Tags management
 for i = 1, 9 do
-    local tag = i
-
     -- Super+[1-9] to focus tag [0-8]
-    Utils.SetFocusedTag({ "Super" }, tostring(i), tag)
+    Utils.SetFocusedTag({ "Super" }, tostring(i), i)
 
     -- Super+Shift+[1-9] to tag focused view with tag [0-8]
-    Utils.SetViewTag({ "Super", "Shift" }, tostring(i), tag)
+    Utils.SetViewTag({ "Super", "Shift" }, tostring(i), i)
 
     -- Super+Control+[1-9] to toggle focus of tag [0-8]
-    Utils.ToggleFocusedTag({ "Super", "Control" }, tostring(i), tag)
+    Utils.ToggleFocusedTag({ "Super", "Control" }, tostring(i), i)
 
     -- Super+Shift+Control+[1-9] to toggle tag [0-8] of focused view
-    Utils.ToggleViewTag({ "Super", "Shift", "Control" }, tostring(i), tag)
+    Utils.ToggleViewTag({ "Super", "Shift", "Control" }, tostring(i), i)
 end
