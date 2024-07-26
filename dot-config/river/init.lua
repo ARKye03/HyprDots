@@ -25,6 +25,10 @@ NOTE:
 
 require('autostart').Start()
 
+local ViewRules = require('viewrules')
+ViewRules()
+
+
 -- local wl_script_dir = os.getenv('HOME') .. '/.local/libexec/wayland'
 -- local AppsLauncher = 'ags -t applauncher'
 -- local ChatMenu = 'ags -t Chat'

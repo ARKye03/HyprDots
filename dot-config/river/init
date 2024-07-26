@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-bash $HOME/.config/river/start.sh
+bash "$HOME/.config/river/start.sh"
 
 riverctl focus-follows-cursor normal
 
@@ -19,20 +19,20 @@ riverctl map normal Super C close
 riverctl map normal Super W spawn '/usr/bin/brave --enable-features=UseOzonePlatform --ozone-platform=wayland --use-gl=desktop --disable-features=UseChromeOSDirectVideoDecoder --enable-features=VaapiVideoDecoder'
 
 # Utils
-riverctl map normal Super V spawn '$HOME/.dotfiles/scripts/toggle_vpn.lua'
-riverctl map normal Super X spawn '$HOME/.config/rofi/powermenu/type-4/powermenu.sh'
-riverctl map normal Super M spawn '/usr/bin/alacritty --class floatcritty -e /usr/bin/ncmpcpp -c $HOME/.ncmpcpp/config'
-riverctl map normal Super E spawn '/usr/bin/thunar'
+riverctl map normal Super V spawn "$HOME/.dotfiles/scripts/toggle_vpn.lua"
+riverctl map normal Super X spawn "$HOME/.config/rofi/powermenu/type-4/powermenu.sh"
+riverctl map normal Super M spawn "/usr/bin/alacritty --class floatcritty -e /usr/bin/ncmpcpp -c $HOME/.ncmpcpp/config"
+riverctl map normal Super E spawn "/usr/bin/thunar"
 
 # Screenshots
-riverctl map normal Super Print spawn '$HOME/.dotfiles/scripts/gss.lua region'
-riverctl map normal Super S spawn '$HOME/.dotfiles/scripts/gss.lua window'
-riverctl map normal None Print spawn '$HOME/.dotfiles/scripts/gss.lua full'
-riverctl map normal Super Q spawn '$HOME/.dotfiles/scripts/gss.lua aspect_visualizer'
+riverctl map normal Super Print spawn "$HOME/.dotfiles/scripts/gss.lua region"
+riverctl map normal Super S spawn "$HOME/.dotfiles/scripts/gss.lua window"
+riverctl map normal None Print spawn "$HOME/.dotfiles/scripts/gss.lua full"
+riverctl map normal Super Q spawn "$HOME/.dotfiles/scripts/gss.lua aspect_visualizer"
 
 # Wallpapers WBG
-riverctl map normal Super U spawn '$HOME/.dotfiles/scripts/WBG.lua next'
-riverctl map normal Super+Shift U spawn '$HOME/.dotfiles/scripts/WBG.lua prev'
+riverctl map normal Super U spawn "$HOME/.dotfiles/scripts/WBG.lua next"
+riverctl map normal Super+Shift U spawn "$HOME/.dotfiles/scripts/WBG.lua prev"
 
 # HyprEcko
 riverctl map normal Super P spawn '/usr/bin/hyprpicker -a'
@@ -99,7 +99,7 @@ riverctl map-pointer normal Super BTN_MIDDLE toggle-float
 ssds=('org.gnome.Loupe' 'Alacritty' 'dev.zed.Zed' 'thunar' 'uget-gtk' 'io.github.celluloid_player.Celluloid' 'nwg-look' 'dev.warp.Warp')
 
 for it in "${ssds[@]}"; do
-    riverctl rule-add -app-id "$it" ssd
+  riverctl rule-add -app-id "$it" ssd
 done
 
 riverctl rule-add -app-id 'brave-browser' tags 2
@@ -117,20 +117,20 @@ riverctl rule-add -app-id 'vlc' tags 64
 
 riverctl rule-add -app-id 'uget-gtk' tags 128
 
-for i in $(seq 1 9); do
+for i in $(seq 1 9); do 
 	tags=$((1 << ($i - 1)))
 
 	# Super+[1-9] to focus tag [0-8]
-	riverctl map normal Super $i set-focused-tags $tags
+	riverctl map normal Super "$i" set-focused-tags $tags
 
 	# Super+Shift+[1-9] to tag focused view with tag [0-8]
-	riverctl map normal Super+Shift $i set-view-tags $tags
+	riverctl map normal Super+Shift "$i" set-view-tags $tags
 
 	# Super+Control+[1-9] to toggle focus of tag [0-8]
-	riverctl map normal Super+Control $i toggle-focused-tags $tags
+	riverctl map normal Super+Control "$i" toggle-focused-tags $tags
 
 	# Super+Shift+Control+[1-9] to toggle tag [0-8] of focused view
-	riverctl map normal Super+Shift+Control $i toggle-view-tags $tags
+	riverctl map normal Super+Shift+Control "$i" toggle-view-tags $tags
 done
 
 # Super+0 to focus all tags
@@ -167,13 +167,13 @@ for mode in normal locked; do
 	# Eject the optical drive (well if you still have one that is)
 	riverctl map $mode None XF86Eject spawn 'eject -T'
 
-	riverctl map $mode None XF86AudioRaiseVolume spawn '/usr/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+'
-	riverctl map $mode None XF86AudioLowerVolume spawn '/usr/bin/wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-'
+	riverctl map $mode None XF86AudioRaiseVolume spawn "/usr/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"
+	riverctl map $mode None XF86AudioLowerVolume spawn "/usr/bin/wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
 
-	riverctl map $mode None XF86AudioMedia spawn 'playerctl play-pause'
-	riverctl map $mode None XF86AudioPlay spawn 'playerctl play-pause'
-	riverctl map $mode None XF86AudioPrev spawn 'playerctl previous'
-	riverctl map $mode None XF86AudioNext spawn 'playerctl next'
+	riverctl map $mode None XF86AudioMedia spawn "playerctl play-pause"
+	riverctl map $mode None XF86AudioPlay spawn "playerctl play-pause"
+	riverctl map $mode None XF86AudioPrev spawn "playerctl previous"
+	riverctl map $mode None XF86AudioNext spawn "playerctl next"
 done
 
 # Set background and border color
