@@ -11,7 +11,7 @@
 | base-devel | 1-1 |
 | bat | 0.24.0-2 |
 | bleachbit | 4.6.0-2 |
-| blueman | 2.4.2-2 |
+| blueman | 2.4.3-1 |
 | brave-bin | 1:1.68.128-1 |
 | bspwm | 0.9.10-3 |
 | btop | 1.3.2-1 |
@@ -33,7 +33,7 @@
 | debtap | 3.5.1-1.2 |
 | direnv | 2.34.0-1 |
 | discord | 0.0.61-1 |
-| docker | 1:27.0.3-1 |
+| docker | 1:27.1.1-1 |
 | dotnet-sdk | 8.0.6.sdk106-1 |
 | downgrade | 11.3.0-1.1 |
 | edk2-shell | 202311-1 |
@@ -80,6 +80,7 @@
 | intel-ucode | 20240531-1 |
 | iwd | 2.19-1 |
 | jq | 1.7.1-2 |
+| kando-bin | 1.2.0-1 |
 | kitty | 0.35.2-1 |
 | ldb | 2:2.9.1-1 |
 | lib32-pipewire | 1:1.2.1-1 |
@@ -99,6 +100,7 @@
 | linux-zen-headers | 6.10.zen1-2 |
 | loupe | 46.2-1 |
 | lswt | 2.0.0-1 |
+| lua-posix | 36.2.1-2 |
 | man-db | 2.12.1-1 |
 | meson | 1.5.0-1 |
 | microsoft-edge-stable-bin | 126.0.2592.68-1 |
@@ -111,7 +113,7 @@
 | neofetch | 7.1.0-2 |
 | neovim | 0.10.1-2 |
 | network-manager-applet | 1.36.0-1 |
-| networkmanager | 1.48.4-1 |
+| networkmanager | 1.48.6-1 |
 | ninja | 1.12.1-1 |
 | nix | 2.23.3-1 |
 | nm-connection-editor | 1.36.0-1 |
