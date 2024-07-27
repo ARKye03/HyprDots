@@ -1,13 +1,9 @@
 local Mapping = {}
 
 function Mapping.Spawn(modkeys, keybind, command)
-    -- Concatenate the modifier keys with a `+` separator
     local modkeys_str = table.concat(modkeys, "+")
+    local cmd = string.format("riverctl map normal %s %s spawn \"%s\"", modkeys_str, keybind, command)
 
-    -- Construct the command string
-    local cmd = string.format("riverctl map normal %s %s spawn %s", modkeys_str, keybind, command)
-
-    -- Execute the command
     os.execute(cmd)
 end
 
@@ -21,11 +17,13 @@ end
 function Mapping.Pointer(modkeys, keybind, option)
     local modkeys_str = table.concat(modkeys, "+")
     local cmd = string.format("riverctl map-pointer normal %s %s %s", modkeys_str, keybind, option)
+
     os.execute(cmd)
 end
 
 function Mapping.Property(property, value)
     local cmd = string.format("riverctl %s %s", property, value)
+
     os.execute(cmd)
 end
 
@@ -44,11 +42,13 @@ local tags = {
 
 function Mapping.ViewRule(id, tag)
     local cmd = string.format("riverctl rule-add -app-id %s tags %s", id, tags[tag])
+
     os.execute(cmd)
 end
 
 function Mapping.ViewSSD(id)
     local cmd = string.format("riverctl rule-add -app-id %s ssd", id)
+
     os.execute(cmd)
 end
 
@@ -56,6 +56,7 @@ function Mapping.SetFocusedTag(modkeys, keybind, tag)
     local modkeys_str = table.concat(modkeys, "+")
     local cmd = string.format(
         "riverctl map normal %s %s set-focused-tags %s", modkeys_str, keybind, tags[tag])
+
     os.execute(cmd)
 end
 
@@ -63,6 +64,7 @@ function Mapping.SetViewTag(modkeys, keybind, tag)
     local modkeys_str = table.concat(modkeys, "+")
     local cmd = string.format(
         "riverctl map normal %s %s set-view-tags %s", modkeys_str, keybind, tags[tag])
+
     os.execute(cmd)
 end
 
@@ -70,6 +72,7 @@ function Mapping.ToggleFocusedTag(modkeys, keybind, tag)
     local modkeys_str = table.concat(modkeys, "+")
     local cmd = string.format(
         "riverctl map normal %s %s toggle-focused-tags %s", modkeys_str, keybind, tags[tag])
+
     os.execute(cmd)
 end
 
@@ -77,6 +80,7 @@ function Mapping.ToggleViewTag(modkeys, keybind, tag)
     local modkeys_str = table.concat(modkeys, "+")
     local cmd = string.format(
         "riverctl map normal %s %s toggle-view-tags %s", modkeys_str, keybind, tags[tag])
+
     os.execute(cmd)
 end
 
