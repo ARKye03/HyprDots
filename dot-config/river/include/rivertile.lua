@@ -1,7 +1,7 @@
 function Rivertile()
     local rivertile = {
-        view_padding = 6,
-        outer_padding = 6,
+        view_padding = 4,
+        outer_padding = 2,
         main_location = "left",
         main_count = 1,
         main_ratio = 0.6
