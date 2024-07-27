@@ -96,7 +96,7 @@ riverctl map-pointer normal Super BTN_RIGHT resize-view
 # Super + Middle Mouse Button to toggle float
 riverctl map-pointer normal Super BTN_MIDDLE toggle-float
 
-ssds=('org.gnome.Loupe' 'Alacritty' 'dev.zed.Zed' 'thunar' 'uget-gtk' 'io.github.celluloid_player.Celluloid' 'nwg-look' 'dev.warp.Warp' 'msedge-_hnpfjngllnobngcgfapefoaidbinmjnm-Default')
+ssds=('org.gnome.Loupe' 'Alacritty' 'dev.zed.Zed' 'thunar' 'Thunar' 'uget-gtk' 'io.github.celluloid_player.Celluloid' 'nwg-look' 'dev.warp.Warp' 'msedge-_hnpfjngllnobngcgfapefoaidbinmjnm-Default')
 
 for it in "${ssds[@]}"; do
 	riverctl rule-add -app-id "$it" ssd
