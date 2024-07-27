@@ -6,7 +6,8 @@ function Props()
         background_color = "0x181825",
         border_color_focused = "0x8aadf4",
         border_color_unfocused = "0x586e75",
-
+        border_color_urgent = "0xed8796",
+        border_width = 2,
         focus_follows_cursor = "normal",
         -- Keyboard
         set_repeat = "50 300",
