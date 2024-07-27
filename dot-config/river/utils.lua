@@ -2,7 +2,7 @@ local Mapping = {}
 
 function Mapping.Spawn(modkeys, keybind, command)
     local modkeys_str = table.concat(modkeys, "+")
-    local cmd = string.format("riverctl map normal %s %s spawn \"%s\"", modkeys_str, keybind, command)
+    local cmd = string.format('riverctl map normal %s %s spawn "%s"', modkeys_str, keybind, command)
 
     os.execute(cmd)
 end
@@ -22,7 +22,7 @@ function Mapping.Pointer(modkeys, keybind, option)
 end
 
 function Mapping.Property(property, value)
-    local cmd = string.format("riverctl %s %s", property, value)
+    local cmd = string.format("riverctl %s %s", property:gsub("_", "-"), value)
 
     os.execute(cmd)
 end
