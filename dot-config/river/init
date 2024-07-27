@@ -96,10 +96,10 @@ riverctl map-pointer normal Super BTN_RIGHT resize-view
 # Super + Middle Mouse Button to toggle float
 riverctl map-pointer normal Super BTN_MIDDLE toggle-float
 
-ssds=('org.gnome.Loupe' 'Alacritty' 'dev.zed.Zed' 'thunar' 'uget-gtk' 'io.github.celluloid_player.Celluloid' 'nwg-look' 'dev.warp.Warp')
+ssds=('org.gnome.Loupe' 'Alacritty' 'dev.zed.Zed' 'thunar' 'uget-gtk' 'io.github.celluloid_player.Celluloid' 'nwg-look' 'dev.warp.Warp' 'msedge-_hnpfjngllnobngcgfapefoaidbinmjnm-Default')
 
 for it in "${ssds[@]}"; do
-  riverctl rule-add -app-id "$it" ssd
+	riverctl rule-add -app-id "$it" ssd
 done
 
 riverctl rule-add -app-id 'brave-browser' tags 2
@@ -109,16 +109,19 @@ riverctl rule-add -app-id 'dev.zed.Zed' tags 4
 
 riverctl rule-add -app-id 'thunar' tags 8
 
+riverctl rule-add -app-id 'libreoffice-*' tags 16
+
 riverctl rule-add -app-id 'org.telegram.desktop' tags 32
 riverctl rule-add -app-id 'discord' tags 32
+riverctl rule-add -app-id 'msedge-_hnpfjngllnobngcgfapefoaidbinmjnm-Default' tags 32
 
 riverctl rule-add -app-id 'io.github.celluloid_player.Celluloid' tags 64
 riverctl rule-add -app-id 'vlc' tags 64
 
 riverctl rule-add -app-id 'uget-gtk' tags 128
 
-for i in $(seq 1 9); do 
-	tags=$((1 << ($i - 1)))
+for i in $(seq 1 9); do
+    tags=$((1 << (i - 1)))
 
 	# Super+[1-9] to focus tag [0-8]
 	riverctl map normal Super "$i" set-focused-tags $tags
