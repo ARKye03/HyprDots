@@ -40,7 +40,13 @@ local tags = {
 
 }
 
-function Mapping.ViewRule(id, tag)
+function Mapping.ViewRule(id, rule)
+    local cmd = string.format("riverctl rule-add -app-id %s %s", id, rule)
+
+    os.execute(cmd)
+end
+
+function Mapping.ViewRuleTags(id, tag)
     local cmd = string.format("riverctl rule-add -app-id %s tags %s", id, tags[tag])
 
     os.execute(cmd)
