@@ -54,6 +54,23 @@ function KeyBinds()
     Utils.Spawn({ "Super" }, "XF86AudioPrev", "playerctl previous")
     Utils.Spawn({ "Super" }, "XF86AudioNext", "playerctl next")
 
+    --View Control
+    Utils.Move({ "Super", "Alt" }, "H", "left", 100)
+    Utils.Move({ "Super", "Alt" }, "J", "down", 100)
+    Utils.Move({ "Super", "Alt" }, "K", "up", 100)
+    Utils.Move({ "Super", "Alt" }, "L", "right", 100)
+
+    Utils.Snap({ "Super", "Alt", "Control" }, "H", "left")
+    Utils.Snap({ "Super", "Alt", "Control" }, "J", "down")
+    Utils.Snap({ "Super", "Alt", "Control" }, "K", "up")
+    Utils.Snap({ "Super", "Alt", "Control" }, "L", "right")
+
+    Utils.Resize({ "Super", "Alt", "Shift" }, "H", "horizontal", -100)
+    Utils.Resize({ "Super", "Alt", "Shift" }, "J", "vertical", 100)
+    Utils.Resize({ "Super", "Alt", "Shift" }, "K", "vertical", -100)
+    Utils.Resize({ "Super", "Alt", "Shift" }, "L", "horizontal", 100)
+
+
     -- Mouse
     Utils.Pointer({ "Super" }, "BTN_LEFT", "move-view")
     Utils.Pointer({ "Super" }, "BTN_RIGHT", "resize-view")

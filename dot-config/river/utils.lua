@@ -27,6 +27,27 @@ function Mapping.Property(property, value)
     os.execute(cmd)
 end
 
+function Mapping.Move(modkeys, keybind, direction, value)
+    local modkeys_str = table.concat(modkeys, "+")
+    local cmd = string.format("riverctl map normal %s %s move %s %s", modkeys_str, keybind, direction, value)
+
+    os.execute(cmd)
+end
+
+function Mapping.Snap(modkeys, keybind, direction)
+    local modkeys_str = table.concat(modkeys, "+")
+    local cmd = string.format("riverctl map normal %s %s snap %s", modkeys_str, keybind, direction)
+
+    os.execute(cmd)
+end
+
+function Mapping.Resize(modkeys, keybind, direction, value)
+    local modkeys_str = table.concat(modkeys, "+")
+    local cmd = string.format("riverctl map normal %s %s resize %s %s", modkeys_str, keybind, direction, value)
+
+    os.execute(cmd)
+end
+
 local tags = {
     [1] = 1,
     [2] = 2,
