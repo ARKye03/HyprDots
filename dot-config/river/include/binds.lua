@@ -70,6 +70,9 @@ function KeyBinds()
     Utils.Resize({ "Super", "Alt", "Shift" }, "K", "vertical", -100)
     Utils.Resize({ "Super", "Alt", "Shift" }, "L", "horizontal", 100)
 
+    local all_tags = ((1 << 32) - 1)
+    Utils.SetFocusedTag({ "Super" }, "0", all_tags)
+    Utils.SetViewTag({ "Super", "Shift" }, "0", all_tags)
 
     -- Mouse
     Utils.Pointer({ "Super" }, "BTN_LEFT", "move-view")
