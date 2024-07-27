@@ -43,6 +43,7 @@ function KeyBinds()
     Utils.Action({ "Super" }, "Tab", "focus-previous-tags")
     Utils.Action({ "Super" }, "Space", "toggle-float")
     Utils.Action({ "Super" }, "F", "toggle-fullscreen")
+    Utils.Action({ "Super", "Shift" }, "P", "zoom")
 
     --Audio/Media
     Utils.Spawn({ "Super" }, "XF86AudioRaiseVolume", "/usr/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+")
