@@ -1,32 +1,16 @@
 #!/usr/bin/env lua
 
---[[
-
-NOTE:
-- execp() needs 'lua-posix' package
-- bitwise operands for tag mappings need Lua version >= 5.3
-
---]]
-
--- Convenient functions ────────────────────────────────────────────────────────
-
--- Wrapper around table.concat() to also handle other types
--- local function concat(...)
---   local list, sep, i, j = ...
-
---   if type(list) == 'table' then
---     return table.concat(list, sep, i, j)
---   else
---     return tostring(list)
---   end
--- end
-
--- All the setting tables ──────────────────────────────────────────────────────
-
-require('autostart').Start()
-
+local Autostart = require('autostart')
+local KeyBinds = require('binds')
 local ViewRules = require('viewrules')
+local Props = require('props')
+local Rivertile = require('rivertile')
+
+-- Autostart()
+KeyBinds()
 ViewRules()
+Props()
+Rivertile()
 
 
 -- local wl_script_dir = os.getenv('HOME') .. '/.local/libexec/wayland'
