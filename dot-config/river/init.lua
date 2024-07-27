@@ -7,6 +7,7 @@ local Props = require('props')
 local Rivertile = require('rivertile')
 
 -- Autostart()
+os.execute(os.getenv("HOME") .. "/.config/river/start.sh")
 KeyBinds()
 ViewRules()
 Props()
