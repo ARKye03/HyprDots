@@ -9,26 +9,27 @@ function ViewRules()
         "uget-gtk",
         "io.github.celluloid_player.Celluloid",
         "nwg-look",
-        "dev.warp.Warp"
+        "dev.warp.Warp",
+        "msedge-_hnpfjngllnobngcgfapefoaidbinmjnm-Default"
     }
 
     for _, value in ipairs(ssds) do
         Utils.ViewSSD(value)
     end
 
-    local ViewMatrix = {
-        [1] = { 'dev.warp.Warp' },
-        [2] = { 'brave-browser' },
-        [3] = { 'code-url-handler', 'dev.zed.Zed' },
-        [4] = { 'thunar' },
-        [5] = { 'libreoffice-*' },
-        [6] = { 'org.telegram.desktop', 'discord' },
-        [7] = { 'io.github.celluloid_player.Celluloid', 'vlc' },
-        [8] = { 'uget-gtk' },
-        [9] = { 'Gimp-2.10' },
+    local TagForView = {
+        [1] = { "dev.warp.Warp" },
+        [2] = { "brave-browser" },
+        [3] = { "code-url-handler", "dev.zed.Zed" },
+        [4] = { "thunar" },
+        [5] = { "libreoffice-*" },
+        [6] = { "org.telegram.desktop", "discord", "msedge-_hnpfjngllnobngcgfapefoaidbinmjnm-Default" },
+        [7] = { "io.github.celluloid_player.Celluloid", "vlc" },
+        [8] = { "uget-gtk" },
+        [9] = { "Gimp-2.10" },
     }
 
-    for tag, apps in pairs(ViewMatrix) do
+    for tag, apps in pairs(TagForView) do
         for _, app in ipairs(apps) do
             Utils.ViewRule(app, tag)
         end
