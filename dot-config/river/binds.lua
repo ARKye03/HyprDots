@@ -7,8 +7,8 @@ function KeyBinds()
     Utils.Spawn({ "Super", "Control" }, "Return", "/usr/bin/warp-terminal")
 
     --AGS
-    Utils.Spawn({ "Super" }, "D", '/usr/bin/ags -t applauncher')
-    Utils.Spawn({ "Super" }, "R", '/usr/bin/ags -q && ags')
+    Utils.Spawn({ "Super" }, "D", "/usr/bin/ags -t applauncher")
+    Utils.Spawn({ "Super" }, "R", "/usr/bin/ags -q && ags")
 
     --Browser
     Utils.Spawn({ "Super" }, "W",
