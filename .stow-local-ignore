@@ -7,3 +7,4 @@ LICENSE
 .gitignore
 public
 .gitmodules
+.envrc
