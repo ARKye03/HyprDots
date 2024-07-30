@@ -10,7 +10,7 @@ if handle ~= nil then
         table.insert(lines, s)
     end
 
-    local markdown = "# Zoore Arch Installed Packages\n\n| Package  | Version |\n| -------  | ------- |\n"
+    local markdown = "# Eelie Installed Packages\n\n| Package  | Version |\n| -------  | ------- |\n"
     for _, line in ipairs(lines) do
         local package, version = line:match("(%S+)%s+(%S+)")
         markdown = markdown .. "| " .. package .. " | " .. version .. " |\n"
