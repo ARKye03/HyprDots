@@ -21,6 +21,7 @@ riverctl map normal Super W spawn '/usr/bin/brave --enable-features=UseOzonePlat
 # Utils
 riverctl map normal Super V spawn "$HOME/.dotfiles/scripts/toggle_vpn.lua"
 riverctl map normal Super X spawn "$HOME/.config/rofi/powermenu/type-4/powermenu.sh"
+riverctl map normal Super A spawn "ags -t powermenu"
 riverctl map normal Super M spawn "/usr/bin/alacritty --class floatcritty -e /usr/bin/ncmpcpp -c $HOME/.ncmpcpp/config"
 riverctl map normal Super E spawn "/usr/bin/thunar"
 
@@ -121,7 +122,7 @@ riverctl rule-add -app-id 'vlc' tags 64
 riverctl rule-add -app-id 'uget-gtk' tags 128
 
 for i in $(seq 1 9); do
-    tags=$((1 << (i - 1)))
+	tags=$((1 << (i - 1)))
 
 	# Super+[1-9] to focus tag [0-8]
 	riverctl map normal Super "$i" set-focused-tags $tags
