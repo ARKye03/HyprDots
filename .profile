@@ -48,33 +48,65 @@ alias zdots="cd ~/.dotfiles/"
 alias curl='noglob curl'
 
 # Git Aliases
+
+# Clone
 alias gc="git clone"
+
+# Status
 alias gs="git status"
 alias gss="git status -s"
+
+# Add
 alias ga="git add"
 alias gaa="git add --all"
+
+# Commit
 alias gcm="git commit -m"
+
+# Checkout and Switch
 alias gco="git checkout"
 alias gcb="git checkout -b"
-alias gbr="git branch"
-alias gbd="git branch -d"
-alias gpl="git pull"
-alias gplr="git pull --rebase"
-alias gp="git push"
-alias gpf!="git push --force"
-alias gf="git fetch"
-alias gr="git restore"
-alias gplm="git pull origin main"
-alias gpsm="git push origin main"
-alias ggpull='git pull origin "$(git_current_branch)"'
-alias ggpush='git push origin "$(git_current_branch)"'
-alias gm="git merge"
-alias gmom='git merge origin/$(git_main_branch)'
-alias grs="git restore"
 alias gsw="git switch"
 alias gswc="git switch -c"
 alias gswm='git switch $(git_main_branch)'
 alias gswd='git switch $(git_develop_branch)'
+
+# Branch
+alias gbr="git branch"
+alias gbd="git branch -d"
+
+# Pull
+alias gpl="git pull"
+alias gplr="git pull --rebase"
+alias gplm="git pull origin main"
+alias ggpull='git pull origin "$(git_current_branch)"'
+
+# Push
+alias gp="git push"
+alias gpf!="git push --force"
+alias gpsm="git push origin main"
+alias ggpush='git push origin "$(git_current_branch)"'
+
+# Fetch
+alias gf="git fetch"
+alias gfa="git fetch --all --prune"
+
+# Restore
+alias gr="git restore"
+alias grs="git restore"
+
+# Merge
+alias gm="git merge"
+alias gmom='git merge origin/$(git_main_branch)'
+
+# Stash
+alias gst="git stash"
+alias gsta="git stash apply"
+alias gstd="git stash drop"
+alias gstl="git stash list"
+alias gstp="git stash pop"
+
+# Tag
 alias gts="git tag -s"
 alias gtv="git tag | sort -V"
 
@@ -132,4 +164,4 @@ export PATH=$PATH:$(go env GOPATH)/bin
 
 # export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 # export LD_LIBRARY_PATH=/usr/local/lib
-export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
+# export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
