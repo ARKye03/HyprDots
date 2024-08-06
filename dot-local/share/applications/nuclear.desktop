@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Nuclear
-Exec=/opt/nuclear/nuclear --enable-features=UseOzonePlatform --ozone-platform=wayland --use-gl=desktop %U
+Exec=/opt/nuclear/nuclear %U
 Terminal=false
 Type=Application
 Icon=nuclear
