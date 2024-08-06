@@ -75,6 +75,14 @@ alias gswd='git switch $(git_develop_branch)'
 alias gbr="git branch"
 alias gbd="git branch -d"
 
+# Bisect
+alias gbs="git bisect"
+alias gbss="git bisect start"
+alias gbc="git bisect continue"
+alias gbg="git bisect good"
+alias gbb="git bisect bad"
+alias gbs="git bisect reset"
+
 # Pull
 alias gpl="git pull"
 alias gplr="git pull --rebase"
