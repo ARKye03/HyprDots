@@ -173,3 +173,5 @@ export PATH=$PATH:$(go env GOPATH)/bin
 # export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 # export LD_LIBRARY_PATH=/usr/local/lib
 # export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
+
+export GPG_TTY=$(tty)
