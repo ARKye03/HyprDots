@@ -1,4 +1,4 @@
-# Eelie-dots
+# Archkye's dotfiles
 
 > - Hyprland
 >
