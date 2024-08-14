@@ -13,7 +13,6 @@ Used here:
 - [Aylur's GTK Shell](https://github.com/Aylur/ags).
 - [River](https://isaacfreund.com/software/river/).
 - [Hyprland](https://hyprland.org/).
-- [Rofi (lbonn's wayland fork)](https://github.com/lbonn/rofi).
 - [Warp-Terminal](https://www.warp.dev/), [Alacritty](https://alacritty.org/), [Kitty](https://sw.kovidgoyal.net/kitty/).
 - [Hyprlock](https://github.com/hyprwm/hyprlock), [hyprpicker](https://github.com/hyprwm/hyprpicker), [hypridle](https://github.com/hyprwm/hypridle)
 - [Music Player Daemon](https://musicpd.org/) + [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp) & [mpd-mpris](https://github.com/natsukagami/mpd-mpris).
