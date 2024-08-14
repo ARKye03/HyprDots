@@ -39,6 +39,8 @@ source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring
 
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
+source .profile
+
 #Binds
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
