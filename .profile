@@ -1,6 +1,5 @@
 #Arch Linux Aliases
 alias pacsu="sudo pacman -Syu --noconfirm && yay -Syu"
-alias pacsuw='sudo pacman -Syu --noconfirm --config /etc/pacman-warp.conf && yay -Syu --noconfirm --config /etc/pacman-warp.conf'
 alias pacin="sudo pacman -S --noconfirm"
 alias yacin="yay -S --noconfirm"
 alias pacre="sudo pacman -Rns"
@@ -13,13 +12,9 @@ alias avzsh="nvim ~/.dotfiles/.zshrc"
 alias avdots="nvim ~/.dotfiles/"
 alias avbsh="nvim ~/.dotfiles/.bashrc"
 alias avpac="sudo vim /etc/pacman.conf"
-alias avpacw="sudo vim /etc/pacman-warp.conf"
-alias avbsp="nvim ~/.config/bspwm/bspwmrc"
 alias avhyp="nvim ~/.dotfiles/dot-config/hypr/"
 alias avags="nvim ~/.dotfiles/dot-config/ags/"
-alias avsxh="nvim ~/.config/sxhkd/sxhkdrc"
 alias avnvim="nvim ~/.dotfiles/dot-config/nvim/"
-alias avpic="sudo nvim ~/.config/picom/picom.conf"
 
 #ProtonVPN
 alias pvpn="protonvpn-cli c --cc US -p udp"
@@ -32,11 +27,8 @@ alias nmco="nmcli device wifi connect"
 alias nmcomp='nmcli device wifi connect "Mon Palais"'
 
 #OTHERS
-alias getw="xprop | grep WM_CLASS"
 alias mkex="chmod +x"
-alias ythd="yt-dlp -f 'bestvideo[height<=720]+bestaudio/best[height<=720]' --merge-output-format mp4 -o '~/Downloads/ythd/%(title)s.%(ext)s'"
-alias cldl="scdl --onlymp3 --path Downloads/sdcl -l"
-alias nfetch="clear && neofetch"
+alias ffetch="clear && fastfetch"
 alias ptd="pnpm tauri dev"
 alias prd="pnpm run dev"
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
@@ -65,7 +57,7 @@ alias gcm="git commit -m"
 
 # Checkout and Switch
 alias gco="git checkout"
-alias gcb="git checkout -b"
+alias gcob="git checkout -b"
 alias gsw="git switch"
 alias gswc="git switch -c"
 alias gswm='git switch $(git_main_branch)'
@@ -78,10 +70,10 @@ alias gbd="git branch -d"
 # Bisect
 alias gbs="git bisect"
 alias gbss="git bisect start"
-alias gbc="git bisect continue"
-alias gbg="git bisect good"
-alias gbb="git bisect bad"
-alias gbs="git bisect reset"
+alias gbsc="git bisect continue"
+alias gbsg="git bisect good"
+alias gbsb="git bisect bad"
+alias gbsr="git bisect reset"
 
 # Pull
 alias gpl="git pull"
@@ -101,7 +93,6 @@ alias gfa="git fetch --all --prune"
 
 # Restore
 alias gr="git restore"
-alias grs="git restore"
 
 # Merge
 alias gm="git merge"
@@ -116,7 +107,7 @@ alias gstp="git stash pop"
 
 # Tag
 alias gts="git tag -s"
-alias gtv="git tag | sort -V"
+alias gtsv="git tag | sort -V"
 
 function git_current_branch() {
 	git branch --show-current
@@ -129,7 +120,7 @@ function eclean() {
 	echo "Type 'yes' to continue: "
 	read yn
 	if [ "$yn" = "yes" ]; then
-		~/.dotfiles/scripts/eclean.lua
+		~/.dotfiles/scripts/eclean.sh
 	else
 		echo "Aborted."
 	fi
@@ -167,7 +158,6 @@ alias nggc='ng generate component'
 
 # >>> coursier install directory >>>
 export PATH="$PATH:$HOME/.local/share/coursier/bin"
-# export PATH="$PATH:$HOME/go/bin/"
 export PATH=$PATH:$(go env GOPATH)/bin
 
 # export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
