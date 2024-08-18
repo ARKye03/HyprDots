@@ -2,6 +2,7 @@
 
 | Package  | Version |
 | -------  | ------- |
+| adw-gtk-theme | 5.3-2 |
 | alacritty | 0.13.2-2 |
 | aylurs-gtk-shell | 1.8.2-3 |
 | base | 3-2 |
@@ -31,6 +32,7 @@
 | gnome-keyring | 1:46.2-1 |
 | gnome-text-editor | 46.3-2 |
 | go | 2:1.23.0-1 |
+| gradience | 0.4.1_patch1-2 |
 | grim | 1.4.1-2 |
 | gst-plugin-pipewire | 1:1.2.2-2 |
 | gvfs | 1.54.2-1 |
