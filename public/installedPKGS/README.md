@@ -189,7 +189,7 @@
 | surrealist-bin | 2.1.6-1 |
 | swappy | 1.5.1-2 |
 | sxhkd | 0.6.2-4 |
-| systemd-resolvconf | 256.4-1 |
+| systemd-resolvconf | 256.5-1 |
 | telegram-desktop | 5.3.2-2 |
 | tgpt | 2.8.0-1 |
 | thunar | 4.18.11-1 |
