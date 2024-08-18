@@ -4,7 +4,6 @@
 | -------  | ------- |
 | adw-gtk3 | 5.3-2 |
 | alacritty | 0.13.2-2 |
-| amber-bash-bin | 0.3.4.alpha-1 |
 | appmenu-gtk-module | 24.05-1 |
 | aspnet-runtime | 8.0.7.sdk107-1 |
 | aylurs-gtk-shell | 1.8.2-3 |
