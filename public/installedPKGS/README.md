@@ -12,6 +12,7 @@
 | brightnessctl | 0.5.1-3 |
 | btop | 1.3.2-1 |
 | bun-bin | 1.1.24-1 |
+| cava | 0.10.2-2 |
 | celluloid | 0.27-1 |
 | copyq | 9.0.0-1 |
 | direnv | 2.34.0-1 |
