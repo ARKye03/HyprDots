@@ -2,7 +2,7 @@
 
 | Package  | Version |
 | -------  | ------- |
-| adw-gtk3 | 5.3-2 |
+| adw-gtk3 | 5.3-3 |
 | alacritty | 0.13.2-2 |
 | appmenu-gtk-module | 24.05-1 |
 | aspnet-runtime | 8.0.7.sdk107-1 |
@@ -38,7 +38,7 @@
 | dex | 0.9.0-2 |
 | direnv | 2.34.0-1 |
 | discord | 0.0.64-1 |
-| docker | 1:27.1.1-1 |
+| docker | 1:27.1.2-1 |
 | dotnet-sdk | 8.0.7.sdk107-1 |
 | downgrade | 11.3.0-1.1 |
 | edk2-shell | 202311-1 |
@@ -93,6 +93,7 @@
 | jq | 1.7.1-2 |
 | kando-bin | 1.2.0-2 |
 | kitty | 0.35.2-1 |
+| kvantum | 1.1.2-1 |
 | ldb | 2:2.9.1-2 |
 | lf | 32-1 |
 | lib32-pipewire | 1:1.2.2-1 |
@@ -157,9 +158,7 @@
 | pngquant | 3.0.3-2 |
 | polkit-gnome | 0.105-11 |
 | polybar | 3.7.1-1 |
-| protonvpn | 1.0.0-3 |
 | protonvpn-cli | 3.13.0-3 |
-| protonvpn-gui | 1.12.0-1 |
 | python-build | 1.2.1-3 |
 | python-installer | 0.7.0-8 |
 | python-openai | 1.40.6-2 |
@@ -174,7 +173,6 @@
 | reflector | 2023-2 |
 | ripgrep | 14.1.0-1 |
 | river | 0.3.5-2 |
-| rofi-lbonn-wayland | 1.7.5+wayland3-1 |
 | rsync | 3.3.0-2 |
 | rustup | 1.27.1-1 |
 | rxvt-unicode | 9.31-5 |
@@ -193,7 +191,7 @@
 | sxhkd | 0.6.2-4 |
 | systemd-resolvconf | 256.4-1 |
 | telegram-desktop | 5.3.2-2 |
-| tgpt-bin | 2.8.0-1 |
+| tgpt | 2.8.0-1 |
 | thunar | 4.18.11-1 |
 | thunar-archive-plugin | 0.5.2-1 |
 | thunar-media-tags-plugin | 0.4.0-2 |
