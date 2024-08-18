@@ -117,7 +117,7 @@
 | lua-posix | 36.2.1-2 |
 | man-db | 2.12.1-1 |
 | meson | 1.5.1-1 |
-| microsoft-edge-stable-bin | 127.0.2651.86-1 |
+| microsoft-edge-stable-bin | 127.0.2651.105-1 |
 | mlocate | 0.26.git.20170220-7 |
 | mpc | 0.35-1 |
 | mpd | 0.23.15-5 |
@@ -213,7 +213,7 @@
 | vi | 1:070224-6 |
 | vim | 9.1.0672-1 |
 | visual-studio-code-bin | 1.92.2-1 |
-| vlc-git | 4.0.0.r30508.g380feb815e-1 |
+| vlc-git | 4.0.0.r30536.gf697fef566-1 |
 | warp-terminal | v0.2024.08.13.08.02.stable_03-1 |
 | wbg | 1.2.0-1 |
 | wf-recorder | 0.4.1-2 |
