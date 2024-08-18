@@ -1,0 +1,38 @@
+#!/bin/sh
+
+script_dir="$HOME/.dotfiles/public/installedPKGS/"
+readme_file="$script_dir/README.md"
+lua_script="$script_dir/listPkgs.lua"
+
+# Check if the directory exists
+if [ ! -d "$script_dir" ]; then
+    echo "Directory $script_dir does not exist. Aborting."
+    exit 1
+fi
+
+# Check if the Lua script exists
+if [ ! -f "$lua_script" ]; then
+    echo "Lua script $lua_script does not exist. Aborting."
+    exit 1
+fi
+
+cd "$script_dir"
+
+echo "Running listPkgs.lua..."
+lua listPkgs.lua
+
+# Check if the README.md file exists
+if [ ! -f "$readme_file" ]; then
+    echo "README.md file $readme_file does not exist after running the script. Aborting."
+    exit 1
+fi
+
+if git diff --quiet "$readme_file"; then
+    echo "No changes in README.md"
+else
+    echo "Packages have been updated and/or modified"
+    git add "$readme_file"
+    git commit -m "Update Packages [$(date)]"
+fi
+
+exit 0
