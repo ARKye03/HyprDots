@@ -1,7 +1,7 @@
 live_config_reload = true
 
 import = [
-   "~/.dotfiles/dot-config/alacritty/themes/catppuccin-macchiato.toml"
+   "~/.dotfiles/dot-config/alacritty/themes/one_dark.toml"
 ]
 
 [cursor]
