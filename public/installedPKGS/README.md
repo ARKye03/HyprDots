@@ -54,7 +54,7 @@
 | libpulse | 17.0-3 |
 | libva-intel-driver | 2.4.1-3 |
 | linux-firmware | 20240809.59460076-1 |
-| linux-lts | 6.6.46-1 |
+| linux-lts | 6.6.47-1 |
 | loupe | 46.2-1 |
 | man-db | 2.12.1-1 |
 | mpd | 0.23.15-5 |
