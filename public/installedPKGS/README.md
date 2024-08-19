@@ -134,7 +134,7 @@
 | nmap | 7.95-1 |
 | noto-fonts-emoji | 1:2.042-1 |
 | ntfs-3g | 2022.10.3-1 |
-| nuclear-player-bin | 0.6.37-3 |
+| nuclear-player-bin | 0.6.38-3 |
 | nushell | 0.96.1-1 |
 | nvidia-dkms | 555.58.02-1 |
 | nwg-look | 0.2.7-1 |
@@ -143,6 +143,7 @@
 | ocs-url | 3.1.0-7.3 |
 | opencl-nvidia | 555.58.02-1 |
 | openssh | 9.8p1-1 |
+| oxipng | 9.1.2-1 |
 | p7zip | 1:17.05-2 |
 | pacman-contrib | 1.10.6-1 |
 | pangomm | 2.46.4-1 |
@@ -157,7 +158,7 @@
 | playerctl | 2.4.1-4 |
 | pngquant | 3.0.3-2 |
 | polkit-gnome | 0.105-11 |
-| polybar | 3.7.1-1 |
+| polybar | 3.7.2-1 |
 | protonvpn-cli | 3.13.0-3 |
 | python-build | 1.2.1-3 |
 | python-installer | 0.7.0-8 |
@@ -218,7 +219,7 @@
 | wbg | 1.2.0-1 |
 | wf-recorder | 0.4.1-2 |
 | wget | 1.24.5-3 |
-| wine | 9.14-1 |
+| wine | 9.15-1 |
 | wine-mono | 9.2.0-1 |
 | wireless_tools | 30.pre9-4 |
 | wireplumber | 0.5.5-1 |
