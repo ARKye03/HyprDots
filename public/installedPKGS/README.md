@@ -9,6 +9,7 @@
 | base-devel | 1-1 |
 | bat | 0.24.0-2 |
 | bleachbit | 4.6.0-2 |
+| blueman | 2.4.3-1 |
 | brave-bin | 1:1.68.141-1 |
 | brightnessctl | 0.5.1-3 |
 | btop | 1.3.2-1 |
@@ -18,7 +19,7 @@
 | copyq | 9.0.0-1 |
 | direnv | 2.34.0-1 |
 | discord | 0.0.64-1 |
-| docker | 1:27.1.1-1 |
+| docker | 1:27.1.2-1 |
 | dotnet-sdk | 8.0.7.sdk107-1 |
 | efibootmgr | 18-3 |
 | engrampa | 1.28.1-1 |
