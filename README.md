@@ -20,7 +20,7 @@ Used here:
 - Clipboard manager: [CopyQ](https://github.com/hluk/CopyQ).
 - Notification Daemon: [AGS](https://aylur.github.io/ags-docs/services/notifications/).
 - [Zsh](https://www.zsh.org/), [ble.sh(Bash)](https://github.com/akinomyoga/ble.sh).
-- GTK Theme: Catppuccin-Macchiato.
+- GTK Theme: OneDark.
   - [Gradience](https://github.com/GradienceTeam/Gradience) adw-gtk3
 - Cursor: [Catppuccin](https://github.com/catppuccin/cursors).
 - [GNU Stow](https://www.gnu.org/software/stow/)
