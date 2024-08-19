@@ -38,6 +38,7 @@ alias codedots="code ~/.dotfiles"
 alias codeags="code ~/.dotfiles/dot-config/ags/"
 alias zdots="cd ~/.dotfiles/"
 alias curl='noglob curl'
+alias spwmusic='/usr/bin/mpd ~/.config/mpd/mpd.conf; /usr/bin/mpd-mpris --no-instance --host 127.0.0.1 & disown'
 
 # Git Aliases
 
