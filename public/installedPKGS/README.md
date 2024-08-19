@@ -28,6 +28,7 @@
 | fd | 10.1.0-1 |
 | ffmpegthumbnailer | 2.2.2-6 |
 | firefox | 129.0.1-2 |
+| fnm-bin | 1.37.1-0 |
 | git | 2.46.0-1 |
 | github-cli | 2.54.0-1 |
 | gnome-keyring | 1:46.2-1 |
