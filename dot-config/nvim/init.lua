@@ -15,5 +15,21 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+-- Hyprlang LSP and tree-sitter
+vim.api.nvim_create_autocmd({'BufEnter', 'BufWinEnter'}, {
+        pattern = {"*.hl", "hypr*.conf"},
+        callback = function(event)
+                print(string.format("starting hyprls for %s", vim.inspect(event)))
+                vim.lsp.start {
+                        name = "hyprlang",
+                        cmd = {"hyprls"},
+                        root_dir = vim.fn.getcwd(),
+                }
+                vim.filetype.add({
+                  pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+                })
+        end
+})
+
 require "lazy_setup"
 require "polish"
