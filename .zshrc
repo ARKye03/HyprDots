@@ -51,6 +51,7 @@ bindkey "^L" clear-screen # Ctrl + L
 
 eval "$(zoxide init zsh)"
 eval "$(direnv hook zsh)"
+eval "$(fnm env --use-on-cd --shell zsh)"
 
 export MANROFFOPT="-c"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
