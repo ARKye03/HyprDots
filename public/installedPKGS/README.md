@@ -17,6 +17,7 @@
 | cava | 0.10.2-2 |
 | celluloid | 0.27-1 |
 | copyq | 9.0.0-1 |
+| dex | 0.9.0-2 |
 | direnv | 2.34.0-1 |
 | discord | 0.0.64-1 |
 | docker | 1:27.1.2-1 |
@@ -30,7 +31,7 @@
 | firefox | 129.0.1-2 |
 | fnm-bin | 1.37.1-0 |
 | git | 2.46.0-1 |
-| github-cli | 2.54.0-1 |
+| github-cli | 2.55.0-1 |
 | gnome-keyring | 1:46.2-1 |
 | gnome-text-editor | 46.3-2 |
 | go | 2:1.23.0-1 |
@@ -52,6 +53,7 @@
 | less | 1:661-1 |
 | libgnome-keyring | 1:3.12.0+r14+g23438cc-1 |
 | libpulse | 17.0-3 |
+| libreoffice-still | 7.6.7-1 |
 | libva-intel-driver | 2.4.1-3 |
 | linux-firmware | 20240809.59460076-1 |
 | linux-lts | 6.6.47-1 |
@@ -64,6 +66,7 @@
 | neovim | 0.10.1-3 |
 | network-manager-applet | 1.36.0-1 |
 | networkmanager | 1.48.8-1 |
+| noto-fonts-emoji | 1:2.042-1 |
 | nwg-icon-picker | 0.1.1-3 |
 | nwg-look | 0.2.7-1 |
 | obs-studio | 30.2.1-1 |
@@ -90,7 +93,7 @@
 | smartmontools | 7.4-2 |
 | sof-firmware | 2024.06-1 |
 | stow | 2.4.0-1 |
-| telegram-desktop | 5.3.2-2 |
+| telegram-desktop | 5.4.1-1 |
 | tgpt | 2.8.0-1 |
 | thunar | 4.18.11-1 |
 | thunar-archive-plugin | 0.5.2-1 |
