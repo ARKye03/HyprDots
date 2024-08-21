@@ -28,7 +28,6 @@
 | fastfetch | 2.21.3-1 |
 | fd | 10.1.0-1 |
 | ffmpegthumbnailer | 2.2.2-6 |
-| firefox | 129.0.1-2 |
 | fnm-bin | 1.37.1-0 |
 | git | 2.46.0-1 |
 | github-cli | 2.55.0-1 |
@@ -48,7 +47,7 @@
 | intel-media-driver | 24.2.5-1 |
 | intel-ucode | 20240813-2 |
 | iwd | 2.19-1 |
-| kitty | 0.35.2-1 |
+| kitty | 0.36.0-1 |
 | kvantum | 1.1.2-1 |
 | less | 1:661-1 |
 | libgnome-keyring | 1:3.12.0+r14+g23438cc-1 |
