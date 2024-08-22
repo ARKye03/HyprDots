@@ -1,5 +1,10 @@
 #!/usr/bin/env lua
--- file: gss.lua
+
+-- Get the directory of the current script
+local script_dir = debug.getinfo(1).source:match("@?(.*/)")
+package.path = script_dir .. "?.lua;" .. package.path
+
+local lib = require('lib')
 local os = require('os')
 
 local function region_screenshot()
@@ -22,12 +27,21 @@ end
 local function full_screenshot()
   local status = os.execute('grim')
   if status == 0 then
-    os.execute('notify-send -u low -t 2000 "Screenshot stored in ~/Pictures"')
+    lib.Notify("Screenshot stored in ~/Pictures", "low", 2000)
   end
 end
 
 local function custom_slurp()
-  local output = os.execute('slurp -d -c #ffffff -b #00000000')
+  local handle = io.popen('slurp -d -c "#ffffff" -b "#00000000"')
+  local output = handle and handle:read("*a") or ""
+  if handle then
+    handle:close()
+  end
+
+  if output == nil or output == "" then
+    output = "No output from slurp"
+  end
+
   os.execute('notify-send "The measure is:" "' .. output .. '" -u low')
 end
 
