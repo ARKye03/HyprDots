@@ -59,7 +59,7 @@
 | geogebra | 1:5.2.851.0-1 |
 | gimp | 2.10.38-1 |
 | git | 2.46.0-1 |
-| github-cli | 2.54.0-1 |
+| github-cli | 2.55.0-1 |
 | glfw | 3.4-2 |
 | glibmm | 2.66.7-1 |
 | gnome-bluetooth-3.0 | 46.1-1 |
@@ -92,7 +92,7 @@
 | iwd | 2.19-1 |
 | jq | 1.7.1-2 |
 | kando-bin | 1.2.0-2 |
-| kitty | 0.35.2-1 |
+| kitty | 0.36.0-1 |
 | kvantum | 1.1.2-1 |
 | ldb | 2:2.9.1-2 |
 | lf | 32-1 |
@@ -102,7 +102,7 @@
 | libayatana-appindicator | 0.5.93-1 |
 | libdisplay-info | 0.2.0-1 |
 | libpulse | 17.0-3 |
-| libreoffice-still | 7.6.7-1 |
+| libreoffice-still | 24.2.5-1 |
 | libsigc++ | 2.12.1-1 |
 | libva-intel-driver | 2.4.1-3 |
 | libva-nvidia-driver | 0.0.12-1 |
@@ -135,7 +135,7 @@
 | noto-fonts-emoji | 1:2.042-1 |
 | ntfs-3g | 2022.10.3-1 |
 | nuclear-player-bin | 0.6.38-3 |
-| nushell | 0.96.1-1 |
+| nushell | 0.97.1-1 |
 | nvidia-dkms | 555.58.02-1 |
 | nwg-look | 0.2.7-1 |
 | obs-studio | 30.2.1-1 |
@@ -162,13 +162,15 @@
 | protonvpn-cli | 3.13.0-3 |
 | python-build | 1.2.1-3 |
 | python-installer | 0.7.0-8 |
-| python-openai | 1.40.6-2 |
+| python-openai | 1.41.1-1 |
 | python-pam | 2.0.2-3 |
 | python-pip | 24.2-1 |
 | python-pynvim | 0.5.0-3 |
 | python-zombie-imp | 0.0.2-1 |
 | qalculate-gtk | 5.2.0-1 |
 | qemu-full | 9.0.2-1 |
+| qt5ct | 1.8-2 |
+| qt6ct | 0.9-9 |
 | quickemu | 4.9.6-1.1 |
 | ranger | 1.9.3-11 |
 | reflector | 2023-2 |
@@ -191,8 +193,8 @@
 | swappy | 1.5.1-2 |
 | sxhkd | 0.6.2-4 |
 | systemd-resolvconf | 256.5-1 |
-| telegram-desktop | 5.3.2-2 |
-| tgpt | 2.8.0-1 |
+| telegram-desktop | 5.4.1-1 |
+| tgpt | 2.8.1-1 |
 | thunar | 4.18.11-1 |
 | thunar-archive-plugin | 0.5.2-1 |
 | thunar-media-tags-plugin | 0.4.0-2 |
@@ -214,7 +216,7 @@
 | vi | 1:070224-6 |
 | vim | 9.1.0672-1 |
 | visual-studio-code-bin | 1.92.2-1 |
-| vlc-git | 4.0.0.r30536.gf697fef566-1 |
+| vlc-git | 4.0.0.r30556.g7bd96dc6ee-1 |
 | warp-terminal | v0.2024.08.13.08.02.stable_03-1 |
 | wbg | 1.2.0-1 |
 | wf-recorder | 0.4.1-2 |
@@ -234,7 +236,7 @@
 | xorg-xsetroot | 1.1.3-2 |
 | xsettingsd | 1.0.2-2 |
 | yay | 12.3.5-1 |
-| zed | 0.148.1-1 |
+| zed | 0.149.3-1 |
 | zoxide | 0.9.4-2 |
 | zsh | 5.9-5 |
 | zsh-autosuggestions | 0.7.0-3 |
