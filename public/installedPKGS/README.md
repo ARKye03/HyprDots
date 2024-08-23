@@ -14,7 +14,7 @@
 | bleachbit | 4.6.0-2 |
 | blueman | 2.4.3-1 |
 | brave-beta-bin | 1.70.80-1 |
-| brave-bin | 1:1.68.141-1 |
+| brave-bin | 1:1.69.153-1 |
 | bspwm | 0.9.10-4 |
 | btop | 1.3.2-1 |
 | bun-bin | 1.1.24-1 |
@@ -37,7 +37,7 @@
 | debtap | 3.5.1-1.2 |
 | dex | 0.9.0-2 |
 | direnv | 2.34.0-1 |
-| discord | 0.0.64-1 |
+| discord | 0.0.65-1 |
 | docker | 1:27.1.2-1 |
 | dotnet-sdk | 8.0.7.sdk107-1 |
 | downgrade | 11.3.0-1.1 |
@@ -59,7 +59,9 @@
 | geogebra | 1:5.2.851.0-1 |
 | gimp | 2.10.38-1 |
 | git | 2.46.0-1 |
+| gitg | 2:44-2 |
 | github-cli | 2.55.0-1 |
+| gitui | 0.26.3-1 |
 | glfw | 3.4-2 |
 | glibmm | 2.66.7-1 |
 | gnome-bluetooth-3.0 | 46.1-1 |
@@ -109,15 +111,15 @@
 | libvips | 8.15.1-5 |
 | libxml++ | 3.2.5-1 |
 | linux-firmware | 20240809.59460076-1 |
-| linux-zen | 6.10.5.zen1-1 |
-| linux-zen-docs | 6.10.5.zen1-1 |
-| linux-zen-headers | 6.10.5.zen1-1 |
+| linux-zen | 6.10.6.zen1-1 |
+| linux-zen-docs | 6.10.6.zen1-1 |
+| linux-zen-headers | 6.10.6.zen1-1 |
 | loupe | 46.2-1 |
 | lswt | 2.0.0-1 |
 | lua-posix | 36.2.1-2 |
 | man-db | 2.12.1-1 |
 | meson | 1.5.1-1 |
-| microsoft-edge-stable-bin | 127.0.2651.105-1 |
+| microsoft-edge-stable-bin | 128.0.2739.42-1 |
 | mlocate | 0.26.git.20170220-7 |
 | mpc | 0.35-1 |
 | mpd | 0.23.15-5 |
@@ -214,7 +216,7 @@
 | uncrustify | 0.78.1-2 |
 | upscayl-bin | 2.11.5-1 |
 | vi | 1:070224-6 |
-| vim | 9.1.0672-1 |
+| vim | 9.1.0689-1 |
 | visual-studio-code-bin | 1.92.2-1 |
 | vlc-git | 4.0.0.r30556.g7bd96dc6ee-1 |
 | warp-terminal | v0.2024.08.13.08.02.stable_03-1 |
@@ -236,7 +238,7 @@
 | xorg-xsetroot | 1.1.3-2 |
 | xsettingsd | 1.0.2-2 |
 | yay | 12.3.5-1 |
-| zed | 0.149.3-1 |
+| zed | 0.149.5-1 |
 | zoxide | 0.9.4-2 |
 | zsh | 5.9-5 |
 | zsh-autosuggestions | 0.7.0-3 |
