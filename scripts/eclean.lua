@@ -1,3 +1,5 @@
+#! /usr/bin/env lua
+
 -- Function to prompt for password securely
 local function prompt_password()
   io.write("Enter your password: ")

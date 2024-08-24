@@ -1,5 +1,5 @@
 #!/usr/bin/env lua
--- file: WBG.lua
+
 local os = require("os")
 local io = require("io")
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env lua
--- file: toggle_vpn.lua
+
 local os = require('os')
 
 local function execute_command(command)
