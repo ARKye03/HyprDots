@@ -1,6 +1,5 @@
 #!/usr/bin/env lua
 
-
 -- Get the directory of the current script
 local script_dir = debug.getinfo(1).source:match("@?(.*/)")
 package.path = script_dir .. "?.lua;" .. package.path
