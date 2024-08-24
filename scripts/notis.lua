@@ -1,5 +1,5 @@
 #!/usr/bin/env lua
--- file: notis.lua
+
 local os = require('os')
 
 local function notify_send(args, title, message)
