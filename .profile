@@ -76,6 +76,9 @@ alias gbsg="git bisect good"
 alias gbsb="git bisect bad"
 alias gbsr="git bisect reset"
 
+# Log
+alias glog="git log --oneline --decorate --graph --all"
+
 # Pull
 alias gpl="git pull"
 alias gplr="git pull --rebase"
