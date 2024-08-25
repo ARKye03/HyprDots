@@ -13,7 +13,7 @@
 | bat | 0.24.0-2 |
 | bleachbit | 4.6.0-2 |
 | blueman | 2.4.3-1 |
-| brave-beta-bin | 1.70.80-1 |
+| brave-beta-bin | 1.70.88-1 |
 | brave-bin | 1:1.69.153-1 |
 | bspwm | 0.9.10-4 |
 | btop | 1.3.2-1 |
@@ -49,7 +49,7 @@
 | eza | 0.19.0-1 |
 | fastfetch | 2.21.3-1 |
 | fcitx5 | 5.1.10-1 |
-| fd | 10.1.0-1 |
+| fd | 10.2.0-1 |
 | ffmpegthumbnailer | 2.2.2-6 |
 | find-the-command | 2.0.1-1.2 |
 | fnm-bin | 1.37.1-0 |
@@ -138,12 +138,12 @@
 | ntfs-3g | 2022.10.3-1 |
 | nuclear-player-bin | 0.6.38-3 |
 | nushell | 0.97.1-1 |
-| nvidia-dkms | 555.58.02-1 |
+| nvidia-dkms | 560.35.03-2 |
 | nwg-look | 0.2.7-1 |
 | obs-studio | 30.2.1-1 |
 | obsidian | 1.6.7-1 |
 | ocs-url | 3.1.0-7.3 |
-| opencl-nvidia | 555.58.02-1 |
+| opencl-nvidia | 560.35.03-2 |
 | openssh | 9.8p1-1 |
 | oxipng | 9.1.2-1 |
 | p7zip | 1:17.05-2 |
@@ -218,10 +218,10 @@
 | vi | 1:070224-6 |
 | vim | 9.1.0689-1 |
 | visual-studio-code-bin | 1.92.2-2 |
-| vlc-git | 4.0.0.r30556.g7bd96dc6ee-1 |
+| vlc-git | 4.0.0.r30577.g0f4f6806d3-1 |
 | warp-terminal | v0.2024.08.20.08.02.stable_00-1 |
 | wbg | 1.2.0-1 |
-| wf-recorder | 0.4.1-2 |
+| wf-recorder | 0.5.0-1 |
 | wget | 1.24.5-3 |
 | wine | 9.15-1 |
 | wine-mono | 9.2.0-1 |
