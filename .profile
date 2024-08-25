@@ -79,6 +79,9 @@ alias gbsr="git bisect reset"
 # Log
 alias glog="git log --oneline --decorate --graph --all"
 
+# Log
+alias glog="git log --oneline --decorate --graph --all"
+
 # Pull
 alias gpl="git pull"
 alias gplr="git pull --rebase"
