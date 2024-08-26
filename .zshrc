@@ -101,3 +101,10 @@ PATH=~/.console-ninja/.bin:$PATH
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+# bun completions
+[ -s "/home/archkye/.bun/_bun" ] && source "/home/archkye/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
