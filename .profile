@@ -12,7 +12,7 @@ alias avzsh="nvim ~/.dotfiles/.zshrc"
 alias avdots="nvim ~/.dotfiles/"
 alias avbsh="nvim ~/.dotfiles/.bashrc"
 alias avpac="sudo vim /etc/pacman.conf"
-alias avhyp="nvim ~/.dotfiles/dot-config/hypr/"
+alias avhyp="nvim ~/.dotfiles/dot-cofig/hypr/"
 alias avags="nvim ~/.dotfiles/dot-config/ags/"
 alias avnvim="nvim ~/.dotfiles/dot-config/nvim/"
 
@@ -28,17 +28,28 @@ alias nmcomp='nmcli device wifi connect "Mon Palais"'
 
 #OTHERS
 alias mkex="chmod +x"
-alias ffetch="clear && fastfetch"
-alias ptd="pnpm tauri dev"
-alias prd="pnpm run dev"
+alias ythd="yt-dlp -f 'bestvideo[height<=720]+bestaudio/best[height<=720]' --merge-output-format mp4 -o '~/Downloads/ythd/%(title)s.%(ext)s'"
+alias cldl="scdl --onlymp3 --path Downloads/sdcl -l"
+alias nfetch="clear && neofetch"
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias lsa="eza -a --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias ll="/usr/bin/ls -al"
 alias cdar="cd ~/arch_progs/"
 alias codedots="code ~/.dotfiles"
 alias codeags="code ~/.dotfiles/dot-config/ags/"
 alias zdots="cd ~/.dotfiles/"
 alias curl='noglob curl'
 alias spwmusic='/usr/bin/mpd ~/.config/mpd/mpd.conf; /usr/bin/mpd-mpris --no-instance --host 127.0.0.1 & disown'
+
+# Node & Bun
+alias ptd="pnpm tauri dev"
+alias prd="pnpm run dev"
+
+alias btd="bun tauri dev"
+alias brd="bun run dev"
+
+# Ripgrep
+alias rgfs='rg --fixed-strings --'
 
 # Node & Bun
 alias ptd="pnpm tauri dev"
