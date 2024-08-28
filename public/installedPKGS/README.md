@@ -31,12 +31,12 @@
 | codeberg-cli | 0.4.3-1 |
 | copyq | 9.0.0-1 |
 | cpanminus | 1.7046-3 |
-| cpio | 2.15-1 |
+| cpio | 2.15-2 |
 | cronie | 1.7.2-1 |
 | debtap | 3.5.1-1.2 |
 | dex | 0.9.0-2 |
 | direnv | 2.34.0-1 |
-| discord | 0.0.65-1 |
+| discord | 0.0.66-1 |
 | docker | 1:27.1.2-1 |
 | dotnet-sdk | 8.0.7.sdk107-1 |
 | downgrade | 11.3.0-1.1 |
@@ -92,7 +92,6 @@
 | intel-ucode | 20240813-2 |
 | iwd | 2.19-1 |
 | jq | 1.7.1-2 |
-| kando-bin | 1.2.0-2 |
 | kitty | 0.36.1-1 |
 | kvantum | 1.1.2-1 |
 | ldb | 2:2.9.1-2 |
@@ -101,9 +100,10 @@
 | libappindicator-gtk3 | 12.10.0.r298-4 |
 | libastal-river-git | r12.0a8a39d-1 |
 | libayatana-appindicator | 0.5.93-1 |
+| libcpuid | 0.7.0-1 |
 | libdisplay-info | 0.2.0-1 |
 | libpulse | 17.0-3 |
-| libreoffice-still | 24.2.5-1 |
+| libreoffice-still | 24.2.5-2 |
 | libsigc++ | 2.12.1-1 |
 | libva-intel-driver | 2.4.1-3 |
 | libva-nvidia-driver | 0.0.12-1 |
@@ -128,7 +128,7 @@
 | neofetch | 7.1.0-2 |
 | neovim | 0.10.1-3 |
 | network-manager-applet | 1.36.0-1 |
-| networkmanager | 1.48.8-1 |
+| networkmanager | 1.48.10-1 |
 | ninja | 1.12.1-1 |
 | nix | 2.23.3-1 |
 | nm-connection-editor | 1.36.0-1 |
@@ -235,7 +235,7 @@
 | xorg-xsetroot | 1.1.3-2 |
 | xsettingsd | 1.0.2-2 |
 | yay | 12.3.5-1 |
-| zed | 0.149.5-1 |
+| zed | 0.149.6-2 |
 | zoxide | 0.9.4-2 |
 | zsh | 5.9-5 |
 | zsh-autosuggestions | 0.7.0-3 |
