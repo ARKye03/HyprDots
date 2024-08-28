@@ -40,6 +40,16 @@ alias zdots="cd ~/.dotfiles/"
 alias curl='noglob curl'
 alias spwmusic='/usr/bin/mpd ~/.config/mpd/mpd.conf; /usr/bin/mpd-mpris --no-instance --host 127.0.0.1 & disown'
 
+# Node & Bun
+alias ptd="pnpm tauri dev"
+alias prd="pnpm run dev"
+
+alias btd="bun tauri dev"
+alias brd="bun run dev"
+
+# Ripgrep
+alias rgfs='rg --fixed-strings --'
+
 # Git Aliases
 
 # Clone
