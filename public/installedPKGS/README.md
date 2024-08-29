@@ -27,7 +27,7 @@
 | cjson | 1.7.18-1 |
 | clang | 18.1.8-2 |
 | cliphist | 1:0.5.0-1 |
-| cmake | 3.30.2-1 |
+| cmake | 3.30.3-1 |
 | codeberg-cli | 0.4.3-1 |
 | copyq | 9.0.0-1 |
 | cpanminus | 1.7046-3 |
@@ -45,7 +45,7 @@
 | engrampa | 1.28.1-1 |
 | exfat-utils | 1.4.0-3 |
 | extramaus | 20121220-3 |
-| eza | 0.19.0-1 |
+| eza | 0.19.1-1 |
 | fastfetch | 2.22.0-1 |
 | fcitx5 | 5.1.10-1 |
 | fd | 10.2.0-1 |
@@ -55,9 +55,9 @@
 | fzf | 0.54.3-1 |
 | gapless | 3.8-1 |
 | gdb | 15.1-1 |
-| geogebra | 1:5.2.851.0-1 |
+| geogebra | 1:5.2.853.0-1 |
 | gimp | 2.10.38-1 |
-| git | 2.46.0-1 |
+| git | 2.46.0-2 |
 | gitg | 2:44-2 |
 | github-cli | 2.55.0-1 |
 | gitui | 0.26.3-1 |
@@ -130,7 +130,7 @@
 | network-manager-applet | 1.36.0-1 |
 | networkmanager | 1.48.10-1 |
 | ninja | 1.12.1-1 |
-| nix | 2.23.3-1 |
+| nix | 2.23.3-2 |
 | nm-connection-editor | 1.36.0-1 |
 | nmap | 7.95-1 |
 | noto-fonts-emoji | 1:2.042-1 |
@@ -163,7 +163,7 @@
 | protonvpn-cli | 3.13.0-3 |
 | python-build | 1.2.1-3 |
 | python-installer | 0.7.0-8 |
-| python-openai | 1.41.1-1 |
+| python-openai | 1.42.0-1 |
 | python-pam | 2.0.2-3 |
 | python-pip | 24.2-1 |
 | python-pynvim | 0.5.0-3 |
@@ -235,7 +235,7 @@
 | xorg-xsetroot | 1.1.3-2 |
 | xsettingsd | 1.0.2-2 |
 | yay | 12.3.5-1 |
-| zed | 0.149.6-2 |
+| zed | 0.150.4-1 |
 | zoxide | 0.9.4-2 |
 | zsh | 5.9-5 |
 | zsh-autosuggestions | 0.7.0-3 |
