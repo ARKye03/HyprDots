@@ -14,7 +14,7 @@
 | bleachbit | 4.6.1-1 |
 | blueman | 2.4.3-1 |
 | brave-beta-bin | 1.70.88-1 |
-| brave-bin | 1:1.69.153-1 |
+| brave-bin | 1:1.69.160-1 |
 | bspwm | 0.9.10-4 |
 | btop | 1.3.2-1 |
 | cambalache | 0.90.4-1 |
@@ -37,7 +37,7 @@
 | dex | 0.9.0-2 |
 | direnv | 2.34.0-1 |
 | discord | 0.0.66-1 |
-| docker | 1:27.1.2-1 |
+| docker | 1:27.2.0-1 |
 | dotnet-sdk | 8.0.7.sdk107-1 |
 | downgrade | 11.3.0-1.1 |
 | edk2-shell | 202311-1 |
@@ -90,7 +90,7 @@
 | icu74 | 74.2-6 |
 | id3v2 | 0.1.12-6 |
 | intel-ucode | 20240813-2 |
-| iwd | 2.19-1 |
+| iwd | 2.20-1 |
 | jq | 1.7.1-2 |
 | kitty | 0.36.1-1 |
 | kvantum | 1.1.2-1 |
@@ -116,7 +116,7 @@
 | loupe | 46.2-1 |
 | lswt | 2.0.0-1 |
 | lua-posix | 36.2.1-2 |
-| man-db | 2.12.1-1 |
+| man-db | 2.13.0-1 |
 | meson | 1.5.1-1 |
 | microsoft-edge-stable-bin | 128.0.2739.42-1 |
 | mlocate | 0.26.git.20170220-7 |
@@ -137,7 +137,7 @@
 | ntfs-3g | 2022.10.3-1 |
 | nuclear-player-bin | 0.6.38-3 |
 | nushell | 0.97.1-1 |
-| nvidia-open-dkms | 560.35.03-1 |
+| nvidia-open-dkms | 560.35.03-2 |
 | nwg-look | 0.2.7-1 |
 | obs-studio | 30.2.1-1 |
 | obsidian | 1.6.7-1 |
@@ -163,7 +163,7 @@
 | protonvpn-cli | 3.13.0-3 |
 | python-build | 1.2.1-3 |
 | python-installer | 0.7.0-8 |
-| python-openai | 1.42.0-1 |
+| python-openai | 1.43.0-1 |
 | python-pam | 2.0.2-3 |
 | python-pip | 24.2-1 |
 | python-pynvim | 0.5.0-3 |
@@ -215,8 +215,9 @@
 | uncrustify | 0.78.1-2 |
 | unrar | 1:7.0.9-1 |
 | upscayl-bin | 2.11.5-1 |
+| vala | 0.56.17-1 |
 | vi | 1:070224-6 |
-| vim | 9.1.0697-1 |
+| vim | 9.1.0707-1 |
 | visual-studio-code-bin | 1.92.2-2 |
 | warp-terminal | v0.2024.08.20.08.02.stable_00-1 |
 | wbg | 1.2.0-1 |
