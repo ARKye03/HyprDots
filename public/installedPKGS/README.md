@@ -53,7 +53,7 @@
 | find-the-command | 2.0.1-1.2 |
 | fnm-bin | 1.37.1-0 |
 | fzf | 0.54.3-1 |
-| gapless | 3.8-1 |
+| gapless | 3.9-1 |
 | gdb | 15.1-1 |
 | geogebra | 1:5.2.853.0-1 |
 | gimp | 2.10.38-1 |
@@ -90,7 +90,7 @@
 | icu74 | 74.2-6 |
 | id3v2 | 0.1.12-6 |
 | intel-ucode | 20240813-2 |
-| iwd | 2.20-1 |
+| iwd | 2.20-2 |
 | jq | 1.7.1-2 |
 | kitty | 0.36.1-1 |
 | kvantum | 1.1.2-1 |
@@ -98,7 +98,7 @@
 | lf | 32-1 |
 | lib32-pipewire | 1:1.2.3-1 |
 | libappindicator-gtk3 | 12.10.0.r298-4 |
-| libastal-river-git | r12.0a8a39d-1 |
+| libastal-river-git | r257.b8acc38-1 |
 | libayatana-appindicator | 0.5.93-1 |
 | libcpuid | 0.7.0-1 |
 | libdisplay-info | 0.2.0-1 |
@@ -124,13 +124,13 @@
 | mpd | 0.23.15-5 |
 | mpd-mpris-bin | 0.4.1-2 |
 | nano | 8.1-1 |
-| ncmpcpp | 0.9.2-19 |
+| ncmpcpp | 0.9.2-20 |
 | neofetch | 7.1.0-2 |
 | neovim | 0.10.1-3 |
 | network-manager-applet | 1.36.0-1 |
 | networkmanager | 1.48.10-1 |
 | ninja | 1.12.1-1 |
-| nix | 2.23.3-2 |
+| nix | 2.23.3-3 |
 | nm-connection-editor | 1.36.0-1 |
 | nmap | 7.95-1 |
 | noto-fonts-emoji | 1:2.042-1 |
@@ -218,7 +218,7 @@
 | vala | 0.56.17-1 |
 | vi | 1:070224-6 |
 | vim | 9.1.0707-1 |
-| visual-studio-code-bin | 1.92.2-2 |
+| visual-studio-code-bin | 1.92.2-4 |
 | warp-terminal | v0.2024.08.20.08.02.stable_00-1 |
 | wbg | 1.2.0-1 |
 | wf-recorder | 0.5.0-1 |
