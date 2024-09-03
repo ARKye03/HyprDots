@@ -11,7 +11,7 @@
 | bat | 0.24.0-2 |
 | bleachbit | 4.6.1-1 |
 | blueman | 2.4.3-1 |
-| brave-bin | 1:1.69.153-1 |
+| brave-bin | 1:1.69.160-1 |
 | brightnessctl | 0.5.1-3 |
 | btop | 1.3.2-1 |
 | cava | 0.10.2-2 |
@@ -20,7 +20,7 @@
 | dex | 0.9.0-2 |
 | direnv | 2.34.0-1 |
 | discord | 0.0.66-1 |
-| docker | 1:27.1.2-1 |
+| docker | 1:27.2.0-1 |
 | dotnet-sdk | 8.0.7.sdk107-1 |
 | efibootmgr | 18-3 |
 | engrampa | 1.28.1-1 |
@@ -29,9 +29,9 @@
 | fd | 10.2.0-1 |
 | ffmpegthumbnailer | 2.2.2-6 |
 | fnm-bin | 1.37.1-0 |
-| geogebra | 1:5.2.851.0-1 |
+| geogebra | 1:5.2.853.0-1 |
 | gimp | 2.10.38-1 |
-| git | 2.46.0-1 |
+| git | 2.46.0-2 |
 | gitg | 2:44-2 |
 | github-cli | 2.55.0-1 |
 | gitui | 0.26.3-1 |
@@ -50,7 +50,7 @@
 | hyprpicker | 0.3.0-1 |
 | intel-media-driver | 24.2.5-1 |
 | intel-ucode | 20240813-2 |
-| iwd | 2.19-1 |
+| iwd | 2.20-1 |
 | jq | 1.7.1-2 |
 | kitty | 0.36.1-1 |
 | kvantum | 1.1.2-1 |
@@ -60,9 +60,9 @@
 | libreoffice-still | 24.2.5-2 |
 | libva-intel-driver | 2.4.1-3 |
 | linux-firmware | 20240809.59460076-1 |
-| linux-lts | 6.6.47-1 |
+| linux-lts | 6.6.48-1 |
 | loupe | 46.2-1 |
-| man-db | 2.12.1-1 |
+| man-db | 2.13.0-1 |
 | mpd | 0.23.15-5 |
 | mpd-mpris-bin | 0.4.1-2 |
 | nano | 8.1-1 |
@@ -112,11 +112,11 @@
 | tumbler | 4.18.2-1 |
 | uget | 2.2.3-7 |
 | uget-integrator-chromium | 1.0.0-4 |
-| upower | 1.90.4-1 |
-| vim | 9.1.0697-1 |
+| upower | 1.90.5-2 |
+| vim | 9.1.0707-1 |
 | visual-studio-code-bin | 1.92.2-2 |
 | vlc | 3.0.21-2 |
-| vulkan-intel | 1:24.1.6-1 |
+| vulkan-intel | 1:24.2.1-1 |
 | wbg | 1.2.0-1 |
 | webkit2gtk | 2.44.3-3 |
 | wget | 1.24.5-3 |
