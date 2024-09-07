@@ -9,7 +9,7 @@
 | aylurs-gtk-shell | 1.8.2-3 |
 | balena-etcher | 2:1.19.22-1 |
 | base | 3-2 |
-| base-devel | 1-1 |
+| base-devel | 1-2 |
 | bat | 0.24.0-2 |
 | bleachbit | 4.6.1-1 |
 | blueman | 2.4.3-1 |
@@ -45,7 +45,7 @@
 | engrampa | 1.28.1-1 |
 | exfat-utils | 1.4.0-3 |
 | extramaus | 20121220-3 |
-| eza | 0.19.1-1 |
+| eza | 0.19.2-1 |
 | fastfetch | 2.23.0-1 |
 | fcitx5 | 5.1.10-1 |
 | fd | 10.2.0-1 |
@@ -67,7 +67,7 @@
 | gnome-keyring | 1:46.2-1 |
 | gnome-photos | 1:44.0-4 |
 | gnome-text-editor | 46.3-2 |
-| go | 2:1.23.0-1 |
+| go | 2:1.23.1-1 |
 | gobject-introspection | 1.80.1-3 |
 | gradience-git | 0.8.0.beta1.r214.g9b19f4b1-1 |
 | grim | 1.4.1-2 |
@@ -92,7 +92,7 @@
 | intel-ucode | 20240813-2 |
 | iwd | 2.20-2 |
 | jq | 1.7.1-2 |
-| kitty | 0.36.1-1 |
+| kitty | 0.36.2-1 |
 | kvantum | 1.1.2-1 |
 | ldb | 2:2.9.1-2 |
 | lf | 32-1 |
@@ -161,7 +161,7 @@
 | polkit-gnome | 0.105-11 |
 | polybar | 3.7.2-1 |
 | protonvpn-cli | 3.13.0-3 |
-| python-build | 1.2.1-3 |
+| python-build | 1.2.2-1 |
 | python-installer | 0.7.0-8 |
 | python-openai | 1.43.0-1 |
 | python-pam | 2.0.2-3 |
@@ -194,7 +194,7 @@
 | swappy | 1.5.1-2 |
 | sxhkd | 0.6.2-4 |
 | systemd-resolvconf | 256.5-1 |
-| telegram-desktop | 5.4.1-1 |
+| telegram-desktop | 5.5.0-1 |
 | tgpt | 2.8.1-1 |
 | thunar | 4.18.11-1 |
 | thunar-archive-plugin | 0.5.2-1 |
@@ -218,13 +218,13 @@
 | vala | 0.56.17-1 |
 | vi | 1:070224-6 |
 | vim | 9.1.0707-1 |
-| visual-studio-code-bin | 1.92.2-4 |
-| warp-terminal | v0.2024.08.20.08.02.stable_00-1 |
+| visual-studio-code-bin | 1.93.0-1 |
+| warp-terminal | v0.2024.08.27.08.02.stable_02-1 |
 | wbg | 1.2.0-1 |
 | wf-recorder | 0.5.0-1 |
 | wget | 1.24.5-3 |
 | wireless_tools | 30.pre9-4 |
-| wireplumber | 0.5.5-1 |
+| wireplumber | 0.5.6-1 |
 | wl-clip-persist | 0.4.3-2 |
 | wl-clipboard | 1:2.2.1-2 |
 | wmctrl | 1.07-6 |
@@ -236,7 +236,7 @@
 | xorg-xsetroot | 1.1.3-2 |
 | xsettingsd | 1.0.2-2 |
 | yay | 12.3.5-1 |
-| zed | 0.151.1-1 |
+| zed | 0.151.2-1 |
 | zoxide | 0.9.4-2 |
 | zsh | 5.9-5 |
 | zsh-autosuggestions | 0.7.0-3 |
@@ -244,4 +244,4 @@
 | zsh-history-substring-search | 1.1.0-2 |
 | zsh-nix-shell | 0.8.0-1 |
 | zsh-syntax-highlighting | 0.8.0-1 |
-| zsh-theme-powerlevel10k-git | r4287.a42e374e-1 |
+| zsh-theme-powerlevel10k-git | r4290.d71edb83-1 |
