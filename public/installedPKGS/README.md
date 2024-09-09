@@ -109,10 +109,10 @@
 | libva-nvidia-driver | 0.0.12-1 |
 | libvips | 8.15.1-5 |
 | libxml++ | 3.2.5-1 |
-| linux-firmware | 20240809.59460076-1 |
-| linux-zen | 6.10.7.zen1-1 |
-| linux-zen-docs | 6.10.7.zen1-1 |
-| linux-zen-headers | 6.10.7.zen1-1 |
+| linux-firmware | 20240909.552ed9b8-1 |
+| linux-zen | 6.10.9.zen1-1 |
+| linux-zen-docs | 6.10.9.zen1-1 |
+| linux-zen-headers | 6.10.9.zen1-1 |
 | loupe | 46.2-1 |
 | lswt | 2.0.0-1 |
 | lua-posix | 36.2.1-2 |
@@ -217,7 +217,6 @@
 | vi | 1:070224-6 |
 | vim | 9.1.0707-1 |
 | visual-studio-code-bin | 1.93.0-1 |
-| warp-terminal | v0.2024.08.27.08.02.stable_02-1 |
 | wbg | 1.2.0-1 |
 | wf-recorder | 0.5.0-1 |
 | wget | 1.24.5-3 |
