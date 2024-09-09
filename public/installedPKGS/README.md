@@ -5,7 +5,7 @@
 | adw-gtk3 | 5.3-3 |
 | alacritty | 0.13.2-2 |
 | appmenu-gtk-module | 24.05-1 |
-| aspnet-runtime | 8.0.7.sdk107-1 |
+| aspnet-runtime | 8.0.8.sdk108-1 |
 | aylurs-gtk-shell | 1.8.2-3 |
 | balena-etcher | 2:1.19.22-1 |
 | base | 3-2 |
@@ -36,13 +36,13 @@
 | debtap | 3.5.1-1.2 |
 | dex | 0.9.0-2 |
 | direnv | 2.34.0-1 |
-| discord | 0.0.67-1 |
+| discord | 0.0.68-1 |
 | docker | 1:27.2.0-1 |
-| dotnet-sdk | 8.0.7.sdk107-1 |
+| dotnet-sdk | 8.0.8.sdk108-1 |
 | downgrade | 11.3.0-1.1 |
 | edk2-shell | 202311-1 |
 | efibootmgr | 18-3 |
-| engrampa | 1.28.1-1 |
+| engrampa | 1.28.2-1 |
 | exfat-utils | 1.4.0-3 |
 | extramaus | 20121220-3 |
 | eza | 0.19.2-1 |
@@ -59,7 +59,7 @@
 | gimp | 2.10.38-1 |
 | git | 2.46.0-2 |
 | gitg | 2:44-2 |
-| github-cli | 2.55.0-1 |
+| github-cli | 2.56.0-1 |
 | gitui | 0.26.3-1 |
 | glfw | 3.4-2 |
 | glibmm | 2.66.7-1 |
@@ -80,7 +80,7 @@
 | htop | 3.3.0-3 |
 | hyprcursor | 0.1.9-1 |
 | hypridle | 0.1.2-1 |
-| hyprland | 0.42.0-2 |
+| hyprland | 0.43.0-1 |
 | hyprlang | 0.5.2-1 |
 | hyprlock | 0.4.1-1 |
 | hyprpicker | 0.3.0-1 |
@@ -123,7 +123,7 @@
 | mpc | 0.35-1 |
 | mpd | 0.23.15-5 |
 | mpd-mpris-bin | 0.4.1-2 |
-| nano | 8.1-1 |
+| nano | 8.2-1 |
 | ncmpcpp | 0.10-1 |
 | neofetch | 7.1.0-2 |
 | neovim | 0.10.1-3 |
@@ -137,7 +137,7 @@
 | ntfs-3g | 2022.10.3-1 |
 | nuclear-player-bin | 0.6.38-3 |
 | nushell | 0.97.1-1 |
-| nvidia-open-dkms | 560.35.03-3 |
+| nvidia-open-dkms | 560.35.03-4 |
 | nwg-look | 0.2.7-1 |
 | obs-studio | 30.2.1-1 |
 | obsidian | 1.6.7-1 |
@@ -169,13 +169,11 @@
 | python-pynvim | 0.5.0-3 |
 | python-zombie-imp | 0.0.2-1 |
 | qalculate-gtk | 5.2.0-1 |
-| qemu-full | 9.0.2-1 |
 | qt5ct | 1.8-2 |
 | qt6ct | 0.9-9 |
-| quickemu | 4.9.6-1.1 |
 | ranger | 1.9.3-11 |
 | reflector | 2023-2 |
-| ripgrep | 14.1.0-1 |
+| ripgrep | 14.1.1-1 |
 | river | 0.3.5-2 |
 | rsync | 3.3.0-2 |
 | rustup | 1.27.1-1 |
@@ -194,7 +192,7 @@
 | swappy | 1.5.1-2 |
 | sxhkd | 0.6.2-4 |
 | systemd-resolvconf | 256.5-1 |
-| telegram-desktop | 5.5.0-1 |
+| telegram-desktop | 5.5.1-1 |
 | tgpt | 2.8.1-1 |
 | thunar | 4.18.11-1 |
 | thunar-archive-plugin | 0.5.2-1 |
