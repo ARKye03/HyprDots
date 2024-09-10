@@ -25,7 +25,6 @@
 | chaotic-mirrorlist | 20240306-1 |
 | chatgpt-desktop-bin | 1.1.0-1 |
 | cjson | 1.7.18-1 |
-| clang | 18.1.8-2 |
 | cliphist | 1:0.5.0-1 |
 | cmake | 3.30.3-1 |
 | codeberg-cli | 0.4.3-1 |
@@ -90,11 +89,11 @@
 | icu74 | 74.2-6 |
 | id3v2 | 0.1.12-6 |
 | intel-ucode | 20240813-2 |
-| iwd | 2.20-2 |
+| iwd | 2.21-1 |
 | jq | 1.7.1-2 |
 | kitty | 0.36.2-1 |
 | kvantum | 1.1.2-1 |
-| ldb | 2:2.9.1-2 |
+| ldb | 2:4.21.0-2 |
 | lf | 32-1 |
 | lib32-pipewire | 1:1.2.3-1 |
 | libappindicator-gtk3 | 12.10.0.r298-4 |
@@ -233,7 +232,6 @@
 | xorg-xsetroot | 1.1.3-2 |
 | xsettingsd | 1.0.2-2 |
 | yay | 12.3.5-1 |
-| zed | 0.151.2-1 |
 | zoxide | 0.9.4-2 |
 | zsh | 5.9-5 |
 | zsh-autosuggestions | 0.7.0-3 |
