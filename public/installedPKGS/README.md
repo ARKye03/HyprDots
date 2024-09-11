@@ -88,7 +88,7 @@
 | icoextract | 0.1.5-1 |
 | icu74 | 74.2-6 |
 | id3v2 | 0.1.12-6 |
-| intel-ucode | 20240813-2 |
+| intel-ucode | 20240910-1 |
 | iwd | 2.21-1 |
 | jq | 1.7.1-2 |
 | kitty | 0.36.2-1 |
@@ -118,7 +118,6 @@
 | man-db | 2.13.0-1 |
 | meson | 1.5.1-1 |
 | microsoft-edge-stable-bin | 128.0.2739.42-1 |
-| mlocate | 0.26.git.20170220-7 |
 | mpc | 0.35-1 |
 | mpd | 0.23.15-5 |
 | mpd-mpris-bin | 0.4.1-2 |
@@ -136,7 +135,7 @@
 | ntfs-3g | 2022.10.3-1 |
 | nuclear-player-bin | 0.6.38-3 |
 | nushell | 0.97.1-1 |
-| nvidia-open-dkms | 560.35.03-4 |
+| nvidia-open-dkms | 560.35.03-5 |
 | nwg-look | 0.2.7-1 |
 | obs-studio | 30.2.1-1 |
 | obsidian | 1.6.7-1 |
@@ -156,13 +155,14 @@
 | pipewire-pulse | 1:1.2.3-1 |
 | plank | 0.11.89-5 |
 | playerctl | 2.4.1-4 |
+| plocate | 1.1.22-3 |
 | pngquant | 3.0.3-2 |
 | polkit-gnome | 0.105-11 |
 | polybar | 3.7.2-1 |
 | protonvpn-cli | 3.13.0-3 |
 | python-build | 1.2.2-1 |
 | python-installer | 0.7.0-8 |
-| python-openai | 1.43.0-1 |
+| python-openai | 1.44.1-1 |
 | python-pam | 2.0.2-3 |
 | python-pip | 24.2-1 |
 | python-pynvim | 0.5.0-3 |
@@ -190,7 +190,7 @@
 | surrealist-bin | 2.1.6-1 |
 | swappy | 1.5.1-2 |
 | sxhkd | 0.6.2-4 |
-| systemd-resolvconf | 256.5-1 |
+| systemd-resolvconf | 256.6-1 |
 | telegram-desktop | 5.5.1-1 |
 | tgpt | 2.8.1-1 |
 | thunar | 4.18.11-1 |
