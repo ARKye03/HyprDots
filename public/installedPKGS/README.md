@@ -24,6 +24,7 @@
 | dotnet-sdk | 8.0.8.sdk108-1 |
 | efibootmgr | 18-3 |
 | engrampa | 1.28.2-2 |
+| extramaus | 20121220-3 |
 | eza | 0.19.3-1 |
 | fastfetch | 2.24.0-1 |
 | fd | 10.2.0-1 |
@@ -32,6 +33,7 @@
 | geogebra | 1:5.2.853.0-1 |
 | gimp | 2.10.38-1 |
 | git | 2.46.0-2 |
+| git-filter-repo | 2.38.0-3 |
 | gitg | 2:44-2 |
 | github-cli | 2.56.0-1 |
 | gitui | 0.26.3-2 |
@@ -112,6 +114,7 @@
 | tumbler | 4.18.2-1 |
 | uget | 2.2.3-7 |
 | uget-integrator-chromium | 1.0.0-4 |
+| unityhub | 3.8.0-1 |
 | upower | 1.90.5-2 |
 | vim | 9.1.0707-1 |
 | visual-studio-code-bin | 1.93.0-1 |
