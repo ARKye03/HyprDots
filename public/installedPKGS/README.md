@@ -14,8 +14,10 @@
 | brave-bin | 1:1.70.119-1 |
 | brightnessctl | 0.5.1-3 |
 | btop | 1.4.0-3 |
-| cava | 0.10.2-2 |
+| cava | 0.10.2-2.1 |
 | celluloid | 0.27-1 |
+| chaotic-keyring | 20230616-1 |
+| chaotic-mirrorlist | 20240306-1 |
 | copyq | 9.0.0-1 |
 | dex | 0.9.0-2 |
 | direnv | 2.34.0-1 |
@@ -76,7 +78,7 @@
 | nwg-icon-picker | 0.1.1-3 |
 | nwg-look | 0.2.7-1 |
 | obs-studio | 30.2.1-1 |
-| ocs-url | 3.1.0-7 |
+| ocs-url | 3.1.0-7.3 |
 | pacman-contrib | 1.10.6-2 |
 | pipewire | 1:1.2.4-1 |
 | pipewire-alsa | 1:1.2.4-1 |
@@ -140,4 +142,4 @@
 | zsh-completions | 0.35.0-2 |
 | zsh-history-substring-search | 1.1.0-2 |
 | zsh-syntax-highlighting | 0.8.0-1 |
-| zsh-theme-powerlevel10k-git | r4285.2b7da93d-1 |
+| zsh-theme-powerlevel10k-git | r4293.087405df-1 |
