@@ -12,7 +12,7 @@ alias avzsh="nvim ~/.dotfiles/.zshrc"
 alias avdots="nvim ~/.dotfiles/"
 alias avbsh="nvim ~/.dotfiles/.bashrc"
 alias avpac="sudo vim /etc/pacman.conf"
-alias avhyp="nvim ~/.dotfiles/dot-cofig/hypr/"
+alias avhyp="nvim ~/.dotfiles/dot-config/hypr"
 alias avags="nvim ~/.dotfiles/dot-config/ags/"
 alias avnvim="nvim ~/.dotfiles/dot-config/nvim/"
 
