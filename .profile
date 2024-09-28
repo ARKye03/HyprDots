@@ -64,84 +64,84 @@ alias rgfs='rg --fixed-strings --'
 # Git Aliases
 
 # Clone
-alias gc="git clone"
+alias gc="/usr/bin/git clone"
 
 # Status
-alias gs="git status"
-alias gss="git status -s"
+alias gs="/usr/bin/git status"
+alias gss="/usr/bin/git status -s"
 
 # Add
-alias ga="git add"
-alias gaa="git add --all"
+alias ga="/usr/bin/git add"
+alias gaa="/usr/bin/git add --all"
 
 # Commit
-alias gcm="git commit -m"
+alias gcm="/usr/bin/git commit -m"
 
 # Checkout and Switch
-alias gco="git checkout"
-alias gcob="git checkout -b"
-alias gsw="git switch"
-alias gswc="git switch -c"
-alias gswm='git switch $(git_main_branch)'
-alias gswd='git switch $(git_develop_branch)'
+alias gco="/usr/bin/git checkout"
+alias gcob="/usr/bin/git checkout -b"
+alias gsw="/usr/bin/git switch"
+alias gswc="/usr/bin/git switch -c"
+alias gswm='/usr/bin/git switch $(git_main_branch)'
+alias gswd='/usr/bin/git switch $(git_develop_branch)'
 
 # Branch
-alias gbr="git branch"
-alias gbd="git branch -d"
+alias gbr="/usr/bin/git branch"
+alias gbd="/usr/bin/git branch -d"
 
 # Bisect
-alias gbs="git bisect"
-alias gbss="git bisect start"
-alias gbsc="git bisect continue"
-alias gbsg="git bisect good"
-alias gbsb="git bisect bad"
-alias gbsr="git bisect reset"
+alias gbs="/usr/bin/git bisect"
+alias gbss="/usr/bin/git bisect start"
+alias gbsc="/usr/bin/git bisect continue"
+alias gbsg="/usr/bin/git bisect good"
+alias gbsb="/usr/bin/git bisect bad"
+alias gbsr="/usr/bin/git bisect reset"
 
 # Log
-alias glog="git log --oneline --decorate --graph --all"
+alias glog="/usr/bin/git log --oneline --decorate --graph --all"
 
 # Log
-alias glog="git log --oneline --decorate --graph --all"
+alias glog="/usr/bin/git log --oneline --decorate --graph --all"
 
 # Pull
-alias gpl="git pull"
-alias gplr="git pull --rebase"
-alias gplm="git pull origin main"
-alias ggpull='git pull origin "$(git_current_branch)"'
+alias gpl="/usr/bin/git pull"
+alias gplr="/usr/bin/git pull --rebase"
+alias gplm="/usr/bin/git pull origin main"
+alias ggpull='/usr/bin/git pull origin "$(git_current_branch)"'
 
 # Push
-alias gp="git push"
-alias gpf!="git push --force"
-alias gpsm="git push origin main"
-alias ggpush='git push origin "$(git_current_branch)"'
+alias gp="/usr/bin/git push"
+alias gpf!="/usr/bin/git push --force"
+alias gpsm="/usr/bin/git push origin main"
+alias ggpush='/usr/bin/git push origin "$(git_current_branch)"'
 
 # Fetch
-alias gf="git fetch"
-alias gfa="git fetch --all --prune"
+alias gf="/usr/bin/git fetch"
+alias gfa="/usr/bin/git fetch --all --prune"
 
 # Restore
-alias gr="git restore"
+alias gr="/usr/bin/git restore"
 
 # Merge
-alias gm="git merge"
-alias gmom='git merge origin/$(git_main_branch)'
+alias gm="/usr/bin/git merge"
+alias gmom='/usr/bin/git merge origin/$(git_main_branch)'
 
 # Stash
-alias gst="git stash"
-alias gsta="git stash apply"
-alias gstd="git stash drop"
-alias gstl="git stash list"
-alias gstp="git stash pop"
+alias gst="/usr/bin/git stash"
+alias gsta="/usr/bin/git stash apply"
+alias gstd="/usr/bin/git stash drop"
+alias gstl="/usr/bin/git stash list"
+alias gstp="/usr/bin/git stash pop"
 
 # Tag
-alias gts="git tag -s"
-alias gtsv="git tag | sort -V"
+alias gts="/usr/bin/git tag -s"
+alias gtsv="/usr/bin/git tag | sort -V"
 
 function git_current_branch() {
 	git branch --show-current
 }
 function gd() {
-	git diff --name-only --relative --diff-filter=d $@ | xargs bat --diff
+	git diff --name-only --relative --diff-filter=d "$@" | xargs bat --diff
 }
 function eclean() {
 	echo "Are you sure you want to clean the cache and remove old packages?"
