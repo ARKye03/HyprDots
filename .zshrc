@@ -36,6 +36,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 source /usr/share/zsh/plugins/zsh-sudo/sudo.plugin.zsh
+source /usr/share/zsh/plugins/zsh-auto-notify/auto-notify.plugin.zsh
 
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
@@ -52,6 +53,7 @@ bindkey "^L" clear-screen # Ctrl + L
 eval "$(zoxide init zsh)"
 eval "$(direnv hook zsh)"
 eval "$(fnm env --use-on-cd --shell zsh)"
+source <(fzf --zsh)
 
 export MANROFFOPT="-c"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
