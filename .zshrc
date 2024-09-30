@@ -30,7 +30,7 @@ if [[ "$TERM_PROGRAM" != "WarpTerminal" ]]; then
   source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
   source /usr/share/zsh/plugins/zsh-sudo/sudo.plugin.zsh
-  # source /usr/share/zsh/plugins/zsh-nix-shell/nix-shell.plugin.zsh
+  source /usr/share/zsh/plugins/zsh-auto-notify/auto-notify.plugin.zsh
   source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
   ZSH_AUTOSUGGEST_STRATEGY=(history completion)
