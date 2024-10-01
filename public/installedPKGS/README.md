@@ -14,7 +14,7 @@
 | bleachbit | 4.6.1-1 |
 | blueman | 2.4.3-1 |
 | brave-beta-bin | 1.70.88-1 |
-| brave-bin | 1:1.70.117-1 |
+| brave-bin | 1:1.70.119-1 |
 | bspwm | 0.9.10-4 |
 | btop | 1.4.0-3 |
 | cage | 0.1.5+r36+ge7d8780-2 |
@@ -118,7 +118,7 @@
 | lua-posix | 36.2.1-2 |
 | man-db | 2.13.0-1 |
 | meson | 1.5.2-1 |
-| microsoft-edge-stable-bin | 128.0.2739.42-1 |
+| microsoft-edge-stable-bin | 129.0.2792.52-1 |
 | mpc | 0.35-1 |
 | mpd | 0.23.15-6 |
 | mpd-mpris-bin | 0.4.1-2 |
@@ -211,6 +211,7 @@
 | uget | 2.2.3-7 |
 | uget-integrator-chromium | 1.0.0-4 |
 | uncrustify | 0.78.1-2 |
+| unityhub | 3.8.0-1 |
 | unrar | 1:7.0.9-1 |
 | upscayl-bin | 2.11.5-1 |
 | vala | 0.56.17-1 |
