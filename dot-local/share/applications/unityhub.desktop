@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Unity Hub
+Exec=/opt/unityhub/unityhub --ozone-platform-hint=wayland %U
+Terminal=false
+Type=Application
+Icon=unityhub
+StartupWMClass=unityhub
+Comment=The Official Unity Hub
+Categories=Development;
+TryExec=unityhub
+MimeType=x-scheme-handler/unityhub;
