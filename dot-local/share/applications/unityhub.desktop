@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Unity Hub
-Exec=/opt/unityhub/unityhub --ozone-platform-hint=wayland %U
+Exec=/opt/unityhub/unityhub --enable-features=UseOzonePlatform --ozone-platform=wayland %U
 Terminal=false
 Type=Application
 Icon=unityhub
