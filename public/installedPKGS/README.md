@@ -28,7 +28,7 @@
 | engrampa | 1.28.2-2 |
 | extramaus | 20121220-3 |
 | eza | 0.20.0-1 |
-| fastfetch | 2.25.0-1 |
+| fastfetch | 2.26.1-1 |
 | fd | 10.2.0-1 |
 | ffmpegthumbnailer | 2.2.3-2 |
 | fnm-bin | 1.37.1-0 |
@@ -57,7 +57,7 @@
 | intel-ucode | 20240910-1 |
 | iwd | 2.22-1 |
 | jq | 1.7.1-2 |
-| kitty | 0.36.3-1 |
+| kitty | 0.36.4-1 |
 | kvantum | 1.1.2-1 |
 | less | 1:661-1 |
 | libgnome-keyring | 1:3.12.0+r14+g23438cc-1 |
@@ -124,7 +124,7 @@
 | vlc | 3.0.21-6 |
 | vulkan-intel | 1:24.2.3-1 |
 | wbg | 1.2.0-1 |
-| webkit2gtk | 2.46.0-2 |
+| webkit2gtk | 2.46.1-1 |
 | wget | 1.24.5-3 |
 | wireless_tools | 30.pre9-4 |
 | wireplumber | 0.5.6-1 |
