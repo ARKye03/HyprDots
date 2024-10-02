@@ -13,7 +13,6 @@
 | bat | 0.24.0-2 |
 | bleachbit | 4.6.1-1 |
 | blueman | 2.4.3-1 |
-| brave-beta-bin | 1.70.88-1 |
 | brave-bin | 1:1.70.119-1 |
 | bspwm | 0.9.10-4 |
 | btop | 1.4.0-3 |
@@ -103,7 +102,7 @@
 | libcpuid | 0.7.0-1 |
 | libdisplay-info | 0.2.0-1 |
 | libpulse | 17.0-3 |
-| libreoffice-still | 24.2.5-2 |
+| libreoffice-still | 24.2.6-5 |
 | libsigc++ | 2.12.1-1 |
 | libva-intel-driver | 2.4.1-3 |
 | libva-nvidia-driver | 0.0.12-1 |
