@@ -28,7 +28,7 @@
 | engrampa | 1.28.2-2 |
 | extramaus | 20121220-3 |
 | eza | 0.20.0-1 |
-| fastfetch | 2.26.1-1 |
+| fastfetch | 2.26.1-2 |
 | fd | 10.2.0-1 |
 | ffmpegthumbnailer | 2.2.3-2 |
 | fnm-bin | 1.37.1-0 |
@@ -38,7 +38,7 @@
 | git | 2.46.2-1 |
 | git-filter-repo | 2.38.0-3 |
 | gitg | 2:44-3 |
-| github-cli | 2.57.0-1 |
+| github-cli | 2.58.0-1 |
 | gitui | 0.26.3-2 |
 | gnome-keyring | 1:46.2-1 |
 | gnome-text-editor | 47.0-1 |
@@ -52,7 +52,7 @@
 | hypridle | 0.1.2-1 |
 | hyprland | 0.43.0-1 |
 | hyprlock | 0.4.1-1 |
-| hyprpicker | 0.3.0-2 |
+| hyprpicker | 0.4.1-1 |
 | intel-media-driver | 24.3.3-1 |
 | intel-ucode | 20240910-1 |
 | iwd | 2.22-1 |
@@ -136,6 +136,7 @@
 | xorg-server | 21.1.13-1 |
 | xorg-xinit | 1.4.2-2 |
 | yay | 12.4.2-1 |
+| yt-dlp | 2024.09.27-1 |
 | zoxide | 0.9.6-1 |
 | zram-generator | 1.1.2-1 |
 | zsh | 5.9-5 |
