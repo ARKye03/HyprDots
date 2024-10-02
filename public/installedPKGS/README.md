@@ -86,6 +86,7 @@
 | pipewire-jack | 1:1.2.5-1 |
 | pipewire-pulse | 1:1.2.5-1 |
 | polkit-gnome | 0.105-11 |
+| power-profiles-daemon | 0.23-1 |
 | protonvpn-cli | 3.13.0-3 |
 | qt5-wayland | 5.15.15+kde+r59-1 |
 | qt6-svg | 6.7.3-1 |
@@ -95,6 +96,7 @@
 | ripgrep | 14.1.1-1 |
 | river | 0.3.5-2 |
 | rsync | 3.3.0-2 |
+| rustup | 1.27.1-1 |
 | sassc | 3.6.2-5 |
 | sddm | 0.21.0-4 |
 | seahorse | 1:47.0.1-2 |
