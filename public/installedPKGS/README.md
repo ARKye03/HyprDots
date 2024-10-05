@@ -2,7 +2,7 @@
 
 | Package  | Version |
 | -------  | ------- |
-| adw-gtk-theme | 5.3-2 |
+| adw-gtk-theme | 5.4-1 |
 | alacritty | 0.13.2-3 |
 | aria2 | 1.37.0-1 |
 | aylurs-gtk-shell | 1.8.2-3 |
@@ -11,7 +11,7 @@
 | bat | 0.24.0-2 |
 | bleachbit | 4.6.1-1 |
 | blueman | 2.4.3-1 |
-| brave-bin | 1:1.70.119-1 |
+| brave-bin | 1:1.70.123-1 |
 | brightnessctl | 0.5.1-3 |
 | btop | 1.4.0-3 |
 | cava | 0.10.2-2.1 |
@@ -27,7 +27,7 @@
 | efibootmgr | 18-3 |
 | engrampa | 1.28.2-2 |
 | extramaus | 20121220-3 |
-| eza | 0.20.0-1 |
+| eza | 0.20.1-1 |
 | fastfetch | 2.26.1-2 |
 | fd | 10.2.0-1 |
 | ffmpegthumbnailer | 2.2.3-2 |
@@ -42,7 +42,7 @@
 | gitui | 0.26.3-2 |
 | gnome-keyring | 1:46.2-1 |
 | gnome-text-editor | 47.0-1 |
-| go | 2:1.23.1-1 |
+| go | 2:1.23.2-1 |
 | gradience | 0.4.1_patch1-2 |
 | grim | 1.4.1-2 |
 | gst-plugin-pipewire | 1:1.2.5-1 |
@@ -53,6 +53,7 @@
 | hyprland | 0.43.0-1 |
 | hyprlock | 0.4.1-1 |
 | hyprpicker | 0.4.1-1 |
+| icoextract | 0.1.5-1 |
 | intel-media-driver | 24.3.3-1 |
 | intel-ucode | 20240910-1 |
 | iwd | 2.22-1 |
@@ -72,10 +73,11 @@
 | mpd-mpris-bin | 0.4.1-2 |
 | nano | 8.2-1 |
 | ncmpcpp | 0.10-1 |
-| neovim | 0.10.1-5 |
+| neovim | 0.10.2-1 |
 | network-manager-applet | 1.36.0-1 |
 | networkmanager | 1.48.10-1 |
-| noto-fonts-emoji | 1:2.042-1 |
+| noto-fonts-emoji | 1:2.047-1 |
+| ntfs-3g | 2022.10.3-1 |
 | nwg-icon-picker | 0.1.1-3 |
 | nwg-look | 0.2.7-1 |
 | obs-studio | 30.2.1-1 |
@@ -103,6 +105,7 @@
 | slurp | 1.5.0-1 |
 | smartmontools | 7.4-2 |
 | sof-firmware | 2024.09-1 |
+| steam | 1.0.0.81-2 |
 | stow | 2.4.1-1 |
 | swappy | 1.5.1-2 |
 | telegram-desktop | 5.5.5-3 |
@@ -110,7 +113,9 @@
 | thunar | 4.18.11-2 |
 | thunar-archive-plugin | 0.5.2-2 |
 | thunar-media-tags-plugin | 0.4.0-3 |
+| thunar-vcs-plugin | 0.2.0-2 |
 | thunar-volman | 4.18.0-3 |
+| thunderbird | 128.3.0-1 |
 | tldr | 3.3.0-1 |
 | ttf-cousine-nerd | 3.2.1-2 |
 | ttf-firacode-nerd | 3.2.1-2 |
@@ -122,11 +127,11 @@
 | unityhub | 3.8.0-1 |
 | upower | 1.90.6-1 |
 | vim | 9.1.0740-1 |
-| visual-studio-code-bin | 1.93.1-1 |
+| visual-studio-code-bin | 1.94.0-1 |
 | vlc | 3.0.21-6 |
 | vulkan-intel | 1:24.2.3-1 |
 | wbg | 1.2.0-1 |
-| webkit2gtk | 2.46.1-1 |
+| webkit2gtk | 2.46.1-3 |
 | wget | 1.24.5-3 |
 | wireless_tools | 30.pre9-4 |
 | wireplumber | 0.5.6-1 |
