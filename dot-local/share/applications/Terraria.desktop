@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Terraria
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/18347172279256875008
+Icon=/home/archkye/Downloads/terraria-icon-400x512-wcvquzhx.png
+Terminal=false
+Type=Application
+Categories=Game;
