@@ -1,4 +1,7 @@
-#Arch Linux Aliases
+#Core
+alias snvim="sudo -E nvim"
+
+#Arch Linux
 alias pacsu="sudo pacman -Syu --noconfirm && yay -Syu"
 alias pacin="sudo pacman -S --noconfirm"
 alias yacin="yay -S --noconfirm"
@@ -7,11 +10,11 @@ alias yacre="yay -Rns"
 alias paclean='sudo pacman -Qdtq | sudo pacman -Rns - ; sudo fstrim -av'
 alias pacache="sudo pacman -Scc --noconfirm && yay -Scc --noconfirm"
 
-#AstroNvim Aliases
+#AstroNvim
 alias avzsh="nvim ~/.dotfiles/.zshrc"
 alias avdots="nvim ~/.dotfiles/"
 alias avbsh="nvim ~/.dotfiles/.bashrc"
-alias avpac="sudo vim /etc/pacman.conf"
+alias avpac="snvim ~/.dotfiles/public/pacman.conf"
 alias avhyp="nvim ~/.dotfiles/dot-config/hypr"
 alias avags="nvim ~/.dotfiles/dot-config/ags/"
 alias avnvim="nvim ~/.dotfiles/dot-config/nvim/"
@@ -28,7 +31,7 @@ alias nmcomp='nmcli device wifi connect "Mon Palais"'
 
 #OTHERS
 alias mkex="chmod +x"
-alias ythd="yt-dlp -f 'bestvideo[height<=720]+bestaudio/best[height<=720]' --merge-output-format mp4 -o '~/Downloads/ythd/%(title)s.%(ext)s'"
+alias ythd="yt-dlp -f 'bestvideo[height<=720]+bestaudio/best[height<=720]' -o '~/Downloads/Video/%(title)s.%(ext)s'"
 alias cldl="scdl --onlymp3 --path Downloads/sdcl -l"
 alias nfetch="clear && neofetch"
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
@@ -40,16 +43,6 @@ alias codeags="code ~/.dotfiles/dot-config/ags/"
 alias zdots="cd ~/.dotfiles/"
 alias curl='noglob curl'
 alias spwmusic='/usr/bin/mpd ~/.config/mpd/mpd.conf; /usr/bin/mpd-mpris --no-instance --host 127.0.0.1 & disown'
-
-# Node & Bun
-alias ptd="pnpm tauri dev"
-alias prd="pnpm run dev"
-
-alias btd="bun tauri dev"
-alias brd="bun run dev"
-
-# Ripgrep
-alias rgfs='rg --fixed-strings --'
 
 # Node & Bun
 alias ptd="pnpm tauri dev"
@@ -143,16 +136,6 @@ function git_current_branch() {
 function gd() {
 	git diff --name-only --relative --diff-filter=d "$@" | xargs bat --diff
 }
-function eclean() {
-	echo "Are you sure you want to clean the cache and remove old packages?"
-	echo "Type 'yes' to continue: "
-	read yn
-	if [ "$yn" = "yes" ]; then
-		~/.dotfiles/scripts/eclean.sh
-	else
-		echo "Aborted."
-	fi
-}
 
 #.Net Aliases
 alias dn='dotnet new'
@@ -168,9 +151,10 @@ alias dng='dotnet nuget'
 alias db='dotnet build'
 
 # Make Aliases
-alias mr='make run'
-alias mp='make prune'
-alias mc='make create'
+alias mkr='make run'
+alias mkp='make prune'
+alias mkc='make create'
+alias mkd='make docs'
 
 # Rust Aliases
 alias cg='cargo'
@@ -187,9 +171,5 @@ alias nggc='ng generate component'
 # >>> coursier install directory >>>
 export PATH="$PATH:$HOME/.local/share/coursier/bin"
 export PATH=$PATH:$(go env GOPATH)/bin
-
-# export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
-# export LD_LIBRARY_PATH=/usr/local/lib
-# export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
 
 export GPG_TTY=$(tty)
