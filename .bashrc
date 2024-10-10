@@ -22,4 +22,3 @@ export PATH="$HOME/.console-ninja/.bin:$PATH"
 eval "$(fzf --bash)"
 eval "$(zoxide init bash)"
 
-PATH=~/.console-ninja/.bin:$PATH

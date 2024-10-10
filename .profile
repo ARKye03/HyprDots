@@ -1,3 +1,6 @@
+# Core
+alias snvim="sudo -E nvim"
+
 #Arch Linux Aliases
 alias pacsu="sudo pacman -Syu --noconfirm && yay -Syu"
 alias pacsuw='sudo pacman -Syu --noconfirm --config /etc/pacman-warp.conf && yay -Syu --noconfirm --config /etc/pacman-warp.conf'
@@ -163,9 +166,9 @@ alias dng='dotnet nuget'
 alias db='dotnet build'
 
 # Make Aliases
-alias mr='make run'
-alias mp='make prune'
-alias mc='make create'
+alias mkr='make run'
+alias mkp='make prune'
+alias mkc='make create'
 
 # Rust Aliases
 alias cg='cargo'

@@ -97,8 +97,6 @@ add-zsh-hook chpwd _fnm_autoload_hook \
 rehash"
 eval "$(fnm env --use-on-cd)"
 
-PATH=~/.console-ninja/.bin:$PATH
-
 # Load Angular CLI autocompletion.
 source <(ng completion script)
 
