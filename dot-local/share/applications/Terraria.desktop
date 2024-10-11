@@ -1,8 +1,13 @@
 [Desktop Entry]
 Name=Terraria
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/18347172279256875008
-Icon=/home/archkye/Downloads/terraria-icon-400x512-wcvquzhx.png
-Terminal=false
+Exec=bottles-cli run -p Terraria -b 'Terraria' -- %u
 Type=Application
-Categories=Game;
+Terminal=false
+Categories=Application;
+Icon=/home/archkye/.local/share/bottles/bottles/Terraria/icons/Terraria.png
+Comment=Launch Terraria using Bottles.
+StartupWMClass=Terraria
+Actions=Configure;
+[Desktop Action Configure]
+Name=Configure in Bottles
+Exec=bottles -b 'Terraria'

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Geometry Dash
+Exec=bottles-cli run -p 'Geometry Dash' -b 'Games' -- %u
+Type=Application
+Terminal=false
+Categories=Application;
+Icon=/home/archkye/.local/share/bottles/bottles/Terraria__129/icons/Geometry Dash.png
+Comment=Launch Geometry Dash using Bottles.
+StartupWMClass=Geometry Dash
+Actions=Configure;
+[Desktop Action Configure]
+Name=Configure in Bottles
+Exec=bottles -b 'Games'
