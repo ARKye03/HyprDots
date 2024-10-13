@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Cursor
+Exec=/usr/bin/cursor --enable-features=UseOzonePlatform --ozone-platform=wayland --use-gl=desktop --no-sandbox %U
+Terminal=false
+Type=Application
+Icon=cursor
+StartupWMClass=cursor-url-handler
+X-AppImage-Version=0.42.0
+MimeType=x-scheme-handler/cursor;
+Categories=Utility;
