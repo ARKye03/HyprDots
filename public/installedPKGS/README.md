@@ -138,7 +138,7 @@
 | nwg-icon-picker | 0.1.1-3 |
 | nwg-look | 0.2.7-1 |
 | obs-studio | 30.2.1-1 |
-| obsidian | 1.6.7-1 |
+| obsidian | 1.7.4-1 |
 | ocs-url | 3.1.0-7.3 |
 | onefetch | 2.22.0-1 |
 | opencl-nvidia | 560.35.03-16 |
