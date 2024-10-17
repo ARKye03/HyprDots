@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Termius
+Exec=termius --enable-features=UseOzonePlatform --ozone-platform=wayland --use-gl=desktop %U
+Terminal=false
+Type=Application
+Icon=termius
+StartupWMClass=Termius
+Comment=Desktop SSH Client
+MimeType=x-scheme-handler/termius;
+Categories=Utility;
