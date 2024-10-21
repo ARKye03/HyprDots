@@ -48,7 +48,7 @@ bindkey '^[[B' history-substring-search-down
 bindkey '^[[1;5C' forward-word  # Ctrl + Right
 bindkey '^[[1;5D' backward-word  # Ctrl + Left
 bindkey '^H' backward-kill-word # Ctrl + Backspace
-bindkey "^L" clear-screen # Ctrl + L
+# bindkey "^L" clear-screen # Ctrl + L
 
 eval "$(zoxide init zsh)"
 eval "$(direnv hook zsh)"
