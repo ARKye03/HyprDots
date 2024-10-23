@@ -3,7 +3,7 @@
 | Package  | Version |
 | -------  | ------- |
 | adw-gtk-theme | 5.4-1 |
-| alacritty | 0.13.2-3 |
+| alacritty | 0.14.0-1 |
 | appmenu-gtk-module | 24.05-1 |
 | aria2 | 1.37.0-1 |
 | aspnet-runtime | 8.0.8.sdk108-1 |
@@ -12,6 +12,7 @@
 | base | 3-2 |
 | base-devel | 1-2 |
 | bat | 0.24.0-2 |
+| bibata-cursor-git | 0.1.r10.70778d7-1 |
 | bleachbit | 4.6.2-1 |
 | blueman | 2.4.3-1 |
 | brave-bin | 1:1.71.114-1 |
@@ -29,14 +30,13 @@
 | copyq | 9.0.0-1 |
 | cpanminus | 1.7047-2 |
 | cpio | 2.15-2 |
-| cursor-bin | 0.42.3-1 |
 | dart-sass | 1.79.4-1 |
 | dex | 0.9.0-2 |
 | direnv | 2.35.0-1 |
-| discord_arch_electron | 0.0.71-1 |
+| discord_arch_electron | 0.0.72-1 |
 | docker | 1:27.3.1-1 |
 | dotnet-sdk | 8.0.8.sdk108-1 |
-| downgrade | 11.3.0-1.1 |
+| downgrade | 11.4.2-1 |
 | edk2-shell | 202311-1 |
 | efibootmgr | 18-3 |
 | engrampa | 1.28.2-2 |
@@ -76,7 +76,7 @@
 | gvfs-mtp | 1.56.1-1 |
 | htop | 3.3.0-3 |
 | hyprcursor | 0.1.10-1 |
-| hypridle | 0.1.2-1 |
+| hypridle | 0.1.3-1 |
 | hyprland | 0.44.1-1 |
 | hyprlang | 0.5.3-1 |
 | hyprlock | 0.4.1-1 |
@@ -89,6 +89,7 @@
 | intel-ucode | 20240910-1 |
 | iwd | 3.0-1 |
 | jq | 1.7.1-2 |
+| just | 1.36.0-1 |
 | kitty | 0.36.4-1 |
 | ldb | 2:4.21.1-1 |
 | lib32-pipewire | 1:1.2.5-1 |
@@ -118,7 +119,7 @@
 | microsoft-edge-stable-bin | 130.0.2849.46-1 |
 | mpc | 0.35-1 |
 | mpd | 0.23.15-6 |
-| mpd-mpris-bin | 0.4.1-2 |
+| mpd-mpris | 0.4.1-2 |
 | nano | 8.2-1 |
 | ncmpcpp | 0.10-1 |
 | neofetch | 7.1.0-2 |
@@ -158,7 +159,7 @@
 | plocate | 1.1.22-3 |
 | polkit-gnome | 0.105-11 |
 | polybar | 3.7.2-2 |
-| protonvpn-cli | 3.13.0-3 |
+| protonvpn-cli-community | 2.2.12-1 |
 | python-build | 1.2.2-1 |
 | python-installer | 0.7.0-8 |
 | python-pam | 2.0.2-3 |
@@ -234,7 +235,7 @@
 | xorg-xsetroot | 1.1.3-2 |
 | xsettingsd | 1.0.2-2 |
 | yay | 12.4.2-1 |
-| yt-dlp | 2024.10.07-1 |
+| yt-dlp | 2024.10.22-1 |
 | zed | 0.157.5-1 |
 | zoxide | 0.9.6-1 |
 | zsh | 5.9-5 |
